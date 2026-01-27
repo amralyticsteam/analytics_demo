@@ -1,0 +1,7 @@
+post_id,platform,image_category,engagement_score,sentiment_visual,color_palette,objects_detected
+1,Instagram,Product Shot,8.5,Positive,"Blue, White, Gray","product, hand, background",2850
+2,Instagram,Lifestyle,9.2,Positive,"Warm tones, Beige","people, product, outdoor",4320
+3,Facebook,Behind the Scenes,6.8,Neutral,"Industrial, Gray","workspace, tools, people",1560
+4,Instagram,User Generated,7.9,Positive,"Vibrant, Colorful","product, lifestyle, indoor",3240
+5,Facebook,Product Shot,5.2,Neutral,"White, Minimal","product, table, shadow",980
+6,Instagram,Event,8.8,Positive,"Dark, Accent colors","people, venue, lighting",3890

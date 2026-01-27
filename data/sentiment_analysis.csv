@@ -1,0 +1,11 @@
+review_id,review_text,sentiment_score,sentiment_label,date
+1,"Excellent service and quality products! Highly recommend.",0.92,Positive,2024-01-15
+2,"Terrible experience. Never coming back.",−0.85,Negative,2024-01-16
+3,"Good selection but prices are a bit high.",0.35,Neutral,2024-01-17
+4,"Amazing customer service! Staff went above and beyond.",0.88,Positive,2024-01-18
+5,"Average. Nothing special but gets the job done.",0.05,Neutral,2024-01-19
+6,"Disappointed with the quality. Expected much better.",−0.62,Negative,2024-01-20
+7,"Love this place! Been a customer for years.",0.95,Positive,2024-01-21
+8,"Okay experience. Could be better.",0.15,Neutral,2024-01-22
+9,"Worst purchase ever. Complete waste of money.",−0.90,Negative,2024-01-23
+10,"Pretty good overall. Will return.",0.68,Positive,2024-01-24

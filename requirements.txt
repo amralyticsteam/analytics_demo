@@ -1,0 +1,7 @@
+streamlit>=1.28.0
+plotly>=5.17.0
+pandas>=2.0.0
+numpy>=1.24.0
+nltk>=3.8.0
+scikit-learn>=1.3.0
+# umap-learn>=0.5.3  # Optional: for 3D customer segmentation (requires TensorFlow, may have compatibility issues)

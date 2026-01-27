@@ -1,0 +1,6 @@
+topic_id,topic_name,document_count,top_keywords,prevalence
+1,Product Quality,245,"quality, durable, craftsmanship, materials, build",0.28
+2,Customer Service,198,"service, staff, helpful, friendly, support",0.23
+3,Pricing,187,"price, expensive, value, affordable, cost",0.21
+4,Delivery & Shipping,156,"delivery, shipping, fast, late, package",0.18
+5,Store Experience,89,"store, location, clean, organized, atmosphere",0.10

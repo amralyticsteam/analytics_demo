@@ -1,0 +1,37 @@
+date,channel,campaign_name,spend,impressions,clicks,leads,conversions,revenue,ctr,conversion_rate,cpa,roas,service_type
+2024-01-05,Google Ads,Winter Heating Emergency,450,12500,380,45,12,7200,3.04,3.16,37.50,16.00,Emergency
+2024-01-12,Google Ads,Furnace Repair,350,9800,285,32,9,4050,2.91,3.16,38.89,11.57,Heating
+2024-01-19,Google Ads,Winter Maintenance,200,6500,175,18,6,900,2.69,3.43,33.33,4.50,Maintenance
+2024-02-02,Google Ads,Heating Service,400,11200,340,38,11,4950,3.04,3.24,36.36,12.38,Heating
+2024-02-16,Google Ads,Emergency HVAC,425,13000,395,42,13,7800,3.04,3.29,32.69,18.35,Emergency
+2024-03-01,Google Ads,Spring Tune-up,300,8900,245,25,8,1200,2.75,3.27,37.50,4.00,Maintenance
+2024-03-15,Instagram,Spring AC Check,150,25000,420,12,2,250,1.68,0.48,75.00,1.67,Maintenance
+2024-04-05,Google Ads,AC Preparation,350,10500,310,28,9,1350,2.95,3.23,38.89,3.86,Maintenance
+2024-04-20,Instagram,Cool Summer Promo,200,28000,520,15,3,375,1.86,0.58,66.67,1.88,Maintenance
+2024-05-01,Google Ads,Early AC Service,400,12000,365,35,11,1650,3.04,3.14,36.36,4.13,Maintenance
+2024-05-15,LinkedIn,Commercial HVAC,250,8500,125,18,8,9600,1.47,6.40,31.25,38.40,Installation
+2024-06-01,Google Ads,AC Repair Season,500,15000,485,52,18,7020,3.23,3.71,27.78,14.04,Cooling
+2024-06-15,Google Ads,Summer AC Emergency,600,18500,575,68,22,14300,3.11,3.83,27.27,23.83,Emergency
+2024-06-22,Instagram,Beat the Heat,180,32000,580,14,2,780,1.81,0.36,90.00,4.33,Cooling
+2024-07-01,Google Ads,Peak Summer AC,650,20000,635,75,25,16250,3.18,3.94,26.00,25.00,Emergency
+2024-07-08,Google Ads,AC Repair Now,550,17500,540,62,21,8190,3.09,3.89,26.19,14.89,Cooling
+2024-07-15,LinkedIn,Office Cooling,300,9200,140,22,10,12000,1.52,7.14,30.00,40.00,Installation
+2024-07-22,Instagram,Cool Down Sale,220,35000,640,16,3,1170,1.83,0.47,73.33,5.32,Cooling
+2024-08-01,Google Ads,Late Summer AC,600,18000,590,70,24,15600,3.28,4.07,25.00,26.00,Emergency
+2024-08-08,Google Ads,AC Maintenance,450,14000,445,48,16,2400,3.18,3.60,28.13,5.33,Maintenance
+2024-08-15,Google Ads,End of Summer,400,12500,385,42,14,5460,3.08,3.64,28.57,13.65,Cooling
+2024-01-08,Yelp,Heating Services,100,5000,85,8,2,1200,1.70,2.35,50.00,12.00,Heating
+2024-02-12,Yelp,Emergency Heat,120,6000,95,9,3,1800,1.58,3.16,40.00,15.00,Emergency
+2024-03-10,Yelp,Spring Service,80,4200,65,6,2,300,1.55,3.08,40.00,3.75,Maintenance
+2024-04-18,Referral Program,Customer Referrals,50,500,45,18,12,7200,9.00,26.67,4.17,144.00,Mixed
+2024-05-22,Referral Program,Customer Referrals,50,520,48,20,14,8400,9.23,29.17,3.57,168.00,Mixed
+2024-06-25,Yelp,AC Services,100,5500,88,8,3,1170,1.60,3.41,33.33,11.70,Cooling
+2024-07-12,Referral Program,Customer Referrals,50,480,42,19,13,7800,8.75,30.95,3.85,156.00,Mixed
+2024-07-28,Yelp,Summer Cooling,120,6200,98,9,3,1950,1.58,3.06,40.00,16.25,Cooling
+2024-08-20,Referral Program,Customer Referrals,50,510,46,21,15,9000,9.02,32.61,3.33,180.00,Mixed
+2024-01-15,LinkedIn,Commercial Services,200,7800,110,15,6,7200,1.41,5.45,33.33,36.00,Installation
+2024-03-22,LinkedIn,Business HVAC,220,8200,125,16,7,8400,1.52,5.60,31.43,38.18,Installation
+2024-05-28,LinkedIn,Office Climate,240,8900,132,19,9,10800,1.48,6.82,26.67,45.00,Installation
+2024-02-05,Print,Local Newspaper,150,15000,25,8,2,1200,0.17,8.00,75.00,8.00,Heating
+2024-04-12,Print,Community Mailer,180,18000,30,9,3,1500,0.17,10.00,60.00,8.33,Maintenance
+2024-06-08,Print,Summer Insert,200,20000,35,10,3,1950,0.18,8.57,66.67,9.75,Cooling

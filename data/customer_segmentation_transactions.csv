@@ -1,0 +1,1779 @@
+customer_id,date,service_type,service_category,amount,payment_method,technician,duration_hours,parts_cost,labor_cost,follow_up_needed
+CUST_003,2023-09-22,Mini-Split Installation,Installation,3200,Financing,Tech_A,10.0,2100,1100.0,Yes
+CUST_003,2023-09-22,Refrigerant Level Check,Cooling,95,Check,Tech_B,0.7,10,77.0,No
+CUST_082,2024-08-05,Heat Pump Installation,Installation,5500,Credit Card,Tech_D,17.0,3600,1870.0,Yes
+CUST_082,2024-08-05,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_001,2023-10-05,Control Board Replacement,Heating,580,Credit Card,Tech_A,2.5,320,275.0,No
+CUST_001,2023-10-05,Thermostat Installation,Installation,280,Check,Tech_D,1.2,140,132.0,Yes
+CUST_004,2023-11-13,Igniter Replacement,Heating,220,Check,Tech_B,1.5,60,165.0,No
+CUST_004,2023-11-13,Thermostat Check,Maintenance,50,Credit Card,Tech_C,0.5,5,55.0,No
+CUST_031,2024-03-22,Breaker Inspection,Maintenance,85,Check,Tech_B,0.7,5,77.0,No
+CUST_051,2024-08-23,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_051,2024-08-23,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_133,2024-02-13,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_B,1.5,30,165.0,No
+CUST_133,2024-02-13,Thermostat Installation,Installation,280,Check,Tech_C,1.2,140,132.0,Yes
+CUST_092,2024-04-02,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_D,1.5,25,165.0,No
+CUST_092,2024-04-02,Thermostat Calibration,Maintenance,95,Credit Card,Tech_A,0.8,15,88.0,No
+CUST_041,2024-10-02,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_D,1.5,25,165.0,No
+CUST_041,2024-10-02,Igniter Replacement,Heating,220,Cash,Tech_A,1.5,60,165.0,No
+CUST_138,2024-05-06,Compressor Replacement,Cooling,2100,Check,Tech_B,5.0,1350,550.0,No
+CUST_138,2024-05-06,Condenser Coil Cleaning,Cooling,180,Check,Tech_B,1.5,30,165.0,No
+CUST_138,2024-05-06,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_R16,2024-04-26,Gas Valve Replacement,Heating,350,Credit Card,Tech_A,2.0,145,220.0,No
+CUST_102,2023-03-28,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_118,2024-11-21,AC Tune-up,Maintenance,125,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_118,2024-11-21,Gas Valve Replacement,Heating,350,Credit Card,Tech_B,2.0,145,220.0,No
+CUST_118,2024-11-21,Return Air Inspection,Maintenance,70,Cash,Tech_A,0.6,5,66.0,No
+CUST_R12,2023-10-20,AC Tune-up,Maintenance,125,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_R12,2023-10-20,Refrigerant Recharge,Cooling,280,Cash,Tech_B,1.5,95,165.0,No
+CUST_R12,2023-10-20,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_016,2023-11-05,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_016,2023-11-05,Gas Valve Replacement,Heating,350,Check,Tech_B,2.0,145,220.0,No
+CUST_016,2023-11-05,Pressure Switch Replacement,Heating,210,Credit Card,Tech_B,1.5,65,165.0,No
+CUST_R14,2024-09-08,Heat Pump Installation,Installation,5500,Credit Card,Tech_C,17.0,3600,1870.0,Yes
+CUST_R14,2024-09-08,Thermostat Replacement,Heating,185,Credit Card,Tech_C,1.0,85,110.0,No
+CUST_137,2023-10-24,Heating Repair,Heating,450,Check,Tech_B,2.5,180,275.0,No
+CUST_137,2023-10-24,Heating Tune-up,Maintenance,140,Cash,Tech_A,1.5,20,165.0,No
+CUST_033,2023-01-21,Pressure Switch Replacement,Heating,210,Check,Tech_C,1.5,65,165.0,No
+CUST_033,2023-01-21,Thermostat Installation,Installation,280,Cash,Tech_C,1.2,140,132.0,Yes
+CUST_R06,2024-05-09,Igniter Replacement,Heating,220,Credit Card,Tech_B,1.5,60,165.0,No
+CUST_R06,2024-05-09,Pressure Switch Replacement,Heating,210,Check,Tech_B,1.5,65,165.0,No
+CUST_R27,2024-10-11,Refrigerant Level Check,Cooling,95,Check,Tech_C,0.7,10,77.0,No
+CUST_058,2023-11-05,Zone Damper Replacement,Heating,380,Check,Tech_B,2.0,180,220.0,No
+CUST_092,2024-01-22,Furnace Installation,Installation,4100,Financing,Tech_B,12.0,2750,1320.0,Yes
+CUST_092,2024-01-22,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_148,2023-11-12,Flame Sensor Replacement,Heating,195,Credit Card,Tech_C,1.2,55,132.0,No
+CUST_140,2024-08-21,Condenser Coil Cleaning,Cooling,180,Cash,Tech_B,1.5,30,165.0,No
+CUST_140,2024-08-21,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_120,2024-08-30,AC Tune-up,Maintenance,125,Cash,Tech_A,1.0,15,110.0,No
+CUST_147,2023-10-26,Humidifier Check,Maintenance,75,Check,Tech_A,0.5,10,55.0,No
+CUST_118,2023-08-20,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_054,2023-02-21,Igniter Replacement,Heating,220,Credit Card,Tech_D,1.5,60,165.0,No
+CUST_R15,2024-04-24,Heating Repair,Heating,450,Check,Tech_B,2.5,180,275.0,No
+CUST_052,2023-07-25,Drain Line Flush,Cooling,125,Check,Tech_C,1.0,20,110.0,No
+CUST_052,2023-07-25,Igniter Replacement,Heating,220,Cash,Tech_D,1.5,60,165.0,No
+CUST_052,2023-07-25,Refrigerant Level Check,Cooling,95,Credit Card,Tech_B,0.7,10,77.0,No
+CUST_058,2024-09-26,Capacitor Replacement,Cooling,180,Credit Card,Tech_B,1.0,45,110.0,No
+CUST_078,2024-07-07,Duct Sealing,Maintenance,520,Check,Tech_B,3.0,180,330.0,No
+CUST_078,2024-07-07,Mini-Split Installation,Installation,3200,Financing,Tech_A,10.0,2100,1100.0,Yes
+CUST_014,2023-11-06,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_B,1.5,25,165.0,No
+CUST_014,2023-11-06,Igniter Replacement,Heating,220,Check,Tech_C,1.5,60,165.0,No
+CUST_020,2023-04-10,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_020,2023-04-10,Mini-Split Installation,Installation,3200,Financing,Tech_A,10.0,2100,1100.0,Yes
+CUST_020,2023-04-10,Zone Damper Replacement,Heating,380,Credit Card,Tech_B,2.0,180,220.0,No
+CUST_001,2023-02-05,Furnace Installation,Installation,4100,Credit Card,Tech_C,12.0,2750,1320.0,Yes
+CUST_001,2023-02-05,Thermostat Installation,Installation,280,Credit Card,Tech_D,1.2,140,132.0,Yes
+CUST_137,2023-06-10,Control Board Replacement,Heating,580,Financing,Tech_A,2.5,320,275.0,No
+CUST_137,2023-06-10,Gas Valve Replacement,Heating,350,Credit Card,Tech_A,2.0,145,220.0,No
+CUST_112,2024-12-11,Air Handler Installation,Installation,2800,Credit Card,Tech_C,9.0,1900,990.0,Yes
+CUST_112,2024-12-11,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_112,2024-12-11,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_123,2024-11-14,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_123,2024-11-14,Heating Repair,Heating,450,Credit Card,Tech_D,2.5,180,275.0,No
+CUST_R08,2023-05-09,Refrigerant Level Check,Cooling,95,Check,Tech_A,0.7,10,77.0,No
+CUST_R13,2023-04-23,Breaker Inspection,Maintenance,85,Credit Card,Tech_C,0.7,5,77.0,No
+CUST_R13,2023-04-23,Condensate Pump Cleaning,Cooling,140,Credit Card,Tech_C,1.2,25,132.0,No
+CUST_R13,2023-04-23,Heat Exchanger Inspection,Heating,185,Check,Tech_B,1.5,25,165.0,No
+CUST_009,2024-11-14,Duct Sealing,Maintenance,520,Credit Card,Tech_C,3.0,180,330.0,No
+CUST_009,2024-11-14,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_119,2023-01-28,Blower Motor Cleaning,Heating,120,Credit Card,Tech_D,1.0,15,110.0,No
+CUST_119,2023-01-28,Pressure Switch Replacement,Heating,210,Credit Card,Tech_D,1.5,65,165.0,No
+CUST_048,2023-06-08,Refrigerant Level Check,Cooling,95,Credit Card,Tech_B,0.7,10,77.0,No
+CUST_076,2023-02-18,Compressor Replacement,Cooling,2100,Financing,Tech_C,5.0,1350,550.0,No
+CUST_076,2023-02-18,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_016,2023-01-28,Furnace Installation,Installation,4100,Credit Card,Tech_A,12.0,2750,1320.0,Yes
+CUST_016,2023-01-28,Zone Damper Replacement,Heating,380,Credit Card,Tech_C,2.0,180,220.0,No
+CUST_034,2023-03-14,Refrigerant Recharge,Cooling,280,Credit Card,Tech_B,1.5,95,165.0,No
+CUST_004,2023-07-05,AC Tune-up,Maintenance,125,Credit Card,Tech_C,1.0,15,110.0,No
+CUST_004,2023-07-05,Contactor Replacement,Cooling,165,Cash,Tech_A,1.0,40,110.0,No
+CUST_080,2024-05-25,Fan Motor Replacement,Heating,520,Financing,Tech_A,2.5,280,275.0,No
+CUST_080,2024-05-25,Refrigerant Level Check,Cooling,95,Check,Tech_A,0.7,10,77.0,No
+CUST_128,2023-06-13,Control Board Replacement,Heating,580,Credit Card,Tech_A,2.5,320,275.0,No
+CUST_059,2023-10-08,Condensate Pump Cleaning,Cooling,140,Check,Tech_C,1.2,25,132.0,No
+CUST_076,2023-10-25,Pressure Switch Replacement,Heating,210,Check,Tech_A,1.5,65,165.0,No
+CUST_006,2023-03-07,Boiler Installation,Installation,4800,Credit Card,Tech_A,14.0,3200,1540.0,Yes
+CUST_006,2023-03-07,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_C,1.7,35,187.0,No
+CUST_051,2023-06-22,Drain Pan Replacement,Cooling,220,Credit Card,Tech_A,1.5,80,165.0,No
+CUST_051,2023-06-22,System Maintenance,Maintenance,150,Check,Tech_A,1.5,25,165.0,No
+CUST_133,2023-09-03,Furnace Installation,Installation,4100,Credit Card,Tech_B,12.0,2750,1320.0,Yes
+CUST_133,2023-09-03,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_001,2024-01-20,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_A,1.7,35,187.0,No
+CUST_115,2024-01-23,AC Installation,Installation,3750,Financing,Tech_C,11.0,2500,1210.0,Yes
+CUST_044,2024-12-10,Boiler Installation,Installation,4800,Financing,Tech_B,14.0,3200,1540.0,Yes
+CUST_044,2024-12-10,Capacitor Replacement,Cooling,180,Credit Card,Tech_C,1.0,45,110.0,No
+CUST_048,2023-10-31,Refrigerant Level Check,Cooling,95,Check,Tech_C,0.7,10,77.0,No
+CUST_R26,2023-05-03,Capacitor Replacement,Cooling,180,Check,Tech_D,1.0,45,110.0,No
+CUST_068,2024-06-27,Compressor Replacement,Cooling,2100,Credit Card,Tech_B,5.0,1350,550.0,No
+CUST_068,2024-06-27,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_R11,2023-11-12,Flame Sensor Replacement,Heating,195,Check,Tech_A,1.2,55,132.0,No
+CUST_R11,2023-11-12,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_R11,2023-11-12,System Maintenance,Maintenance,150,Credit Card,Tech_D,1.5,25,165.0,No
+CUST_078,2023-07-11,Condenser Coil Cleaning,Cooling,180,Check,Tech_D,1.5,30,165.0,No
+CUST_078,2023-07-11,Thermostat Installation,Installation,280,Credit Card,Tech_D,1.2,140,132.0,Yes
+CUST_114,2023-03-20,AC Installation,Installation,3750,Financing,Tech_C,11.0,2500,1210.0,Yes
+CUST_114,2023-03-20,Duct Cleaning,Maintenance,350,Credit Card,Tech_B,2.5,80,275.0,No
+CUST_114,2023-03-20,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_011,2023-12-21,Filter Replacement,Maintenance,45,Credit Card,Tech_A,0.3,8,33.0,No
+CUST_102,2023-09-23,Contactor Replacement,Cooling,165,Check,Tech_A,1.0,40,110.0,No
+CUST_102,2023-09-23,Thermostat Check,Maintenance,50,Check,Tech_D,0.5,5,55.0,No
+CUST_108,2023-05-24,Igniter Replacement,Heating,220,Credit Card,Tech_C,1.5,60,165.0,No
+CUST_108,2023-05-24,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_002,2023-02-01,Boiler Installation,Installation,4800,Financing,Tech_B,14.0,3200,1540.0,Yes
+CUST_002,2023-02-01,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_002,2023-02-01,Thermostat Installation,Installation,280,Check,Tech_C,1.2,140,132.0,Yes
+CUST_129,2024-09-22,Pressure Switch Replacement,Heating,210,Credit Card,Tech_A,1.5,65,165.0,No
+CUST_129,2024-09-22,Refrigerant Recharge,Cooling,280,Check,Tech_A,1.5,95,165.0,No
+CUST_058,2024-03-09,AC Repair,Cooling,390,Credit Card,Tech_A,2.0,170,220.0,No
+CUST_058,2024-03-09,Pressure Switch Replacement,Heating,210,Check,Tech_C,1.5,65,165.0,No
+CUST_058,2024-03-09,Thermostat Replacement,Heating,185,Credit Card,Tech_D,1.0,85,110.0,No
+CUST_055,2024-06-20,Condenser Coil Cleaning,Cooling,180,Check,Tech_C,1.5,30,165.0,No
+CUST_R13,2023-03-08,Compressor Replacement,Cooling,2100,Financing,Tech_B,5.0,1350,550.0,No
+CUST_R13,2023-03-08,UV Light Check,Maintenance,90,Credit Card,Tech_C,0.7,10,77.0,No
+CUST_053,2024-10-19,Drain Pan Replacement,Cooling,220,Credit Card,Tech_A,1.5,80,165.0,No
+CUST_053,2024-10-19,Pressure Switch Replacement,Heating,210,Check,Tech_A,1.5,65,165.0,No
+CUST_R06,2023-10-25,Flame Sensor Replacement,Heating,195,Check,Tech_A,1.2,55,132.0,No
+CUST_R06,2023-10-25,Supply Vent Balancing,Maintenance,180,Credit Card,Tech_B,1.5,20,165.0,No
+CUST_148,2024-12-04,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_148,2024-12-04,Flame Sensor Replacement,Heating,195,Credit Card,Tech_D,1.2,55,132.0,No
+CUST_148,2024-12-04,Thermostat Replacement,Heating,185,Check,Tech_A,1.0,85,110.0,No
+CUST_006,2024-06-11,Duct Inspection,Maintenance,85,Check,Tech_A,0.8,10,88.0,No
+CUST_006,2024-06-11,Thermostat Replacement,Heating,185,Credit Card,Tech_D,1.0,85,110.0,No
+CUST_123,2024-09-19,Drain Pan Replacement,Cooling,220,Cash,Tech_B,1.5,80,165.0,No
+CUST_123,2024-09-19,Heating Tune-up,Maintenance,140,Credit Card,Tech_C,1.5,20,165.0,No
+CUST_143,2024-03-20,Air Quality Assessment,Maintenance,140,Check,Tech_D,1.0,35,110.0,No
+CUST_143,2024-03-20,Flame Sensor Replacement,Heating,195,Credit Card,Tech_D,1.2,55,132.0,No
+CUST_045,2024-10-21,Boiler Installation,Installation,4800,Credit Card,Tech_B,14.0,3200,1540.0,Yes
+CUST_045,2024-10-21,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_115,2023-12-03,Relay Replacement,Heating,145,Credit Card,Tech_B,1.0,35,110.0,No
+CUST_R03,2023-08-17,Drain Line Flush,Cooling,125,Credit Card,Tech_B,1.0,20,110.0,No
+CUST_R14,2023-09-11,AC Installation,Installation,3750,Financing,Tech_A,11.0,2500,1210.0,Yes
+CUST_R14,2023-09-11,Evaporator Coil Cleaning,Cooling,195,Check,Tech_B,1.7,35,187.0,No
+CUST_R14,2023-09-11,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_R09,2023-06-03,Condenser Coil Cleaning,Cooling,180,Cash,Tech_B,1.5,30,165.0,No
+CUST_R09,2023-06-03,Refrigerant Recharge,Cooling,280,Check,Tech_A,1.5,95,165.0,No
+CUST_094,2024-08-02,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_R30,2023-10-11,Evaporator Coil Cleaning,Cooling,195,Check,Tech_B,1.7,35,187.0,No
+CUST_R30,2023-10-11,Filter Replacement,Maintenance,45,Credit Card,Tech_A,0.3,8,33.0,No
+CUST_R30,2023-10-11,Thermostat Calibration,Maintenance,95,Credit Card,Tech_A,0.8,15,88.0,No
+CUST_052,2024-12-02,Air Quality Assessment,Maintenance,140,Credit Card,Tech_A,1.0,35,110.0,No
+CUST_052,2024-12-02,Heating Tune-up,Maintenance,140,Credit Card,Tech_C,1.5,20,165.0,No
+CUST_065,2024-05-18,Capacitor Replacement,Cooling,180,Check,Tech_B,1.0,45,110.0,No
+CUST_065,2024-05-18,Contactor Replacement,Cooling,165,Credit Card,Tech_B,1.0,40,110.0,No
+CUST_R15,2023-11-27,Thermostat Calibration,Maintenance,95,Check,Tech_C,0.8,15,88.0,No
+CUST_R15,2023-11-27,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_038,2023-07-26,AC Tune-up,Maintenance,125,Cash,Tech_C,1.0,15,110.0,No
+CUST_040,2024-11-16,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_040,2024-11-16,Heating Tune-up,Maintenance,140,Check,Tech_A,1.5,20,165.0,No
+CUST_081,2024-04-16,Blower Motor Repair,Heating,320,Credit Card,Tech_B,2.0,110,220.0,No
+CUST_081,2024-04-16,System Maintenance,Maintenance,150,Check,Tech_A,1.5,25,165.0,No
+CUST_018,2024-07-26,Heat Pump Installation,Installation,5500,Financing,Tech_C,17.0,3600,1870.0,Yes
+CUST_125,2024-05-30,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_B,1.7,35,187.0,No
+CUST_131,2023-01-28,Heat Pump Installation,Installation,5500,Credit Card,Tech_B,17.0,3600,1870.0,Yes
+CUST_102,2023-07-10,AC Repair,Cooling,390,Credit Card,Tech_C,2.0,170,220.0,No
+CUST_102,2023-07-10,Contactor Replacement,Cooling,165,Cash,Tech_C,1.0,40,110.0,No
+CUST_119,2023-07-20,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_B,1.7,35,187.0,No
+CUST_050,2024-06-10,Thermostat Replacement,Heating,185,Check,Tech_C,1.0,85,110.0,No
+CUST_R25,2023-07-16,AC Installation,Installation,3750,Financing,Tech_C,11.0,2500,1210.0,Yes
+CUST_064,2024-11-05,Carbon Monoxide Test,Maintenance,95,Credit Card,Tech_B,0.8,20,88.0,No
+CUST_064,2024-11-05,Condensate Pump Cleaning,Cooling,140,Credit Card,Tech_C,1.2,25,132.0,No
+CUST_064,2024-11-05,Thermostat Check,Maintenance,50,Credit Card,Tech_A,0.5,5,55.0,No
+CUST_084,2023-08-07,Drain Pan Replacement,Cooling,220,Credit Card,Tech_A,1.5,80,165.0,No
+CUST_084,2023-08-07,Heating Tune-up,Maintenance,140,Check,Tech_A,1.5,20,165.0,No
+CUST_054,2024-03-23,Duct Cleaning,Maintenance,350,Credit Card,Tech_A,2.5,80,275.0,No
+CUST_054,2024-03-23,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_R23,2023-08-17,Furnace Installation,Installation,4100,Credit Card,Tech_C,12.0,2750,1320.0,Yes
+CUST_R15,2024-12-16,Fan Motor Replacement,Heating,520,Check,Tech_B,2.5,280,275.0,No
+CUST_R15,2024-12-16,Gas Valve Replacement,Heating,350,Credit Card,Tech_D,2.0,145,220.0,No
+CUST_010,2023-09-01,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_010,2023-09-01,Thermostat Installation,Installation,280,Check,Tech_C,1.2,140,132.0,Yes
+CUST_048,2024-05-03,AC Tune-up,Maintenance,125,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_005,2023-04-26,Thermostat Check,Maintenance,50,Credit Card,Tech_B,0.5,5,55.0,No
+CUST_097,2023-10-13,Fan Motor Replacement,Heating,520,Credit Card,Tech_B,2.5,280,275.0,No
+CUST_051,2023-12-04,Filter Replacement,Maintenance,45,Check,Tech_B,0.3,8,33.0,No
+CUST_107,2023-12-02,Gas Valve Replacement,Heating,350,Credit Card,Tech_B,2.0,145,220.0,No
+CUST_107,2023-12-02,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_139,2024-01-03,AC Repair,Cooling,390,Credit Card,Tech_C,2.0,170,220.0,No
+CUST_139,2024-01-03,Blower Motor Cleaning,Heating,120,Credit Card,Tech_D,1.0,15,110.0,No
+CUST_R03,2024-01-30,Heat Pump Installation,Installation,5500,Financing,Tech_C,17.0,3600,1870.0,Yes
+CUST_R03,2024-01-30,Supply Vent Balancing,Maintenance,180,Check,Tech_B,1.5,20,165.0,No
+CUST_R15,2024-05-08,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_R15,2024-05-08,Thermostat Installation,Installation,280,Credit Card,Tech_D,1.2,140,132.0,Yes
+CUST_096,2024-06-24,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_147,2023-08-05,Refrigerant Recharge,Cooling,280,Credit Card,Tech_B,1.5,95,165.0,No
+CUST_058,2023-08-15,AC Tune-up,Maintenance,125,Credit Card,Tech_C,1.0,15,110.0,No
+CUST_058,2023-08-15,Thermostat Calibration,Maintenance,95,Check,Tech_B,0.8,15,88.0,No
+CUST_058,2023-08-15,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_078,2023-01-05,Thermostat Check,Maintenance,50,Check,Tech_B,0.5,5,55.0,No
+CUST_128,2024-07-28,Refrigerant Recharge,Cooling,280,Credit Card,Tech_B,1.5,95,165.0,No
+CUST_042,2023-10-01,Condensate Pump Cleaning,Cooling,140,Credit Card,Tech_C,1.2,25,132.0,No
+CUST_042,2023-10-01,Pressure Switch Replacement,Heating,210,Cash,Tech_A,1.5,65,165.0,No
+CUST_042,2023-10-01,Thermostat Calibration,Maintenance,95,Check,Tech_C,0.8,15,88.0,No
+CUST_064,2024-09-23,AC Repair,Cooling,390,Credit Card,Tech_A,2.0,170,220.0,No
+CUST_064,2024-09-23,Mini-Split Installation,Installation,3200,Credit Card,Tech_A,10.0,2100,1100.0,Yes
+CUST_103,2024-02-28,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_C,1.5,30,165.0,No
+CUST_103,2024-02-28,Gas Valve Replacement,Heating,350,Check,Tech_B,2.0,145,220.0,No
+CUST_027,2023-10-26,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_C,1.7,35,187.0,No
+CUST_027,2023-10-26,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_102,2024-01-04,Heat Exchanger Inspection,Heating,185,Cash,Tech_B,1.5,25,165.0,No
+CUST_121,2023-12-05,Flame Sensor Replacement,Heating,195,Credit Card,Tech_B,1.2,55,132.0,No
+CUST_138,2024-09-16,Condensate Pump Cleaning,Cooling,140,Credit Card,Tech_B,1.2,25,132.0,No
+CUST_006,2023-01-11,Furnace Installation,Installation,4100,Credit Card,Tech_C,12.0,2750,1320.0,Yes
+CUST_006,2023-01-11,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_063,2023-01-20,Refrigerant Recharge,Cooling,280,Check,Tech_D,1.5,95,165.0,No
+CUST_R03,2024-05-14,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_A,1.7,35,187.0,No
+CUST_R20,2024-07-21,AC Installation,Installation,3750,Financing,Tech_B,11.0,2500,1210.0,Yes
+CUST_R20,2024-07-21,Refrigerant Recharge,Cooling,280,Credit Card,Tech_B,1.5,95,165.0,No
+CUST_052,2023-09-05,Thermostat Calibration,Maintenance,95,Check,Tech_B,0.8,15,88.0,No
+CUST_052,2023-09-05,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_141,2023-10-11,Flame Sensor Replacement,Heating,195,Credit Card,Tech_A,1.2,55,132.0,No
+CUST_141,2023-10-11,Heat Exchanger Inspection,Heating,185,Check,Tech_B,1.5,25,165.0,No
+CUST_141,2023-10-11,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_R25,2023-01-26,Supply Vent Balancing,Maintenance,180,Check,Tech_A,1.5,20,165.0,No
+CUST_084,2024-05-17,Pressure Switch Replacement,Heating,210,Credit Card,Tech_B,1.5,65,165.0,No
+CUST_084,2024-05-17,Relay Replacement,Heating,145,Credit Card,Tech_D,1.0,35,110.0,No
+CUST_084,2024-05-30,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_021,2023-05-29,Carbon Monoxide Test,Maintenance,95,Credit Card,Tech_C,0.8,20,88.0,No
+CUST_021,2023-05-29,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_C,1.7,35,187.0,No
+CUST_R19,2024-02-24,Flame Sensor Replacement,Heating,195,Check,Tech_C,1.2,55,132.0,No
+CUST_R19,2024-02-24,Heat Exchanger Inspection,Heating,185,Check,Tech_A,1.5,25,165.0,No
+CUST_120,2024-09-01,Flame Sensor Replacement,Heating,195,Check,Tech_B,1.2,55,132.0,No
+CUST_019,2023-04-25,Blower Motor Cleaning,Heating,120,Credit Card,Tech_D,1.0,15,110.0,No
+CUST_019,2023-04-25,Relay Replacement,Heating,145,Check,Tech_A,1.0,35,110.0,No
+CUST_019,2023-04-25,Zone System Check,Maintenance,120,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_058,2023-04-12,Relay Replacement,Heating,145,Credit Card,Tech_A,1.0,35,110.0,No
+CUST_058,2023-04-12,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_139,2024-10-27,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_139,2024-10-27,Heating Repair,Heating,450,Credit Card,Tech_C,2.5,180,275.0,No
+CUST_060,2023-12-10,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_117,2023-03-24,Gas Valve Replacement,Heating,350,Credit Card,Tech_C,2.0,145,220.0,No
+CUST_133,2023-03-02,Gas Valve Replacement,Heating,350,Cash,Tech_A,2.0,145,220.0,No
+CUST_133,2023-03-02,Thermostat Check,Maintenance,50,Check,Tech_C,0.5,5,55.0,No
+CUST_138,2023-09-21,Blower Motor Repair,Heating,320,Check,Tech_B,2.0,110,220.0,No
+CUST_138,2023-09-21,Mini-Split Installation,Installation,3200,Financing,Tech_A,10.0,2100,1100.0,Yes
+CUST_103,2024-08-26,AC Repair,Cooling,390,Cash,Tech_A,2.0,170,220.0,No
+CUST_103,2024-08-26,Air Quality Assessment,Maintenance,140,Credit Card,Tech_A,1.0,35,110.0,No
+CUST_103,2024-08-26,Duct Cleaning,Maintenance,350,Credit Card,Tech_B,2.5,80,275.0,No
+CUST_R24,2024-11-29,Flame Sensor Replacement,Heating,195,Cash,Tech_C,1.2,55,132.0,No
+CUST_023,2023-12-13,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_078,2023-04-04,Control Board Replacement,Heating,580,Credit Card,Tech_A,2.5,320,275.0,No
+CUST_078,2023-04-04,Return Air Inspection,Maintenance,70,Check,Tech_C,0.6,5,66.0,No
+CUST_093,2023-05-07,Capacitor Replacement,Cooling,180,Credit Card,Tech_B,1.0,45,110.0,No
+CUST_050,2024-02-23,Flame Sensor Replacement,Heating,195,Credit Card,Tech_C,1.2,55,132.0,No
+CUST_001,2024-07-30,Capacitor Replacement,Cooling,180,Check,Tech_A,1.0,45,110.0,No
+CUST_001,2024-07-30,Thermostat Replacement,Heating,185,Credit Card,Tech_B,1.0,85,110.0,No
+CUST_052,2023-12-03,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_052,2023-12-03,Igniter Replacement,Heating,220,Check,Tech_A,1.5,60,165.0,No
+CUST_052,2023-12-03,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_R24,2023-05-04,Heat Exchanger Inspection,Heating,185,Check,Tech_A,1.5,25,165.0,No
+CUST_116,2023-12-06,Drain Pan Replacement,Cooling,220,Check,Tech_B,1.5,80,165.0,No
+CUST_116,2023-12-06,Heat Pump Installation,Installation,5500,Financing,Tech_B,17.0,3600,1870.0,Yes
+CUST_116,2023-12-06,Thermostat Installation,Installation,280,Credit Card,Tech_D,1.2,140,132.0,Yes
+CUST_051,2023-02-23,Blower Motor Repair,Heating,320,Credit Card,Tech_B,2.0,110,220.0,No
+CUST_016,2023-01-04,Furnace Installation,Installation,4100,Financing,Tech_A,12.0,2750,1320.0,Yes
+CUST_137,2023-03-02,Humidifier Check,Maintenance,75,Check,Tech_D,0.5,10,55.0,No
+CUST_042,2023-11-28,Relay Replacement,Heating,145,Credit Card,Tech_B,1.0,35,110.0,No
+CUST_089,2023-05-16,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_089,2023-05-16,Flame Sensor Replacement,Heating,195,Check,Tech_B,1.2,55,132.0,No
+CUST_089,2023-05-16,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_027,2024-02-07,Heating Tune-up,Maintenance,140,Credit Card,Tech_B,1.5,20,165.0,No
+CUST_027,2024-02-07,UV Light Check,Maintenance,90,Cash,Tech_A,0.7,10,77.0,No
+CUST_104,2024-11-11,Boiler Installation,Installation,4800,Financing,Tech_B,14.0,3200,1540.0,Yes
+CUST_R14,2023-09-12,Refrigerant Level Check,Cooling,95,Cash,Tech_A,0.7,10,77.0,No
+CUST_R14,2023-09-12,Refrigerant Recharge,Cooling,280,Check,Tech_A,1.5,95,165.0,No
+CUST_034,2024-07-12,AC Installation,Installation,3750,Financing,Tech_B,11.0,2500,1210.0,Yes
+CUST_034,2024-07-12,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_149,2024-11-18,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_149,2024-11-18,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_029,2024-11-05,Refrigerant Recharge,Cooling,280,Credit Card,Tech_A,1.5,95,165.0,No
+CUST_109,2023-08-25,Capacitor Replacement,Cooling,180,Credit Card,Tech_D,1.0,45,110.0,No
+CUST_109,2023-08-25,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_059,2023-03-15,Duct Cleaning,Maintenance,350,Credit Card,Tech_A,2.5,80,275.0,No
+CUST_059,2023-03-15,Gas Valve Replacement,Heating,350,Credit Card,Tech_B,2.0,145,220.0,No
+CUST_059,2023-03-15,Pressure Switch Replacement,Heating,210,Credit Card,Tech_C,1.5,65,165.0,No
+CUST_045,2024-05-13,AC Installation,Installation,3750,Credit Card,Tech_A,11.0,2500,1210.0,Yes
+CUST_051,2024-07-20,Condenser Coil Cleaning,Cooling,180,Check,Tech_A,1.5,30,165.0,No
+CUST_051,2024-07-20,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_014,2023-05-05,Gas Valve Replacement,Heating,350,Credit Card,Tech_C,2.0,145,220.0,No
+CUST_101,2023-03-24,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_101,2023-03-24,Heat Pump Installation,Installation,5500,Financing,Tech_C,17.0,3600,1870.0,Yes
+CUST_083,2024-01-13,Igniter Replacement,Heating,220,Cash,Tech_D,1.5,60,165.0,No
+CUST_083,2024-01-13,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_128,2024-05-16,HVAC Installation,Installation,5200,Credit Card,Tech_B,16.0,3400,1760.0,Yes
+CUST_128,2024-05-16,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_018,2023-03-04,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_C,1.5,30,165.0,No
+CUST_018,2023-03-04,Drain Line Flush,Cooling,125,Credit Card,Tech_D,1.0,20,110.0,No
+CUST_018,2023-03-04,Pressure Switch Replacement,Heating,210,Check,Tech_D,1.5,65,165.0,No
+CUST_066,2024-09-25,Supply Vent Balancing,Maintenance,180,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_R10,2024-10-23,Zone Damper Replacement,Heating,380,Credit Card,Tech_C,2.0,180,220.0,No
+CUST_009,2024-05-07,Filter Replacement,Maintenance,45,Cash,Tech_B,0.3,8,33.0,No
+CUST_009,2024-05-07,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_C,1.5,25,165.0,No
+CUST_014,2023-08-11,Capacitor Replacement,Cooling,180,Check,Tech_B,1.0,45,110.0,No
+CUST_014,2023-08-11,Compressor Replacement,Cooling,2100,Check,Tech_C,5.0,1350,550.0,No
+CUST_014,2023-08-11,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_013,2024-02-19,Furnace Installation,Installation,4100,Credit Card,Tech_B,12.0,2750,1320.0,Yes
+CUST_013,2024-02-19,Refrigerant Recharge,Cooling,280,Check,Tech_A,1.5,95,165.0,No
+CUST_095,2023-04-10,Zone System Check,Maintenance,120,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_126,2023-04-07,AC Installation,Installation,3750,Credit Card,Tech_A,11.0,2500,1210.0,Yes
+CUST_R17,2024-09-08,Humidifier Check,Maintenance,75,Check,Tech_A,0.5,10,55.0,No
+CUST_137,2023-09-27,Capacitor Replacement,Cooling,180,Credit Card,Tech_B,1.0,45,110.0,No
+CUST_137,2023-09-27,Condensate Pump Cleaning,Cooling,140,Credit Card,Tech_B,1.2,25,132.0,No
+CUST_012,2023-01-17,Pressure Switch Replacement,Heating,210,Credit Card,Tech_D,1.5,65,165.0,No
+CUST_018,2024-10-30,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_069,2024-01-26,Zone Damper Replacement,Heating,380,Credit Card,Tech_A,2.0,180,220.0,No
+CUST_044,2023-12-09,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_044,2023-12-09,Igniter Replacement,Heating,220,Check,Tech_A,1.5,60,165.0,No
+CUST_006,2023-07-30,Duct Cleaning,Maintenance,350,Check,Tech_C,2.5,80,275.0,No
+CUST_006,2023-07-30,Evaporator Coil Cleaning,Cooling,195,Check,Tech_C,1.7,35,187.0,No
+CUST_082,2024-01-03,Boiler Installation,Installation,4800,Credit Card,Tech_C,14.0,3200,1540.0,Yes
+CUST_082,2024-01-03,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_004,2024-08-06,Igniter Replacement,Heating,220,Credit Card,Tech_C,1.5,60,165.0,No
+CUST_004,2024-08-06,UV Light Check,Maintenance,90,Credit Card,Tech_B,0.7,10,77.0,No
+CUST_076,2024-01-22,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_076,2024-01-22,Pressure Switch Replacement,Heating,210,Credit Card,Tech_A,1.5,65,165.0,No
+CUST_076,2024-01-22,Thermostat Replacement,Heating,185,Credit Card,Tech_A,1.0,85,110.0,No
+CUST_027,2024-03-29,Heat Exchanger Inspection,Heating,185,Check,Tech_A,1.5,25,165.0,No
+CUST_072,2024-12-27,Flame Sensor Replacement,Heating,195,Check,Tech_B,1.2,55,132.0,No
+CUST_072,2024-12-27,Humidifier Check,Maintenance,75,Credit Card,Tech_B,0.5,10,55.0,No
+CUST_072,2024-12-27,Igniter Replacement,Heating,220,Check,Tech_A,1.5,60,165.0,No
+CUST_128,2024-11-04,AC Repair,Cooling,390,Credit Card,Tech_B,2.0,170,220.0,No
+CUST_087,2023-03-15,Heat Exchanger Inspection,Heating,185,Check,Tech_C,1.5,25,165.0,No
+CUST_034,2023-01-02,Heat Exchanger Inspection,Heating,185,Check,Tech_A,1.5,25,165.0,No
+CUST_038,2023-08-22,Capacitor Replacement,Cooling,180,Credit Card,Tech_A,1.0,45,110.0,No
+CUST_038,2023-08-22,Flame Sensor Replacement,Heating,195,Credit Card,Tech_C,1.2,55,132.0,No
+CUST_133,2023-11-15,Boiler Installation,Installation,4800,Credit Card,Tech_C,14.0,3200,1540.0,Yes
+CUST_133,2023-11-15,Flame Sensor Replacement,Heating,195,Credit Card,Tech_A,1.2,55,132.0,No
+CUST_133,2023-11-15,Zone System Check,Maintenance,120,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_127,2023-01-24,Pressure Switch Replacement,Heating,210,Credit Card,Tech_B,1.5,65,165.0,No
+CUST_006,2024-07-24,AC Repair,Cooling,390,Credit Card,Tech_D,2.0,170,220.0,No
+CUST_006,2024-07-24,Condensate Pump Cleaning,Cooling,140,Check,Tech_B,1.2,25,132.0,No
+CUST_092,2024-09-08,Mini-Split Installation,Installation,3200,Financing,Tech_A,10.0,2100,1100.0,Yes
+CUST_005,2024-12-25,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_115,2024-06-02,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_104,2024-12-11,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_101,2024-02-20,Flame Sensor Replacement,Heating,195,Credit Card,Tech_B,1.2,55,132.0,No
+CUST_065,2023-11-15,Fan Motor Replacement,Heating,520,Credit Card,Tech_C,2.5,280,275.0,No
+CUST_033,2023-03-15,Pressure Switch Replacement,Heating,210,Cash,Tech_B,1.5,65,165.0,No
+CUST_017,2024-05-03,Humidifier Check,Maintenance,75,Credit Card,Tech_C,0.5,10,55.0,No
+CUST_089,2023-08-24,Return Air Inspection,Maintenance,70,Cash,Tech_C,0.6,5,66.0,No
+CUST_139,2023-11-30,AC Repair,Cooling,390,Credit Card,Tech_B,2.0,170,220.0,No
+CUST_139,2023-11-30,Electrical Safety Inspection,Maintenance,110,Credit Card,Tech_B,1.0,5,110.0,No
+CUST_139,2023-11-30,Zone System Check,Maintenance,120,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_034,2023-05-20,Boiler Installation,Installation,4800,Credit Card,Tech_A,14.0,3200,1540.0,Yes
+CUST_R07,2024-08-05,AC Tune-up,Maintenance,125,Credit Card,Tech_C,1.0,15,110.0,No
+CUST_086,2023-04-17,HVAC Installation,Installation,5200,Financing,Tech_A,16.0,3400,1760.0,Yes
+CUST_028,2024-03-26,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_028,2024-03-26,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_C,1.7,35,187.0,No
+CUST_028,2024-03-26,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_131,2024-06-01,Compressor Replacement,Cooling,2100,Credit Card,Tech_C,5.0,1350,550.0,No
+CUST_086,2024-12-14,Boiler Installation,Installation,4800,Financing,Tech_A,14.0,3200,1540.0,Yes
+CUST_086,2024-12-14,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_105,2023-03-02,Heating Repair,Heating,450,Cash,Tech_A,2.5,180,275.0,No
+CUST_047,2023-12-11,Gas Valve Replacement,Heating,350,Credit Card,Tech_B,2.0,145,220.0,No
+CUST_047,2023-12-11,Zone Damper Replacement,Heating,380,Credit Card,Tech_B,2.0,180,220.0,No
+CUST_049,2024-05-30,Thermostat Check,Maintenance,50,Check,Tech_C,0.5,5,55.0,No
+CUST_R03,2024-09-04,Condenser Coil Cleaning,Cooling,180,Check,Tech_C,1.5,30,165.0,No
+CUST_R03,2024-09-04,Thermostat Calibration,Maintenance,95,Cash,Tech_A,0.8,15,88.0,No
+CUST_148,2024-08-28,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_022,2024-11-21,Flame Sensor Replacement,Heating,195,Credit Card,Tech_C,1.2,55,132.0,No
+CUST_022,2024-11-21,Heating Repair,Heating,450,Credit Card,Tech_C,2.5,180,275.0,No
+CUST_118,2024-12-08,Gas Valve Replacement,Heating,350,Cash,Tech_D,2.0,145,220.0,No
+CUST_150,2024-03-20,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_150,2024-03-20,Pressure Switch Replacement,Heating,210,Credit Card,Tech_D,1.5,65,165.0,No
+CUST_150,2024-03-20,Refrigerant Recharge,Cooling,280,Credit Card,Tech_B,1.5,95,165.0,No
+CUST_084,2024-07-08,AC Tune-up,Maintenance,125,Check,Tech_A,1.0,15,110.0,No
+CUST_084,2024-07-08,Evaporator Coil Cleaning,Cooling,195,Check,Tech_C,1.7,35,187.0,No
+CUST_019,2023-08-07,AC Tune-up,Maintenance,125,Check,Tech_D,1.0,15,110.0,No
+CUST_019,2023-08-07,Condensate Pump Cleaning,Cooling,140,Credit Card,Tech_A,1.2,25,132.0,No
+CUST_019,2023-08-07,Supply Vent Balancing,Maintenance,180,Check,Tech_D,1.5,20,165.0,No
+CUST_072,2023-12-20,Air Quality Assessment,Maintenance,140,Check,Tech_B,1.0,35,110.0,No
+CUST_R05,2024-01-31,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_R07,2023-09-30,Boiler Installation,Installation,4800,Financing,Tech_A,14.0,3200,1540.0,Yes
+CUST_R07,2023-09-30,Thermostat Installation,Installation,280,Check,Tech_C,1.2,140,132.0,Yes
+CUST_138,2023-08-09,AC Repair,Cooling,390,Credit Card,Tech_A,2.0,170,220.0,No
+CUST_138,2023-08-09,Breaker Inspection,Maintenance,85,Credit Card,Tech_C,0.7,5,77.0,No
+CUST_070,2023-06-23,Duct Sealing,Maintenance,520,Credit Card,Tech_B,3.0,180,330.0,No
+CUST_070,2023-06-23,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_070,2023-06-23,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_124,2024-01-11,AC Tune-up,Maintenance,125,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_150,2023-02-16,Boiler Installation,Installation,4800,Credit Card,Tech_D,14.0,3200,1540.0,Yes
+CUST_150,2023-02-16,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_063,2023-09-22,Condensate Pump Cleaning,Cooling,140,Credit Card,Tech_B,1.2,25,132.0,No
+CUST_063,2023-09-22,Heat Exchanger Inspection,Heating,185,Check,Tech_B,1.5,25,165.0,No
+CUST_078,2023-11-10,Drain Line Flush,Cooling,125,Cash,Tech_B,1.0,20,110.0,No
+CUST_078,2023-11-10,Refrigerant Level Check,Cooling,95,Check,Tech_B,0.7,10,77.0,No
+CUST_051,2023-09-15,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_051,2023-09-15,Heating Repair,Heating,450,Credit Card,Tech_C,2.5,180,275.0,No
+CUST_051,2023-09-15,Thermostat Check,Maintenance,50,Credit Card,Tech_B,0.5,5,55.0,No
+CUST_R13,2023-10-15,Fan Motor Replacement,Heating,520,Credit Card,Tech_A,2.5,280,275.0,No
+CUST_138,2023-11-02,Gas Valve Replacement,Heating,350,Credit Card,Tech_A,2.0,145,220.0,No
+CUST_138,2023-11-02,Heat Exchanger Inspection,Heating,185,Check,Tech_A,1.5,25,165.0,No
+CUST_138,2023-11-02,Zone System Check,Maintenance,120,Credit Card,Tech_C,1.0,15,110.0,No
+CUST_141,2023-03-03,Flame Sensor Replacement,Heating,195,Credit Card,Tech_A,1.2,55,132.0,No
+CUST_141,2023-03-03,Pressure Switch Replacement,Heating,210,Credit Card,Tech_A,1.5,65,165.0,No
+CUST_036,2024-01-08,Duct Inspection,Maintenance,85,Credit Card,Tech_A,0.8,10,88.0,No
+CUST_037,2024-01-08,Boiler Installation,Installation,4800,Credit Card,Tech_B,14.0,3200,1540.0,Yes
+CUST_037,2024-01-08,Thermostat Installation,Installation,280,Cash,Tech_D,1.2,140,132.0,Yes
+CUST_092,2024-10-17,Filter Replacement,Maintenance,45,Check,Tech_B,0.3,8,33.0,No
+CUST_092,2024-10-17,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_021,2024-01-17,Evaporator Coil Cleaning,Cooling,195,Check,Tech_A,1.7,35,187.0,No
+CUST_021,2024-01-17,Flame Sensor Replacement,Heating,195,Credit Card,Tech_B,1.2,55,132.0,No
+CUST_021,2024-01-17,Humidifier Check,Maintenance,75,Check,Tech_C,0.5,10,55.0,No
+CUST_143,2023-11-23,Flame Sensor Replacement,Heating,195,Check,Tech_C,1.2,55,132.0,No
+CUST_143,2023-11-23,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_064,2023-10-23,Compressor Replacement,Cooling,2100,Financing,Tech_C,5.0,1350,550.0,No
+CUST_064,2023-10-23,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_049,2024-03-21,Pressure Switch Replacement,Heating,210,Credit Card,Tech_A,1.5,65,165.0,No
+CUST_121,2023-06-30,AC Installation,Installation,3750,Financing,Tech_A,11.0,2500,1210.0,Yes
+CUST_046,2024-11-24,AC Repair,Cooling,390,Check,Tech_A,2.0,170,220.0,No
+CUST_085,2023-04-27,Fan Motor Replacement,Heating,520,Check,Tech_A,2.5,280,275.0,No
+CUST_102,2024-09-21,Fan Motor Replacement,Heating,520,Credit Card,Tech_C,2.5,280,275.0,No
+CUST_102,2024-09-21,Gas Valve Replacement,Heating,350,Check,Tech_A,2.0,145,220.0,No
+CUST_139,2023-10-07,Fan Motor Replacement,Heating,520,Check,Tech_C,2.5,280,275.0,No
+CUST_139,2023-10-07,Flame Sensor Replacement,Heating,195,Cash,Tech_B,1.2,55,132.0,No
+CUST_085,2023-04-30,Drain Pan Replacement,Cooling,220,Credit Card,Tech_B,1.5,80,165.0,No
+CUST_R23,2024-10-28,Contactor Replacement,Cooling,165,Credit Card,Tech_C,1.0,40,110.0,No
+CUST_R23,2024-10-28,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_027,2024-05-01,Flame Sensor Replacement,Heating,195,Cash,Tech_C,1.2,55,132.0,No
+CUST_027,2024-05-01,Heat Pump Installation,Installation,5500,Credit Card,Tech_A,17.0,3600,1870.0,Yes
+CUST_141,2023-07-21,Refrigerant Level Check,Cooling,95,Cash,Tech_A,0.7,10,77.0,No
+CUST_036,2023-09-27,Air Handler Installation,Installation,2800,Financing,Tech_A,9.0,1900,990.0,Yes
+CUST_036,2023-09-27,Thermostat Installation,Installation,280,Credit Card,Tech_D,1.2,140,132.0,Yes
+CUST_078,2024-06-23,Filter Replacement,Maintenance,45,Credit Card,Tech_A,0.3,8,33.0,No
+CUST_041,2024-08-27,Condenser Coil Cleaning,Cooling,180,Check,Tech_B,1.5,30,165.0,No
+CUST_141,2024-06-29,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_141,2024-06-29,Contactor Replacement,Cooling,165,Credit Card,Tech_B,1.0,40,110.0,No
+CUST_141,2024-06-29,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_048,2023-10-17,Flame Sensor Replacement,Heating,195,Cash,Tech_A,1.2,55,132.0,No
+CUST_118,2023-12-29,AC Tune-up,Maintenance,125,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_118,2023-12-29,Heating Repair,Heating,450,Credit Card,Tech_C,2.5,180,275.0,No
+CUST_007,2023-03-02,Boiler Installation,Installation,4800,Financing,Tech_A,14.0,3200,1540.0,Yes
+CUST_R15,2024-09-12,Capacitor Replacement,Cooling,180,Credit Card,Tech_C,1.0,45,110.0,No
+CUST_R18,2023-04-18,Pressure Switch Replacement,Heating,210,Check,Tech_D,1.5,65,165.0,No
+CUST_R18,2023-04-18,Zone Damper Replacement,Heating,380,Cash,Tech_A,2.0,180,220.0,No
+CUST_093,2023-04-01,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_093,2023-04-01,Heating Tune-up,Maintenance,140,Credit Card,Tech_B,1.5,20,165.0,No
+CUST_093,2023-04-01,Mini-Split Installation,Installation,3200,Financing,Tech_A,10.0,2100,1100.0,Yes
+CUST_042,2024-07-07,Thermostat Calibration,Maintenance,95,Credit Card,Tech_A,0.8,15,88.0,No
+CUST_031,2023-09-08,Contactor Replacement,Cooling,165,Check,Tech_A,1.0,40,110.0,No
+CUST_031,2023-09-08,Drain Line Flush,Cooling,125,Credit Card,Tech_B,1.0,20,110.0,No
+CUST_134,2023-04-19,Compressor Replacement,Cooling,2100,Credit Card,Tech_B,5.0,1350,550.0,No
+CUST_134,2023-04-19,Duct Inspection,Maintenance,85,Credit Card,Tech_B,0.8,10,88.0,No
+CUST_134,2023-04-19,Furnace Installation,Installation,4100,Financing,Tech_A,12.0,2750,1320.0,Yes
+CUST_053,2023-09-11,Furnace Installation,Installation,4100,Credit Card,Tech_D,12.0,2750,1320.0,Yes
+CUST_053,2023-09-11,Gas Valve Replacement,Heating,350,Cash,Tech_B,2.0,145,220.0,No
+CUST_R10,2024-01-26,Heating Tune-up,Maintenance,140,Credit Card,Tech_C,1.5,20,165.0,No
+CUST_R10,2024-01-26,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_134,2024-10-22,Filter Replacement,Maintenance,45,Credit Card,Tech_C,0.3,8,33.0,No
+CUST_134,2024-10-22,UV Light Check,Maintenance,90,Credit Card,Tech_B,0.7,10,77.0,No
+CUST_146,2024-11-25,Gas Valve Replacement,Heating,350,Credit Card,Tech_D,2.0,145,220.0,No
+CUST_060,2024-01-24,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_060,2024-01-24,Pressure Switch Replacement,Heating,210,Check,Tech_A,1.5,65,165.0,No
+CUST_121,2024-09-02,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_121,2024-09-02,Thermostat Installation,Installation,280,Cash,Tech_A,1.2,140,132.0,Yes
+CUST_074,2024-08-01,Drain Pan Replacement,Cooling,220,Check,Tech_A,1.5,80,165.0,No
+CUST_074,2024-08-01,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_A,1.7,35,187.0,No
+CUST_074,2024-08-01,Refrigerant Recharge,Cooling,280,Check,Tech_B,1.5,95,165.0,No
+CUST_042,2023-09-15,AC Tune-up,Maintenance,125,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_042,2023-09-15,Refrigerant Level Check,Cooling,95,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_120,2023-05-27,Thermostat Replacement,Heating,185,Credit Card,Tech_B,1.0,85,110.0,No
+CUST_120,2023-05-27,Zone System Check,Maintenance,120,Credit Card,Tech_C,1.0,15,110.0,No
+CUST_051,2023-07-21,AC Installation,Installation,3750,Credit Card,Tech_C,11.0,2500,1210.0,Yes
+CUST_051,2023-07-21,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_077,2023-10-15,Mini-Split Installation,Installation,3200,Financing,Tech_B,10.0,2100,1100.0,Yes
+CUST_126,2024-05-01,Supply Vent Balancing,Maintenance,180,Check,Tech_A,1.5,20,165.0,No
+CUST_073,2024-09-20,AC Repair,Cooling,390,Credit Card,Tech_A,2.0,170,220.0,No
+CUST_073,2024-09-20,Carbon Monoxide Test,Maintenance,95,Credit Card,Tech_A,0.8,20,88.0,No
+CUST_073,2024-09-20,Electrical Safety Inspection,Maintenance,110,Credit Card,Tech_A,1.0,5,110.0,No
+CUST_084,2024-01-01,AC Installation,Installation,3750,Financing,Tech_B,11.0,2500,1210.0,Yes
+CUST_084,2024-01-01,Duct Cleaning,Maintenance,350,Check,Tech_A,2.5,80,275.0,No
+CUST_084,2024-01-01,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_090,2023-04-23,Control Board Replacement,Heating,580,Credit Card,Tech_B,2.5,320,275.0,No
+CUST_090,2023-04-23,Heat Exchanger Inspection,Heating,185,Check,Tech_A,1.5,25,165.0,No
+CUST_090,2023-01-10,Air Handler Installation,Installation,2800,Financing,Tech_B,9.0,1900,990.0,Yes
+CUST_141,2024-08-21,Mini-Split Installation,Installation,3200,Credit Card,Tech_A,10.0,2100,1100.0,Yes
+CUST_116,2023-02-12,Heating Tune-up,Maintenance,140,Credit Card,Tech_C,1.5,20,165.0,No
+CUST_116,2023-02-12,Igniter Replacement,Heating,220,Check,Tech_A,1.5,60,165.0,No
+CUST_116,2023-02-12,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_061,2024-05-14,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_C,1.7,35,187.0,No
+CUST_015,2023-08-29,AC Tune-up,Maintenance,125,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_109,2024-05-22,Duct Inspection,Maintenance,85,Check,Tech_B,0.8,10,88.0,No
+CUST_109,2024-05-22,Refrigerant Level Check,Cooling,95,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_048,2024-01-18,Blower Motor Cleaning,Heating,120,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_048,2024-01-18,Condensate Pump Cleaning,Cooling,140,Credit Card,Tech_C,1.2,25,132.0,No
+CUST_048,2024-01-18,Flame Sensor Replacement,Heating,195,Credit Card,Tech_B,1.2,55,132.0,No
+CUST_007,2023-03-29,Pressure Switch Replacement,Heating,210,Credit Card,Tech_C,1.5,65,165.0,No
+CUST_123,2023-11-21,Drain Line Flush,Cooling,125,Credit Card,Tech_B,1.0,20,110.0,No
+CUST_123,2023-11-21,Zone Damper Replacement,Heating,380,Credit Card,Tech_B,2.0,180,220.0,No
+CUST_083,2023-05-25,AC Installation,Installation,3750,Credit Card,Tech_B,11.0,2500,1210.0,Yes
+CUST_R15,2024-11-20,Drain Pan Replacement,Cooling,220,Credit Card,Tech_A,1.5,80,165.0,No
+CUST_R15,2024-11-20,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_A,1.7,35,187.0,No
+CUST_088,2023-06-17,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_128,2024-10-11,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_128,2024-10-11,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_129,2023-06-13,Breaker Inspection,Maintenance,85,Credit Card,Tech_A,0.7,5,77.0,No
+CUST_129,2023-06-13,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_C,1.7,35,187.0,No
+CUST_057,2024-06-29,Drain Line Flush,Cooling,125,Credit Card,Tech_C,1.0,20,110.0,No
+CUST_057,2024-06-29,Refrigerant Level Check,Cooling,95,Credit Card,Tech_B,0.7,10,77.0,No
+CUST_132,2024-02-20,Heating Tune-up,Maintenance,140,Credit Card,Tech_C,1.5,20,165.0,No
+CUST_018,2023-02-04,Furnace Installation,Installation,4100,Financing,Tech_A,12.0,2750,1320.0,Yes
+CUST_109,2023-01-18,Flame Sensor Replacement,Heating,195,Credit Card,Tech_B,1.2,55,132.0,No
+CUST_109,2023-01-18,Gas Valve Replacement,Heating,350,Credit Card,Tech_A,2.0,145,220.0,No
+CUST_033,2023-12-28,Pressure Switch Replacement,Heating,210,Credit Card,Tech_A,1.5,65,165.0,No
+CUST_033,2023-12-28,Refrigerant Level Check,Cooling,95,Check,Tech_A,0.7,10,77.0,No
+CUST_010,2024-07-05,HVAC Installation,Installation,5200,Credit Card,Tech_C,16.0,3400,1760.0,Yes
+CUST_010,2024-07-05,Mini-Split Installation,Installation,3200,Financing,Tech_B,10.0,2100,1100.0,Yes
+CUST_010,2024-07-05,Thermostat Installation,Installation,280,Cash,Tech_B,1.2,140,132.0,Yes
+CUST_090,2024-10-27,Refrigerant Level Check,Cooling,95,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_052,2023-07-31,Duct Cleaning,Maintenance,350,Cash,Tech_B,2.5,80,275.0,No
+CUST_054,2023-12-16,Thermostat Calibration,Maintenance,95,Credit Card,Tech_B,0.8,15,88.0,No
+CUST_108,2023-03-18,Gas Valve Replacement,Heating,350,Credit Card,Tech_B,2.0,145,220.0,No
+CUST_108,2023-03-18,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_085,2023-02-03,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_085,2023-02-03,Flame Sensor Replacement,Heating,195,Check,Tech_A,1.2,55,132.0,No
+CUST_082,2023-11-15,Filter Replacement,Maintenance,45,Credit Card,Tech_B,0.3,8,33.0,No
+CUST_082,2023-11-15,Refrigerant Level Check,Cooling,95,Check,Tech_A,0.7,10,77.0,No
+CUST_004,2024-11-23,Igniter Replacement,Heating,220,Credit Card,Tech_B,1.5,60,165.0,No
+CUST_004,2024-11-23,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_029,2023-10-20,Gas Valve Replacement,Heating,350,Credit Card,Tech_B,2.0,145,220.0,No
+CUST_029,2023-10-20,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_029,2023-10-20,Thermostat Installation,Installation,280,Cash,Tech_D,1.2,140,132.0,Yes
+CUST_084,2024-08-21,Duct Sealing,Maintenance,520,Credit Card,Tech_B,3.0,180,330.0,No
+CUST_084,2024-08-21,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_051,2024-07-21,Thermostat Check,Maintenance,50,Credit Card,Tech_A,0.5,5,55.0,No
+CUST_051,2024-07-21,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_R26,2024-07-04,Capacitor Replacement,Cooling,180,Credit Card,Tech_A,1.0,45,110.0,No
+CUST_125,2024-10-15,Drain Line Flush,Cooling,125,Cash,Tech_A,1.0,20,110.0,No
+CUST_119,2023-04-24,Filter Replacement,Maintenance,45,Credit Card,Tech_A,0.3,8,33.0,No
+CUST_119,2023-04-24,Thermostat Replacement,Heating,185,Cash,Tech_A,1.0,85,110.0,No
+CUST_150,2023-12-30,Furnace Installation,Installation,4100,Financing,Tech_C,12.0,2750,1320.0,Yes
+CUST_126,2024-02-22,Boiler Installation,Installation,4800,Financing,Tech_B,14.0,3200,1540.0,Yes
+CUST_120,2024-11-23,Capacitor Replacement,Cooling,180,Check,Tech_A,1.0,45,110.0,No
+CUST_120,2024-11-23,Furnace Installation,Installation,4100,Financing,Tech_B,12.0,2750,1320.0,Yes
+CUST_120,2024-11-23,Heating Tune-up,Maintenance,140,Cash,Tech_C,1.5,20,165.0,No
+CUST_150,2024-09-25,AC Installation,Installation,3750,Financing,Tech_B,11.0,2500,1210.0,Yes
+CUST_150,2024-09-25,Breaker Inspection,Maintenance,85,Credit Card,Tech_A,0.7,5,77.0,No
+CUST_150,2024-09-25,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_009,2023-11-03,AC Installation,Installation,3750,Financing,Tech_A,11.0,2500,1210.0,Yes
+CUST_009,2023-11-03,Drain Pan Replacement,Cooling,220,Cash,Tech_B,1.5,80,165.0,No
+CUST_009,2023-11-03,Thermostat Installation,Installation,280,Check,Tech_D,1.2,140,132.0,Yes
+CUST_R08,2024-06-11,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_D,1.5,25,165.0,No
+CUST_R08,2024-06-11,Thermostat Replacement,Heating,185,Credit Card,Tech_B,1.0,85,110.0,No
+CUST_089,2024-04-16,Return Air Inspection,Maintenance,70,Credit Card,Tech_C,0.6,5,66.0,No
+CUST_113,2024-05-16,Fan Motor Replacement,Heating,520,Credit Card,Tech_C,2.5,280,275.0,No
+CUST_113,2024-05-16,Zone Damper Replacement,Heating,380,Credit Card,Tech_C,2.0,180,220.0,No
+CUST_117,2024-12-23,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_117,2024-12-23,Thermostat Installation,Installation,280,Credit Card,Tech_D,1.2,140,132.0,Yes
+CUST_R11,2023-10-25,AC Tune-up,Maintenance,125,Check,Tech_A,1.0,15,110.0,No
+CUST_049,2023-12-04,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_030,2024-03-03,Furnace Installation,Installation,4100,Financing,Tech_B,12.0,2750,1320.0,Yes
+CUST_053,2023-06-03,Thermostat Check,Maintenance,50,Credit Card,Tech_D,0.5,5,55.0,No
+CUST_053,2023-06-03,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_082,2024-07-16,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_A,1.7,35,187.0,No
+CUST_082,2024-07-16,Heating Tune-up,Maintenance,140,Check,Tech_B,1.5,20,165.0,No
+CUST_046,2023-10-19,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_028,2023-03-05,Air Handler Installation,Installation,2800,Credit Card,Tech_B,9.0,1900,990.0,Yes
+CUST_028,2023-03-05,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_102,2024-03-13,Furnace Installation,Installation,4100,Financing,Tech_B,12.0,2750,1320.0,Yes
+CUST_102,2024-03-13,Heat Exchanger Inspection,Heating,185,Cash,Tech_A,1.5,25,165.0,No
+CUST_102,2024-03-13,Supply Vent Balancing,Maintenance,180,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_090,2024-04-25,Capacitor Replacement,Cooling,180,Credit Card,Tech_B,1.0,45,110.0,No
+CUST_090,2024-04-25,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_B,1.7,35,187.0,No
+CUST_R14,2023-02-02,Flame Sensor Replacement,Heating,195,Check,Tech_C,1.2,55,132.0,No
+CUST_R14,2023-02-02,Heating Repair,Heating,450,Check,Tech_B,2.5,180,275.0,No
+CUST_R14,2023-02-02,Heating Tune-up,Maintenance,140,Cash,Tech_B,1.5,20,165.0,No
+CUST_123,2023-09-18,Filter Replacement,Maintenance,45,Check,Tech_A,0.3,8,33.0,No
+CUST_123,2023-09-18,Refrigerant Level Check,Cooling,95,Check,Tech_D,0.7,10,77.0,No
+CUST_069,2024-02-21,System Maintenance,Maintenance,150,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_068,2024-07-09,Carbon Monoxide Test,Maintenance,95,Check,Tech_A,0.8,20,88.0,No
+CUST_068,2024-07-09,Compressor Replacement,Cooling,2100,Check,Tech_A,5.0,1350,550.0,No
+CUST_068,2024-07-09,Drain Pan Replacement,Cooling,220,Check,Tech_A,1.5,80,165.0,No
+CUST_066,2023-03-14,Blower Motor Cleaning,Heating,120,Check,Tech_A,1.0,15,110.0,No
+CUST_066,2023-03-14,Heat Pump Installation,Installation,5500,Financing,Tech_C,17.0,3600,1870.0,Yes
+CUST_109,2024-06-05,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_147,2024-10-06,Drain Pan Replacement,Cooling,220,Credit Card,Tech_D,1.5,80,165.0,No
+CUST_147,2024-10-06,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_A,1.7,35,187.0,No
+CUST_140,2023-08-24,AC Tune-up,Maintenance,125,Check,Tech_A,1.0,15,110.0,No
+CUST_140,2023-08-24,Drain Line Flush,Cooling,125,Credit Card,Tech_B,1.0,20,110.0,No
+CUST_141,2023-07-09,Contactor Replacement,Cooling,165,Credit Card,Tech_B,1.0,40,110.0,No
+CUST_141,2023-07-09,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_141,2023-03-12,Evaporator Coil Cleaning,Cooling,195,Check,Tech_C,1.7,35,187.0,No
+CUST_141,2023-03-12,Heating Tune-up,Maintenance,140,Credit Card,Tech_B,1.5,20,165.0,No
+CUST_007,2024-03-06,Compressor Replacement,Cooling,2100,Financing,Tech_B,5.0,1350,550.0,No
+CUST_088,2023-03-12,Heating Repair,Heating,450,Credit Card,Tech_B,2.5,180,275.0,No
+CUST_143,2024-09-01,AC Installation,Installation,3750,Credit Card,Tech_B,11.0,2500,1210.0,Yes
+CUST_143,2024-09-01,Air Handler Installation,Installation,2800,Credit Card,Tech_A,9.0,1900,990.0,Yes
+CUST_143,2024-09-01,Thermostat Installation,Installation,280,Check,Tech_C,1.2,140,132.0,Yes
+CUST_046,2024-10-28,AC Tune-up,Maintenance,125,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_133,2024-11-17,Heating Tune-up,Maintenance,140,Check,Tech_B,1.5,20,165.0,No
+CUST_R11,2023-11-01,Boiler Installation,Installation,4800,Credit Card,Tech_A,14.0,3200,1540.0,Yes
+CUST_R11,2023-11-01,Gas Valve Replacement,Heating,350,Credit Card,Tech_B,2.0,145,220.0,No
+CUST_R11,2023-11-01,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_068,2023-07-06,Blower Motor Cleaning,Heating,120,Credit Card,Tech_C,1.0,15,110.0,No
+CUST_147,2023-02-02,AC Installation,Installation,3750,Credit Card,Tech_D,11.0,2500,1210.0,Yes
+CUST_115,2023-04-07,Capacitor Replacement,Cooling,180,Credit Card,Tech_A,1.0,45,110.0,No
+CUST_115,2023-04-07,Furnace Installation,Installation,4100,Financing,Tech_A,12.0,2750,1320.0,Yes
+CUST_R10,2023-06-25,AC Installation,Installation,3750,Financing,Tech_A,11.0,2500,1210.0,Yes
+CUST_R10,2023-06-25,Gas Valve Replacement,Heating,350,Cash,Tech_D,2.0,145,220.0,No
+CUST_R10,2023-06-25,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_030,2023-06-28,Gas Valve Replacement,Heating,350,Credit Card,Tech_A,2.0,145,220.0,No
+CUST_030,2023-06-28,Heating Tune-up,Maintenance,140,Check,Tech_C,1.5,20,165.0,No
+CUST_030,2024-08-31,Refrigerant Recharge,Cooling,280,Credit Card,Tech_B,1.5,95,165.0,No
+CUST_030,2024-08-31,Thermostat Calibration,Maintenance,95,Credit Card,Tech_B,0.8,15,88.0,No
+CUST_087,2024-05-17,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_B,1.7,35,187.0,No
+CUST_042,2024-10-31,AC Installation,Installation,3750,Financing,Tech_A,11.0,2500,1210.0,Yes
+CUST_042,2024-10-31,Thermostat Installation,Installation,280,Check,Tech_C,1.2,140,132.0,Yes
+CUST_025,2023-11-07,AC Tune-up,Maintenance,125,Credit Card,Tech_C,1.0,15,110.0,No
+CUST_025,2023-11-07,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_089,2023-01-08,UV Light Check,Maintenance,90,Credit Card,Tech_B,0.7,10,77.0,No
+CUST_040,2023-10-15,Capacitor Replacement,Cooling,180,Credit Card,Tech_B,1.0,45,110.0,No
+CUST_040,2023-10-15,Duct Cleaning,Maintenance,350,Check,Tech_B,2.5,80,275.0,No
+CUST_148,2024-07-13,Gas Valve Replacement,Heating,350,Check,Tech_D,2.0,145,220.0,No
+CUST_148,2024-07-13,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_134,2024-04-28,System Maintenance,Maintenance,150,Check,Tech_C,1.5,25,165.0,No
+CUST_134,2024-04-28,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_126,2023-10-04,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_126,2023-10-04,Refrigerant Recharge,Cooling,280,Credit Card,Tech_C,1.5,95,165.0,No
+CUST_050,2023-01-21,AC Installation,Installation,3750,Credit Card,Tech_C,11.0,2500,1210.0,Yes
+CUST_137,2023-08-09,AC Installation,Installation,3750,Financing,Tech_B,11.0,2500,1210.0,Yes
+CUST_137,2023-08-09,Heat Pump Installation,Installation,5500,Credit Card,Tech_A,17.0,3600,1870.0,Yes
+CUST_033,2024-02-26,Heating Repair,Heating,450,Credit Card,Tech_B,2.5,180,275.0,No
+CUST_031,2023-08-26,Thermostat Calibration,Maintenance,95,Credit Card,Tech_C,0.8,15,88.0,No
+CUST_R29,2023-05-05,Breaker Inspection,Maintenance,85,Check,Tech_D,0.7,5,77.0,No
+CUST_034,2023-08-17,Mini-Split Installation,Installation,3200,Credit Card,Tech_D,10.0,2100,1100.0,Yes
+CUST_034,2023-08-17,Thermostat Installation,Installation,280,Credit Card,Tech_D,1.2,140,132.0,Yes
+CUST_019,2023-01-16,Furnace Installation,Installation,4100,Credit Card,Tech_B,12.0,2750,1320.0,Yes
+CUST_093,2024-04-30,HVAC Installation,Installation,5200,Credit Card,Tech_A,16.0,3400,1760.0,Yes
+CUST_093,2024-04-30,Heat Exchanger Inspection,Heating,185,Check,Tech_A,1.5,25,165.0,No
+CUST_049,2024-09-29,Contactor Replacement,Cooling,165,Check,Tech_C,1.0,40,110.0,No
+CUST_115,2024-09-22,Filter Replacement,Maintenance,45,Cash,Tech_B,0.3,8,33.0,No
+CUST_115,2024-09-22,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_031,2024-10-04,Heating Repair,Heating,450,Credit Card,Tech_B,2.5,180,275.0,No
+CUST_031,2024-10-04,Thermostat Replacement,Heating,185,Credit Card,Tech_A,1.0,85,110.0,No
+CUST_114,2024-07-14,AC Tune-up,Maintenance,125,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_074,2024-04-25,Condenser Coil Cleaning,Cooling,180,Check,Tech_A,1.5,30,165.0,No
+CUST_R21,2024-03-10,Heating Repair,Heating,450,Credit Card,Tech_C,2.5,180,275.0,No
+CUST_058,2023-10-08,Breaker Inspection,Maintenance,85,Credit Card,Tech_B,0.7,5,77.0,No
+CUST_058,2023-10-08,Return Air Inspection,Maintenance,70,Credit Card,Tech_A,0.6,5,66.0,No
+CUST_052,2024-05-20,Furnace Installation,Installation,4100,Financing,Tech_A,12.0,2750,1320.0,Yes
+CUST_052,2024-05-20,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_121,2023-06-09,Refrigerant Recharge,Cooling,280,Cash,Tech_C,1.5,95,165.0,No
+CUST_133,2024-06-08,Capacitor Replacement,Cooling,180,Credit Card,Tech_A,1.0,45,110.0,No
+CUST_133,2024-06-08,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_014,2023-12-10,Control Board Replacement,Heating,580,Credit Card,Tech_B,2.5,320,275.0,No
+CUST_014,2023-12-10,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_D,1.7,35,187.0,No
+CUST_137,2023-08-25,Heat Pump Installation,Installation,5500,Financing,Tech_C,17.0,3600,1870.0,Yes
+CUST_137,2023-08-25,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_141,2023-02-27,Gas Valve Replacement,Heating,350,Cash,Tech_D,2.0,145,220.0,No
+CUST_131,2023-07-31,Blower Motor Cleaning,Heating,120,Cash,Tech_C,1.0,15,110.0,No
+CUST_131,2023-07-31,Electrical Safety Inspection,Maintenance,110,Cash,Tech_D,1.0,5,110.0,No
+CUST_005,2024-06-17,Contactor Replacement,Cooling,165,Credit Card,Tech_B,1.0,40,110.0,No
+CUST_005,2024-06-17,Evaporator Coil Cleaning,Cooling,195,Check,Tech_B,1.7,35,187.0,No
+CUST_R10,2024-02-06,Boiler Installation,Installation,4800,Financing,Tech_A,14.0,3200,1540.0,Yes
+CUST_070,2023-08-30,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_070,2023-08-30,Thermostat Installation,Installation,280,Credit Card,Tech_D,1.2,140,132.0,Yes
+CUST_132,2023-07-24,Refrigerant Recharge,Cooling,280,Cash,Tech_A,1.5,95,165.0,No
+CUST_035,2024-05-14,AC Tune-up,Maintenance,125,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_R20,2024-08-01,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_C,1.5,30,165.0,No
+CUST_R20,2024-08-01,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_B,1.7,35,187.0,No
+CUST_148,2024-01-03,Compressor Replacement,Cooling,2100,Credit Card,Tech_B,5.0,1350,550.0,No
+CUST_033,2023-03-22,Furnace Installation,Installation,4100,Financing,Tech_B,12.0,2750,1320.0,Yes
+CUST_103,2023-07-27,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_103,2023-07-27,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_067,2023-11-19,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_A,1.7,35,187.0,No
+CUST_067,2023-11-19,Filter Replacement,Maintenance,45,Check,Tech_B,0.3,8,33.0,No
+CUST_R12,2024-09-03,Igniter Replacement,Heating,220,Credit Card,Tech_B,1.5,60,165.0,No
+CUST_R12,2024-09-03,Refrigerant Level Check,Cooling,95,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_R12,2024-09-03,Thermostat Installation,Installation,280,Cash,Tech_A,1.2,140,132.0,Yes
+CUST_R25,2023-01-13,Flame Sensor Replacement,Heating,195,Credit Card,Tech_C,1.2,55,132.0,No
+CUST_R25,2023-01-13,Furnace Installation,Installation,4100,Credit Card,Tech_B,12.0,2750,1320.0,Yes
+CUST_011,2024-01-04,Duct Cleaning,Maintenance,350,Check,Tech_A,2.5,80,275.0,No
+CUST_011,2024-01-04,Furnace Installation,Installation,4100,Financing,Tech_A,12.0,2750,1320.0,Yes
+CUST_011,2024-01-04,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_003,2023-04-16,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_003,2023-04-16,Heat Exchanger Inspection,Heating,185,Check,Tech_A,1.5,25,165.0,No
+CUST_003,2023-04-16,Mini-Split Installation,Installation,3200,Financing,Tech_A,10.0,2100,1100.0,Yes
+CUST_102,2024-09-06,Furnace Installation,Installation,4100,Financing,Tech_B,12.0,2750,1320.0,Yes
+CUST_R09,2023-10-22,Duct Cleaning,Maintenance,350,Credit Card,Tech_B,2.5,80,275.0,No
+CUST_R09,2023-10-22,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_B,1.5,25,165.0,No
+CUST_094,2023-09-09,Igniter Replacement,Heating,220,Cash,Tech_A,1.5,60,165.0,No
+CUST_094,2023-09-09,Supply Vent Balancing,Maintenance,180,Cash,Tech_C,1.5,20,165.0,No
+CUST_R28,2024-12-13,Gas Valve Replacement,Heating,350,Credit Card,Tech_B,2.0,145,220.0,No
+CUST_R28,2024-12-13,Thermostat Replacement,Heating,185,Check,Tech_C,1.0,85,110.0,No
+CUST_R28,2024-12-13,Zone Damper Replacement,Heating,380,Check,Tech_A,2.0,180,220.0,No
+CUST_019,2024-08-19,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_R06,2023-10-13,Compressor Replacement,Cooling,2100,Credit Card,Tech_B,5.0,1350,550.0,No
+CUST_132,2024-04-22,Furnace Installation,Installation,4100,Financing,Tech_A,12.0,2750,1320.0,Yes
+CUST_053,2023-07-12,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_090,2023-11-23,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_090,2023-11-23,Pressure Switch Replacement,Heating,210,Credit Card,Tech_A,1.5,65,165.0,No
+CUST_090,2023-11-23,Refrigerant Level Check,Cooling,95,Check,Tech_A,0.7,10,77.0,No
+CUST_128,2024-12-09,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_103,2024-05-17,Carbon Monoxide Test,Maintenance,95,Cash,Tech_C,0.8,20,88.0,No
+CUST_103,2024-05-17,Relay Replacement,Heating,145,Credit Card,Tech_A,1.0,35,110.0,No
+CUST_065,2023-01-29,Capacitor Replacement,Cooling,180,Credit Card,Tech_A,1.0,45,110.0,No
+CUST_065,2023-01-29,Control Board Replacement,Heating,580,Credit Card,Tech_A,2.5,320,275.0,No
+CUST_069,2024-02-29,Igniter Replacement,Heating,220,Check,Tech_B,1.5,60,165.0,No
+CUST_004,2024-02-23,Gas Valve Replacement,Heating,350,Cash,Tech_B,2.0,145,220.0,No
+CUST_069,2024-01-19,Flame Sensor Replacement,Heating,195,Credit Card,Tech_C,1.2,55,132.0,No
+CUST_069,2024-01-19,Thermostat Installation,Installation,280,Check,Tech_C,1.2,140,132.0,Yes
+CUST_120,2023-02-04,Furnace Installation,Installation,4100,Financing,Tech_C,12.0,2750,1320.0,Yes
+CUST_075,2024-08-21,Mini-Split Installation,Installation,3200,Financing,Tech_A,10.0,2100,1100.0,Yes
+CUST_075,2024-08-21,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_065,2023-02-08,Zone System Check,Maintenance,120,Credit Card,Tech_D,1.0,15,110.0,No
+CUST_006,2024-11-06,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_130,2023-11-26,Igniter Replacement,Heating,220,Check,Tech_A,1.5,60,165.0,No
+CUST_130,2023-11-26,Relay Replacement,Heating,145,Credit Card,Tech_A,1.0,35,110.0,No
+CUST_026,2023-11-04,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_063,2023-01-28,Heating Tune-up,Maintenance,140,Check,Tech_B,1.5,20,165.0,No
+CUST_063,2023-01-28,Pressure Switch Replacement,Heating,210,Credit Card,Tech_B,1.5,65,165.0,No
+CUST_101,2023-02-14,AC Tune-up,Maintenance,125,Credit Card,Tech_D,1.0,15,110.0,No
+CUST_101,2023-02-14,Refrigerant Recharge,Cooling,280,Credit Card,Tech_A,1.5,95,165.0,No
+CUST_090,2023-04-13,Air Quality Assessment,Maintenance,140,Credit Card,Tech_C,1.0,35,110.0,No
+CUST_090,2023-04-13,Filter Replacement,Maintenance,45,Check,Tech_D,0.3,8,33.0,No
+CUST_076,2023-02-11,Flame Sensor Replacement,Heating,195,Credit Card,Tech_D,1.2,55,132.0,No
+CUST_076,2023-02-11,Igniter Replacement,Heating,220,Check,Tech_B,1.5,60,165.0,No
+CUST_R03,2023-06-09,Blower Motor Cleaning,Heating,120,Check,Tech_A,1.0,15,110.0,No
+CUST_R03,2023-06-09,Capacitor Replacement,Cooling,180,Credit Card,Tech_A,1.0,45,110.0,No
+CUST_R03,2023-06-09,Gas Valve Replacement,Heating,350,Credit Card,Tech_A,2.0,145,220.0,No
+CUST_018,2023-05-03,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_D,1.7,35,187.0,No
+CUST_018,2023-05-03,Gas Valve Replacement,Heating,350,Check,Tech_D,2.0,145,220.0,No
+CUST_018,2023-05-03,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_150,2024-01-20,Blower Motor Cleaning,Heating,120,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_150,2024-01-20,Heat Exchanger Inspection,Heating,185,Cash,Tech_B,1.5,25,165.0,No
+CUST_150,2024-01-20,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_R21,2024-04-05,AC Tune-up,Maintenance,125,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_065,2024-09-18,Fan Motor Replacement,Heating,520,Credit Card,Tech_D,2.5,280,275.0,No
+CUST_147,2023-06-30,AC Tune-up,Maintenance,125,Cash,Tech_B,1.0,15,110.0,No
+CUST_147,2023-06-30,Mini-Split Installation,Installation,3200,Financing,Tech_B,10.0,2100,1100.0,Yes
+CUST_068,2023-07-08,Pressure Switch Replacement,Heating,210,Credit Card,Tech_B,1.5,65,165.0,No
+CUST_065,2023-09-03,Heat Exchanger Inspection,Heating,185,Check,Tech_A,1.5,25,165.0,No
+CUST_065,2023-09-03,Supply Vent Balancing,Maintenance,180,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_017,2024-04-13,Return Air Inspection,Maintenance,70,Credit Card,Tech_C,0.6,5,66.0,No
+CUST_076,2024-09-03,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_076,2024-09-03,Capacitor Replacement,Cooling,180,Check,Tech_A,1.0,45,110.0,No
+CUST_076,2024-09-03,Thermostat Installation,Installation,280,Cash,Tech_C,1.2,140,132.0,Yes
+CUST_021,2023-11-04,Pressure Switch Replacement,Heating,210,Credit Card,Tech_B,1.5,65,165.0,No
+CUST_077,2023-07-31,AC Installation,Installation,3750,Credit Card,Tech_D,11.0,2500,1210.0,Yes
+CUST_077,2023-07-31,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_R04,2023-11-22,Blower Motor Repair,Heating,320,Cash,Tech_C,2.0,110,220.0,No
+CUST_R04,2023-11-22,Pressure Switch Replacement,Heating,210,Credit Card,Tech_A,1.5,65,165.0,No
+CUST_R30,2024-07-31,Refrigerant Level Check,Cooling,95,Credit Card,Tech_B,0.7,10,77.0,No
+CUST_004,2023-02-19,Furnace Installation,Installation,4100,Financing,Tech_D,12.0,2750,1320.0,Yes
+CUST_004,2023-02-19,Thermostat Installation,Installation,280,Cash,Tech_B,1.2,140,132.0,Yes
+CUST_045,2024-05-08,Contactor Replacement,Cooling,165,Check,Tech_A,1.0,40,110.0,No
+CUST_045,2024-05-08,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_022,2024-02-07,Air Quality Assessment,Maintenance,140,Check,Tech_B,1.0,35,110.0,No
+CUST_019,2024-04-02,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_019,2024-04-02,Furnace Installation,Installation,4100,Credit Card,Tech_C,12.0,2750,1320.0,Yes
+CUST_019,2024-04-02,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_135,2023-10-31,Refrigerant Recharge,Cooling,280,Check,Tech_D,1.5,95,165.0,No
+CUST_135,2023-10-31,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_088,2023-12-03,Flame Sensor Replacement,Heating,195,Check,Tech_D,1.2,55,132.0,No
+CUST_088,2023-12-03,Refrigerant Level Check,Cooling,95,Check,Tech_D,0.7,10,77.0,No
+CUST_009,2024-02-19,Boiler Installation,Installation,4800,Financing,Tech_A,14.0,3200,1540.0,Yes
+CUST_009,2024-02-19,Furnace Installation,Installation,4100,Credit Card,Tech_D,12.0,2750,1320.0,Yes
+CUST_006,2024-05-12,Duct Sealing,Maintenance,520,Check,Tech_B,3.0,180,330.0,No
+CUST_014,2024-06-02,AC Repair,Cooling,390,Check,Tech_A,2.0,170,220.0,No
+CUST_014,2024-06-02,Thermostat Calibration,Maintenance,95,Credit Card,Tech_C,0.8,15,88.0,No
+CUST_120,2024-08-31,AC Installation,Installation,3750,Financing,Tech_A,11.0,2500,1210.0,Yes
+CUST_120,2024-08-31,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_128,2024-06-18,Filter Replacement,Maintenance,45,Check,Tech_B,0.3,8,33.0,No
+CUST_095,2024-10-27,AC Tune-up,Maintenance,125,Check,Tech_C,1.0,15,110.0,No
+CUST_095,2024-10-27,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_032,2024-02-22,Filter Replacement,Maintenance,45,Check,Tech_D,0.3,8,33.0,No
+CUST_025,2024-11-08,Flame Sensor Replacement,Heating,195,Credit Card,Tech_B,1.2,55,132.0,No
+CUST_025,2024-11-08,Pressure Switch Replacement,Heating,210,Cash,Tech_C,1.5,65,165.0,No
+CUST_116,2023-12-24,Flame Sensor Replacement,Heating,195,Credit Card,Tech_B,1.2,55,132.0,No
+CUST_116,2023-12-24,UV Light Check,Maintenance,90,Credit Card,Tech_B,0.7,10,77.0,No
+CUST_049,2024-11-15,Boiler Installation,Installation,4800,Credit Card,Tech_A,14.0,3200,1540.0,Yes
+CUST_049,2024-11-15,Igniter Replacement,Heating,220,Cash,Tech_A,1.5,60,165.0,No
+CUST_049,2024-11-15,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_126,2024-02-22,AC Installation,Installation,3750,Credit Card,Tech_B,11.0,2500,1210.0,Yes
+CUST_126,2024-02-22,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_079,2023-02-21,Fan Motor Replacement,Heating,520,Credit Card,Tech_C,2.5,280,275.0,No
+CUST_094,2024-10-19,AC Tune-up,Maintenance,125,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_094,2024-10-19,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_070,2023-11-26,Return Air Inspection,Maintenance,70,Check,Tech_C,0.6,5,66.0,No
+CUST_009,2023-12-13,Duct Cleaning,Maintenance,350,Cash,Tech_C,2.5,80,275.0,No
+CUST_R28,2024-08-15,Thermostat Check,Maintenance,50,Credit Card,Tech_B,0.5,5,55.0,No
+CUST_073,2023-02-05,Gas Valve Replacement,Heating,350,Credit Card,Tech_A,2.0,145,220.0,No
+CUST_097,2023-03-10,Capacitor Replacement,Cooling,180,Cash,Tech_A,1.0,45,110.0,No
+CUST_097,2023-03-10,Contactor Replacement,Cooling,165,Check,Tech_B,1.0,40,110.0,No
+CUST_125,2024-03-14,Igniter Replacement,Heating,220,Check,Tech_D,1.5,60,165.0,No
+CUST_R02,2023-07-11,Mini-Split Installation,Installation,3200,Financing,Tech_B,10.0,2100,1100.0,Yes
+CUST_R02,2023-07-11,Refrigerant Level Check,Cooling,95,Check,Tech_C,0.7,10,77.0,No
+CUST_063,2024-10-28,UV Light Check,Maintenance,90,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_055,2023-05-25,Control Board Replacement,Heating,580,Credit Card,Tech_A,2.5,320,275.0,No
+CUST_017,2024-08-24,Condenser Coil Cleaning,Cooling,180,Check,Tech_A,1.5,30,165.0,No
+CUST_017,2024-08-24,Refrigerant Level Check,Cooling,95,Cash,Tech_A,0.7,10,77.0,No
+CUST_R17,2023-04-11,Igniter Replacement,Heating,220,Credit Card,Tech_C,1.5,60,165.0,No
+CUST_R17,2023-04-11,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_037,2023-03-05,Condenser Coil Cleaning,Cooling,180,Check,Tech_C,1.5,30,165.0,No
+CUST_037,2023-03-05,Filter Replacement,Maintenance,45,Credit Card,Tech_A,0.3,8,33.0,No
+CUST_038,2024-03-01,Drain Pan Replacement,Cooling,220,Check,Tech_A,1.5,80,165.0,No
+CUST_001,2023-09-26,Heat Pump Installation,Installation,5500,Financing,Tech_D,17.0,3600,1870.0,Yes
+CUST_001,2023-09-26,Mini-Split Installation,Installation,3200,Credit Card,Tech_C,10.0,2100,1100.0,Yes
+CUST_042,2023-09-24,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_128,2023-12-23,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_016,2024-02-27,Gas Valve Replacement,Heating,350,Credit Card,Tech_B,2.0,145,220.0,No
+CUST_016,2024-02-27,Heating Tune-up,Maintenance,140,Credit Card,Tech_C,1.5,20,165.0,No
+CUST_045,2024-03-01,Heating Repair,Heating,450,Cash,Tech_C,2.5,180,275.0,No
+CUST_045,2024-03-01,Heating Tune-up,Maintenance,140,Credit Card,Tech_B,1.5,20,165.0,No
+CUST_045,2024-03-01,Pressure Switch Replacement,Heating,210,Check,Tech_A,1.5,65,165.0,No
+CUST_148,2024-04-05,AC Installation,Installation,3750,Financing,Tech_A,11.0,2500,1210.0,Yes
+CUST_133,2023-07-10,Relay Replacement,Heating,145,Credit Card,Tech_B,1.0,35,110.0,No
+CUST_026,2023-02-28,Gas Valve Replacement,Heating,350,Credit Card,Tech_C,2.0,145,220.0,No
+CUST_026,2023-02-28,Heating Tune-up,Maintenance,140,Check,Tech_C,1.5,20,165.0,No
+CUST_026,2023-11-10,Pressure Switch Replacement,Heating,210,Credit Card,Tech_A,1.5,65,165.0,No
+CUST_009,2023-05-21,Refrigerant Recharge,Cooling,280,Credit Card,Tech_A,1.5,95,165.0,No
+CUST_009,2023-05-21,System Maintenance,Maintenance,150,Check,Tech_A,1.5,25,165.0,No
+CUST_091,2024-07-26,Contactor Replacement,Cooling,165,Credit Card,Tech_C,1.0,40,110.0,No
+CUST_042,2023-07-21,Boiler Installation,Installation,4800,Financing,Tech_A,14.0,3200,1540.0,Yes
+CUST_143,2023-07-29,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_143,2023-07-29,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_R25,2023-09-10,Compressor Replacement,Cooling,2100,Financing,Tech_C,5.0,1350,550.0,No
+CUST_R25,2023-09-10,Filter Replacement,Maintenance,45,Check,Tech_B,0.3,8,33.0,No
+CUST_R25,2023-09-10,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_123,2024-11-27,Furnace Installation,Installation,4100,Credit Card,Tech_C,12.0,2750,1320.0,Yes
+CUST_006,2024-05-08,Pressure Switch Replacement,Heating,210,Credit Card,Tech_A,1.5,65,165.0,No
+CUST_090,2023-01-19,Gas Valve Replacement,Heating,350,Check,Tech_A,2.0,145,220.0,No
+CUST_017,2024-10-27,Heat Pump Installation,Installation,5500,Credit Card,Tech_A,17.0,3600,1870.0,Yes
+CUST_017,2024-10-27,Thermostat Installation,Installation,280,Cash,Tech_A,1.2,140,132.0,Yes
+CUST_085,2024-07-09,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_C,1.7,35,187.0,No
+CUST_025,2023-12-09,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_034,2024-08-19,Breaker Inspection,Maintenance,85,Credit Card,Tech_C,0.7,5,77.0,No
+CUST_034,2024-08-19,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_B,1.5,30,165.0,No
+CUST_034,2024-08-19,Control Board Replacement,Heating,580,Credit Card,Tech_A,2.5,320,275.0,No
+CUST_009,2024-03-04,Heating Repair,Heating,450,Check,Tech_C,2.5,180,275.0,No
+CUST_023,2024-01-17,Heat Pump Installation,Installation,5500,Financing,Tech_B,17.0,3600,1870.0,Yes
+CUST_023,2024-01-17,Thermostat Check,Maintenance,50,Credit Card,Tech_A,0.5,5,55.0,No
+CUST_023,2024-01-17,Zone Damper Replacement,Heating,380,Credit Card,Tech_A,2.0,180,220.0,No
+CUST_026,2023-01-09,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_026,2023-01-09,Flame Sensor Replacement,Heating,195,Credit Card,Tech_C,1.2,55,132.0,No
+CUST_026,2023-01-09,Gas Valve Replacement,Heating,350,Check,Tech_B,2.0,145,220.0,No
+CUST_118,2023-06-07,Supply Vent Balancing,Maintenance,180,Cash,Tech_C,1.5,20,165.0,No
+CUST_038,2024-05-28,Air Quality Assessment,Maintenance,140,Cash,Tech_A,1.0,35,110.0,No
+CUST_038,2024-05-28,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_130,2023-05-28,Heating Repair,Heating,450,Check,Tech_C,2.5,180,275.0,No
+CUST_130,2023-05-28,UV Light Check,Maintenance,90,Credit Card,Tech_B,0.7,10,77.0,No
+CUST_146,2024-03-16,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_B,1.5,25,165.0,No
+CUST_110,2024-06-02,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_B,1.7,35,187.0,No
+CUST_075,2024-11-15,Thermostat Replacement,Heating,185,Cash,Tech_A,1.0,85,110.0,No
+CUST_016,2024-02-13,Gas Valve Replacement,Heating,350,Credit Card,Tech_A,2.0,145,220.0,No
+CUST_016,2024-02-13,Heating Repair,Heating,450,Cash,Tech_D,2.5,180,275.0,No
+CUST_016,2024-02-13,Return Air Inspection,Maintenance,70,Check,Tech_A,0.6,5,66.0,No
+CUST_043,2024-01-23,Condenser Coil Cleaning,Cooling,180,Check,Tech_B,1.5,30,165.0,No
+CUST_043,2024-01-23,Relay Replacement,Heating,145,Check,Tech_B,1.0,35,110.0,No
+CUST_094,2024-07-01,AC Tune-up,Maintenance,125,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_094,2024-07-01,Boiler Installation,Installation,4800,Financing,Tech_A,14.0,3200,1540.0,Yes
+CUST_103,2023-04-20,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_103,2023-04-20,UV Light Check,Maintenance,90,Credit Card,Tech_D,0.7,10,77.0,No
+CUST_030,2024-10-05,Heat Pump Installation,Installation,5500,Financing,Tech_B,17.0,3600,1870.0,Yes
+CUST_039,2024-02-05,Flame Sensor Replacement,Heating,195,Credit Card,Tech_C,1.2,55,132.0,No
+CUST_039,2024-02-05,Mini-Split Installation,Installation,3200,Financing,Tech_D,10.0,2100,1100.0,Yes
+CUST_039,2024-02-05,Refrigerant Recharge,Cooling,280,Cash,Tech_B,1.5,95,165.0,No
+CUST_112,2023-03-21,Carbon Monoxide Test,Maintenance,95,Credit Card,Tech_C,0.8,20,88.0,No
+CUST_112,2023-03-21,Gas Valve Replacement,Heating,350,Check,Tech_A,2.0,145,220.0,No
+CUST_112,2023-03-21,Heating Tune-up,Maintenance,140,Check,Tech_B,1.5,20,165.0,No
+CUST_091,2024-02-23,Furnace Installation,Installation,4100,Financing,Tech_B,12.0,2750,1320.0,Yes
+CUST_091,2024-02-23,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_094,2024-11-30,Air Handler Installation,Installation,2800,Check,Tech_B,9.0,1900,990.0,Yes
+CUST_094,2024-11-30,Heating Repair,Heating,450,Credit Card,Tech_B,2.5,180,275.0,No
+CUST_R10,2023-10-14,Compressor Replacement,Cooling,2100,Credit Card,Tech_C,5.0,1350,550.0,No
+CUST_R10,2023-10-14,Furnace Installation,Installation,4100,Financing,Tech_A,12.0,2750,1320.0,Yes
+CUST_087,2023-05-10,Air Quality Assessment,Maintenance,140,Check,Tech_D,1.0,35,110.0,No
+CUST_091,2023-11-28,UV Light Check,Maintenance,90,Credit Card,Tech_B,0.7,10,77.0,No
+CUST_038,2023-08-11,Condenser Coil Cleaning,Cooling,180,Check,Tech_A,1.5,30,165.0,No
+CUST_038,2023-08-11,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_038,2023-08-11,Refrigerant Level Check,Cooling,95,Credit Card,Tech_C,0.7,10,77.0,No
+CUST_008,2024-12-08,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_008,2024-12-08,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_023,2024-10-10,Condensate Pump Cleaning,Cooling,140,Check,Tech_A,1.2,25,132.0,No
+CUST_023,2024-10-10,Fan Motor Replacement,Heating,520,Credit Card,Tech_C,2.5,280,275.0,No
+CUST_R13,2023-05-05,Contactor Replacement,Cooling,165,Credit Card,Tech_C,1.0,40,110.0,No
+CUST_R11,2023-05-13,Capacitor Replacement,Cooling,180,Credit Card,Tech_A,1.0,45,110.0,No
+CUST_R11,2023-05-13,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_007,2024-11-07,Furnace Installation,Installation,4100,Financing,Tech_B,12.0,2750,1320.0,Yes
+CUST_051,2023-10-25,Duct Sealing,Maintenance,520,Check,Tech_A,3.0,180,330.0,No
+CUST_081,2024-09-26,Refrigerant Recharge,Cooling,280,Credit Card,Tech_D,1.5,95,165.0,No
+CUST_049,2024-06-10,AC Tune-up,Maintenance,125,Check,Tech_D,1.0,15,110.0,No
+CUST_049,2024-06-10,Refrigerant Level Check,Cooling,95,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_080,2024-05-24,Mini-Split Installation,Installation,3200,Financing,Tech_C,10.0,2100,1100.0,Yes
+CUST_080,2024-05-24,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_039,2024-08-10,AC Installation,Installation,3750,Financing,Tech_B,11.0,2500,1210.0,Yes
+CUST_039,2024-08-10,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_097,2023-12-27,Condenser Coil Cleaning,Cooling,180,Cash,Tech_A,1.5,30,165.0,No
+CUST_097,2023-12-27,Gas Valve Replacement,Heating,350,Credit Card,Tech_C,2.0,145,220.0,No
+CUST_027,2023-03-16,Flame Sensor Replacement,Heating,195,Credit Card,Tech_A,1.2,55,132.0,No
+CUST_027,2023-03-16,Igniter Replacement,Heating,220,Credit Card,Tech_D,1.5,60,165.0,No
+CUST_137,2023-01-11,Flame Sensor Replacement,Heating,195,Credit Card,Tech_C,1.2,55,132.0,No
+CUST_069,2024-01-12,Gas Valve Replacement,Heating,350,Credit Card,Tech_D,2.0,145,220.0,No
+CUST_030,2023-09-30,AC Installation,Installation,3750,Financing,Tech_A,11.0,2500,1210.0,Yes
+CUST_030,2023-09-30,AC Tune-up,Maintenance,125,Check,Tech_A,1.0,15,110.0,No
+CUST_030,2023-09-30,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_112,2023-11-01,Heating Tune-up,Maintenance,140,Credit Card,Tech_C,1.5,20,165.0,No
+CUST_112,2023-11-01,Zone Damper Replacement,Heating,380,Check,Tech_C,2.0,180,220.0,No
+CUST_037,2023-03-11,Heat Pump Installation,Installation,5500,Financing,Tech_C,17.0,3600,1870.0,Yes
+CUST_037,2023-03-11,Return Air Inspection,Maintenance,70,Check,Tech_B,0.6,5,66.0,No
+CUST_037,2023-03-11,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_112,2023-11-03,HVAC Installation,Installation,5200,Credit Card,Tech_D,16.0,3400,1760.0,Yes
+CUST_112,2023-11-03,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_143,2024-11-03,Boiler Installation,Installation,4800,Credit Card,Tech_A,14.0,3200,1540.0,Yes
+CUST_143,2024-11-03,Gas Valve Replacement,Heating,350,Credit Card,Tech_C,2.0,145,220.0,No
+CUST_142,2023-02-18,Igniter Replacement,Heating,220,Credit Card,Tech_B,1.5,60,165.0,No
+CUST_016,2023-07-08,Duct Cleaning,Maintenance,350,Credit Card,Tech_A,2.5,80,275.0,No
+CUST_041,2023-03-31,Carbon Monoxide Test,Maintenance,95,Credit Card,Tech_A,0.8,20,88.0,No
+CUST_041,2023-03-31,Control Board Replacement,Heating,580,Credit Card,Tech_B,2.5,320,275.0,No
+CUST_111,2024-05-19,AC Tune-up,Maintenance,125,Check,Tech_A,1.0,15,110.0,No
+CUST_111,2024-05-19,Duct Cleaning,Maintenance,350,Credit Card,Tech_A,2.5,80,275.0,No
+CUST_111,2024-05-19,Thermostat Replacement,Heating,185,Cash,Tech_B,1.0,85,110.0,No
+CUST_017,2024-06-06,AC Repair,Cooling,390,Credit Card,Tech_A,2.0,170,220.0,No
+CUST_055,2023-09-03,Air Handler Installation,Installation,2800,Check,Tech_B,9.0,1900,990.0,Yes
+CUST_055,2023-09-03,Refrigerant Recharge,Cooling,280,Cash,Tech_A,1.5,95,165.0,No
+CUST_055,2023-09-03,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_R28,2024-07-06,Mini-Split Installation,Installation,3200,Financing,Tech_A,10.0,2100,1100.0,Yes
+CUST_146,2024-09-19,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_B,1.7,35,187.0,No
+CUST_146,2024-09-19,Refrigerant Recharge,Cooling,280,Credit Card,Tech_C,1.5,95,165.0,No
+CUST_033,2023-08-30,AC Tune-up,Maintenance,125,Check,Tech_C,1.0,15,110.0,No
+CUST_033,2023-08-30,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_B,1.5,25,165.0,No
+CUST_013,2023-11-02,Heating Tune-up,Maintenance,140,Cash,Tech_A,1.5,20,165.0,No
+CUST_013,2023-11-02,Igniter Replacement,Heating,220,Check,Tech_A,1.5,60,165.0,No
+CUST_013,2023-11-02,Refrigerant Recharge,Cooling,280,Credit Card,Tech_A,1.5,95,165.0,No
+CUST_004,2024-06-30,Duct Cleaning,Maintenance,350,Credit Card,Tech_B,2.5,80,275.0,No
+CUST_004,2024-06-30,Supply Vent Balancing,Maintenance,180,Check,Tech_A,1.5,20,165.0,No
+CUST_072,2024-05-05,Igniter Replacement,Heating,220,Cash,Tech_D,1.5,60,165.0,No
+CUST_088,2023-03-09,Capacitor Replacement,Cooling,180,Credit Card,Tech_C,1.0,45,110.0,No
+CUST_088,2023-03-09,Control Board Replacement,Heating,580,Credit Card,Tech_D,2.5,320,275.0,No
+CUST_020,2024-02-10,Heat Pump Installation,Installation,5500,Credit Card,Tech_A,17.0,3600,1870.0,Yes
+CUST_149,2023-09-20,Humidifier Check,Maintenance,75,Credit Card,Tech_A,0.5,10,55.0,No
+CUST_006,2023-04-19,Refrigerant Recharge,Cooling,280,Check,Tech_A,1.5,95,165.0,No
+CUST_029,2023-10-11,Blower Motor Cleaning,Heating,120,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_029,2023-10-11,Drain Line Flush,Cooling,125,Check,Tech_B,1.0,20,110.0,No
+CUST_124,2024-08-28,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_124,2024-08-28,Gas Valve Replacement,Heating,350,Check,Tech_C,2.0,145,220.0,No
+CUST_R19,2024-03-04,Filter Replacement,Maintenance,45,Credit Card,Tech_B,0.3,8,33.0,No
+CUST_R19,2024-03-04,Humidifier Check,Maintenance,75,Credit Card,Tech_A,0.5,10,55.0,No
+CUST_149,2023-03-22,Furnace Installation,Installation,4100,Credit Card,Tech_A,12.0,2750,1320.0,Yes
+CUST_149,2023-03-22,Thermostat Installation,Installation,280,Cash,Tech_B,1.2,140,132.0,Yes
+CUST_043,2024-12-16,AC Installation,Installation,3750,Financing,Tech_C,11.0,2500,1210.0,Yes
+CUST_043,2024-12-16,Igniter Replacement,Heating,220,Credit Card,Tech_B,1.5,60,165.0,No
+CUST_R11,2023-05-17,AC Repair,Cooling,390,Cash,Tech_C,2.0,170,220.0,No
+CUST_R11,2023-05-17,Compressor Replacement,Cooling,2100,Credit Card,Tech_C,5.0,1350,550.0,No
+CUST_R11,2023-05-17,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_116,2024-09-29,Control Board Replacement,Heating,580,Check,Tech_A,2.5,320,275.0,No
+CUST_116,2024-09-29,Heating Tune-up,Maintenance,140,Check,Tech_D,1.5,20,165.0,No
+CUST_122,2024-08-20,Refrigerant Recharge,Cooling,280,Credit Card,Tech_B,1.5,95,165.0,No
+CUST_017,2024-11-04,Pressure Switch Replacement,Heating,210,Credit Card,Tech_B,1.5,65,165.0,No
+CUST_017,2024-11-04,Thermostat Installation,Installation,280,Check,Tech_C,1.2,140,132.0,Yes
+CUST_027,2024-02-22,Thermostat Check,Maintenance,50,Credit Card,Tech_A,0.5,5,55.0,No
+CUST_094,2023-05-14,Capacitor Replacement,Cooling,180,Cash,Tech_B,1.0,45,110.0,No
+CUST_094,2023-05-14,Heating Tune-up,Maintenance,140,Credit Card,Tech_C,1.5,20,165.0,No
+CUST_094,2023-05-14,Igniter Replacement,Heating,220,Cash,Tech_C,1.5,60,165.0,No
+CUST_R28,2023-05-08,Duct Inspection,Maintenance,85,Credit Card,Tech_C,0.8,10,88.0,No
+CUST_087,2023-06-25,Pressure Switch Replacement,Heating,210,Credit Card,Tech_C,1.5,65,165.0,No
+CUST_R18,2024-05-16,Furnace Installation,Installation,4100,Financing,Tech_D,12.0,2750,1320.0,Yes
+CUST_R18,2024-05-16,HVAC Installation,Installation,5200,Financing,Tech_B,16.0,3400,1760.0,Yes
+CUST_091,2024-04-29,Capacitor Replacement,Cooling,180,Check,Tech_A,1.0,45,110.0,No
+CUST_091,2024-04-29,Duct Inspection,Maintenance,85,Credit Card,Tech_A,0.8,10,88.0,No
+CUST_083,2023-09-19,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_B,1.5,30,165.0,No
+CUST_083,2023-09-19,Furnace Installation,Installation,4100,Credit Card,Tech_B,12.0,2750,1320.0,Yes
+CUST_083,2023-09-19,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_080,2023-02-08,Boiler Installation,Installation,4800,Financing,Tech_A,14.0,3200,1540.0,Yes
+CUST_080,2023-02-08,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_R18,2023-10-01,Refrigerant Recharge,Cooling,280,Check,Tech_C,1.5,95,165.0,No
+CUST_052,2023-03-10,AC Installation,Installation,3750,Financing,Tech_D,11.0,2500,1210.0,Yes
+CUST_049,2024-02-26,Carbon Monoxide Test,Maintenance,95,Credit Card,Tech_A,0.8,20,88.0,No
+CUST_049,2024-02-26,Flame Sensor Replacement,Heating,195,Credit Card,Tech_B,1.2,55,132.0,No
+CUST_015,2023-01-18,Heating Tune-up,Maintenance,140,Check,Tech_A,1.5,20,165.0,No
+CUST_015,2023-01-18,Pressure Switch Replacement,Heating,210,Check,Tech_C,1.5,65,165.0,No
+CUST_071,2024-09-17,Heat Pump Installation,Installation,5500,Financing,Tech_B,17.0,3600,1870.0,Yes
+CUST_129,2024-07-12,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_C,1.5,30,165.0,No
+CUST_129,2024-07-12,Control Board Replacement,Heating,580,Check,Tech_A,2.5,320,275.0,No
+CUST_056,2023-08-17,Condensate Pump Cleaning,Cooling,140,Credit Card,Tech_A,1.2,25,132.0,No
+CUST_056,2023-08-17,Heat Pump Installation,Installation,5500,Credit Card,Tech_B,17.0,3600,1870.0,Yes
+CUST_092,2023-03-29,Refrigerant Level Check,Cooling,95,Check,Tech_A,0.7,10,77.0,No
+CUST_078,2024-11-03,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_049,2023-09-17,Thermostat Calibration,Maintenance,95,Check,Tech_A,0.8,15,88.0,No
+CUST_049,2023-09-17,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_004,2023-07-07,Heat Pump Installation,Installation,5500,Financing,Tech_B,17.0,3600,1870.0,Yes
+CUST_004,2023-07-07,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_R02,2023-02-03,Boiler Installation,Installation,4800,Credit Card,Tech_A,14.0,3200,1540.0,Yes
+CUST_R02,2023-02-03,Furnace Installation,Installation,4100,Financing,Tech_A,12.0,2750,1320.0,Yes
+CUST_R23,2024-04-17,Air Quality Assessment,Maintenance,140,Check,Tech_C,1.0,35,110.0,No
+CUST_R23,2024-04-17,Breaker Inspection,Maintenance,85,Credit Card,Tech_A,0.7,5,77.0,No
+CUST_030,2023-05-17,Return Air Inspection,Maintenance,70,Credit Card,Tech_C,0.6,5,66.0,No
+CUST_R06,2024-09-09,Condenser Coil Cleaning,Cooling,180,Check,Tech_B,1.5,30,165.0,No
+CUST_R06,2024-09-09,Electrical Safety Inspection,Maintenance,110,Credit Card,Tech_A,1.0,5,110.0,No
+CUST_081,2023-06-14,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_C,1.5,30,165.0,No
+CUST_081,2023-06-14,Heating Tune-up,Maintenance,140,Credit Card,Tech_B,1.5,20,165.0,No
+CUST_095,2024-08-19,Blower Motor Cleaning,Heating,120,Check,Tech_A,1.0,15,110.0,No
+CUST_095,2024-08-19,Duct Cleaning,Maintenance,350,Credit Card,Tech_B,2.5,80,275.0,No
+CUST_140,2024-03-12,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_001,2023-03-15,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_C,1.5,25,165.0,No
+CUST_R09,2023-02-06,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_R09,2023-02-06,Supply Vent Balancing,Maintenance,180,Credit Card,Tech_C,1.5,20,165.0,No
+CUST_R04,2024-06-29,Refrigerant Recharge,Cooling,280,Check,Tech_A,1.5,95,165.0,No
+CUST_R04,2024-06-29,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_R12,2024-04-02,Heating Repair,Heating,450,Cash,Tech_A,2.5,180,275.0,No
+CUST_129,2023-02-10,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_140,2024-12-11,Refrigerant Level Check,Cooling,95,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_140,2024-12-11,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_143,2023-05-02,AC Repair,Cooling,390,Check,Tech_A,2.0,170,220.0,No
+CUST_R06,2024-11-17,Duct Inspection,Maintenance,85,Credit Card,Tech_B,0.8,10,88.0,No
+CUST_R06,2024-11-17,Heat Pump Installation,Installation,5500,Financing,Tech_C,17.0,3600,1870.0,Yes
+CUST_120,2024-02-03,Capacitor Replacement,Cooling,180,Check,Tech_A,1.0,45,110.0,No
+CUST_074,2024-06-09,Thermostat Calibration,Maintenance,95,Check,Tech_A,0.8,15,88.0,No
+CUST_024,2024-09-28,Fan Motor Replacement,Heating,520,Credit Card,Tech_B,2.5,280,275.0,No
+CUST_024,2024-09-28,UV Light Check,Maintenance,90,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_123,2023-01-25,AC Installation,Installation,3750,Credit Card,Tech_B,11.0,2500,1210.0,Yes
+CUST_123,2023-01-25,Gas Valve Replacement,Heating,350,Cash,Tech_A,2.0,145,220.0,No
+CUST_123,2023-01-25,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_125,2024-03-02,Blower Motor Cleaning,Heating,120,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_125,2024-03-02,Evaporator Coil Cleaning,Cooling,195,Cash,Tech_C,1.7,35,187.0,No
+CUST_012,2024-02-22,Duct Inspection,Maintenance,85,Check,Tech_A,0.8,10,88.0,No
+CUST_012,2024-02-22,Flame Sensor Replacement,Heating,195,Credit Card,Tech_A,1.2,55,132.0,No
+CUST_051,2023-10-20,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_100,2023-05-29,AC Installation,Installation,3750,Credit Card,Tech_A,11.0,2500,1210.0,Yes
+CUST_100,2023-05-29,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_100,2023-05-29,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_111,2024-02-15,Condenser Coil Cleaning,Cooling,180,Check,Tech_A,1.5,30,165.0,No
+CUST_111,2024-02-15,Drain Pan Replacement,Cooling,220,Check,Tech_C,1.5,80,165.0,No
+CUST_024,2023-04-08,Blower Motor Cleaning,Heating,120,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_024,2023-04-08,Condensate Pump Cleaning,Cooling,140,Credit Card,Tech_C,1.2,25,132.0,No
+CUST_107,2024-09-26,Drain Pan Replacement,Cooling,220,Check,Tech_B,1.5,80,165.0,No
+CUST_107,2024-09-26,Evaporator Coil Cleaning,Cooling,195,Check,Tech_B,1.7,35,187.0,No
+CUST_078,2024-04-10,Duct Sealing,Maintenance,520,Check,Tech_A,3.0,180,330.0,No
+CUST_078,2024-04-10,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_078,2024-04-10,UV Light Check,Maintenance,90,Check,Tech_B,0.7,10,77.0,No
+CUST_083,2023-11-08,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_083,2023-11-08,Refrigerant Recharge,Cooling,280,Credit Card,Tech_D,1.5,95,165.0,No
+CUST_064,2023-12-12,Blower Motor Cleaning,Heating,120,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_064,2023-12-12,Thermostat Replacement,Heating,185,Credit Card,Tech_B,1.0,85,110.0,No
+CUST_037,2023-02-11,Gas Valve Replacement,Heating,350,Check,Tech_B,2.0,145,220.0,No
+CUST_128,2023-09-24,Air Quality Assessment,Maintenance,140,Check,Tech_A,1.0,35,110.0,No
+CUST_072,2024-05-26,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_R23,2023-01-12,Flame Sensor Replacement,Heating,195,Check,Tech_A,1.2,55,132.0,No
+CUST_R23,2023-01-12,Gas Valve Replacement,Heating,350,Check,Tech_A,2.0,145,220.0,No
+CUST_093,2023-07-07,Capacitor Replacement,Cooling,180,Credit Card,Tech_A,1.0,45,110.0,No
+CUST_093,2023-07-07,Refrigerant Level Check,Cooling,95,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_129,2023-05-09,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_D,1.7,35,187.0,No
+CUST_129,2023-05-09,Refrigerant Recharge,Cooling,280,Check,Tech_D,1.5,95,165.0,No
+CUST_094,2023-03-10,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_113,2023-04-11,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_113,2023-04-11,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_A,1.7,35,187.0,No
+CUST_136,2023-12-02,Carbon Monoxide Test,Maintenance,95,Credit Card,Tech_B,0.8,20,88.0,No
+CUST_136,2023-12-02,Refrigerant Recharge,Cooling,280,Credit Card,Tech_A,1.5,95,165.0,No
+CUST_065,2024-08-23,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_020,2024-09-07,Capacitor Replacement,Cooling,180,Check,Tech_C,1.0,45,110.0,No
+CUST_020,2024-09-07,Heat Exchanger Inspection,Heating,185,Cash,Tech_A,1.5,25,165.0,No
+CUST_020,2024-09-07,Mini-Split Installation,Installation,3200,Financing,Tech_A,10.0,2100,1100.0,Yes
+CUST_R02,2024-07-12,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_R02,2024-07-12,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_138,2023-09-29,Blower Motor Repair,Heating,320,Credit Card,Tech_B,2.0,110,220.0,No
+CUST_135,2024-01-30,Zone Damper Replacement,Heating,380,Credit Card,Tech_A,2.0,180,220.0,No
+CUST_142,2024-10-23,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_017,2024-05-29,Duct Cleaning,Maintenance,350,Cash,Tech_A,2.5,80,275.0,No
+CUST_017,2024-05-29,Heating Repair,Heating,450,Credit Card,Tech_B,2.5,180,275.0,No
+CUST_062,2024-07-16,Gas Valve Replacement,Heating,350,Credit Card,Tech_C,2.0,145,220.0,No
+CUST_062,2024-07-16,Refrigerant Level Check,Cooling,95,Cash,Tech_B,0.7,10,77.0,No
+CUST_072,2024-06-18,AC Repair,Cooling,390,Check,Tech_A,2.0,170,220.0,No
+CUST_072,2024-06-18,Heat Pump Installation,Installation,5500,Financing,Tech_C,17.0,3600,1870.0,Yes
+CUST_106,2023-03-13,Control Board Replacement,Heating,580,Credit Card,Tech_B,2.5,320,275.0,No
+CUST_106,2023-03-13,Flame Sensor Replacement,Heating,195,Credit Card,Tech_A,1.2,55,132.0,No
+CUST_106,2023-03-13,Heating Repair,Heating,450,Cash,Tech_D,2.5,180,275.0,No
+CUST_103,2024-01-23,Flame Sensor Replacement,Heating,195,Credit Card,Tech_B,1.2,55,132.0,No
+CUST_103,2024-01-23,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_R05,2023-03-23,Duct Cleaning,Maintenance,350,Credit Card,Tech_A,2.5,80,275.0,No
+CUST_R05,2023-03-23,Heating Tune-up,Maintenance,140,Cash,Tech_B,1.5,20,165.0,No
+CUST_093,2023-11-17,Flame Sensor Replacement,Heating,195,Check,Tech_B,1.2,55,132.0,No
+CUST_093,2023-11-17,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_093,2023-11-17,Pressure Switch Replacement,Heating,210,Cash,Tech_A,1.5,65,165.0,No
+CUST_R11,2023-08-26,Air Quality Assessment,Maintenance,140,Check,Tech_D,1.0,35,110.0,No
+CUST_R11,2023-08-26,Duct Inspection,Maintenance,85,Credit Card,Tech_A,0.8,10,88.0,No
+CUST_109,2024-11-27,Flame Sensor Replacement,Heating,195,Check,Tech_B,1.2,55,132.0,No
+CUST_109,2024-11-27,Pressure Switch Replacement,Heating,210,Check,Tech_D,1.5,65,165.0,No
+CUST_109,2024-11-27,Supply Vent Balancing,Maintenance,180,Credit Card,Tech_C,1.5,20,165.0,No
+CUST_108,2024-11-03,Thermostat Check,Maintenance,50,Cash,Tech_B,0.5,5,55.0,No
+CUST_025,2024-02-04,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_025,2024-02-04,Heat Exchanger Inspection,Heating,185,Check,Tech_C,1.5,25,165.0,No
+CUST_003,2023-10-01,Heating Tune-up,Maintenance,140,Check,Tech_A,1.5,20,165.0,No
+CUST_003,2023-10-01,Humidifier Check,Maintenance,75,Credit Card,Tech_A,0.5,10,55.0,No
+CUST_013,2024-05-16,AC Installation,Installation,3750,Financing,Tech_B,11.0,2500,1210.0,Yes
+CUST_013,2024-05-16,Air Quality Assessment,Maintenance,140,Credit Card,Tech_C,1.0,35,110.0,No
+CUST_013,2024-05-16,Contactor Replacement,Cooling,165,Credit Card,Tech_D,1.0,40,110.0,No
+CUST_136,2024-07-25,Drain Line Flush,Cooling,125,Credit Card,Tech_A,1.0,20,110.0,No
+CUST_147,2024-09-16,AC Tune-up,Maintenance,125,Credit Card,Tech_C,1.0,15,110.0,No
+CUST_091,2023-04-06,Gas Valve Replacement,Heating,350,Credit Card,Tech_B,2.0,145,220.0,No
+CUST_091,2023-04-06,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_091,2023-04-06,Refrigerant Recharge,Cooling,280,Credit Card,Tech_B,1.5,95,165.0,No
+CUST_149,2023-01-29,AC Installation,Installation,3750,Financing,Tech_D,11.0,2500,1210.0,Yes
+CUST_149,2023-01-29,Carbon Monoxide Test,Maintenance,95,Check,Tech_A,0.8,20,88.0,No
+CUST_060,2023-06-26,AC Installation,Installation,3750,Credit Card,Tech_C,11.0,2500,1210.0,Yes
+CUST_060,2023-06-26,AC Tune-up,Maintenance,125,Check,Tech_A,1.0,15,110.0,No
+CUST_060,2023-06-26,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_126,2023-04-07,Control Board Replacement,Heating,580,Credit Card,Tech_A,2.5,320,275.0,No
+CUST_126,2023-04-07,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_C,1.5,25,165.0,No
+CUST_040,2023-02-12,Gas Valve Replacement,Heating,350,Check,Tech_B,2.0,145,220.0,No
+CUST_040,2023-02-12,HVAC Installation,Installation,5200,Financing,Tech_A,16.0,3400,1760.0,Yes
+CUST_029,2024-12-22,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_029,2024-12-22,Heat Exchanger Inspection,Heating,185,Check,Tech_C,1.5,25,165.0,No
+CUST_040,2023-10-30,Furnace Installation,Installation,4100,Financing,Tech_C,12.0,2750,1320.0,Yes
+CUST_040,2023-10-30,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_103,2023-06-27,Compressor Replacement,Cooling,2100,Check,Tech_C,5.0,1350,550.0,No
+CUST_R16,2023-02-09,Capacitor Replacement,Cooling,180,Check,Tech_C,1.0,45,110.0,No
+CUST_R16,2023-02-09,Furnace Installation,Installation,4100,Financing,Tech_A,12.0,2750,1320.0,Yes
+CUST_121,2023-05-03,Compressor Replacement,Cooling,2100,Financing,Tech_B,5.0,1350,550.0,No
+CUST_099,2023-11-26,Thermostat Calibration,Maintenance,95,Credit Card,Tech_C,0.8,15,88.0,No
+CUST_R05,2024-11-05,Gas Valve Replacement,Heating,350,Check,Tech_C,2.0,145,220.0,No
+CUST_R05,2024-11-05,Heating Repair,Heating,450,Check,Tech_A,2.5,180,275.0,No
+CUST_019,2024-04-05,Duct Cleaning,Maintenance,350,Check,Tech_C,2.5,80,275.0,No
+CUST_019,2024-04-05,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_003,2023-05-07,Heat Pump Installation,Installation,5500,Financing,Tech_C,17.0,3600,1870.0,Yes
+CUST_003,2023-05-07,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_119,2023-10-07,AC Repair,Cooling,390,Cash,Tech_A,2.0,170,220.0,No
+CUST_119,2023-10-07,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_119,2023-10-07,Thermostat Replacement,Heating,185,Cash,Tech_C,1.0,85,110.0,No
+CUST_071,2024-07-08,AC Installation,Installation,3750,Financing,Tech_A,11.0,2500,1210.0,Yes
+CUST_071,2024-07-08,Capacitor Replacement,Cooling,180,Check,Tech_B,1.0,45,110.0,No
+CUST_R01,2023-06-16,Refrigerant Level Check,Cooling,95,Credit Card,Tech_C,0.7,10,77.0,No
+CUST_R01,2023-06-16,Thermostat Installation,Installation,280,Cash,Tech_B,1.2,140,132.0,Yes
+CUST_042,2024-09-14,AC Tune-up,Maintenance,125,Check,Tech_B,1.0,15,110.0,No
+CUST_042,2024-09-14,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_042,2024-09-14,Relay Replacement,Heating,145,Credit Card,Tech_C,1.0,35,110.0,No
+CUST_035,2023-06-27,AC Repair,Cooling,390,Check,Tech_A,2.0,170,220.0,No
+CUST_035,2023-06-27,Contactor Replacement,Cooling,165,Credit Card,Tech_B,1.0,40,110.0,No
+CUST_035,2023-06-27,Electrical Safety Inspection,Maintenance,110,Check,Tech_D,1.0,5,110.0,No
+CUST_059,2023-04-01,AC Tune-up,Maintenance,125,Check,Tech_B,1.0,15,110.0,No
+CUST_059,2023-04-01,Return Air Inspection,Maintenance,70,Credit Card,Tech_A,0.6,5,66.0,No
+CUST_001,2024-11-19,Boiler Installation,Installation,4800,Credit Card,Tech_B,14.0,3200,1540.0,Yes
+CUST_001,2024-11-19,Heat Exchanger Inspection,Heating,185,Check,Tech_A,1.5,25,165.0,No
+CUST_100,2024-12-10,Mini-Split Installation,Installation,3200,Credit Card,Tech_D,10.0,2100,1100.0,Yes
+CUST_100,2024-12-10,System Maintenance,Maintenance,150,Cash,Tech_A,1.5,25,165.0,No
+CUST_095,2024-10-19,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_095,2024-10-19,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_R21,2024-04-24,Compressor Replacement,Cooling,2100,Financing,Tech_D,5.0,1350,550.0,No
+CUST_R21,2024-04-24,Refrigerant Level Check,Cooling,95,Check,Tech_A,0.7,10,77.0,No
+CUST_100,2023-08-13,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_C,1.7,35,187.0,No
+CUST_067,2024-03-08,Zone System Check,Maintenance,120,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_058,2023-09-02,UV Light Check,Maintenance,90,Check,Tech_C,0.7,10,77.0,No
+CUST_043,2024-11-15,Heat Pump Installation,Installation,5500,Financing,Tech_B,17.0,3600,1870.0,Yes
+CUST_081,2024-01-26,Boiler Installation,Installation,4800,Credit Card,Tech_A,14.0,3200,1540.0,Yes
+CUST_081,2024-01-26,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_061,2023-12-25,AC Tune-up,Maintenance,125,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_061,2023-12-25,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_061,2023-12-25,Pressure Switch Replacement,Heating,210,Credit Card,Tech_B,1.5,65,165.0,No
+CUST_R29,2023-07-28,AC Installation,Installation,3750,Financing,Tech_A,11.0,2500,1210.0,Yes
+CUST_050,2023-05-20,AC Installation,Installation,3750,Financing,Tech_A,11.0,2500,1210.0,Yes
+CUST_050,2023-05-20,Filter Replacement,Maintenance,45,Check,Tech_A,0.3,8,33.0,No
+CUST_R01,2023-09-11,Mini-Split Installation,Installation,3200,Financing,Tech_B,10.0,2100,1100.0,Yes
+CUST_R01,2023-09-11,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_142,2023-09-07,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_C,1.5,25,165.0,No
+CUST_R01,2023-08-30,Flame Sensor Replacement,Heating,195,Check,Tech_A,1.2,55,132.0,No
+CUST_062,2023-07-28,Thermostat Installation,Installation,280,Credit Card,Tech_D,1.2,140,132.0,Yes
+CUST_062,2023-07-28,UV Light Check,Maintenance,90,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_080,2024-05-13,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_082,2023-12-22,Carbon Monoxide Test,Maintenance,95,Credit Card,Tech_A,0.8,20,88.0,No
+CUST_082,2023-12-22,Flame Sensor Replacement,Heating,195,Check,Tech_C,1.2,55,132.0,No
+CUST_010,2024-11-26,Fan Motor Replacement,Heating,520,Credit Card,Tech_D,2.5,280,275.0,No
+CUST_010,2024-11-26,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_010,2024-11-26,Igniter Replacement,Heating,220,Credit Card,Tech_B,1.5,60,165.0,No
+CUST_105,2023-05-26,Refrigerant Level Check,Cooling,95,Check,Tech_A,0.7,10,77.0,No
+CUST_105,2023-05-26,Refrigerant Recharge,Cooling,280,Credit Card,Tech_A,1.5,95,165.0,No
+CUST_R16,2023-10-18,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_005,2023-01-16,Heat Exchanger Inspection,Heating,185,Check,Tech_A,1.5,25,165.0,No
+CUST_031,2024-09-01,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_031,2024-09-01,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_024,2023-03-10,Heating Tune-up,Maintenance,140,Check,Tech_B,1.5,20,165.0,No
+CUST_024,2023-03-10,Zone System Check,Maintenance,120,Check,Tech_B,1.0,15,110.0,No
+CUST_R23,2023-09-25,Compressor Replacement,Cooling,2100,Credit Card,Tech_C,5.0,1350,550.0,No
+CUST_R23,2023-09-25,Pressure Switch Replacement,Heating,210,Credit Card,Tech_D,1.5,65,165.0,No
+CUST_R08,2023-08-31,Pressure Switch Replacement,Heating,210,Check,Tech_A,1.5,65,165.0,No
+CUST_005,2023-06-11,Humidifier Check,Maintenance,75,Check,Tech_A,0.5,10,55.0,No
+CUST_135,2023-12-20,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_135,2023-12-20,Electrical Safety Inspection,Maintenance,110,Check,Tech_A,1.0,5,110.0,No
+CUST_105,2024-06-15,HVAC Installation,Installation,5200,Financing,Tech_A,16.0,3400,1760.0,Yes
+CUST_105,2024-06-15,Heat Pump Installation,Installation,5500,Credit Card,Tech_A,17.0,3600,1870.0,Yes
+CUST_105,2024-06-15,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_042,2024-04-23,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_R03,2024-07-01,Refrigerant Recharge,Cooling,280,Credit Card,Tech_D,1.5,95,165.0,No
+CUST_134,2024-03-04,Condenser Coil Cleaning,Cooling,180,Check,Tech_B,1.5,30,165.0,No
+CUST_134,2024-03-04,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_098,2024-07-28,Flame Sensor Replacement,Heating,195,Credit Card,Tech_B,1.2,55,132.0,No
+CUST_076,2023-07-26,AC Repair,Cooling,390,Check,Tech_C,2.0,170,220.0,No
+CUST_076,2023-07-26,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_B,1.5,30,165.0,No
+CUST_076,2023-07-26,Igniter Replacement,Heating,220,Cash,Tech_D,1.5,60,165.0,No
+CUST_069,2023-06-01,Filter Replacement,Maintenance,45,Credit Card,Tech_B,0.3,8,33.0,No
+CUST_117,2023-07-08,Air Quality Assessment,Maintenance,140,Check,Tech_B,1.0,35,110.0,No
+CUST_122,2024-04-25,AC Repair,Cooling,390,Check,Tech_A,2.0,170,220.0,No
+CUST_122,2024-04-25,Capacitor Replacement,Cooling,180,Check,Tech_A,1.0,45,110.0,No
+CUST_122,2024-04-25,Condenser Coil Cleaning,Cooling,180,Check,Tech_A,1.5,30,165.0,No
+CUST_031,2024-12-22,Contactor Replacement,Cooling,165,Check,Tech_A,1.0,40,110.0,No
+CUST_031,2024-12-22,System Maintenance,Maintenance,150,Cash,Tech_A,1.5,25,165.0,No
+CUST_031,2024-12-22,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_126,2024-05-31,AC Tune-up,Maintenance,125,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_055,2023-07-13,AC Installation,Installation,3750,Credit Card,Tech_B,11.0,2500,1210.0,Yes
+CUST_055,2023-07-13,Thermostat Installation,Installation,280,Cash,Tech_A,1.2,140,132.0,Yes
+CUST_121,2024-08-10,AC Installation,Installation,3750,Credit Card,Tech_B,11.0,2500,1210.0,Yes
+CUST_121,2024-08-10,Heat Pump Installation,Installation,5500,Credit Card,Tech_A,17.0,3600,1870.0,Yes
+CUST_084,2023-10-18,Refrigerant Level Check,Cooling,95,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_084,2023-10-18,Thermostat Installation,Installation,280,Check,Tech_C,1.2,140,132.0,Yes
+CUST_111,2023-09-24,AC Installation,Installation,3750,Financing,Tech_C,11.0,2500,1210.0,Yes
+CUST_111,2023-09-24,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_R04,2024-03-12,Heating Tune-up,Maintenance,140,Check,Tech_A,1.5,20,165.0,No
+CUST_R04,2024-03-12,Zone Damper Replacement,Heating,380,Check,Tech_B,2.0,180,220.0,No
+CUST_R04,2023-01-02,Drain Pan Replacement,Cooling,220,Credit Card,Tech_A,1.5,80,165.0,No
+CUST_R04,2023-01-02,Heating Repair,Heating,450,Credit Card,Tech_C,2.5,180,275.0,No
+CUST_122,2024-01-17,Igniter Replacement,Heating,220,Check,Tech_B,1.5,60,165.0,No
+CUST_122,2024-01-17,Pressure Switch Replacement,Heating,210,Credit Card,Tech_B,1.5,65,165.0,No
+CUST_R16,2023-06-25,Contactor Replacement,Cooling,165,Credit Card,Tech_D,1.0,40,110.0,No
+CUST_050,2024-03-24,AC Repair,Cooling,390,Credit Card,Tech_A,2.0,170,220.0,No
+CUST_023,2023-12-21,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_023,2023-12-21,Refrigerant Recharge,Cooling,280,Credit Card,Tech_A,1.5,95,165.0,No
+CUST_128,2023-10-08,Igniter Replacement,Heating,220,Credit Card,Tech_B,1.5,60,165.0,No
+CUST_128,2023-10-08,Thermostat Check,Maintenance,50,Check,Tech_B,0.5,5,55.0,No
+CUST_R20,2023-05-10,Supply Vent Balancing,Maintenance,180,Check,Tech_C,1.5,20,165.0,No
+CUST_115,2024-07-03,Duct Cleaning,Maintenance,350,Check,Tech_B,2.5,80,275.0,No
+CUST_115,2024-07-03,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_118,2024-11-10,Heating Repair,Heating,450,Check,Tech_A,2.5,180,275.0,No
+CUST_109,2024-02-24,Boiler Installation,Installation,4800,Credit Card,Tech_D,14.0,3200,1540.0,Yes
+CUST_109,2024-02-24,Pressure Switch Replacement,Heating,210,Cash,Tech_B,1.5,65,165.0,No
+CUST_109,2024-02-24,Thermostat Installation,Installation,280,Cash,Tech_B,1.2,140,132.0,Yes
+CUST_R01,2023-01-01,Furnace Installation,Installation,4100,Financing,Tech_D,12.0,2750,1320.0,Yes
+CUST_051,2024-05-30,Thermostat Check,Maintenance,50,Credit Card,Tech_A,0.5,5,55.0,No
+CUST_046,2023-12-07,Heating Tune-up,Maintenance,140,Check,Tech_B,1.5,20,165.0,No
+CUST_046,2023-12-07,Igniter Replacement,Heating,220,Check,Tech_C,1.5,60,165.0,No
+CUST_R19,2023-04-28,AC Tune-up,Maintenance,125,Credit Card,Tech_C,1.0,15,110.0,No
+CUST_R19,2023-04-28,Mini-Split Installation,Installation,3200,Financing,Tech_B,10.0,2100,1100.0,Yes
+CUST_R19,2023-04-28,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_067,2024-03-02,Blower Motor Repair,Heating,320,Check,Tech_B,2.0,110,220.0,No
+CUST_067,2024-03-02,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_067,2024-03-02,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_R26,2024-07-28,Condenser Coil Cleaning,Cooling,180,Check,Tech_A,1.5,30,165.0,No
+CUST_R26,2024-07-28,Gas Valve Replacement,Heating,350,Credit Card,Tech_B,2.0,145,220.0,No
+CUST_R26,2024-07-28,Mini-Split Installation,Installation,3200,Financing,Tech_A,10.0,2100,1100.0,Yes
+CUST_007,2023-11-11,Heating Tune-up,Maintenance,140,Check,Tech_C,1.5,20,165.0,No
+CUST_007,2023-11-11,Zone Damper Replacement,Heating,380,Credit Card,Tech_B,2.0,180,220.0,No
+CUST_037,2024-10-19,Air Quality Assessment,Maintenance,140,Credit Card,Tech_B,1.0,35,110.0,No
+CUST_037,2024-10-19,Heating Repair,Heating,450,Credit Card,Tech_C,2.5,180,275.0,No
+CUST_087,2024-10-26,Mini-Split Installation,Installation,3200,Financing,Tech_C,10.0,2100,1100.0,Yes
+CUST_087,2024-10-26,Pressure Switch Replacement,Heating,210,Check,Tech_B,1.5,65,165.0,No
+CUST_087,2024-10-26,Thermostat Installation,Installation,280,Cash,Tech_A,1.2,140,132.0,Yes
+CUST_030,2024-08-16,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_009,2024-11-30,Heating Repair,Heating,450,Cash,Tech_A,2.5,180,275.0,No
+CUST_009,2024-11-30,Mini-Split Installation,Installation,3200,Financing,Tech_A,10.0,2100,1100.0,Yes
+CUST_072,2023-02-17,Flame Sensor Replacement,Heating,195,Credit Card,Tech_B,1.2,55,132.0,No
+CUST_072,2023-02-17,Supply Vent Balancing,Maintenance,180,Check,Tech_C,1.5,20,165.0,No
+CUST_065,2023-08-19,UV Light Check,Maintenance,90,Credit Card,Tech_C,0.7,10,77.0,No
+CUST_015,2023-11-15,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_015,2023-11-15,Heating Tune-up,Maintenance,140,Credit Card,Tech_C,1.5,20,165.0,No
+CUST_049,2023-04-13,Flame Sensor Replacement,Heating,195,Credit Card,Tech_A,1.2,55,132.0,No
+CUST_049,2023-04-13,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_061,2024-12-20,Heating Tune-up,Maintenance,140,Credit Card,Tech_C,1.5,20,165.0,No
+CUST_061,2024-12-20,Refrigerant Level Check,Cooling,95,Check,Tech_B,0.7,10,77.0,No
+CUST_061,2024-12-20,Thermostat Installation,Installation,280,Credit Card,Tech_D,1.2,140,132.0,Yes
+CUST_117,2023-10-10,Mini-Split Installation,Installation,3200,Financing,Tech_B,10.0,2100,1100.0,Yes
+CUST_117,2023-10-10,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_R20,2024-07-03,AC Repair,Cooling,390,Check,Tech_C,2.0,170,220.0,No
+CUST_R20,2024-07-03,Filter Replacement,Maintenance,45,Credit Card,Tech_A,0.3,8,33.0,No
+CUST_018,2024-12-27,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_018,2024-12-27,Heating Tune-up,Maintenance,140,Credit Card,Tech_C,1.5,20,165.0,No
+CUST_113,2023-02-16,Compressor Replacement,Cooling,2100,Credit Card,Tech_C,5.0,1350,550.0,No
+CUST_150,2024-08-02,Compressor Replacement,Cooling,2100,Credit Card,Tech_C,5.0,1350,550.0,No
+CUST_150,2024-08-02,Condensate Pump Cleaning,Cooling,140,Credit Card,Tech_A,1.2,25,132.0,No
+CUST_049,2023-05-17,Gas Valve Replacement,Heating,350,Credit Card,Tech_D,2.0,145,220.0,No
+CUST_047,2024-02-16,Drain Pan Replacement,Cooling,220,Credit Card,Tech_C,1.5,80,165.0,No
+CUST_R15,2023-03-25,Boiler Installation,Installation,4800,Financing,Tech_B,14.0,3200,1540.0,Yes
+CUST_R15,2023-03-25,Igniter Replacement,Heating,220,Check,Tech_C,1.5,60,165.0,No
+CUST_R15,2023-03-25,Thermostat Installation,Installation,280,Cash,Tech_A,1.2,140,132.0,Yes
+CUST_R17,2024-02-17,Igniter Replacement,Heating,220,Credit Card,Tech_C,1.5,60,165.0,No
+CUST_R17,2024-02-17,Thermostat Replacement,Heating,185,Check,Tech_C,1.0,85,110.0,No
+CUST_150,2023-01-02,Furnace Installation,Installation,4100,Financing,Tech_D,12.0,2750,1320.0,Yes
+CUST_150,2023-01-02,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_126,2023-01-06,Compressor Replacement,Cooling,2100,Financing,Tech_D,5.0,1350,550.0,No
+CUST_126,2023-01-06,Thermostat Installation,Installation,280,Check,Tech_C,1.2,140,132.0,Yes
+CUST_060,2024-10-11,Gas Valve Replacement,Heating,350,Credit Card,Tech_B,2.0,145,220.0,No
+CUST_060,2024-10-11,Thermostat Calibration,Maintenance,95,Credit Card,Tech_C,0.8,15,88.0,No
+CUST_025,2024-10-10,Drain Line Flush,Cooling,125,Credit Card,Tech_A,1.0,20,110.0,No
+CUST_025,2024-10-10,Duct Sealing,Maintenance,520,Credit Card,Tech_C,3.0,180,330.0,No
+CUST_025,2024-10-10,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_061,2023-10-16,Heat Exchanger Inspection,Heating,185,Check,Tech_B,1.5,25,165.0,No
+CUST_061,2023-10-16,Heating Tune-up,Maintenance,140,Credit Card,Tech_D,1.5,20,165.0,No
+CUST_083,2023-09-09,Breaker Inspection,Maintenance,85,Check,Tech_A,0.7,5,77.0,No
+CUST_083,2023-09-09,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_B,1.5,30,165.0,No
+CUST_083,2023-09-09,Zone System Check,Maintenance,120,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_041,2023-09-21,Igniter Replacement,Heating,220,Check,Tech_B,1.5,60,165.0,No
+CUST_087,2023-01-11,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_033,2024-09-04,Contactor Replacement,Cooling,165,Cash,Tech_B,1.0,40,110.0,No
+CUST_R29,2024-10-01,Refrigerant Recharge,Cooling,280,Credit Card,Tech_B,1.5,95,165.0,No
+CUST_062,2023-04-22,Gas Valve Replacement,Heating,350,Cash,Tech_D,2.0,145,220.0,No
+CUST_R06,2024-02-13,Gas Valve Replacement,Heating,350,Credit Card,Tech_A,2.0,145,220.0,No
+CUST_R06,2024-02-13,Heating Repair,Heating,450,Credit Card,Tech_B,2.5,180,275.0,No
+CUST_R06,2024-02-13,Refrigerant Level Check,Cooling,95,Credit Card,Tech_B,0.7,10,77.0,No
+CUST_R23,2023-02-27,AC Installation,Installation,3750,Credit Card,Tech_A,11.0,2500,1210.0,Yes
+CUST_142,2024-07-29,AC Tune-up,Maintenance,125,Check,Tech_A,1.0,15,110.0,No
+CUST_142,2024-07-29,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_138,2024-02-14,Heating Tune-up,Maintenance,140,Check,Tech_B,1.5,20,165.0,No
+CUST_R05,2023-03-21,Pressure Switch Replacement,Heating,210,Credit Card,Tech_C,1.5,65,165.0,No
+CUST_R25,2023-03-28,Compressor Replacement,Cooling,2100,Credit Card,Tech_C,5.0,1350,550.0,No
+CUST_R25,2023-03-28,Heat Exchanger Inspection,Heating,185,Check,Tech_C,1.5,25,165.0,No
+CUST_R05,2024-11-07,Drain Line Flush,Cooling,125,Cash,Tech_B,1.0,20,110.0,No
+CUST_R05,2024-11-07,Thermostat Calibration,Maintenance,95,Credit Card,Tech_B,0.8,15,88.0,No
+CUST_067,2023-04-02,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_D,1.7,35,187.0,No
+CUST_067,2023-04-02,Refrigerant Level Check,Cooling,95,Credit Card,Tech_C,0.7,10,77.0,No
+CUST_048,2023-05-13,Breaker Inspection,Maintenance,85,Credit Card,Tech_C,0.7,5,77.0,No
+CUST_048,2023-05-13,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_128,2023-07-27,Return Air Inspection,Maintenance,70,Check,Tech_D,0.6,5,66.0,No
+CUST_044,2023-07-28,AC Repair,Cooling,390,Check,Tech_B,2.0,170,220.0,No
+CUST_044,2023-07-28,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_C,1.5,25,165.0,No
+CUST_150,2024-07-30,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_A,1.7,35,187.0,No
+CUST_150,2024-07-30,Heat Pump Installation,Installation,5500,Credit Card,Tech_C,17.0,3600,1870.0,Yes
+CUST_081,2023-08-19,Mini-Split Installation,Installation,3200,Financing,Tech_A,10.0,2100,1100.0,Yes
+CUST_091,2023-02-01,AC Installation,Installation,3750,Credit Card,Tech_A,11.0,2500,1210.0,Yes
+CUST_091,2023-02-01,Gas Valve Replacement,Heating,350,Check,Tech_D,2.0,145,220.0,No
+CUST_091,2023-02-01,Thermostat Installation,Installation,280,Credit Card,Tech_D,1.2,140,132.0,Yes
+CUST_067,2024-09-26,AC Tune-up,Maintenance,125,Credit Card,Tech_D,1.0,15,110.0,No
+CUST_067,2024-09-26,Compressor Replacement,Cooling,2100,Credit Card,Tech_C,5.0,1350,550.0,No
+CUST_116,2024-11-08,Igniter Replacement,Heating,220,Check,Tech_B,1.5,60,165.0,No
+CUST_093,2024-02-18,Heating Repair,Heating,450,Check,Tech_A,2.5,180,275.0,No
+CUST_093,2024-02-18,Pressure Switch Replacement,Heating,210,Check,Tech_C,1.5,65,165.0,No
+CUST_013,2023-01-02,AC Installation,Installation,3750,Financing,Tech_C,11.0,2500,1210.0,Yes
+CUST_013,2023-01-02,Contactor Replacement,Cooling,165,Credit Card,Tech_C,1.0,40,110.0,No
+CUST_011,2023-09-18,Gas Valve Replacement,Heating,350,Credit Card,Tech_B,2.0,145,220.0,No
+CUST_129,2023-05-02,Carbon Monoxide Test,Maintenance,95,Credit Card,Tech_B,0.8,20,88.0,No
+CUST_129,2023-05-02,Control Board Replacement,Heating,580,Credit Card,Tech_A,2.5,320,275.0,No
+CUST_076,2024-01-02,Gas Valve Replacement,Heating,350,Credit Card,Tech_B,2.0,145,220.0,No
+CUST_046,2023-09-25,Mini-Split Installation,Installation,3200,Credit Card,Tech_A,10.0,2100,1100.0,Yes
+CUST_046,2023-09-25,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_122,2024-11-02,Contactor Replacement,Cooling,165,Credit Card,Tech_B,1.0,40,110.0,No
+CUST_122,2024-11-02,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_R07,2024-01-10,Drain Pan Replacement,Cooling,220,Credit Card,Tech_B,1.5,80,165.0,No
+CUST_R07,2024-01-10,Igniter Replacement,Heating,220,Credit Card,Tech_C,1.5,60,165.0,No
+CUST_R11,2023-03-06,Heat Pump Installation,Installation,5500,Financing,Tech_A,17.0,3600,1870.0,Yes
+CUST_R11,2023-03-06,Humidifier Check,Maintenance,75,Credit Card,Tech_A,0.5,10,55.0,No
+CUST_143,2024-05-11,AC Installation,Installation,3750,Credit Card,Tech_D,11.0,2500,1210.0,Yes
+CUST_047,2024-11-24,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_127,2023-06-07,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_127,2023-06-07,Duct Sealing,Maintenance,520,Credit Card,Tech_A,3.0,180,330.0,No
+CUST_123,2024-02-10,Boiler Installation,Installation,4800,Credit Card,Tech_B,14.0,3200,1540.0,Yes
+CUST_123,2024-02-10,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_042,2024-06-14,Duct Cleaning,Maintenance,350,Credit Card,Tech_C,2.5,80,275.0,No
+CUST_R07,2024-08-21,Filter Replacement,Maintenance,45,Check,Tech_B,0.3,8,33.0,No
+CUST_070,2024-12-04,Relay Replacement,Heating,145,Check,Tech_A,1.0,35,110.0,No
+CUST_070,2024-12-04,Return Air Inspection,Maintenance,70,Check,Tech_C,0.6,5,66.0,No
+CUST_035,2023-03-22,Fan Motor Replacement,Heating,520,Check,Tech_D,2.5,280,275.0,No
+CUST_035,2023-03-22,Heating Repair,Heating,450,Credit Card,Tech_B,2.5,180,275.0,No
+CUST_035,2023-03-22,Refrigerant Level Check,Cooling,95,Check,Tech_B,0.7,10,77.0,No
+CUST_074,2023-05-28,Compressor Replacement,Cooling,2100,Check,Tech_C,5.0,1350,550.0,No
+CUST_074,2023-05-28,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_142,2023-10-27,Drain Line Flush,Cooling,125,Check,Tech_B,1.0,20,110.0,No
+CUST_142,2023-10-27,Flame Sensor Replacement,Heating,195,Cash,Tech_A,1.2,55,132.0,No
+CUST_041,2024-10-08,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_007,2024-06-28,AC Installation,Installation,3750,Financing,Tech_C,11.0,2500,1210.0,Yes
+CUST_007,2024-06-28,Refrigerant Level Check,Cooling,95,Check,Tech_B,0.7,10,77.0,No
+CUST_021,2023-10-28,Furnace Installation,Installation,4100,Financing,Tech_D,12.0,2750,1320.0,Yes
+CUST_034,2024-04-20,AC Repair,Cooling,390,Check,Tech_A,2.0,170,220.0,No
+CUST_009,2023-06-30,AC Repair,Cooling,390,Check,Tech_A,2.0,170,220.0,No
+CUST_009,2023-06-30,Filter Replacement,Maintenance,45,Credit Card,Tech_B,0.3,8,33.0,No
+CUST_009,2023-06-30,Flame Sensor Replacement,Heating,195,Cash,Tech_B,1.2,55,132.0,No
+CUST_045,2024-05-27,AC Repair,Cooling,390,Credit Card,Tech_A,2.0,170,220.0,No
+CUST_045,2024-05-27,Fan Motor Replacement,Heating,520,Check,Tech_C,2.5,280,275.0,No
+CUST_045,2024-05-27,Refrigerant Level Check,Cooling,95,Check,Tech_A,0.7,10,77.0,No
+CUST_092,2023-11-30,AC Repair,Cooling,390,Credit Card,Tech_A,2.0,170,220.0,No
+CUST_092,2023-11-30,Air Quality Assessment,Maintenance,140,Check,Tech_A,1.0,35,110.0,No
+CUST_092,2023-11-30,Relay Replacement,Heating,145,Credit Card,Tech_A,1.0,35,110.0,No
+CUST_031,2024-12-09,Carbon Monoxide Test,Maintenance,95,Credit Card,Tech_C,0.8,20,88.0,No
+CUST_111,2023-10-21,Drain Pan Replacement,Cooling,220,Credit Card,Tech_C,1.5,80,165.0,No
+CUST_111,2023-10-21,Supply Vent Balancing,Maintenance,180,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_056,2023-01-02,Refrigerant Recharge,Cooling,280,Cash,Tech_A,1.5,95,165.0,No
+CUST_096,2023-04-23,Refrigerant Level Check,Cooling,95,Credit Card,Tech_B,0.7,10,77.0,No
+CUST_008,2024-10-07,AC Repair,Cooling,390,Credit Card,Tech_C,2.0,170,220.0,No
+CUST_008,2024-10-07,Control Board Replacement,Heating,580,Check,Tech_B,2.5,320,275.0,No
+CUST_008,2024-10-07,Fan Motor Replacement,Heating,520,Credit Card,Tech_A,2.5,280,275.0,No
+CUST_063,2023-06-07,System Maintenance,Maintenance,150,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_100,2023-10-19,Condensate Pump Cleaning,Cooling,140,Credit Card,Tech_A,1.2,25,132.0,No
+CUST_100,2023-10-19,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_B,1.5,25,165.0,No
+CUST_050,2024-02-23,Duct Sealing,Maintenance,520,Credit Card,Tech_C,3.0,180,330.0,No
+CUST_084,2023-06-17,Capacitor Replacement,Cooling,180,Credit Card,Tech_B,1.0,45,110.0,No
+CUST_084,2023-06-17,Control Board Replacement,Heating,580,Financing,Tech_A,2.5,320,275.0,No
+CUST_034,2024-09-07,Zone System Check,Maintenance,120,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_051,2023-03-20,Breaker Inspection,Maintenance,85,Credit Card,Tech_A,0.7,5,77.0,No
+CUST_016,2024-11-18,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_C,1.5,30,165.0,No
+CUST_016,2024-11-18,Control Board Replacement,Heating,580,Check,Tech_B,2.5,320,275.0,No
+CUST_016,2024-11-18,Zone Damper Replacement,Heating,380,Credit Card,Tech_A,2.0,180,220.0,No
+CUST_110,2023-10-17,AC Installation,Installation,3750,Credit Card,Tech_C,11.0,2500,1210.0,Yes
+CUST_110,2023-10-17,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_B,1.5,30,165.0,No
+CUST_110,2023-10-17,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_052,2023-10-07,Flame Sensor Replacement,Heating,195,Cash,Tech_C,1.2,55,132.0,No
+CUST_052,2023-10-07,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_070,2024-01-02,Pressure Switch Replacement,Heating,210,Cash,Tech_B,1.5,65,165.0,No
+CUST_135,2024-01-07,Gas Valve Replacement,Heating,350,Check,Tech_A,2.0,145,220.0,No
+CUST_105,2024-08-14,Capacitor Replacement,Cooling,180,Credit Card,Tech_A,1.0,45,110.0,No
+CUST_093,2023-01-04,Flame Sensor Replacement,Heating,195,Credit Card,Tech_A,1.2,55,132.0,No
+CUST_093,2023-01-04,Heat Exchanger Inspection,Heating,185,Check,Tech_B,1.5,25,165.0,No
+CUST_093,2023-01-04,Refrigerant Level Check,Cooling,95,Check,Tech_B,0.7,10,77.0,No
+CUST_067,2023-07-22,AC Installation,Installation,3750,Credit Card,Tech_C,11.0,2500,1210.0,Yes
+CUST_R03,2023-02-25,Drain Line Flush,Cooling,125,Check,Tech_B,1.0,20,110.0,No
+CUST_R03,2023-02-25,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_R03,2023-02-25,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_061,2024-12-03,Flame Sensor Replacement,Heating,195,Check,Tech_B,1.2,55,132.0,No
+CUST_128,2023-09-17,System Maintenance,Maintenance,150,Cash,Tech_A,1.5,25,165.0,No
+CUST_075,2024-05-27,Thermostat Check,Maintenance,50,Credit Card,Tech_B,0.5,5,55.0,No
+CUST_132,2023-07-27,AC Tune-up,Maintenance,125,Credit Card,Tech_C,1.0,15,110.0,No
+CUST_132,2023-07-27,Duct Inspection,Maintenance,85,Credit Card,Tech_C,0.8,10,88.0,No
+CUST_050,2023-08-18,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_B,1.5,30,165.0,No
+CUST_R01,2023-04-12,Pressure Switch Replacement,Heating,210,Credit Card,Tech_B,1.5,65,165.0,No
+CUST_R01,2023-04-12,System Maintenance,Maintenance,150,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_100,2024-07-28,AC Repair,Cooling,390,Credit Card,Tech_A,2.0,170,220.0,No
+CUST_100,2024-07-28,Thermostat Calibration,Maintenance,95,Cash,Tech_A,0.8,15,88.0,No
+CUST_116,2023-11-04,Duct Inspection,Maintenance,85,Check,Tech_B,0.8,10,88.0,No
+CUST_116,2023-11-04,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_116,2023-11-04,Pressure Switch Replacement,Heating,210,Credit Card,Tech_C,1.5,65,165.0,No
+CUST_118,2023-09-25,Capacitor Replacement,Cooling,180,Cash,Tech_C,1.0,45,110.0,No
+CUST_118,2023-09-25,Refrigerant Level Check,Cooling,95,Credit Card,Tech_D,0.7,10,77.0,No
+CUST_069,2023-07-18,AC Repair,Cooling,390,Credit Card,Tech_D,2.0,170,220.0,No
+CUST_069,2023-07-18,Capacitor Replacement,Cooling,180,Check,Tech_C,1.0,45,110.0,No
+CUST_069,2023-07-18,Refrigerant Recharge,Cooling,280,Credit Card,Tech_A,1.5,95,165.0,No
+CUST_R23,2024-04-30,Electrical Safety Inspection,Maintenance,110,Check,Tech_B,1.0,5,110.0,No
+CUST_R23,2024-04-30,HVAC Installation,Installation,5200,Financing,Tech_A,16.0,3400,1760.0,Yes
+CUST_R23,2024-04-30,Refrigerant Recharge,Cooling,280,Cash,Tech_B,1.5,95,165.0,No
+CUST_055,2024-02-22,Pressure Switch Replacement,Heating,210,Credit Card,Tech_A,1.5,65,165.0,No
+CUST_117,2024-11-14,Capacitor Replacement,Cooling,180,Credit Card,Tech_D,1.0,45,110.0,No
+CUST_117,2024-11-14,Pressure Switch Replacement,Heating,210,Check,Tech_C,1.5,65,165.0,No
+CUST_R12,2023-02-25,Boiler Installation,Installation,4800,Credit Card,Tech_B,14.0,3200,1540.0,Yes
+CUST_R12,2023-02-25,Gas Valve Replacement,Heating,350,Credit Card,Tech_A,2.0,145,220.0,No
+CUST_R12,2023-02-25,Thermostat Installation,Installation,280,Cash,Tech_D,1.2,140,132.0,Yes
+CUST_096,2024-03-15,Gas Valve Replacement,Heating,350,Credit Card,Tech_C,2.0,145,220.0,No
+CUST_096,2024-03-15,Thermostat Installation,Installation,280,Check,Tech_C,1.2,140,132.0,Yes
+CUST_064,2024-01-07,Heating Repair,Heating,450,Cash,Tech_A,2.5,180,275.0,No
+CUST_113,2024-06-12,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_113,2024-06-12,Relay Replacement,Heating,145,Check,Tech_D,1.0,35,110.0,No
+CUST_106,2023-08-07,AC Tune-up,Maintenance,125,Check,Tech_A,1.0,15,110.0,No
+CUST_106,2023-08-07,Air Handler Installation,Installation,2800,Financing,Tech_A,9.0,1900,990.0,Yes
+CUST_106,2023-08-07,Compressor Replacement,Cooling,2100,Credit Card,Tech_C,5.0,1350,550.0,No
+CUST_073,2024-04-01,HVAC Installation,Installation,5200,Financing,Tech_A,16.0,3400,1760.0,Yes
+CUST_122,2023-03-17,Duct Sealing,Maintenance,520,Check,Tech_A,3.0,180,330.0,No
+CUST_122,2023-03-17,Heating Tune-up,Maintenance,140,Credit Card,Tech_B,1.5,20,165.0,No
+CUST_093,2024-08-01,Carbon Monoxide Test,Maintenance,95,Credit Card,Tech_A,0.8,20,88.0,No
+CUST_093,2024-08-01,Zone System Check,Maintenance,120,Credit Card,Tech_C,1.0,15,110.0,No
+CUST_112,2023-03-11,Heating Repair,Heating,450,Credit Card,Tech_D,2.5,180,275.0,No
+CUST_R25,2023-10-09,AC Installation,Installation,3750,Credit Card,Tech_D,11.0,2500,1210.0,Yes
+CUST_R25,2023-10-09,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_A,1.7,35,187.0,No
+CUST_R25,2023-10-09,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_060,2024-06-28,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_093,2024-10-14,HVAC Installation,Installation,5200,Financing,Tech_B,16.0,3400,1760.0,Yes
+CUST_093,2024-10-14,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_015,2023-03-13,Flame Sensor Replacement,Heating,195,Check,Tech_A,1.2,55,132.0,No
+CUST_015,2023-03-13,Return Air Inspection,Maintenance,70,Check,Tech_A,0.6,5,66.0,No
+CUST_132,2024-06-20,Duct Inspection,Maintenance,85,Cash,Tech_C,0.8,10,88.0,No
+CUST_105,2024-07-30,AC Installation,Installation,3750,Credit Card,Tech_A,11.0,2500,1210.0,Yes
+CUST_104,2024-02-27,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_113,2023-04-27,Air Quality Assessment,Maintenance,140,Credit Card,Tech_D,1.0,35,110.0,No
+CUST_113,2023-04-27,Flame Sensor Replacement,Heating,195,Credit Card,Tech_B,1.2,55,132.0,No
+CUST_113,2023-04-27,Refrigerant Level Check,Cooling,95,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_R10,2024-04-14,Blower Motor Repair,Heating,320,Credit Card,Tech_A,2.0,110,220.0,No
+CUST_052,2023-10-24,Compressor Replacement,Cooling,2100,Credit Card,Tech_D,5.0,1350,550.0,No
+CUST_052,2023-10-24,Igniter Replacement,Heating,220,Credit Card,Tech_B,1.5,60,165.0,No
+CUST_052,2023-10-24,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_R21,2023-10-09,Capacitor Replacement,Cooling,180,Check,Tech_C,1.0,45,110.0,No
+CUST_R21,2023-10-09,Gas Valve Replacement,Heating,350,Credit Card,Tech_C,2.0,145,220.0,No
+CUST_R07,2024-10-07,UV Light Check,Maintenance,90,Credit Card,Tech_C,0.7,10,77.0,No
+CUST_R24,2023-11-06,Breaker Inspection,Maintenance,85,Credit Card,Tech_A,0.7,5,77.0,No
+CUST_109,2024-12-17,Igniter Replacement,Heating,220,Credit Card,Tech_C,1.5,60,165.0,No
+CUST_035,2024-12-04,Boiler Installation,Installation,4800,Credit Card,Tech_B,14.0,3200,1540.0,Yes
+CUST_035,2024-12-04,Evaporator Coil Cleaning,Cooling,195,Cash,Tech_B,1.7,35,187.0,No
+CUST_035,2024-12-04,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_070,2024-08-01,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_070,2024-08-01,Refrigerant Level Check,Cooling,95,Check,Tech_C,0.7,10,77.0,No
+CUST_146,2023-08-12,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_146,2023-08-12,Refrigerant Recharge,Cooling,280,Cash,Tech_D,1.5,95,165.0,No
+CUST_146,2023-08-12,System Maintenance,Maintenance,150,Credit Card,Tech_C,1.5,25,165.0,No
+CUST_103,2023-03-18,Filter Replacement,Maintenance,45,Check,Tech_B,0.3,8,33.0,No
+CUST_103,2023-03-18,Flame Sensor Replacement,Heating,195,Credit Card,Tech_A,1.2,55,132.0,No
+CUST_140,2023-01-18,Thermostat Replacement,Heating,185,Check,Tech_A,1.0,85,110.0,No
+CUST_062,2024-09-24,Fan Motor Replacement,Heating,520,Financing,Tech_A,2.5,280,275.0,No
+CUST_116,2023-09-26,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_117,2024-07-19,Capacitor Replacement,Cooling,180,Credit Card,Tech_A,1.0,45,110.0,No
+CUST_080,2023-01-12,Mini-Split Installation,Installation,3200,Credit Card,Tech_A,10.0,2100,1100.0,Yes
+CUST_080,2023-01-12,Pressure Switch Replacement,Heating,210,Credit Card,Tech_A,1.5,65,165.0,No
+CUST_080,2023-01-12,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_029,2024-02-04,Flame Sensor Replacement,Heating,195,Credit Card,Tech_D,1.2,55,132.0,No
+CUST_039,2024-03-22,AC Tune-up,Maintenance,125,Credit Card,Tech_A,1.0,15,110.0,No
+CUST_039,2024-03-22,Condensate Pump Cleaning,Cooling,140,Check,Tech_B,1.2,25,132.0,No
+CUST_039,2024-03-22,Zone Damper Replacement,Heating,380,Credit Card,Tech_A,2.0,180,220.0,No
+CUST_R01,2023-10-30,AC Installation,Installation,3750,Financing,Tech_B,11.0,2500,1210.0,Yes
+CUST_066,2023-07-17,Refrigerant Level Check,Cooling,95,Credit Card,Tech_B,0.7,10,77.0,No
+CUST_023,2024-05-05,Condenser Coil Cleaning,Cooling,180,Check,Tech_C,1.5,30,165.0,No
+CUST_023,2024-05-05,Igniter Replacement,Heating,220,Credit Card,Tech_B,1.5,60,165.0,No
+CUST_017,2024-12-31,Heating Tune-up,Maintenance,140,Check,Tech_C,1.5,20,165.0,No
+CUST_124,2023-01-30,Heating Repair,Heating,450,Credit Card,Tech_D,2.5,180,275.0,No
+CUST_124,2023-01-30,System Maintenance,Maintenance,150,Credit Card,Tech_C,1.5,25,165.0,No
+CUST_120,2024-12-07,Furnace Installation,Installation,4100,Financing,Tech_C,12.0,2750,1320.0,Yes
+CUST_120,2024-12-07,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_123,2024-10-31,Evaporator Coil Cleaning,Cooling,195,Check,Tech_B,1.7,35,187.0,No
+CUST_123,2024-10-31,Thermostat Check,Maintenance,50,Credit Card,Tech_D,0.5,5,55.0,No
+CUST_123,2024-10-31,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_R06,2024-06-23,Mini-Split Installation,Installation,3200,Financing,Tech_D,10.0,2100,1100.0,Yes
+CUST_R06,2024-06-23,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_091,2023-04-11,Zone Damper Replacement,Heating,380,Cash,Tech_C,2.0,180,220.0,No
+CUST_110,2023-03-12,AC Tune-up,Maintenance,125,Check,Tech_D,1.0,15,110.0,No
+CUST_110,2023-03-12,Boiler Installation,Installation,4800,Credit Card,Tech_D,14.0,3200,1540.0,Yes
+CUST_110,2023-03-12,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_145,2023-10-23,Heat Exchanger Inspection,Heating,185,Check,Tech_A,1.5,25,165.0,No
+CUST_042,2023-01-20,Evaporator Coil Cleaning,Cooling,195,Check,Tech_A,1.7,35,187.0,No
+CUST_042,2023-01-20,Flame Sensor Replacement,Heating,195,Check,Tech_B,1.2,55,132.0,No
+CUST_051,2023-08-28,Capacitor Replacement,Cooling,180,Credit Card,Tech_C,1.0,45,110.0,No
+CUST_051,2023-08-28,Mini-Split Installation,Installation,3200,Credit Card,Tech_B,10.0,2100,1100.0,Yes
+CUST_078,2024-10-23,Duct Cleaning,Maintenance,350,Credit Card,Tech_D,2.5,80,275.0,No
+CUST_078,2024-10-23,Pressure Switch Replacement,Heating,210,Credit Card,Tech_B,1.5,65,165.0,No
+CUST_037,2024-08-05,Compressor Replacement,Cooling,2100,Credit Card,Tech_B,5.0,1350,550.0,No
+CUST_037,2024-08-05,Mini-Split Installation,Installation,3200,Financing,Tech_B,10.0,2100,1100.0,Yes
+CUST_057,2023-08-13,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_057,2023-08-13,Refrigerant Recharge,Cooling,280,Credit Card,Tech_A,1.5,95,165.0,No
+CUST_R11,2024-11-09,Capacitor Replacement,Cooling,180,Check,Tech_B,1.0,45,110.0,No
+CUST_R11,2024-11-09,Duct Sealing,Maintenance,520,Credit Card,Tech_C,3.0,180,330.0,No
+CUST_R11,2024-11-09,Heating Repair,Heating,450,Credit Card,Tech_D,2.5,180,275.0,No
+CUST_086,2023-10-18,Air Quality Assessment,Maintenance,140,Check,Tech_B,1.0,35,110.0,No
+CUST_086,2023-10-18,Pressure Switch Replacement,Heating,210,Check,Tech_B,1.5,65,165.0,No
+CUST_086,2023-10-18,Relay Replacement,Heating,145,Credit Card,Tech_B,1.0,35,110.0,No
+CUST_131,2024-11-21,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_B,1.7,35,187.0,No
+CUST_131,2024-11-21,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_R05,2023-11-15,Heating Tune-up,Maintenance,140,Cash,Tech_A,1.5,20,165.0,No
+CUST_110,2024-03-14,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_B,1.5,25,165.0,No
+CUST_131,2024-01-29,Gas Valve Replacement,Heating,350,Cash,Tech_A,2.0,145,220.0,No
+CUST_131,2024-01-29,Igniter Replacement,Heating,220,Credit Card,Tech_B,1.5,60,165.0,No
+CUST_131,2024-01-29,Thermostat Check,Maintenance,50,Cash,Tech_A,0.5,5,55.0,No
+CUST_R01,2024-04-23,Evaporator Coil Cleaning,Cooling,195,Check,Tech_A,1.7,35,187.0,No
+CUST_R01,2024-04-23,Heating Repair,Heating,450,Credit Card,Tech_B,2.5,180,275.0,No
+CUST_R01,2024-04-23,Relay Replacement,Heating,145,Credit Card,Tech_A,1.0,35,110.0,No
+CUST_095,2023-12-20,Capacitor Replacement,Cooling,180,Check,Tech_A,1.0,45,110.0,No
+CUST_095,2023-12-20,Supply Vent Balancing,Maintenance,180,Credit Card,Tech_D,1.5,20,165.0,No
+CUST_067,2024-10-15,AC Tune-up,Maintenance,125,Cash,Tech_A,1.0,15,110.0,No
+CUST_067,2024-10-15,Fan Motor Replacement,Heating,520,Credit Card,Tech_A,2.5,280,275.0,No
+CUST_R27,2024-07-01,Refrigerant Level Check,Cooling,95,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_R27,2024-07-01,UV Light Check,Maintenance,90,Check,Tech_A,0.7,10,77.0,No
+CUST_R18,2024-06-22,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_B,1.7,35,187.0,No
+CUST_131,2024-07-30,Refrigerant Recharge,Cooling,280,Cash,Tech_A,1.5,95,165.0,No
+CUST_015,2023-04-11,Relay Replacement,Heating,145,Check,Tech_A,1.0,35,110.0,No
+CUST_041,2024-07-07,AC Repair,Cooling,390,Credit Card,Tech_B,2.0,170,220.0,No
+CUST_041,2024-07-07,Capacitor Replacement,Cooling,180,Check,Tech_A,1.0,45,110.0,No
+CUST_R27,2023-03-25,Heating Tune-up,Maintenance,140,Credit Card,Tech_B,1.5,20,165.0,No
+CUST_R27,2023-03-25,Igniter Replacement,Heating,220,Check,Tech_B,1.5,60,165.0,No
+CUST_124,2024-03-30,Boiler Installation,Installation,4800,Financing,Tech_A,14.0,3200,1540.0,Yes
+CUST_124,2024-03-30,Heating Repair,Heating,450,Check,Tech_B,2.5,180,275.0,No
+CUST_124,2024-03-30,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_008,2023-10-06,Refrigerant Recharge,Cooling,280,Credit Card,Tech_B,1.5,95,165.0,No
+CUST_008,2023-10-06,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_R06,2024-09-19,Boiler Installation,Installation,4800,Credit Card,Tech_B,14.0,3200,1540.0,Yes
+CUST_R06,2024-09-19,Heat Pump Installation,Installation,5500,Financing,Tech_B,17.0,3600,1870.0,Yes
+CUST_091,2023-09-11,AC Installation,Installation,3750,Financing,Tech_C,11.0,2500,1210.0,Yes
+CUST_091,2023-09-11,Air Quality Assessment,Maintenance,140,Credit Card,Tech_B,1.0,35,110.0,No
+CUST_039,2024-11-21,Duct Cleaning,Maintenance,350,Credit Card,Tech_B,2.5,80,275.0,No
+CUST_039,2024-11-21,UV Light Check,Maintenance,90,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_140,2024-05-28,Blower Motor Cleaning,Heating,120,Credit Card,Tech_C,1.0,15,110.0,No
+CUST_140,2024-05-28,Contactor Replacement,Cooling,165,Credit Card,Tech_A,1.0,40,110.0,No
+CUST_094,2023-08-03,AC Installation,Installation,3750,Financing,Tech_B,11.0,2500,1210.0,Yes
+CUST_040,2023-06-01,AC Repair,Cooling,390,Credit Card,Tech_C,2.0,170,220.0,No
+CUST_134,2023-01-27,Heating Repair,Heating,450,Check,Tech_A,2.5,180,275.0,No
+CUST_134,2023-01-27,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_134,2023-01-27,Mini-Split Installation,Installation,3200,Credit Card,Tech_C,10.0,2100,1100.0,Yes
+CUST_068,2023-12-27,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_R06,2024-07-21,AC Repair,Cooling,390,Credit Card,Tech_B,2.0,170,220.0,No
+CUST_R06,2024-07-21,Compressor Replacement,Cooling,2100,Credit Card,Tech_B,5.0,1350,550.0,No
+CUST_R06,2024-07-21,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_A,1.5,30,165.0,No
+CUST_064,2024-02-29,Contactor Replacement,Cooling,165,Check,Tech_C,1.0,40,110.0,No
+CUST_064,2024-02-29,Flame Sensor Replacement,Heating,195,Credit Card,Tech_C,1.2,55,132.0,No
+CUST_064,2024-02-29,Pressure Switch Replacement,Heating,210,Credit Card,Tech_C,1.5,65,165.0,No
+CUST_061,2024-05-30,Blower Motor Repair,Heating,320,Credit Card,Tech_A,2.0,110,220.0,No
+CUST_010,2024-08-02,Capacitor Replacement,Cooling,180,Credit Card,Tech_B,1.0,45,110.0,No
+CUST_119,2024-08-03,Refrigerant Recharge,Cooling,280,Credit Card,Tech_C,1.5,95,165.0,No
+CUST_035,2023-03-22,Capacitor Replacement,Cooling,180,Credit Card,Tech_B,1.0,45,110.0,No
+CUST_035,2023-03-22,Heat Exchanger Inspection,Heating,185,Check,Tech_B,1.5,25,165.0,No
+CUST_035,2023-03-22,Igniter Replacement,Heating,220,Credit Card,Tech_C,1.5,60,165.0,No
+CUST_R08,2024-02-28,Fan Motor Replacement,Heating,520,Financing,Tech_D,2.5,280,275.0,No
+CUST_R08,2024-02-28,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_R04,2024-03-19,Duct Sealing,Maintenance,520,Financing,Tech_B,3.0,180,330.0,No
+CUST_R04,2024-03-19,Flame Sensor Replacement,Heating,195,Credit Card,Tech_B,1.2,55,132.0,No
+CUST_R04,2024-03-19,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_R26,2024-03-16,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_R26,2024-03-16,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_R26,2024-03-16,Thermostat Replacement,Heating,185,Credit Card,Tech_A,1.0,85,110.0,No
+CUST_R21,2024-05-15,Refrigerant Recharge,Cooling,280,Check,Tech_B,1.5,95,165.0,No
+CUST_097,2023-06-01,AC Installation,Installation,3750,Financing,Tech_B,11.0,2500,1210.0,Yes
+CUST_136,2024-04-24,Air Handler Installation,Installation,2800,Credit Card,Tech_C,9.0,1900,990.0,Yes
+CUST_136,2024-04-24,Thermostat Installation,Installation,280,Credit Card,Tech_D,1.2,140,132.0,Yes
+CUST_143,2023-03-19,Flame Sensor Replacement,Heating,195,Check,Tech_D,1.2,55,132.0,No
+CUST_143,2023-03-19,Furnace Installation,Installation,4100,Credit Card,Tech_C,12.0,2750,1320.0,Yes
+CUST_143,2023-03-19,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_R11,2024-12-24,Gas Valve Replacement,Heating,350,Credit Card,Tech_C,2.0,145,220.0,No
+CUST_R11,2024-12-24,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_R11,2024-12-24,Igniter Replacement,Heating,220,Check,Tech_A,1.5,60,165.0,No
+CUST_R24,2024-10-02,Igniter Replacement,Heating,220,Check,Tech_B,1.5,60,165.0,No
+CUST_R24,2024-10-02,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_004,2024-11-08,Thermostat Calibration,Maintenance,95,Credit Card,Tech_D,0.8,15,88.0,No
+CUST_150,2024-10-10,AC Repair,Cooling,390,Credit Card,Tech_A,2.0,170,220.0,No
+CUST_150,2024-10-10,Electrical Safety Inspection,Maintenance,110,Credit Card,Tech_B,1.0,5,110.0,No
+CUST_114,2023-08-30,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_B,1.7,35,187.0,No
+CUST_114,2023-08-30,Zone System Check,Maintenance,120,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_069,2024-10-11,Heating Repair,Heating,450,Check,Tech_A,2.5,180,275.0,No
+CUST_038,2024-05-27,Breaker Inspection,Maintenance,85,Check,Tech_A,0.7,5,77.0,No
+CUST_038,2024-05-27,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_131,2024-02-04,Heating Tune-up,Maintenance,140,Credit Card,Tech_C,1.5,20,165.0,No
+CUST_131,2024-02-04,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_029,2023-02-20,HVAC Installation,Installation,5200,Financing,Tech_C,16.0,3400,1760.0,Yes
+CUST_113,2023-10-17,Boiler Installation,Installation,4800,Financing,Tech_A,14.0,3200,1540.0,Yes
+CUST_113,2023-10-17,Thermostat Installation,Installation,280,Check,Tech_C,1.2,140,132.0,Yes
+CUST_057,2023-05-25,Contactor Replacement,Cooling,165,Credit Card,Tech_B,1.0,40,110.0,No
+CUST_057,2023-05-25,Mini-Split Installation,Installation,3200,Financing,Tech_B,10.0,2100,1100.0,Yes
+CUST_119,2024-01-21,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_C,1.5,25,165.0,No
+CUST_119,2024-01-21,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_099,2023-09-28,Pressure Switch Replacement,Heating,210,Cash,Tech_D,1.5,65,165.0,No
+CUST_099,2023-09-28,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_110,2023-04-27,Pressure Switch Replacement,Heating,210,Credit Card,Tech_C,1.5,65,165.0,No
+CUST_R05,2024-06-13,Capacitor Replacement,Cooling,180,Credit Card,Tech_A,1.0,45,110.0,No
+CUST_R05,2024-06-13,Refrigerant Level Check,Cooling,95,Credit Card,Tech_B,0.7,10,77.0,No
+CUST_138,2024-12-16,Air Quality Assessment,Maintenance,140,Credit Card,Tech_A,1.0,35,110.0,No
+CUST_100,2023-12-17,Flame Sensor Replacement,Heating,195,Credit Card,Tech_A,1.2,55,132.0,No
+CUST_100,2023-12-17,Gas Valve Replacement,Heating,350,Cash,Tech_B,2.0,145,220.0,No
+CUST_044,2024-03-30,Blower Motor Cleaning,Heating,120,Check,Tech_A,1.0,15,110.0,No
+CUST_057,2024-03-09,Heating Tune-up,Maintenance,140,Check,Tech_C,1.5,20,165.0,No
+CUST_057,2024-03-09,Igniter Replacement,Heating,220,Credit Card,Tech_B,1.5,60,165.0,No
+CUST_089,2023-09-20,Condenser Coil Cleaning,Cooling,180,Cash,Tech_B,1.5,30,165.0,No
+CUST_089,2023-09-20,Heating Repair,Heating,450,Credit Card,Tech_B,2.5,180,275.0,No
+CUST_002,2023-10-19,Filter Replacement,Maintenance,45,Credit Card,Tech_B,0.3,8,33.0,No
+CUST_082,2024-05-01,AC Installation,Installation,3750,Credit Card,Tech_B,11.0,2500,1210.0,Yes
+CUST_082,2024-05-01,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_B,1.5,30,165.0,No
+CUST_061,2024-11-06,AC Installation,Installation,3750,Financing,Tech_C,11.0,2500,1210.0,Yes
+CUST_061,2024-11-06,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_096,2023-02-21,Boiler Installation,Installation,4800,Financing,Tech_C,14.0,3200,1540.0,Yes
+CUST_122,2024-03-22,Relay Replacement,Heating,145,Credit Card,Tech_A,1.0,35,110.0,No
+CUST_015,2023-10-26,Heating Repair,Heating,450,Credit Card,Tech_B,2.5,180,275.0,No
+CUST_015,2023-10-26,Refrigerant Level Check,Cooling,95,Check,Tech_B,0.7,10,77.0,No
+CUST_026,2023-10-28,Igniter Replacement,Heating,220,Check,Tech_B,1.5,60,165.0,No
+CUST_017,2023-05-29,Contactor Replacement,Cooling,165,Credit Card,Tech_D,1.0,40,110.0,No
+CUST_005,2024-08-15,AC Installation,Installation,3750,Credit Card,Tech_B,11.0,2500,1210.0,Yes
+CUST_005,2024-08-15,Refrigerant Recharge,Cooling,280,Credit Card,Tech_C,1.5,95,165.0,No
+CUST_047,2023-11-23,Boiler Installation,Installation,4800,Credit Card,Tech_A,14.0,3200,1540.0,Yes
+CUST_136,2023-08-12,AC Repair,Cooling,390,Check,Tech_C,2.0,170,220.0,No
+CUST_033,2024-04-02,Heat Pump Installation,Installation,5500,Financing,Tech_C,17.0,3600,1870.0,Yes
+CUST_020,2024-11-18,Igniter Replacement,Heating,220,Cash,Tech_B,1.5,60,165.0,No
+CUST_020,2024-11-18,UV Light Check,Maintenance,90,Check,Tech_B,0.7,10,77.0,No
+CUST_056,2023-07-19,AC Tune-up,Maintenance,125,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_016,2024-09-29,Capacitor Replacement,Cooling,180,Credit Card,Tech_B,1.0,45,110.0,No
+CUST_016,2024-09-29,Refrigerant Level Check,Cooling,95,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_020,2023-06-29,Compressor Replacement,Cooling,2100,Check,Tech_A,5.0,1350,550.0,No
+CUST_020,2023-06-29,Thermostat Installation,Installation,280,Check,Tech_C,1.2,140,132.0,Yes
+CUST_018,2024-07-07,Capacitor Replacement,Cooling,180,Check,Tech_A,1.0,45,110.0,No
+CUST_018,2024-07-07,Control Board Replacement,Heating,580,Credit Card,Tech_A,2.5,320,275.0,No
+CUST_031,2023-10-10,Boiler Installation,Installation,4800,Financing,Tech_A,14.0,3200,1540.0,Yes
+CUST_R16,2024-07-01,AC Tune-up,Maintenance,125,Cash,Tech_D,1.0,15,110.0,No
+CUST_R16,2024-07-01,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_D,1.5,30,165.0,No
+CUST_R16,2024-07-01,Return Air Inspection,Maintenance,70,Credit Card,Tech_B,0.6,5,66.0,No
+CUST_028,2023-11-17,Thermostat Replacement,Heating,185,Credit Card,Tech_D,1.0,85,110.0,No
+CUST_050,2023-06-09,Flame Sensor Replacement,Heating,195,Credit Card,Tech_A,1.2,55,132.0,No
+CUST_050,2023-06-09,Relay Replacement,Heating,145,Credit Card,Tech_C,1.0,35,110.0,No
+CUST_050,2023-06-09,System Maintenance,Maintenance,150,Check,Tech_B,1.5,25,165.0,No
+CUST_078,2024-04-09,AC Tune-up,Maintenance,125,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_078,2024-04-09,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_150,2024-05-04,Heating Repair,Heating,450,Credit Card,Tech_A,2.5,180,275.0,No
+CUST_150,2024-05-04,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_060,2024-01-13,Furnace Installation,Installation,4100,Financing,Tech_A,12.0,2750,1320.0,Yes
+CUST_122,2023-02-22,Condensate Pump Cleaning,Cooling,140,Credit Card,Tech_A,1.2,25,132.0,No
+CUST_122,2023-02-22,Furnace Installation,Installation,4100,Credit Card,Tech_A,12.0,2750,1320.0,Yes
+CUST_147,2024-11-20,Heat Pump Installation,Installation,5500,Credit Card,Tech_D,17.0,3600,1870.0,Yes
+CUST_147,2024-11-20,Igniter Replacement,Heating,220,Credit Card,Tech_C,1.5,60,165.0,No
+CUST_148,2023-07-24,Compressor Replacement,Cooling,2100,Check,Tech_B,5.0,1350,550.0,No
+CUST_148,2023-07-24,Fan Motor Replacement,Heating,520,Check,Tech_C,2.5,280,275.0,No
+CUST_R30,2023-04-03,Gas Valve Replacement,Heating,350,Cash,Tech_A,2.0,145,220.0,No
+CUST_073,2023-10-11,Flame Sensor Replacement,Heating,195,Cash,Tech_B,1.2,55,132.0,No
+CUST_073,2023-10-11,Gas Valve Replacement,Heating,350,Credit Card,Tech_A,2.0,145,220.0,No
+CUST_073,2023-10-11,Refrigerant Recharge,Cooling,280,Credit Card,Tech_C,1.5,95,165.0,No
+CUST_064,2023-11-02,Furnace Installation,Installation,4100,Financing,Tech_B,12.0,2750,1320.0,Yes
+CUST_064,2023-11-02,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_120,2023-08-17,HVAC Installation,Installation,5200,Financing,Tech_A,16.0,3400,1760.0,Yes
+CUST_120,2023-08-17,Thermostat Installation,Installation,280,Credit Card,Tech_A,1.2,140,132.0,Yes
+CUST_035,2023-05-28,AC Installation,Installation,3750,Financing,Tech_B,11.0,2500,1210.0,Yes
+CUST_035,2023-05-28,Thermostat Installation,Installation,280,Check,Tech_B,1.2,140,132.0,Yes
+CUST_038,2023-03-19,AC Repair,Cooling,390,Credit Card,Tech_A,2.0,170,220.0,No
+CUST_038,2023-03-19,Thermostat Replacement,Heating,185,Credit Card,Tech_C,1.0,85,110.0,No
+CUST_R06,2024-10-19,Thermostat Calibration,Maintenance,95,Check,Tech_B,0.8,15,88.0,No
+CUST_050,2024-12-26,Capacitor Replacement,Cooling,180,Credit Card,Tech_B,1.0,45,110.0,No
+CUST_050,2024-12-26,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_A,1.5,25,165.0,No
+CUST_050,2024-12-26,Igniter Replacement,Heating,220,Check,Tech_C,1.5,60,165.0,No
+CUST_015,2024-08-26,Heat Pump Installation,Installation,5500,Financing,Tech_B,17.0,3600,1870.0,Yes
+CUST_115,2023-01-23,Flame Sensor Replacement,Heating,195,Credit Card,Tech_C,1.2,55,132.0,No
+CUST_115,2023-01-23,Heating Repair,Heating,450,Check,Tech_C,2.5,180,275.0,No
+CUST_115,2023-01-23,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_034,2024-06-24,Capacitor Replacement,Cooling,180,Credit Card,Tech_A,1.0,45,110.0,No
+CUST_034,2024-06-24,Thermostat Installation,Installation,280,Credit Card,Tech_C,1.2,140,132.0,Yes
+CUST_145,2023-10-10,AC Repair,Cooling,390,Check,Tech_C,2.0,170,220.0,No
+CUST_145,2023-10-10,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_006,2023-04-07,Drain Line Flush,Cooling,125,Check,Tech_B,1.0,20,110.0,No
+CUST_006,2023-04-07,Flame Sensor Replacement,Heating,195,Check,Tech_C,1.2,55,132.0,No
+CUST_146,2023-05-01,Capacitor Replacement,Cooling,180,Credit Card,Tech_A,1.0,45,110.0,No
+CUST_146,2023-05-01,Fan Motor Replacement,Heating,520,Check,Tech_C,2.5,280,275.0,No
+CUST_146,2023-05-01,System Maintenance,Maintenance,150,Credit Card,Tech_B,1.5,25,165.0,No
+CUST_R17,2023-11-01,Boiler Installation,Installation,4800,Financing,Tech_B,14.0,3200,1540.0,Yes
+CUST_R17,2023-11-01,Thermostat Installation,Installation,280,Cash,Tech_B,1.2,140,132.0,Yes
+CUST_058,2024-03-04,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_B,1.5,30,165.0,No
+CUST_058,2024-03-04,Heating Repair,Heating,450,Credit Card,Tech_B,2.5,180,275.0,No
+CUST_058,2024-03-04,Igniter Replacement,Heating,220,Credit Card,Tech_C,1.5,60,165.0,No
+CUST_R06,2024-09-25,Thermostat Replacement,Heating,185,Check,Tech_C,1.0,85,110.0,No
+CUST_088,2023-06-15,Drain Pan Replacement,Cooling,220,Cash,Tech_A,1.5,80,165.0,No
+CUST_088,2023-06-15,Filter Replacement,Maintenance,45,Credit Card,Tech_A,0.3,8,33.0,No
+CUST_088,2023-06-15,Refrigerant Recharge,Cooling,280,Credit Card,Tech_D,1.5,95,165.0,No
+CUST_082,2024-02-28,AC Installation,Installation,3750,Financing,Tech_A,11.0,2500,1210.0,Yes
+CUST_112,2024-01-15,Flame Sensor Replacement,Heating,195,Credit Card,Tech_A,1.2,55,132.0,No
+CUST_112,2024-01-15,Heating Tune-up,Maintenance,140,Credit Card,Tech_A,1.5,20,165.0,No
+CUST_088,2023-11-03,Carbon Monoxide Test,Maintenance,95,Credit Card,Tech_B,0.8,20,88.0,No
+CUST_146,2023-03-23,Duct Sealing,Maintenance,520,Check,Tech_B,3.0,180,330.0,No
+CUST_146,2023-03-23,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_C,1.5,25,165.0,No
+CUST_001,2024-11-27,Refrigerant Recharge,Cooling,280,Check,Tech_C,1.5,95,165.0,No
+CUST_001,2024-11-27,Return Air Inspection,Maintenance,70,Credit Card,Tech_B,0.6,5,66.0,No
+CUST_059,2023-01-09,Condenser Coil Cleaning,Cooling,180,Credit Card,Tech_C,1.5,30,165.0,No
+CUST_059,2023-01-09,Contactor Replacement,Cooling,165,Credit Card,Tech_B,1.0,40,110.0,No
+CUST_059,2023-01-09,Pressure Switch Replacement,Heating,210,Check,Tech_A,1.5,65,165.0,No
+CUST_132,2023-09-10,Blower Motor Cleaning,Heating,120,Credit Card,Tech_B,1.0,15,110.0,No
+CUST_132,2023-09-10,Blower Motor Repair,Heating,320,Check,Tech_B,2.0,110,220.0,No
+CUST_132,2023-09-10,Compressor Replacement,Cooling,2100,Credit Card,Tech_A,5.0,1350,550.0,No
+CUST_090,2023-01-18,Gas Valve Replacement,Heating,350,Credit Card,Tech_C,2.0,145,220.0,No
+CUST_090,2023-01-18,Heat Exchanger Inspection,Heating,185,Credit Card,Tech_B,1.5,25,165.0,No
+CUST_045,2023-08-10,Compressor Replacement,Cooling,2100,Check,Tech_B,5.0,1350,550.0,No
+CUST_045,2023-08-10,Heat Pump Installation,Installation,5500,Credit Card,Tech_C,17.0,3600,1870.0,Yes
+CUST_066,2023-06-09,AC Installation,Installation,3750,Credit Card,Tech_A,11.0,2500,1210.0,Yes
+CUST_066,2023-06-09,Mini-Split Installation,Installation,3200,Financing,Tech_D,10.0,2100,1100.0,Yes
+CUST_066,2023-06-09,Refrigerant Level Check,Cooling,95,Credit Card,Tech_A,0.7,10,77.0,No
+CUST_037,2023-06-04,Evaporator Coil Cleaning,Cooling,195,Credit Card,Tech_A,1.7,35,187.0,No
+CUST_037,2023-06-04,Mini-Split Installation,Installation,3200,Credit Card,Tech_A,10.0,2100,1100.0,Yes
+CUST_128,2023-05-30,Furnace Installation,Installation,4100,Credit Card,Tech_A,12.0,2750,1320.0,Yes
+CUST_128,2023-05-30,HVAC Installation,Installation,5200,Financing,Tech_A,16.0,3400,1760.0,Yes
+CUST_147,2023-10-14,Air Quality Assessment,Maintenance,140,Check,Tech_A,1.0,35,110.0,No
+CUST_014,2024-06-25,AC Tune-up,Maintenance,125,Credit Card,Tech_C,1.0,15,110.0,No
+CUST_092,2023-07-23,Condenser Coil Cleaning,Cooling,180,Check,Tech_D,1.5,30,165.0,No
+CUST_092,2023-07-23,Contactor Replacement,Cooling,165,Check,Tech_C,1.0,40,110.0,No
+CUST_092,2023-07-23,Evaporator Coil Cleaning,Cooling,195,Check,Tech_B,1.7,35,187.0,No
+CUST_013,2023-10-08,Thermostat Calibration,Maintenance,95,Credit Card,Tech_A,0.8,15,88.0,No
+CUST_013,2023-10-08,Thermostat Replacement,Heating,185,Credit Card,Tech_D,1.0,85,110.0,No
+CUST_R24,2024-06-10,Evaporator Coil Cleaning,Cooling,195,Cash,Tech_C,1.7,35,187.0,No
+CUST_R24,2024-06-10,Gas Valve Replacement,Heating,350,Check,Tech_B,2.0,145,220.0,No
+CUST_017,2023-06-03,AC Repair,Cooling,390,Check,Tech_B,2.0,170,220.0,No
+CUST_017,2023-06-03,Return Air Inspection,Maintenance,70,Credit Card,Tech_A,0.6,5,66.0,No
+CUST_019,2024-04-01,Blower Motor Repair,Heating,320,Check,Tech_A,2.0,110,220.0,No
+CUST_019,2024-04-01,Boiler Installation,Installation,4800,Financing,Tech_B,14.0,3200,1540.0,Yes
+CUST_019,2024-04-01,Thermostat Installation,Installation,280,Check,Tech_A,1.2,140,132.0,Yes
+CUST_139,2023-09-09,Furnace Installation,Installation,4100,Financing,Tech_A,12.0,2750,1320.0,Yes
+CUST_R13,2023-08-31,Evaporator Coil Cleaning,Cooling,195,Cash,Tech_A,1.7,35,187.0,No
+CUST_R13,2023-08-31,Humidifier Check,Maintenance,75,Cash,Tech_C,0.5,10,55.0,No
+CUST_R13,2023-08-31,System Maintenance,Maintenance,150,Credit Card,Tech_B,1.5,25,165.0,No
+CUST_078,2023-04-21,Pressure Switch Replacement,Heating,210,Check,Tech_D,1.5,65,165.0,No
+CUST_099,2023-11-09,Capacitor Replacement,Cooling,180,Check,Tech_A,1.0,45,110.0,No
+CUST_099,2023-11-09,Thermostat Calibration,Maintenance,95,Credit Card,Tech_B,0.8,15,88.0,No
+CUST_R18,2024-01-12,Furnace Installation,Installation,4100,Credit Card,Tech_B,12.0,2750,1320.0,Yes
+CUST_083,2023-10-06,Gas Valve Replacement,Heating,350,Credit Card,Tech_C,2.0,145,220.0,No
+CUST_083,2023-10-06,HVAC Installation,Installation,5200,Financing,Tech_D,16.0,3400,1760.0,Yes
+CUST_083,2023-10-06,Igniter Replacement,Heating,220,Credit Card,Tech_A,1.5,60,165.0,No
+CUST_R03,2023-02-02,Pressure Switch Replacement,Heating,210,Cash,Tech_A,1.5,65,165.0,No
+CUST_R03,2023-02-02,Thermostat Installation,Installation,280,Credit Card,Tech_B,1.2,140,132.0,Yes
+CUST_109,2024-08-31,Duct Sealing,Maintenance,520,Credit Card,Tech_A,3.0,180,330.0,No
+CUST_017,2023-10-22,Flame Sensor Replacement,Heating,195,Cash,Tech_B,1.2,55,132.0,No
+CUST_017,2023-10-22,Return Air Inspection,Maintenance,70,Cash,Tech_C,0.6,5,66.0,No
+CUST_017,2023-10-22,Supply Vent Balancing,Maintenance,180,Cash,Tech_A,1.5,20,165.0,No
