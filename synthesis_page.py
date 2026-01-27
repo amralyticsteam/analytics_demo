@@ -18,9 +18,9 @@ def show_synthesis_page():
             color: white;
             margin-bottom: 2rem;
         ">
-            <h1 style="margin: 0; font-size: 2.5rem;">The Complete Picture: </h1>
+            <h1 style="margin: 0; font-size: 2.5rem;">The Complete Picture</h1>
             <p style="font-size: 1.3rem; margin-top: 0.5rem; opacity: 0.95;">
-                Combining all 9 analyses into actionable, prioritized insights for Ron
+                Combining all 10 analyses into actionable, prioritized insights for Ron
             </p>
         </div>
     """, unsafe_allow_html=True)
@@ -29,77 +29,102 @@ def show_synthesis_page():
     
     st.markdown("""
     We've completed a comprehensive analysis of Ron's HVAC business. Each analysis built on the previous one 
-    to create a complete picture, a view of Ron's business that would be incomplete if we only
-    looked at a single area of the business. Here's how they connect:
+    to create a complete picture. Here's how they connect:
     """)
     
-    # Connection flow
-    st.markdown("""
-    1. Business Overview: Revealed declining revenue & aging customer base
-                
-    ↓
-       
-    2. Customer Segmentation: Identified distinct groups with different needs
-                             
-    ↓
-       
-    3. Sentiment Analysis:  Showed what each segment values most
-                             
-    ↓
-       
-    4. Marketing Analysis: Found which channels reach which segments
-                             
-    ↓
-       
-    5. Churn Prediction: Identified at-risk customers in each segment
-                             
-    ↓
-       
-    6. Pricing Analysis: Showed some services underpriced, others overpriced
-                             
-    ↓
-       
-    7. Demand Forecasting: Predicted busy periods requiring staff/inventory
-                             
-    ↓
-       
-    8. Seasonality Analysis: Separated normal variation from real problems
-                             
-    ↓
-       
-    9. Complete Action Plan
-    """)
+    # Connection flow - Updated for 10 analyses
+    col1, col2 = st.columns([1, 3])
+    
+    with col2:
+        st.markdown("""
+        **1. Business Overview** *(ServiceTitan)*
+        - Revealed revenue trends & transaction patterns across 1,778 services
+        
+        ↓
+        
+        **2. Customer Segmentation** *(ServiceTitan)*
+        - Identified 5 distinct customer groups using RFM analysis
+        
+        ↓
+        
+        **3. Sentiment Analysis** *(Google Reviews)*
+        - Showed what customers value: quality work, but response time needs improvement
+        
+        ↓
+        
+        **4. Topic Extraction** *(Google Reviews)*
+        - Found key themes: "professional service", "fair pricing", "quick response"
+        
+        ↓
+        
+        **5. Marketing Impact** *(Google Analytics, Meta Ads)*
+        - Identified which channels (Google vs Social) deliver best ROI
+        
+        ↓
+        
+        **6. Churn Prediction** *(ServiceTitan)*
+        - Flagged at-risk customers before they leave (178 customers analyzed)
+        
+        ↓
+        
+        **7. Pricing Analysis** *(QuickBooks, ServiceTitan)*
+        - Found popular services with zero/negative margins - pricing crisis
+        
+        ↓
+        
+        **8. Demand Forecasting** *(ServiceTitan + Weather API)*
+        - Predicted busy periods using weather patterns & marketing spend
+        
+        ↓
+        
+        **9. Seasonality Analysis** *(QuickBooks)*
+        - Separated normal seasonal variation from real business problems
+        
+        ↓
+        
+        **10. Market Basket Analysis** *(ServiceTitan)*
+        - Discovered which services are bundled together - upsell opportunities
+        
+        ↓
+        
+        **→ Complete Action Plan**
+        """)
     
     st.divider()
     
-    # Key findings
+    # Key findings - Updated with real data from analyses
     st.markdown("### Top 5 Key Findings")
     
     findings = [
         {
-            "finding": "Ron's customer base IS aging and shrinking",
-            "evidence": "Avg age 62, revenue down 8% in 6 months",
-            "action": "Need to attract younger homeowners"
+            "finding": "Popular services are losing money",
+            "evidence": "Thermostat Installation (most popular) has only 2.9% margin. Multiple services have negative margins.",
+            "source": "Pricing Analysis - QuickBooks & ServiceTitan",
+            "action": "Urgent repricing needed on top 10 services"
         },
         {
-            "finding": "High-value installation jobs are rare",
-            "evidence": "Only 45/year at $2,667 each",
-            "action": "Marketing should emphasize installation capabilities"
+            "finding": "Customer segments have very different needs",
+            "evidence": "VIP Installation Clients spend $4,500 avg vs Maintenance Contracts at $800 avg. 5 distinct segments identified.",
+            "source": "Customer Segmentation - ServiceTitan",
+            "action": "Tailor marketing & service packages by segment"
         },
         {
-            "finding": "Customers love Ron's reliability but complain about response times",
-            "evidence": "92% positive on quality, but 'slow response' in 23% of negative reviews",
-            "action": "Hire assistant or optimize scheduling"
+            "finding": "High churn risk among recent customers",
+            "evidence": "Customers who haven't been serviced in 365+ days are flagged as high-risk churn",
+            "source": "Churn Prediction - ServiceTitan",
+            "action": "Launch win-back campaign immediately"
         },
         {
-            "finding": "Instagram isn't working for Ron's customer demographics",
-            "evidence": "Avg customer is 62, Instagram users skew younger",
-            "action": "Shift budget to Google Local Services Ads"
+            "finding": "Service bundling opportunities untapped",
+            "evidence": "Strong associations found: Thermostat Installation frequently paired with other services (1.5-2.5x lift)",
+            "source": "Basket Analysis - ServiceTitan invoices",
+            "action": "Create service packages with 10-15% bundle discount"
         },
         {
-            "finding": "Pricing hasn't kept up with costs",
-            "evidence": "Last price update 18 months ago, margins shrinking",
-            "action": "Implement 12% price increase on maintenance"
+            "finding": "Marketing channels have wildly different ROI",
+            "evidence": "Some channels deliver 3-5x ROAS, others lose money on every campaign",
+            "source": "Marketing Impact - Google Analytics & Meta Ads",
+            "action": "Reallocate budget to high-performing channels"
         }
     ]
     
@@ -116,8 +141,11 @@ def show_synthesis_page():
                 <div style="font-size: 1.2rem; font-weight: 600; color: #667eea; margin-bottom: 0.5rem;">
                     {i}. {item['finding']}
                 </div>
-                <div style="color: #6b7280; margin-bottom: 0.5rem;">
+                <div style="color: #6b7280; margin-bottom: 0.3rem;">
                     <strong>Evidence:</strong> {item['evidence']}
+                </div>
+                <div style="color: #9ca3af; font-size: 0.9rem; margin-bottom: 0.5rem;">
+                    📊 {item['source']}
                 </div>
                 <div style="color: #059669; font-weight: 500;">
                     <strong>→ Action:</strong> {item['action']}
@@ -140,43 +168,48 @@ def show_synthesis_page():
     actions = [
         {
             "priority": "🔴 Priority 1",
-            "action": "Raise prices on maintenance services by 12%",
+            "action": "Fix pricing on negative-margin services immediately",
             "timeline": "This week",
             "impact": "High",
             "effort": "Low",
-            "expected_result": "+$9,600 annual revenue with minimal customer loss"
+            "expected_result": "Raise prices 15-20% on problematic services. Stop losing money on popular jobs. +$12K annual profit.",
+            "source": "Pricing Analysis"
         },
         {
             "priority": "🟠 Priority 2", 
-            "action": "Win-back campaign for at-risk 'Golden Years' segment (250 customers)",
+            "action": "Win-back campaign for high-risk churn customers",
             "timeline": "Next 2 weeks",
             "impact": "High",
             "effort": "Medium",
-            "expected_result": "Prevent $15K in lost annual revenue"
+            "expected_result": "Email/call customers who haven't serviced in 365+ days. 'We Miss You' seasonal tune-up offer. Prevent $15-20K revenue loss.",
+            "source": "Churn Prediction"
         },
         {
             "priority": "🟡 Priority 3",
-            "action": "Shift marketing: Stop Instagram, increase Google Local Services Ads budget",
+            "action": "Create service bundles based on association rules",
             "timeline": "Next month",
-            "impact": "Medium",
-            "effort": "Low",
-            "expected_result": "Better ROI on marketing spend, 20% more qualified leads"
+            "impact": "High",
+            "effort": "Medium",
+            "expected_result": "Package frequently co-purchased services at 10% discount. Increase average ticket 15-25%.",
+            "source": "Basket Analysis"
         },
         {
             "priority": "🟢 Priority 4",
-            "action": "Hire part-time scheduler/assistant for peak season (May-August)",
-            "timeline": "Before May 1",
-            "impact": "Medium",
-            "effort": "High",
-            "expected_result": "Handle 15% more jobs, improve response time complaints"
+            "action": "Reallocate marketing spend to high-ROI channels",
+            "timeline": "Next 30 days",
+            "impact": "Medium-High",
+            "effort": "Low",
+            "expected_result": "Cut spending on low-ROAS channels, double down on Google Local Services. 3-5x better ROI.",
+            "source": "Marketing Impact"
         },
         {
             "priority": "🔵 Priority 5",
-            "action": "Create installation-focused landing page + Google Ads campaign",
-            "timeline": "Next 60 days",
-            "impact": "High",
-            "effort": "Medium",
-            "expected_result": "Double installation jobs from 45 to 90/year"
+            "action": "Staff up for predicted busy season (demand forecast)",
+            "timeline": "Before peak season",
+            "impact": "Medium",
+            "effort": "High",
+            "expected_result": "Hire temp help for high-demand periods. Handle 20% more calls without quality drop.",
+            "source": "Demand Forecasting"
         }
     ]
     
@@ -191,6 +224,47 @@ def show_synthesis_page():
                 st.metric("Effort", item['effort'])
             
             st.success(f"**Expected Result:** {item['expected_result']}")
+            st.info(f"**Data Source:** {item['source']}")
+    
+    st.divider()
+    
+    # Data sources used
+    st.markdown("### Data Sources - Everything From Ron's Existing Systems")
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("""
+        **🔧 ServiceTitan** (Field Service Software)
+        - 1,778 service transactions
+        - 178 unique customers
+        - 1,000 invoices with service bundles
+        - Customer history & churn indicators
+        - Daily call volume (95 days)
+        
+        **💰 QuickBooks** (Accounting)
+        - 50 services with pricing & COGS
+        - 32 months of revenue data
+        - Parts costs & margins
+        """)
+    
+    with col2:
+        st.markdown("""
+        **🌐 Google Reviews** (Customer Feedback)
+        - 40 customer reviews
+        - Ratings, sentiment, topics
+        
+        **📊 Marketing Platforms**
+        - Google Analytics
+        - Meta Ads Manager
+        - 37 campaigns across 6 channels
+        
+        **🌤️ Weather API** (NOAA)
+        - Temperature, precipitation data
+        - Correlated with demand patterns
+        """)
+    
+    st.info("**No extra work for Ron** - we pulled data from systems he already uses daily!")
     
     st.divider()
     
@@ -208,64 +282,102 @@ def show_synthesis_page():
     col1, col2 = st.columns(2)
     
     with col1:
-        st.markdown("#### What Ron Gets")
+        st.markdown("#### ✅ What Ron Gets")
         st.markdown("""
         1. **Executive Summary** (1 page)
            - Top 5 findings
            - 7-day, 30-day, 90-day action plan
            
         2. **Interactive Dashboard**
-           - Explore any analysis deeper, build data literacy over time
+           - Explore any analysis deeper
            - Filter by customer segment
-           - See updated data daily
+           - See updated data monthly
            
         3. **Monthly Check-ins** (30 min)
            - Review progress on action items
            - Adjust priorities as needed
+           - No surprises, collaborative approach
         """)
     
     with col2:
-        st.markdown("#### What Ron Does NOT Get")
+        st.markdown("#### ❌ What Ron Does NOT Get")
         st.markdown("""
         - Raw data dumps
         - Technical jargon
         - 50-page PowerPoint
         - Generic industry benchmarks
         - Analyses without clear next steps
+        - Synthetic/fake data
         
         *Our goal: Take things off Ron's plate, not add more work.*
         """)
     
     st.divider()
     
-    # Projected impact
+    # Projected impact - Updated with realistic numbers
     st.markdown("### Projected Impact (Year 1)")
     
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
     
     with col1:
         st.metric(
             "Revenue Increase",
-            "+$47K",
-            "+8.2%",
-            help="From pricing, installations, and retention"
+            "+$35-45K",
+            "+6-8%",
+            help="From pricing fixes, bundles, and retention"
         )
     
     with col2:
         st.metric(
-            "Time Saved",
-            "6 hrs/week",
-            delta="→ $15K value",
-            help="Better scheduling + marketing efficiency"
+            "Margin Improvement",
+            "+5-8%",
+            "Fix negative margins",
+            help="Stop losing money on popular services"
         )
     
     with col3:
         st.metric(
             "Customer Retention",
-            "+12%",
-            "35 customers",
-            help="From targeted win-back campaigns"
+            "+15-20%",
+            "Win-back campaigns",
+            help="Prevent churn in at-risk segments"
         )
+    
+    with col4:
+        st.metric(
+            "Marketing ROI",
+            "3-5x",
+            "Better targeting",
+            help="Reallocate to high-performing channels"
+        )
+    
+    st.divider()
+    
+    # The Amralytics difference
+    st.markdown("### The Amralytics Approach")
+    
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        st.markdown("""
+        **📊 Comprehensive**
+        
+        Not just one analysis - we look at the entire business ecosystem and how everything connects.
+        """)
+    
+    with col2:
+        st.markdown("""
+        **🎯 Actionable**
+        
+        Every insight comes with specific next steps, timelines, and expected results. No theory, just action.
+        """)
+    
+    with col3:
+        st.markdown("""
+        **🤝 Collaborative**
+        
+        We work with Ron's existing systems and workflows. No disruption, just improvement.
+        """)
     
     st.divider()
     
@@ -278,10 +390,11 @@ def show_synthesis_page():
     2. Pick Priority 1-3 to start (don't do everything at once!)
     3. Schedule 30-min implementation call
     
-    **For Our Team:**
+    **For Amralytics:**
     1. Set up automated monthly reporting
     2. Create templates for customer outreach
     3. Monitor results and adjust recommendations
+    4. Monthly check-ins to track progress
     """)
     
     st.divider()
@@ -291,5 +404,6 @@ def show_synthesis_page():
     with col2:
         if st.button("← Back to Introduction", use_container_width=True, type="secondary"):
             st.session_state.show_intro = True
+            st.session_state.current_analysis_index = 0
+            st.session_state.current_step = 0
             st.rerun()
-        
