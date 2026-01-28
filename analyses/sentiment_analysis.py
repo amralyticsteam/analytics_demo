@@ -45,23 +45,23 @@ class SentimentAnalysis(BaseAnalysis):
         return """Ron has over 100 reviews across Yelp and Google Business. He knows customers generally 
         like him (high retention!), but he doesn't have time to read every review systematically.
         
-**What drives positive vs negative sentiment?** Is it the time of day they leave reviews? Day of week? 
-Response time? Star rating correlation? Understanding these patterns helps Ron know what really matters."""
+        **What drives positive vs negative sentiment?** Is it the time of day they leave reviews? Day of week? 
+        Response time? Star rating correlation? Understanding these patterns helps Ron know what really matters."""
     
     # Backward compatibility
     @property
     def business_question(self) -> str:
         return self.rons_challenge
     
-    @property
+        @property
     def data_collected(self) -> list:
         return [
-            'Customer review ratings (1-5 stars) - **Google Reviews**',
-            'Review text content - **Google Reviews**',
-            'Review dates and response times - **Google Reviews, CRM**',
-            'Customer type classification - **Google Reviews, CRM**',
-            'Service quality mentions - **Google Reviews**'
-    ]
+            '**Source**: Google Reviews API',
+            '**Dataset**: google_reviews.json',
+            '**Records**: 40 customer reviews',
+            '**Contains**: Rating (1-5 stars), review text, date, response time, customer type, service quality metrics'
+        ]
+    
     
     # Backward compatibility
     @property
@@ -70,7 +70,21 @@ Response time? Star rating correlation? Understanding these patterns helps Ron k
     
     @property
     def methodology(self) -> str:
-        return 'VADER sentiment analysis on review text (-1 to +1 scale), correlation analysis between sentiment and multiple variables (stars, response time, day of week, time of day, customer status), monthly trend analysis'
+        return """We use the following analytical techniques to understand what customers really think about Ron's service:
+
+**VADER Sentiment Analysis** - An AI model trained specifically on social media and reviews that reads review text and scores it from -1 (very negative) to +1 (very positive). It catches nuances like "not bad" (slightly positive) vs "not good" (negative).
+
+**Correlation analysis** - Identifies which factors (response time, service type, day of week) have the strongest relationship with positive or negative sentiment.
+
+**Temporal analysis** - Tracks sentiment over time to see if recent changes (new hire, price increase) are affecting customer satisfaction.
+
+**Why this works for Ron:** Reviews tell the truth - customers say things in reviews they might not say to Ron's face. This analysis finds patterns in what makes customers happy or frustrated.
+
+**If results aren't strong enough, we could:**
+- Use more sophisticated NLP models (BERT, GPT) for better sentiment detection
+- Add aspect-based sentiment (separate scores for pricing, quality, responsiveness)
+- Incorporate competitor review analysis to benchmark Ron's performance
+- Connect sentiment to churn prediction (negative reviews = early warning signal)"""
     
     # Backward compatibility
     @property
@@ -391,10 +405,10 @@ Response time? Star rating correlation? Understanding these patterns helps Ron k
         fig.update_yaxes(title_text="Avg Sentiment (-1 to +1)", row=1, col=2, range=[-1, 1])
         
         fig.update_xaxes(title_text="Response Time", row=2, col=1, tickangle=-45)
-        fig.update_yaxes(title_text="Avg Sentiment", row=2, col=1)
+        fig.update_yaxes(title_text="Avg Sentiment", row=2, col=1, rangemode="tozero")
         
         fig.update_xaxes(title_text="Day of Week", row=2, col=2)
-        fig.update_yaxes(title_text="Avg Sentiment", row=2, col=2)
+        fig.update_yaxes(title_text="Avg Sentiment", row=2, col=2, rangemode="tozero")
         
         return fig
     

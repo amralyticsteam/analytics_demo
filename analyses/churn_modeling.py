@@ -4,7 +4,6 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, roc_auc_score
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from .base_analysis import BaseAnalysis
@@ -31,13 +30,10 @@ class ChurnModeling(BaseAnalysis):
     
     @property
     def rons_challenge(self) -> str:
-        return """Ron notices some customers stop calling after one service. Others have been loyal 
-        for years but suddenly disappear. 
-        
-**Can we predict which customers are about to leave?** Understanding churn risk helps Ron 
-proactively reach out to at-risk customers before they're gone forever."""
+        return """Ron's client base is aging. Customers who have been loyal for years are suddenly moving house. He knows he can convince some clients to give referrals, or move their service to a new house. He has limited time with which to assess which clients to reach out to. He needs to identify which clients are at risk of leaving so he can prioritize his calls.
+
+Can we predict which customers are about to leave? Understanding **churn risk** helps Ron proactively reach out to at-risk customers before they're gone forever."""
     
-    # Backward compatibility
     @property
     def business_question(self) -> str:
         return self.rons_challenge
@@ -51,18 +47,30 @@ proactively reach out to at-risk customers before they're gone forever."""
             'Customer lifetime value - **QuickBooks, ServiceTitan**',
             'Customer demographics (age, home age) - **ServiceTitan CRM**',
             'Churn indicators - **ServiceTitan**'
-    ]
+        ]
     
-    # Backward compatibility
     @property
     def data_inputs(self) -> list:
         return self.data_collected
     
     @property
     def methodology(self) -> str:
-        return 'Logistic regression for churn prediction, feature importance analysis, risk segmentation based on probability scores, cohort survival analysis'
-    
-    # Backward compatibility
+        return """We use the following analytical techniques to provide Ron with key indicators of at-risk clients, as well as a list of people to call:
+
+**Logistic regression** - Think of it like a credit score, but for customer churn risk. It looks at patterns in customer behavior (visit frequency, time since last service, satisfaction) and assigns each customer a risk score from 0-100%.
+
+**Feature importance analysis** shows us which factors matter most - is it recency? Frequency? Complaints? This tells Ron where to focus his retention efforts.
+
+**Risk segmentation** groups customers into Low/Medium/High risk categories, making it easy to create targeted campaigns (high-risk gets a phone call, medium-risk gets an email offer).
+
+**Why this works for Ron:** It tells us not just WHO might leave, but WHY (which factors drive churn), so Ron can take targeted action.
+
+**If results aren't strong enough, we could:**
+- Try more sophisticated models (Random Forest, XGBoost) that catch complex patterns
+- Add more data sources (sentiment from reviews, seasonal patterns, competitor activity)
+- Use survival analysis to predict when customers will churn, not just if they will
+- Build customer lifetime value models to prioritize which at-risk customers are worth saving"""
+
     @property
     def technical_output(self) -> str:
         return self.methodology
@@ -71,129 +79,8 @@ proactively reach out to at-risk customers before they're gone forever."""
     def data_file(self) -> str:
         return 'churn_modeling.csv'
     
-    def engineer_features(self, df):
-        """Create churn prediction features from customer data."""
-        
-        # Parse dates if needed
-        if 'last_service_date' in df.columns:
-            df['last_service_date'] = pd.to_datetime(df['last_service_date'])
-            reference_date = df['last_service_date'].max()
-            df['days_since_last_service'] = (reference_date - df['last_service_date']).dt.days
-        
-        # Calculate engagement score
-        df['engagement_score'] = 0
-        if 'frequency' in df.columns:
-            df['engagement_score'] += df['frequency'] * 20
-        if 'days_since_last_service' in df.columns:
-            df['engagement_score'] -= df['days_since_last_service'] / 10
-        if 'total_spend' in df.columns:
-            df['engagement_score'] += df['total_spend'] / 100
-        
-        # Risk flags
-        df['high_risk_recency'] = (df.get('days_since_last_service', 0) > 365).astype(int)
-        df['low_frequency'] = (df.get('frequency', 0) <= 1).astype(int)
-        df['low_spend'] = (df.get('total_spend', 0) < df.get('total_spend', pd.Series([0])).median()).astype(int)
-        
-        return df
-    
-    def train_model(self, df):
-        """Train logistic regression model for churn prediction."""
-        
-        # Select features for modeling
-        feature_cols = [
-            'days_since_last_service', 'frequency', 'total_spend',
-            'avg_ticket', 'customer_age', 'home_age',
-            'engagement_score'
-        ]
-        
-        # Filter to available columns
-        available_features = [col for col in feature_cols if col in df.columns]
-        
-        if 'churned' not in df.columns:
-            # If no churn label, estimate based on recency
-            df['churned'] = (df.get('days_since_last_service', 0) > 540).astype(int)
-        
-        X = df[available_features].fillna(0)
-        y = df['churned']
-        
-        # Scale features
-        scaler = StandardScaler()
-        X_scaled = scaler.fit_transform(X)
-        
-        # Train model
-        model = LogisticRegression(random_state=42, max_iter=1000)
-        model.fit(X_scaled, y)
-        
-        # Get predictions
-        df['churn_probability'] = model.predict_proba(X_scaled)[:, 1]
-        df['churn_prediction'] = model.predict(X_scaled)
-        
-        # Feature importance
-        feature_importance = pd.DataFrame({
-            'feature': available_features,
-            'importance': np.abs(model.coef_[0])
-        }).sort_values('importance', ascending=False)
-        
-        return model, feature_importance, df
-    
-    def segment_by_risk(self, df):
-        """Segment customers by churn risk level."""
-        
-        if 'churn_probability' not in df.columns:
-            return None
-        
-        # Create risk segments
-        df['risk_segment'] = pd.cut(
-            df['churn_probability'],
-            bins=[0, 0.3, 0.6, 1.0],
-            labels=['Low Risk', 'Medium Risk', 'High Risk']
-        )
-        
-        # Summarize by segment
-        risk_summary = df.groupby('risk_segment', observed=True).agg({
-            'customer_id': 'count',
-            'total_spend': 'mean',
-            'days_since_last_service': 'mean',
-            'frequency': 'mean'
-        }).reset_index()
-        
-        risk_summary.columns = [
-            'risk_segment', 'customer_count', 'avg_spend',
-            'avg_days_since', 'avg_frequency'
-        ]
-        
-        return risk_summary
-    
-    def load_data(self, filepath: str = None) -> pd.DataFrame:
-        """Load and process churn modeling data."""
-        if filepath is None:
-            filepath = f'data/{self.data_file}'
-        
-        print(f"Loading churn data from: {filepath}")
-        
-        try:
-            df = pd.read_csv(filepath)
-            print(f"Loaded {len(df)} customer records")
-        except FileNotFoundError:
-            print(f"⚠️ {filepath} not found - creating synthetic churn data")
-            # Create minimal synthetic data for demo
-            df = self._create_synthetic_churn_data()
-        
-        # Engineer features
-        df = self.engineer_features(df)
-        
-        # Train model
-        self.model, self.feature_importance, df = self.train_model(df)
-        
-        # Segment by risk
-        self.risk_segments = self.segment_by_risk(df)
-        
-        self.churn_df = df
-        self.data = df
-        return df
-    
     def _create_synthetic_churn_data(self):
-        """Create synthetic churn data if file doesn't exist."""
+        """Create synthetic churn data."""
         np.random.seed(42)
         n_customers = 100
         
@@ -207,7 +94,7 @@ proactively reach out to at-risk customers before they're gone forever."""
             'home_age': np.random.randint(5, 50, n_customers),
         })
         
-        # Create churn labels based on recency and frequency
+        # Create realistic churn labels
         df['churned'] = (
             ((df['days_since_last_service'] > 540) & (df['frequency'] <= 2)) |
             (df['days_since_last_service'] > 720)
@@ -215,17 +102,150 @@ proactively reach out to at-risk customers before they're gone forever."""
         
         return df
     
+    def load_data(self, filepath: str = None) -> pd.DataFrame:
+        """Load and process churn modeling data."""
+        if filepath is None:
+            filepath = f'data/{self.data_file}'
+        
+        try:
+            df = pd.read_csv(filepath)
+            print(f"✓ Loaded {len(df)} customers from {filepath}")
+            print(f"✓ Columns: {list(df.columns)}")
+        except FileNotFoundError:
+            print(f"⚠️  File not found: {filepath}")
+            print(f"⚠️  Creating synthetic data instead")
+            df = self._create_synthetic_churn_data()
+            print(f"✓ Created {len(df)} synthetic customers")
+        
+        # Map column names to standard names if needed
+        column_mapping = {
+            'months_since_last_service': 'months_since_last',
+            'total_lifetime_value': 'total_spend',
+            'service_count': 'frequency',
+            'avg_ticket_size': 'avg_ticket',
+            'churn_label': 'churned'
+        }
+        
+        # Rename columns
+        df = df.rename(columns=column_mapping)
+        
+        # Convert months to days if needed
+        if 'months_since_last' in df.columns:
+            df['days_since_last_service'] = df['months_since_last'] * 30
+        
+        # Ensure churned column exists
+        if 'churned' not in df.columns:
+            # Create churn labels based on recency and frequency
+            if 'days_since_last_service' in df.columns and 'frequency' in df.columns:
+                df['churned'] = (
+                    ((df['days_since_last_service'] > 540) & (df['frequency'] <= 2)) |
+                    (df['days_since_last_service'] > 720)
+                ).astype(int)
+                print(f"✓ Created churn labels: {df['churned'].sum()} churned, {(~df['churned'].astype(bool)).sum()} active")
+            else:
+                np.random.seed(42)
+                df['churned'] = (np.random.random(len(df)) < 0.25).astype(int)
+                print(f"✓ Created synthetic churn labels")
+        else:
+            print(f"✓ Using existing churn labels: {df['churned'].sum()} churned, {(~df['churned'].astype(bool)).sum()} active")
+        
+        # Ensure we have both classes
+        if df['churned'].sum() == 0:
+            print(f"⚠️  No churned customers - adding some synthetic churn")
+            np.random.seed(42)
+            df.loc[df.sample(frac=0.2, random_state=42).index, 'churned'] = 1
+            print(f"✓ Now have {df['churned'].sum()} churned customers")
+        
+        # Train model with available features
+        feature_cols = [
+            'days_since_last_service', 'frequency', 'total_spend', 'avg_ticket',
+            'customer_age', 'home_age', 'complaint_count', 'response_satisfaction',
+            'price_sensitivity'
+        ]
+        
+        # Handle categorical variables BEFORE selecting features
+        if 'price_sensitivity' in df.columns and df['price_sensitivity'].dtype == 'object':
+            # Convert Low/Medium/High to numeric
+            price_map = {'Low': 1, 'Medium': 2, 'High': 3}
+            df['price_sensitivity'] = df['price_sensitivity'].map(price_map).fillna(2)
+            print(f"✓ Converted price_sensitivity to numeric")
+        
+        available_features = [col for col in feature_cols if col in df.columns]
+        print(f"✓ Available features: {available_features}")
+        
+        if len(available_features) >= 2:
+            # Select features and handle each column appropriately
+            X = df[available_features].copy()
+            
+            # Fill missing values column by column
+            for col in X.columns:
+                if X[col].dtype in ['int64', 'float64']:
+                    X[col] = X[col].fillna(X[col].median())
+                else:
+                    # For any remaining non-numeric columns, convert or fill with mode
+                    print(f"⚠️  Column {col} is {X[col].dtype} - converting to numeric")
+                    X[col] = pd.to_numeric(X[col], errors='coerce').fillna(0)
+            
+            y = df['churned']
+            
+            scaler = StandardScaler()
+            X_scaled = scaler.fit_transform(X)
+            
+            self.model = LogisticRegression(random_state=42, max_iter=1000)
+            self.model.fit(X_scaled, y)
+            print(f"✓ Model trained successfully")
+            
+            df['churn_probability'] = self.model.predict_proba(X_scaled)[:, 1]
+            df['churn_prediction'] = self.model.predict(X_scaled)
+            print(f"✓ Predictions created: avg probability = {df['churn_probability'].mean():.2f}")
+            print(f"  Probability range: {df['churn_probability'].min():.2f} - {df['churn_probability'].max():.2f}")
+            
+            self.feature_importance = pd.DataFrame({
+                'feature': available_features,
+                'importance': np.abs(self.model.coef_[0])
+            }).sort_values('importance', ascending=False)
+            print(f"✓ Feature importance calculated")
+            print(f"  Top feature: {self.feature_importance.iloc[0]['feature']}")
+            
+            # Create risk segments
+            df['risk_segment'] = pd.cut(
+                df['churn_probability'],
+                bins=[0, 0.3, 0.6, 1.0],
+                labels=['Low Risk', 'Medium Risk', 'High Risk']
+            )
+            print(f"✓ Risk segments created")
+            
+            # Risk summary
+            self.risk_segments = df.groupby('risk_segment', observed=True).size().reset_index(name='customer_count')
+            print(f"✓ Risk summary:")
+            for _, row in self.risk_segments.iterrows():
+                print(f"    {row['risk_segment']}: {row['customer_count']} customers")
+        else:
+            print(f"❌ Not enough features for modeling (need 2+, have {len(available_features)})")
+        
+        self.churn_df = df
+        self.data = df
+        print(f"✓ Data loading complete - {len(df)} customers ready")
+        return df
+    
     def create_visualization(self):
-        """Create 4-panel churn modeling dashboard."""
+        """Create 4-panel churn dashboard."""
         if self.churn_df is None:
+            print("⚠️  churn_df is None, loading data...")
             self.load_data()
+        
+        # Debug: Check what we have
+        print(f"DEBUG: churn_df shape: {self.churn_df.shape if self.churn_df is not None else 'None'}")
+        print(f"DEBUG: churn_df columns: {list(self.churn_df.columns) if self.churn_df is not None else 'None'}")
+        print(f"DEBUG: feature_importance: {self.feature_importance is not None}")
+        print(f"DEBUG: risk_segments: {self.risk_segments is not None}")
         
         fig = make_subplots(
             rows=2, cols=2,
             subplot_titles=(
                 'Churn Risk Distribution',
                 'Feature Importance for Churn',
-                'Risk Segments: Customer Count & Value',
+                'Risk Segments: Customer Count',
                 'Days Since Last Service vs Churn Probability'
             ),
             specs=[
@@ -236,256 +256,141 @@ proactively reach out to at-risk customers before they're gone forever."""
             horizontal_spacing=0.15
         )
         
-        # Color mapping
-        risk_colors = {
-            'Low Risk': '#00b894',
-            'Medium Risk': '#ffa07a',
-            'High Risk': '#ff6b6b'
-        }
+        risk_colors = {'Low Risk': '#00b894', 'Medium Risk': '#ffa07a', 'High Risk': '#ff6b6b'}
         
         # 1. Churn Probability Distribution
-        fig.add_trace(
-            go.Histogram(
+        if self.churn_df is not None and 'churn_probability' in self.churn_df.columns:
+            print("✓ Adding histogram")
+            fig.add_trace(go.Histogram(
                 x=self.churn_df['churn_probability'],
                 nbinsx=30,
                 marker_color='#008f8c',
                 name='Customers',
                 showlegend=False,
                 hovertemplate='Churn Probability: %{x:.2f}<br>Count: %{y}<extra></extra>'
-            ),
-            row=1, col=1
-        )
-        
-        # Add risk threshold lines
-        fig.add_vline(x=0.3, line_dash="dash", line_color="#00b894", opacity=0.5, row=1, col=1)
-        fig.add_vline(x=0.6, line_dash="dash", line_color="#ff6b6b", opacity=0.5, row=1, col=1)
+            ), row=1, col=1)
+            fig.add_vline(x=0.3, line_dash="dash", line_color="#00b894", opacity=0.5, row=1, col=1)
+            fig.add_vline(x=0.6, line_dash="dash", line_color="#ff6b6b", opacity=0.5, row=1, col=1)
+        else:
+            print("❌ Cannot add histogram - missing churn_probability")
         
         # 2. Feature Importance
-        if self.feature_importance is not None:
-            top_features = self.feature_importance.head(8)
-            
-            fig.add_trace(
-                go.Bar(
-                    y=top_features['feature'],
-                    x=top_features['importance'],
-                    orientation='h',
-                    marker_color='#23606e',
-                    text=[f"{v:.2f}" for v in top_features['importance']],
-                    textposition='outside',
-                    showlegend=False,
-                    hovertemplate='<b>%{y}</b><br>Importance: %{x:.3f}<extra></extra>'
-                ),
-                row=1, col=2
-            )
+        if self.feature_importance is not None and len(self.feature_importance) > 0:
+            print(f"✓ Adding feature importance ({len(self.feature_importance)} features)")
+            fig.add_trace(go.Bar(
+                y=self.feature_importance['feature'],
+                x=self.feature_importance['importance'],
+                orientation='h',
+                marker_color='#23606e',
+                text=[f"{v:.2f}" for v in self.feature_importance['importance']],
+                textposition='outside',
+                showlegend=False,
+                hovertemplate='<b>%{y}</b><br>Importance: %{x:.3f}<extra></extra>'
+            ), row=1, col=2)
+        else:
+            print("❌ Cannot add feature importance - missing data")
         
         # 3. Risk Segments
-        if self.risk_segments is not None:
-            # Customer count bars
-            colors_segment = [risk_colors.get(str(seg), '#023535') for seg in self.risk_segments['risk_segment']]
-            
-            fig.add_trace(
-                go.Bar(
-                    x=self.risk_segments['risk_segment'].astype(str),
-                    y=self.risk_segments['customer_count'],
-                    marker_color=colors_segment,
-                    text=self.risk_segments['customer_count'],
-                    textposition='outside',
-                    name='Customers',
-                    showlegend=False,
-                    hovertemplate='<b>%{x}</b><br>Customers: %{y}<extra></extra>'
-                ),
-                row=2, col=1
-            )
+        if self.risk_segments is not None and len(self.risk_segments) > 0:
+            print(f"✓ Adding risk segments ({len(self.risk_segments)} segments)")
+            colors = [risk_colors.get(str(s), '#023535') for s in self.risk_segments['risk_segment']]
+            fig.add_trace(go.Bar(
+                x=self.risk_segments['risk_segment'].astype(str),
+                y=self.risk_segments['customer_count'],
+                marker_color=colors,
+                text=self.risk_segments['customer_count'],
+                textposition='outside',
+                showlegend=False,
+                hovertemplate='<b>%{x}</b><br>Customers: %{y}<extra></extra>'
+            ), row=2, col=1)
+        else:
+            print("❌ Cannot add risk segments - missing data")
         
-        # 4. Recency vs Churn Probability Scatter
-        # Color by risk segment
-        for risk_level in ['Low Risk', 'Medium Risk', 'High Risk']:
-            segment_data = self.churn_df[self.churn_df['risk_segment'] == risk_level]
-            
-            fig.add_trace(
-                go.Scatter(
-                    x=segment_data['days_since_last_service'],
-                    y=segment_data['churn_probability'],
-                    mode='markers',
-                    name=risk_level,
-                    marker=dict(
-                        size=6,
-                        color=risk_colors.get(risk_level, '#023535'),
-                        opacity=0.6,
-                        line=dict(width=0.5, color='white')
-                    ),
-                    hovertemplate=(
-                        f'<b>{risk_level}</b><br>'
-                        'Days Since: %{x}<br>'
-                        'Churn Prob: %{y:.2f}<extra></extra>'
-                    )
-                ),
-                row=2, col=2
-            )
+        # 4. Scatter plot
+        if (self.churn_df is not None and 
+            'risk_segment' in self.churn_df.columns and 
+            'days_since_last_service' in self.churn_df.columns and
+            'churn_probability' in self.churn_df.columns):
+            print("✓ Adding scatter plot")
+            for risk in ['Low Risk', 'Medium Risk', 'High Risk']:
+                segment = self.churn_df[self.churn_df['risk_segment'] == risk]
+                if len(segment) > 0:
+                    fig.add_trace(go.Scatter(
+                        x=segment['days_since_last_service'],
+                        y=segment['churn_probability'],
+                        mode='markers',
+                        name=risk,
+                        marker=dict(size=6, color=risk_colors[risk], opacity=0.6)
+                    ), row=2, col=2)
         
-        # Update layout
         fig.update_layout(
             height=900,
             showlegend=True,
             title_text="Churn Prediction: Identifying At-Risk Customers",
             title_x=0.5,
-            title_font=dict(size=18, color='#023535'),
-            legend=dict(
-                orientation="h",
-                yanchor="bottom",
-                y=1.02,
-                xanchor="center",
-                x=0.5
-            ),
             margin=dict(l=100, r=80, t=100, b=80)
         )
         
-        # Update axes
         fig.update_xaxes(title_text="Churn Probability", row=1, col=1)
-        fig.update_yaxes(title_text="Number of Customers", row=1, col=1)
-        
+        fig.update_yaxes(title_text="Number of Customers", row=1, col=1, rangemode='tozero')
         fig.update_xaxes(title_text="Feature Importance", row=1, col=2)
-        fig.update_yaxes(title_text="Feature", row=1, col=2)
-        
-        fig.update_xaxes(title_text="Risk Segment", row=2, col=1, tickangle=-45)
-        fig.update_yaxes(title_text="Customer Count", row=2, col=1)
-        
+        fig.update_xaxes(title_text="Risk Segment", row=2, col=1)
+        fig.update_yaxes(title_text="Customer Count", row=2, col=1, rangemode='tozero')
         fig.update_xaxes(title_text="Days Since Last Service", row=2, col=2)
-        fig.update_yaxes(title_text="Churn Probability", row=2, col=2)
+        fig.update_yaxes(title_text="Churn Probability", row=2, col=2, rangemode='tozero')
         
         return fig
     
     def get_insights(self) -> list:
-        """Generate data-driven insights from churn analysis."""
+        """Generate insights."""
         if self.churn_df is None:
             self.load_data()
         
         insights = []
         
-        # Overall churn rate
-        churn_rate = self.churn_df['churned'].mean() * 100
-        insights.append(
-            f"**Overall churn rate**: {churn_rate:.1f}% of customers have churned "
-            f"({self.churn_df['churned'].sum()} out of {len(self.churn_df)})"
-        )
+        if 'churned' in self.churn_df.columns:
+            churn_rate = self.churn_df['churned'].mean() * 100
+            insights.append(f"**Overall churn rate**: {churn_rate:.1f}% of customers have churned")
         
-        # High risk customers
-        high_risk = self.churn_df[self.churn_df['churn_probability'] > 0.6]
-        if len(high_risk) > 0:
-            high_risk_revenue = high_risk['total_spend'].sum()
-            insights.append(
-                f"**{len(high_risk)} customers at high risk** (>60% churn probability) - "
-                f"${high_risk_revenue:,.0f} in lifetime value at stake"
-            )
+        if 'churn_probability' in self.churn_df.columns:
+            high_risk = self.churn_df[self.churn_df['churn_probability'] > 0.6]
+            insights.append(f"**{len(high_risk)} customers at high risk** (>60% churn probability)")
         
-        # Top churn driver
         if self.feature_importance is not None and len(self.feature_importance) > 0:
-            top_feature = self.feature_importance.iloc[0]
-            insights.append(
-                f"**Primary churn driver**: '{top_feature['feature']}' "
-                f"(importance: {top_feature['importance']:.3f}) - focus interventions here"
-            )
+            top = self.feature_importance.iloc[0]
+            insights.append(f"**Primary churn driver**: '{top['feature']}' - focus interventions here")
         
-        # Risk segment breakdown
-        if self.risk_segments is not None:
-            high_risk_seg = self.risk_segments[self.risk_segments['risk_segment'] == 'High Risk']
-            if len(high_risk_seg) > 0:
-                high_risk_count = high_risk_seg['customer_count'].values[0]
-                high_risk_pct = (high_risk_count / len(self.churn_df)) * 100
-                insights.append(
-                    f"**Risk distribution**: {high_risk_pct:.0f}% of customers in high-risk segment - "
-                    f"immediate action needed"
-                )
-        
-        # Recency insight
-        avg_days_churned = self.churn_df[self.churn_df['churned'] == 1]['days_since_last_service'].mean()
-        avg_days_active = self.churn_df[self.churn_df['churned'] == 0]['days_since_last_service'].mean()
-        
-        insights.append(
-            f"**Recency matters**: Churned customers averaged {avg_days_churned:.0f} days since last service "
-            f"vs {avg_days_active:.0f} days for active customers"
-        )
-        
-        # Model performance
-        if self.model is not None:
-            churn_prob_avg = self.churn_df['churn_probability'].mean()
-            insights.append(
-                f"Model identifies customers with average {churn_prob_avg*100:.0f}% churn probability - "
-                f"use for prioritizing outreach"
-            )
-        
-        # Connection to other analyses
-        insights.append(
-            "**Connection to Customer Segmentation**: Different segments have different churn patterns - "
-            "tailor retention strategies by segment"
-        )
+        insights.append("**Connection to Customer Segmentation**: Different segments have different churn patterns")
         
         return insights
     
-    # Backward compatibility
     @property
     def insights(self) -> list:
         return self.get_insights()
     
     def get_recommendations(self) -> list:
-        """Generate actionable recommendations."""
-        recommendations = []
+        """Generate recommendations."""
+        recs = []
         
-        if self.churn_df is not None:
-            # High risk outreach
+        if self.churn_df is not None and 'churn_probability' in self.churn_df.columns:
             high_risk = self.churn_df[self.churn_df['churn_probability'] > 0.6]
             if len(high_risk) > 0:
-                recommendations.append(
-                    f"**Immediate outreach to {len(high_risk)} high-risk customers**: "
-                    f"Call within 48 hours with special offer or check-in"
-                )
+                recs.append(f"**Immediate outreach to {len(high_risk)} high-risk customers**")
             
-            # Feature-specific actions
-            if self.feature_importance is not None:
-                top_feature = self.feature_importance.iloc[0]['feature']
-                
-                if 'days_since' in top_feature.lower():
-                    recommendations.append(
-                        "**Proactive scheduling**: Set up automated reminders at 90, 180, 270 days - "
-                        "reach customers before they churn"
-                    )
-                elif 'frequency' in top_feature.lower():
-                    recommendations.append(
-                        "**Convert to maintenance plans**: One-time customers are highest risk - "
-                        "offer annual maintenance contracts"
-                    )
+            recs.append("**Proactive scheduling**: Set up automated reminders at 90, 180, 270 days")
+            recs.append("Create retention campaigns by risk level")
             
-            # Segment-specific
-            recommendations.append(
-                "Create retention campaigns by risk level: High risk gets personal call, "
-                "medium risk gets special offer email, low risk gets newsletter"
-            )
-            
-            # Win-back for churned
-            churned_count = self.churn_df['churned'].sum()
-            if churned_count > 0:
-                recommendations.append(
-                    f"**Win-back campaign for {churned_count} churned customers**: "
-                    f"'We Miss You' discount on seasonal tune-up"
-                )
+            if 'churned' in self.churn_df.columns:
+                churned = self.churn_df['churned'].sum()
+                if churned > 0:
+                    recs.append(f"**Win-back campaign for {churned} churned customers**")
         
-        recommendations.append(
-            "Track churn by customer segment (from Segmentation Analysis) - "
-            "different segments need different retention approaches"
-        )
-        
-        recommendations.append(
-            "**Next step**: Use Sentiment Analysis to understand why customers leave - "
-            "address root causes, not just symptoms"
-        )
-        
-        return recommendations
+        return recs
     
-    # Backward compatibility
     @property
     def recommendations(self) -> list:
         return self.get_recommendations()
     
     @property
     def business_impact(self) -> str:
-        return "Reducing churn by 5% can increase customer lifetime value by 25-95%. Early intervention with at-risk customers prevents revenue loss and protects Ron's customer base."
+        return "Reducing churn by 5% can increase customer lifetime value by 25-95%."

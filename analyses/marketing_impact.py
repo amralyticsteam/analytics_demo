@@ -55,8 +55,23 @@ budget to get the best return. And how long does it take from ad click to actual
     
     @property
     def methodology(self) -> str:
-        return 'Channel performance analysis (ROAS, CPA, conversion rate), lag effect analysis showing time-to-conversion patterns, funnel visualization from impressions to revenue, service type performance by channel'
-    
+        return """We use the following analytical techniques to determine which marketing channels are worth Ron's money:
+
+**ROAS Analysis (Return on Ad Spend)** - For every dollar Ron spends on each channel (Google Ads, Facebook, mailers), how many dollars of revenue does he get back? Anything under 3x is concerning.
+
+**Full funnel metrics** - Tracking each channel from impressions → clicks → leads → conversions → revenue to find where the drop-off happens.
+
+**Conversion lag analysis** - How long between seeing an ad and making a purchase? Emergency services convert in hours, installations might take weeks.
+
+**Cost Per Acquisition (CPA)** - What does it cost Ron to acquire one customer through each channel? Combined with LTV tells him which channels are profitable long-term.
+
+**Why this works for Ron:** Immediately shows which channels are wasting money (cut them) and which are winners (double down). Most small businesses guess at this - Ron will know.
+
+**If results aren't strong enough, we could:**
+- Add attribution modeling (multi-touch - customer saw 3 ads before converting, who gets credit?)
+- Include customer quality by channel (some channels bring high-LTV customers, others bring one-timers)
+- Build predictive models for optimal budget allocation across channels
+- Test incrementality (what would happen if we turned off this channel entirely?)"""
     # Backward compatibility
     @property
     def technical_output(self) -> str:

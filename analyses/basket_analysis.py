@@ -67,8 +67,23 @@ upselling, and increase average ticket size without being pushy."""
     
     @property
     def methodology(self) -> str:
-        return 'Association rule mining using Apriori algorithm, calculating support, confidence, and lift metrics for service pairs, network visualization of strong associations'
-    
+        return """We use the following analytical techniques to discover which services are naturally purchased together:
+
+**Market Basket Analysis (Apriori Algorithm)** - A machine learning technique from retail (think "people who buy beer also buy diapers") adapted for services. Finds rules like "customers who get Thermostat Installation also get Furnace Maintenance 75% of the time."
+
+**Association rules (Support, Confidence, Lift)** - Metrics that measure how strong the connection is between services. Lift > 2.0 means the combo happens twice as often as random chance.
+
+**Network visualization** - Shows services as nodes with connections between frequently bundled items, revealing the ecosystem of related services.
+
+**Phi correlation** - Statistical measure of how strongly services co-occur on the same invoice.
+
+**Why this works for Ron:** Creates data-driven service bundles and trains technicians on natural upsell opportunities ("Since we're installing your furnace, let me also check your thermostat...").
+
+**If results aren't strong enough, we could:**
+- Add sequence mining (what do customers buy first, second, third over time?)
+- Include seasonal basket patterns (summer vs winter service combos)
+- Build recommendation engine (Netflix-style "customers who bought X also bought Y")
+- Analyze basket profitability (not just popularity)"""
     # Backward compatibility
     @property
     def technical_output(self) -> str:

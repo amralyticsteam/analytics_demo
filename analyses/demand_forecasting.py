@@ -56,8 +56,24 @@ appropriately and avoid costly overtime or lost revenue."""
     
     @property
     def methodology(self) -> str:
-        return 'Time series regression with weather variables, lag effect analysis (1-3 day delays), feature importance ranking, moving average forecasting with confidence intervals'
-    
+        return """We use the following analytical techniques to help Ron predict busy periods and staff accordingly:
+
+**Time series forecasting** - Using historical call volume patterns to predict future demand, accounting for trends and seasonality.
+
+**Weather correlation analysis** - Linking temperature, precipitation, and humidity to call volume. Hot days = AC repairs spike. Cold snaps = furnace emergencies.
+
+**Marketing lag analysis** - Measuring how long it takes for marketing spend to translate into calls (Google Ads might work in 2 days, mailers might take 2 weeks).
+
+**Moving averages** - Smoothing out daily noise to see real underlying demand patterns.
+
+**Why this works for Ron:** Prevents being caught short-staffed during busy periods (losing revenue) and overstaffed during slow periods (wasting money on idle technicians).
+
+**If results aren't strong enough, we could:**
+- Add Prophet or ARIMA models for more sophisticated forecasting
+- Include economic indicators (housing starts, new construction permits)
+- Forecast by service type separately (emergency vs planned maintenance)
+- Build confidence intervals to plan for best/worst case scenarios"""
+
     # Backward compatibility
     @property
     def technical_output(self) -> str:

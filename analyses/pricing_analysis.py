@@ -55,8 +55,23 @@ price tags."""
     
     @property
     def methodology(self) -> str:
-        return 'Menu Engineering Matrix (popularity vs profitability quadrant analysis), COGS breakdown by service category, labor ratio analysis, price elasticity assessment, competitive positioning'
-    
+        return """We use the following analytical techniques to help Ron optimize his pricing strategy:
+
+**Menu Engineering Matrix** - A restaurant industry technique that plots services by popularity (how often sold) vs profitability (margin). This creates four quadrants: Stars (high profit + high popularity), Plowhorses (low profit + high popularity), Puzzles (high profit + low popularity), and Dogs (low profit + low popularity).
+
+**COGS Analysis (Cost of Goods Sold)** - Breaking down every service into parts cost + labor cost to calculate true margins. Many businesses don't realize they're losing money on "popular" services.
+
+**Labor efficiency metrics** - Revenue per labor hour by category to identify which services are most profitable per unit of Ron's time.
+
+**Why this works for Ron:** Immediately identifies which services are underpriced (popular but unprofitable) and need urgent price increases, plus which high-margin services to promote more.
+
+**If results aren't strong enough, we could:**
+- Add competitive pricing analysis (what do other HVAC companies charge?)
+- Include elasticity testing (how much can Ron raise prices before losing customers?)
+- Build dynamic pricing models (surge pricing for emergency calls, discounts for off-peak)
+- Analyze bundle pricing opportunities (service packages at a discount)"""
+
+
     # Backward compatibility
     @property
     def technical_output(self) -> str:

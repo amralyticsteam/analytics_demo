@@ -54,8 +54,21 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
     
     @property
     def methodology(self) -> str:
-        return 'Time series decomposition (trend + seasonal + residual), service-specific seasonal patterns, year-over-year growth analysis, seasonal indices by category'
-    
+        return """We use the following analytical techniques to separate normal seasonal patterns from real business problems:
+
+**Seasonal decomposition** - Breaking revenue into three components: trend (long-term direction), seasonal pattern (predictable monthly cycles), and residual (unusual events).
+
+**Year-over-year comparison** - Comparing each month to the same month last year to avoid false alarms (October is always slower - that's normal).
+
+**Service mix trends** - Tracking how the balance between Installation, Maintenance, Emergency, Cooling, and Heating changes month by month.
+
+**Why this works for Ron:** Prevents panic over normal seasonal dips (winter is slow for AC) while highlighting real problems (emergency calls dropping year-round = losing market share).
+
+**If results aren't strong enough, we could:**
+- Add multiple years of data for more robust seasonal patterns
+- Include external factors (local construction activity, weather anomalies)
+- Build predictive models for next year's seasonal patterns
+- Compare to industry benchmarks (is Ron's seasonality typical for HVAC?)"""
     # Backward compatibility
     @property
     def technical_output(self) -> str:

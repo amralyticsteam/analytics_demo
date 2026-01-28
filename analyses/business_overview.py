@@ -28,8 +28,8 @@ class BusinessOverview(BaseAnalysis):
         return """Ron runs a successful HVAC business but has never analyzed his data systematically. 
         He knows he's busy in summer (AC work) and winter (heating), but doesn't have clear metrics.
         
-**What does Ron's business actually look like?** Revenue trends? Service mix? Customer patterns? 
-Before diving into complex analyses, we need to understand the current state."""
+        **What does Ron's business actually look like?** Revenue trends? Service mix? Customer patterns? 
+        Before diving into complex analyses, we need to understand the current state."""
     
     # Backward compatibility
     @property
@@ -39,12 +39,11 @@ Before diving into complex analyses, we need to understand the current state."""
     @property
     def data_collected(self) -> list:
         return [
-            'Transaction history (Oct 2023-Aug 2024) - **ServiceTitan**',
-            'Service types and categories - **ServiceTitan**',
-            'Revenue by service category - **QuickBooks**',
-            'Customer payment methods - **ServiceTitan**',
-            'Technician assignments and duration - **ServiceTitan**'
-    ]
+            '**Source**: ServiceTitan (Field Service Software)',
+            '**Dataset**: customer_segmentation_transactions.csv',
+            '**Records**: 1,778 service transactions from Oct 2023-Aug 2024',
+            '**Contains**: Service type, category, customer ID, pricing, payment method, technician, duration, parts/labor costs'
+        ]
     
     # Backward compatibility
     @property
@@ -53,7 +52,23 @@ Before diving into complex analyses, we need to understand the current state."""
     
     @property
     def methodology(self) -> str:
-        return 'Exploratory Data Analysis (EDA), descriptive statistics, revenue trends, service mix analysis, customer behavior patterns'
+        return """We use the following analytical techniques to give Ron a high-level view of business health:
+
+**Exploratory Data Analysis (EDA)** - Looking at overall patterns in Ron's transaction data to spot trends, anomalies, and key metrics.
+
+**Descriptive statistics** - Revenue totals, average transaction sizes, service volumes - the fundamental numbers that tell Ron if the business is growing or shrinking.
+
+**Revenue trend analysis** - Month-over-month changes to identify growth patterns or concerning declines.
+
+**Service mix analysis** - Which service categories (Installation, Maintenance, Emergency) drive the most revenue and how that's changing over time.
+
+**Why this works for Ron:** This is the foundation - before diving into complex analyses, we need to understand the baseline health of the business.
+
+**If results aren't clear enough, we could:**
+- Add year-over-year comparisons to account for seasonality
+- Include industry benchmarks to see how Ron compares to competitors
+- Break down by technician or service area to spot performance differences
+- Add customer acquisition cost (CAC) and lifetime value (LTV) metrics"""
     
     # Backward compatibility
     @property
@@ -83,7 +98,7 @@ Before diving into complex analyses, we need to understand the current state."""
         }).reset_index()
         self.monthly_summary.columns = ['month', 'total_revenue', 'avg_ticket', 'transaction_count', 'unique_customers']
         
-        # Service type summary
+        # Service type summary (using service_category column)
         self.service_summary = self.transactions_df.groupby('service_category').agg({
             'amount': ['sum', 'mean', 'count'],
             'customer_id': 'nunique'
@@ -216,16 +231,16 @@ Before diving into complex analyses, we need to understand the current state."""
         
         # Update axes
         fig.update_xaxes(title_text="Month", row=1, col=1)
-        fig.update_yaxes(title_text="Revenue ($)", row=1, col=1)
+        fig.update_yaxes(title_text="Revenue ($)", row=1, col=1, rangemode='tozero')
         
         fig.update_xaxes(title_text="Service Category", row=1, col=2, tickangle=-45)
-        fig.update_yaxes(title_text="Total Revenue ($)", row=1, col=2)
+        fig.update_yaxes(title_text="Total Revenue ($)", row=1, col=2, rangemode='tozero')
         
         fig.update_xaxes(title_text="Service Category", row=2, col=1, tickangle=-45)
-        fig.update_yaxes(title_text="Average Transaction ($)", row=2, col=1)
+        fig.update_yaxes(title_text="Average Transaction ($)", row=2, col=1, rangemode='tozero')
         
         fig.update_xaxes(title_text="Month", row=2, col=2)
-        fig.update_yaxes(title_text="Count", row=2, col=2)
+        fig.update_yaxes(title_text="Count", row=2, col=2, rangemode='tozero')
         
         return fig
     

@@ -36,9 +36,9 @@ class CustomerSegmentation(BaseAnalysis):
     def rons_challenge(self) -> str:
         return """Ron treats all customers the same way, but are they really all the same? 
         
-Some call only for emergencies. Others schedule regular maintenance. Some spend thousands 
-on installations, others just need tune-ups. **Understanding customer segments** helps Ron 
-tailor his marketing, pricing, and service approach to each group's specific needs."""
+        Some call only for emergencies. Others schedule regular maintenance. Some spend thousands 
+        on installations, others just need tune-ups. **Understanding customer segments** helps Ron 
+        tailor his marketing, pricing, and service approach to each group's specific needs."""
     
     # Backward compatibility
     @property
@@ -48,12 +48,11 @@ tailor his marketing, pricing, and service approach to each group's specific nee
     @property
     def data_collected(self) -> list:
         return [
-            'Customer transaction history (1,778 transactions) - **ServiceTitan**',
-            'RFM metrics (Recency, Frequency, Monetary) - **ServiceTitan**',
-            'Service mix preferences by customer - **ServiceTitan**',
-            'Customer tenure and engagement patterns - **ServiceTitan**',
-            'Payment and timing behaviors - **ServiceTitan**'
-    ]
+            '**Source**: ServiceTitan (Field Service Software)',
+            '**Dataset**: customer_segmentation_transactions.csv',
+            '**Records**: 1,778 service transactions, 178 unique customers',
+            '**Contains**: Customer ID, date, service type/category, amount, payment method, technician, duration, parts/labor costs, follow-up needs'
+        ]
     
     # Backward compatibility
     @property
@@ -62,7 +61,23 @@ tailor his marketing, pricing, and service approach to each group's specific nee
     
     @property
     def methodology(self) -> str:
-        return 'RFM (Recency, Frequency, Monetary) analysis combined with service preference clustering using K-Means, customer lifetime value calculation, segment profiling'
+        return """We use the following analytical techniques to help Ron understand his different customer types and tailor his approach to each group:
+
+**RFM Analysis (Recency, Frequency, Monetary)** - The gold standard for customer segmentation. How recently did they buy? How often? How much did they spend? These three metrics reveal customer value and engagement.
+
+**K-Means Clustering** - A machine learning algorithm that automatically groups customers with similar behaviors together, creating natural segments without manual rules.
+
+**Principal Component Analysis (PCA)** - Reduces complex customer data into 3D visualizations showing how different segments naturally separate.
+
+**Customer Lifetime Value (LTV) calculation** - Estimates how much each customer is worth over their entire relationship with Ron's business.
+
+**Why this works for Ron:** Instead of treating all customers the same, Ron can create targeted marketing, pricing, and service strategies for each segment (VIPs get white-glove service, maintenance customers get contract renewals, etc.).
+
+**If results aren't strong enough, we could:**
+- Try different clustering algorithms (DBSCAN, Hierarchical) to find better segment boundaries
+- Add behavioral features like service type preferences or response to promotions
+- Use predictive segmentation to see how customers move between segments over time
+- Combine with geographic or demographic data for richer profiles"""
     
     # Backward compatibility
     @property
@@ -466,13 +481,13 @@ tailor his marketing, pricing, and service approach to each group's specific nee
         
         # Update axes
         fig.update_xaxes(title_text="Customer Segment", row=1, col=2, tickangle=-45)
-        fig.update_yaxes(title_text="Number of Customers", row=1, col=2, secondary_y=False)
+        fig.update_yaxes(title_text="Number of Customers", row=1, col=2, secondary_y=False, rangemode='tozero')
         
         fig.update_xaxes(title_text="Customer Segment", row=2, col=1, tickangle=-45)
-        fig.update_yaxes(title_text="Service Mix (%)", row=2, col=1)
+        fig.update_yaxes(title_text="Service Mix (%)", row=2, col=1, range=[0, 105])
         
         fig.update_xaxes(title_text="Customer Segment", row=2, col=2, tickangle=-45)
-        fig.update_yaxes(title_text="RFM Score (0-100)", row=2, col=2, range=[0, 105])
+        fig.update_yaxes(title_text="RFM Score (0-100)", row=2, col=2, range=[0, 108])
         
         # Update 3D scene
         scene_dict = dict(
