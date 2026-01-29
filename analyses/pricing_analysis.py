@@ -29,9 +29,9 @@ class PricingAnalysis(BaseAnalysis):
         return """Ron hasn't reviewed his pricing in over 2 years. He's been so focused on finding new 
         customers that he hasn't checked if his most popular services are even profitable.
         
-        **Are his prices covering costs?** More importantly: which services are profitable, which are 
-        losing money, and which should he promote more heavily? Ron needs a pricing strategy, not just 
-        price tags."""
+**Are his prices covering costs?** More importantly: which services are profitable, which are 
+losing money, and which should he promote more heavily? Ron needs a pricing strategy, not just 
+price tags."""
     
     # Backward compatibility
     @property
