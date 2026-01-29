@@ -522,7 +522,7 @@ upselling, and increase average ticket size without being pushy."""
             # Strongest rule
             top_rule = self.rules.iloc[0]
             insights.append(
-                f"**Strongest association**: {top_rule['rule']} "
+                f"Strongest association: {top_rule['rule']} "
                 f"(lift: {top_rule['lift']:.2f}x, confidence: {top_rule['confidence']*100:.0f}%)"
             )
             
@@ -557,7 +557,7 @@ upselling, and increase average ticket size without being pushy."""
         
         # Connection to other analyses
         insights.append(
-            "**Connection to Pricing Analysis**: Bundle frequently paired services with 10-15% discount "
+            "Connection to Pricing Analysis: Bundle frequently paired services with 10-15% discount "
             "while maintaining overall margin"
         )
         
@@ -576,7 +576,7 @@ upselling, and increase average ticket size without being pushy."""
             # Top bundling opportunities
             top_3 = self.rules.nlargest(3, 'lift')
             recommendations.append(
-                "**Create service packages** for top associations: " +
+                "Create service packages for top associations: " +
                 ", ".join([f"'{r['rule']}'" for _, r in top_3.iterrows()])
             )
             
@@ -584,7 +584,7 @@ upselling, and increase average ticket size without being pushy."""
             high_conf_rules = self.rules[self.rules['confidence'] > 0.4].nlargest(5, 'confidence')
             if len(high_conf_rules) > 0:
                 recommendations.append(
-                    "**Train technicians to suggest**: " +
+                    "Train technicians to suggest: " +
                     ", ".join([r['consequent'] for _, r in high_conf_rules.iterrows()]) +
                     " when performing related services"
                 )
@@ -612,7 +612,7 @@ upselling, and increase average ticket size without being pushy."""
         )
         
         recommendations.append(
-            "**Next step**: Use Customer Segmentation to identify which segments respond "
+            "Next step: Use Customer Segmentation to identify which segments respond "
             "best to bundled offerings vs à la carte pricing"
         )
         

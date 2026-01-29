@@ -450,7 +450,7 @@ on what matters most and double down on what customers love."""
         if hasattr(self, 'quarterly_topics') and self.quarterly_topics is not None and len(self.quarterly_topics) > 0:
             latest = self.quarterly_topics.iloc[-1]
             insights.append(
-                f"**Most recent quarter ({latest['quarter_label']})**: "
+                f"Most recent quarter ({latest['quarter_label']}): "
                 f"Most positive topic is '{latest['most_positive_topic']}' ({latest['most_positive_sentiment']:.2f}), "
                 f"least positive is '{latest['least_positive_topic']}' ({latest['least_positive_sentiment']:.2f})"
             )
@@ -463,7 +463,7 @@ on what matters most and double down on what customers love."""
             
             if recurring:
                 insights.append(
-                    f"**Recurring issue**: '{recurring[0]}' appears as least positive in multiple quarters - "
+                    f"Recurring issue: '{recurring[0]}' appears as least positive in multiple quarters - "
                     f"this needs systematic attention"
                 )
         
@@ -494,18 +494,18 @@ on what matters most and double down on what customers love."""
             worst_topic = self.topic_sentiments.nsmallest(1, 'sentiment').iloc[0]
             
             insights.append(
-                f"**Strongest asset**: '{best_topic['topic']}' ({best_topic['sentiment']:.2f} sentiment) - "
+                f"Strongest asset: '{best_topic['topic']}' ({best_topic['sentiment']:.2f} sentiment) - "
                 f"mentioned {best_topic['count']} times"
             )
             
             insights.append(
-                f"**Biggest opportunity**: '{worst_topic['topic']}' ({worst_topic['sentiment']:.2f} sentiment) - "
+                f"Biggest opportunity: '{worst_topic['topic']}' ({worst_topic['sentiment']:.2f} sentiment) - "
                 f"addressing this could improve {worst_topic['count']} customer experiences"
             )
         
         # Connection to other analyses
         insights.append(
-            "**Connection to Customer Segmentation**: Different customer segments may care about different topics - "
+            "Connection to Customer Segmentation: Different customer segments may care about different topics - "
             "cross-reference to tailor messaging by segment"
         )
         
@@ -528,7 +528,7 @@ on what matters most and double down on what customers love."""
             
             if recurring[1] >= 2:
                 recommendations.append(
-                    f"**Priority fix**: '{recurring[0]}' appears as a pain point in {recurring[1]} quarters. "
+                    f"Priority fix: '{recurring[0]}' appears as a pain point in {recurring[1]} quarters. "
                     f"Create an action plan to systematically address this issue"
                 )
         
@@ -554,7 +554,7 @@ on what matters most and double down on what customers love."""
         )
         
         recommendations.append(
-            "**Next step**: Use Marketing Analysis to test messaging that emphasizes Ron's strongest topics "
+            "Next step: Use Marketing Analysis to test messaging that emphasizes Ron's strongest topics "
             f"across different channels"
         )
         

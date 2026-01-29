@@ -1,1001 +1,1739 @@
 invoice_id,customer_id,date,service_1,service_2,service_3,total_amount,same_visit
-INV_00001,CUST_003,2023-09-22,Mini-Split Installation,Refrigerant Level Check,,3113,Yes
-INV_00002,CUST_082,2024-08-05,Heat Pump Installation,Thermostat Installation,,10677,Yes
-INV_00003,CUST_001,2023-10-05,Control Board Replacement,Thermostat Installation,,5948,Yes
-INV_00004,CUST_004,2023-11-13,Igniter Replacement,Thermostat Check,,1034,Yes
-INV_00005,CUST_031,2024-03-22,Breaker Inspection,,,246,Yes
-INV_00006,CUST_051,2024-08-23,Compressor Replacement,Thermostat Installation,,8718,Yes
-INV_00007,CUST_133,2024-02-13,Condenser Coil Cleaning,Thermostat Installation,,5570,Yes
-INV_00008,CUST_092,2024-04-02,Heat Exchanger Inspection,Thermostat Calibration,,640,Yes
-INV_00009,CUST_041,2024-10-02,Heat Exchanger Inspection,Igniter Replacement,,1252,Yes
-INV_00010,CUST_138,2024-05-06,Compressor Replacement,Condenser Coil Cleaning,Thermostat Installation,9149,Yes
-INV_00011,CUST_R16,2024-04-26,Gas Valve Replacement,,,591,Yes
-INV_00012,CUST_102,2023-03-28,Boiler Installation,,,3666,Yes
-INV_00013,CUST_118,2024-11-21,AC Tune-up,Gas Valve Replacement,Return Air Inspection,982,Yes
-INV_00014,CUST_R12,2023-10-20,AC Tune-up,Refrigerant Recharge,Thermostat Installation,6083,Yes
-INV_00015,CUST_016,2023-11-05,Contactor Replacement,Gas Valve Replacement,Pressure Switch Replacement,1831,Yes
-INV_00016,CUST_R14,2024-09-08,Heat Pump Installation,Thermostat Replacement,,6005,No
-INV_00017,CUST_137,2023-10-24,Heating Repair,Heating Tune-up,,853,Yes
-INV_00018,CUST_033,2023-01-21,Pressure Switch Replacement,Thermostat Installation,,5895,Yes
-INV_00019,CUST_R06,2024-05-09,Igniter Replacement,Pressure Switch Replacement,,1541,Yes
-INV_00020,CUST_R27,2024-10-11,Refrigerant Level Check,,,238,Yes
-INV_00021,CUST_058,2023-11-05,Zone Damper Replacement,,,634,Yes
-INV_00022,CUST_092,2024-01-22,Furnace Installation,Thermostat Installation,,9027,Yes
-INV_00023,CUST_148,2023-11-12,Flame Sensor Replacement,,,860,No
-INV_00024,CUST_140,2024-08-21,Condenser Coil Cleaning,Heating Tune-up,,652,Yes
-INV_00025,CUST_120,2024-08-30,AC Tune-up,,,141,Yes
-INV_00026,CUST_147,2023-10-26,Humidifier Check,,,170,Yes
-INV_00027,CUST_118,2023-08-20,Condenser Coil Cleaning,,,431,Yes
-INV_00028,CUST_054,2023-02-21,Igniter Replacement,,,785,Yes
-INV_00029,CUST_R15,2024-04-24,Heating Repair,,,632,Yes
-INV_00030,CUST_052,2023-07-25,Drain Line Flush,Igniter Replacement,Refrigerant Level Check,1184,Yes
-INV_00031,CUST_058,2024-09-26,Capacitor Replacement,,,497,Yes
-INV_00032,CUST_078,2024-07-07,Duct Sealing,Mini-Split Installation,,5710,Yes
-INV_00033,CUST_014,2023-11-06,Heat Exchanger Inspection,Igniter Replacement,,1252,Yes
-INV_00034,CUST_020,2023-04-10,Compressor Replacement,Mini-Split Installation,Zone Damper Replacement,7088,Yes
-INV_00035,CUST_001,2023-02-05,Furnace Installation,Thermostat Installation,,9027,Yes
-INV_00036,CUST_137,2023-06-10,Control Board Replacement,Gas Valve Replacement,,1400,Yes
-INV_00037,CUST_112,2024-12-11,Air Handler Installation,Igniter Replacement,Thermostat Installation,10678,No
-INV_00038,CUST_123,2024-11-14,Heat Exchanger Inspection,Heating Repair,,1099,Yes
-INV_00039,CUST_R08,2023-05-09,Refrigerant Level Check,,,238,Yes
-INV_00040,CUST_R13,2023-04-23,Breaker Inspection,Condensate Pump Cleaning,Heat Exchanger Inspection,894,Yes
-INV_00041,CUST_009,2024-11-14,Duct Sealing,Thermostat Installation,,7974,Yes
-INV_00042,CUST_119,2023-01-28,Blower Motor Cleaning,Pressure Switch Replacement,,950,Yes
-INV_00043,CUST_048,2023-06-08,Refrigerant Level Check,,,238,Yes
-INV_00044,CUST_076,2023-02-18,Compressor Replacement,Thermostat Installation,,8718,Yes
-INV_00045,CUST_016,2023-01-28,Furnace Installation,Zone Damper Replacement,,4522,Yes
-INV_00046,CUST_034,2023-03-14,Refrigerant Recharge,,,803,Yes
-INV_00047,CUST_004,2023-07-05,AC Tune-up,Contactor Replacement,,625,Yes
-INV_00048,CUST_080,2024-05-25,Fan Motor Replacement,Refrigerant Level Check,,934,Yes
-INV_00049,CUST_128,2023-06-13,Control Board Replacement,,,809,Yes
-INV_00050,CUST_059,2023-10-08,Condensate Pump Cleaning,,,181,Yes
-INV_00051,CUST_076,2023-10-25,Pressure Switch Replacement,,,756,Yes
-INV_00052,CUST_006,2023-03-07,Boiler Installation,Evaporator Coil Cleaning,,4423,Yes
-INV_00053,CUST_051,2023-06-22,Drain Pan Replacement,System Maintenance,,688,Yes
-INV_00054,CUST_133,2023-09-03,Furnace Installation,Thermostat Installation,,9027,Yes
-INV_00055,CUST_001,2024-01-20,Evaporator Coil Cleaning,,,757,Yes
-INV_00056,CUST_115,2024-01-23,AC Installation,,,6532,Yes
-INV_00057,CUST_044,2024-12-10,Boiler Installation,Capacitor Replacement,,4163,Yes
-INV_00058,CUST_048,2023-10-31,Refrigerant Level Check,,,238,Yes
-INV_00059,CUST_R26,2023-05-03,Capacitor Replacement,,,497,Yes
-INV_00060,CUST_068,2024-06-27,Compressor Replacement,Thermostat Installation,,8718,No
-INV_00061,CUST_R11,2023-11-12,Flame Sensor Replacement,Heat Exchanger Inspection,System Maintenance,1538,Yes
-INV_00062,CUST_078,2023-07-11,Condenser Coil Cleaning,Thermostat Installation,,5570,Yes
-INV_00063,CUST_114,2023-03-20,AC Installation,Duct Cleaning,Thermostat Installation,12246,Yes
-INV_00064,CUST_011,2023-12-21,Filter Replacement,,,146,No
-INV_00065,CUST_102,2023-09-23,Contactor Replacement,Thermostat Check,,733,Yes
-INV_00066,CUST_108,2023-05-24,Igniter Replacement,Thermostat Installation,,5924,Yes
-INV_00067,CUST_002,2023-02-01,Boiler Installation,Heat Pump Installation,Thermostat Installation,14343,Yes
-INV_00068,CUST_129,2024-09-22,Pressure Switch Replacement,Refrigerant Recharge,,1559,Yes
-INV_00069,CUST_058,2024-03-09,AC Repair,Pressure Switch Replacement,Thermostat Replacement,1586,Yes
-INV_00070,CUST_055,2024-06-20,Condenser Coil Cleaning,,,431,Yes
-INV_00071,CUST_R13,2023-03-08,Compressor Replacement,UV Light Check,,3816,Yes
-INV_00072,CUST_053,2024-10-19,Drain Pan Replacement,Pressure Switch Replacement,,1233,Yes
-INV_00073,CUST_R06,2023-10-25,Flame Sensor Replacement,Supply Vent Balancing,,1053,Yes
-INV_00074,CUST_148,2024-12-04,Condenser Coil Cleaning,Flame Sensor Replacement,Thermostat Replacement,1758,Yes
-INV_00075,CUST_006,2024-06-11,Duct Inspection,Thermostat Replacement,,633,Yes
-INV_00076,CUST_123,2024-09-19,Drain Pan Replacement,Heating Tune-up,,698,Yes
-INV_00077,CUST_143,2024-03-20,Air Quality Assessment,Flame Sensor Replacement,,1022,Yes
-INV_00078,CUST_045,2024-10-21,Boiler Installation,Thermostat Installation,,8805,Yes
-INV_00079,CUST_115,2023-12-03,Relay Replacement,,,789,No
-INV_00080,CUST_R03,2023-08-17,Drain Line Flush,,,161,Yes
-INV_00081,CUST_R14,2023-09-11,AC Installation,Evaporator Coil Cleaning,Thermostat Installation,12428,Yes
-INV_00082,CUST_R09,2023-06-03,Condenser Coil Cleaning,Refrigerant Recharge,,1234,Yes
-INV_00083,CUST_094,2024-08-02,Igniter Replacement,,,785,Yes
-INV_00084,CUST_R30,2023-10-11,Evaporator Coil Cleaning,Filter Replacement,Thermostat Calibration,1076,Yes
-INV_00085,CUST_052,2024-12-02,Air Quality Assessment,Heating Tune-up,,383,Yes
-INV_00086,CUST_065,2024-05-18,Capacitor Replacement,Contactor Replacement,,981,Yes
-INV_00087,CUST_R15,2023-11-27,Thermostat Calibration,Thermostat Installation,,5312,Yes
-INV_00088,CUST_038,2023-07-26,AC Tune-up,,,141,Yes
-INV_00089,CUST_040,2024-11-16,Heating Repair,Heating Tune-up,,853,Yes
-INV_00090,CUST_081,2024-04-16,Blower Motor Repair,System Maintenance,,693,Yes
-INV_00091,CUST_018,2024-07-26,Heat Pump Installation,,,5538,Yes
-INV_00092,CUST_125,2024-05-30,Evaporator Coil Cleaning,,,757,Yes
-INV_00093,CUST_131,2023-01-28,Heat Pump Installation,,,5538,Yes
-INV_00094,CUST_102,2023-07-10,AC Repair,Contactor Replacement,,847,Yes
-INV_00095,CUST_119,2023-07-20,Evaporator Coil Cleaning,,,757,Yes
-INV_00096,CUST_050,2024-06-10,Thermostat Replacement,,,467,Yes
-INV_00097,CUST_R25,2023-07-16,AC Installation,,,6532,Yes
-INV_00098,CUST_064,2024-11-05,Carbon Monoxide Test,Condensate Pump Cleaning,Thermostat Check,610,Yes
-INV_00099,CUST_084,2023-08-07,Drain Pan Replacement,Heating Tune-up,,698,Yes
-INV_00100,CUST_054,2024-03-23,Duct Cleaning,Thermostat Installation,,5714,Yes
-INV_00101,CUST_R23,2023-08-17,Furnace Installation,,,3888,Yes
-INV_00102,CUST_R15,2024-12-16,Fan Motor Replacement,Gas Valve Replacement,,1287,Yes
-INV_00103,CUST_010,2023-09-01,Boiler Installation,Thermostat Installation,,8805,Yes
-INV_00104,CUST_048,2024-05-03,AC Tune-up,,,141,Yes
-INV_00105,CUST_005,2023-04-26,Thermostat Check,,,249,Yes
-INV_00106,CUST_097,2023-10-13,Fan Motor Replacement,,,696,Yes
-INV_00107,CUST_051,2023-12-04,Filter Replacement,,,146,Yes
-INV_00108,CUST_107,2023-12-02,Gas Valve Replacement,Thermostat Installation,,5730,Yes
-INV_00109,CUST_139,2024-01-03,AC Repair,Blower Motor Cleaning,,557,Yes
-INV_00110,CUST_R03,2024-01-30,Heat Pump Installation,Supply Vent Balancing,,5731,Yes
-INV_00111,CUST_R15,2024-05-08,Compressor Replacement,Thermostat Installation,,8718,Yes
-INV_00112,CUST_096,2024-06-24,Contactor Replacement,,,484,No
-INV_00113,CUST_147,2023-08-05,Refrigerant Recharge,,,803,Yes
-INV_00114,CUST_058,2023-08-15,AC Tune-up,Thermostat Calibration,Thermostat Installation,5453,Yes
-INV_00115,CUST_078,2023-01-05,Thermostat Check,,,249,Yes
-INV_00116,CUST_128,2024-07-28,Refrigerant Recharge,,,803,Yes
-INV_00117,CUST_042,2023-10-01,Condensate Pump Cleaning,Pressure Switch Replacement,Thermostat Calibration,1110,Yes
-INV_00118,CUST_064,2024-09-23,AC Repair,Mini-Split Installation,,3238,Yes
-INV_00119,CUST_103,2024-02-28,Condenser Coil Cleaning,Gas Valve Replacement,,1022,Yes
-INV_00120,CUST_027,2023-10-26,Evaporator Coil Cleaning,Heat Exchanger Inspection,,1224,Yes
-INV_00121,CUST_102,2024-01-04,Heat Exchanger Inspection,,,467,Yes
-INV_00122,CUST_121,2023-12-05,Flame Sensor Replacement,,,860,Yes
-INV_00123,CUST_138,2024-09-16,Condensate Pump Cleaning,,,181,Yes
-INV_00124,CUST_006,2023-01-11,Furnace Installation,Thermostat Installation,,9027,Yes
-INV_00125,CUST_063,2023-01-20,Refrigerant Recharge,,,803,Yes
-INV_00126,CUST_R03,2024-05-14,Evaporator Coil Cleaning,,,757,No
-INV_00127,CUST_R20,2024-07-21,AC Installation,Refrigerant Recharge,,7335,Yes
-INV_00128,CUST_052,2023-09-05,Thermostat Calibration,Thermostat Installation,,5312,Yes
-INV_00129,CUST_141,2023-10-11,Flame Sensor Replacement,Heat Exchanger Inspection,Heating Tune-up,1548,Yes
-INV_00130,CUST_R25,2023-01-26,Supply Vent Balancing,,,193,Yes
-INV_00131,CUST_084,2024-05-17,Pressure Switch Replacement,Relay Replacement,,1545,No
-INV_00132,CUST_084,2024-05-30,Heating Tune-up,,,221,Yes
-INV_00133,CUST_021,2023-05-29,Carbon Monoxide Test,Evaporator Coil Cleaning,,937,Yes
-INV_00134,CUST_R19,2024-02-24,Flame Sensor Replacement,Heat Exchanger Inspection,,1327,Yes
-INV_00135,CUST_120,2024-09-01,Flame Sensor Replacement,,,860,Yes
-INV_00136,CUST_019,2023-04-25,Blower Motor Cleaning,Relay Replacement,Zone System Check,1217,Yes
-INV_00137,CUST_058,2023-04-12,Relay Replacement,Thermostat Installation,,5928,Yes
-INV_00138,CUST_139,2024-10-27,Contactor Replacement,Heating Repair,,1116,Yes
-INV_00139,CUST_060,2023-12-10,Igniter Replacement,,,785,Yes
-INV_00140,CUST_117,2023-03-24,Gas Valve Replacement,,,591,Yes
-INV_00141,CUST_133,2023-03-02,Gas Valve Replacement,Thermostat Check,,840,Yes
-INV_00142,CUST_138,2023-09-21,Blower Motor Repair,Mini-Split Installation,,3357,Yes
-INV_00143,CUST_103,2024-08-26,AC Repair,Air Quality Assessment,Duct Cleaning,1100,Yes
-INV_00144,CUST_R24,2024-11-29,Flame Sensor Replacement,,,860,Yes
-INV_00145,CUST_023,2023-12-13,Heating Repair,,,632,Yes
-INV_00146,CUST_078,2023-04-04,Control Board Replacement,Return Air Inspection,,1059,Yes
-INV_00147,CUST_093,2023-05-07,Capacitor Replacement,,,497,Yes
-INV_00148,CUST_050,2024-02-23,Flame Sensor Replacement,,,860,Yes
-INV_00149,CUST_001,2024-07-30,Capacitor Replacement,Thermostat Replacement,,964,Yes
-INV_00150,CUST_052,2023-12-03,Heat Pump Installation,Igniter Replacement,Thermostat Installation,11462,Yes
-INV_00151,CUST_R24,2023-05-04,Heat Exchanger Inspection,,,467,Yes
-INV_00152,CUST_116,2023-12-06,Drain Pan Replacement,Heat Pump Installation,Thermostat Installation,11154,Yes
-INV_00153,CUST_051,2023-02-23,Blower Motor Repair,,,482,Yes
-INV_00154,CUST_016,2023-01-04,Furnace Installation,,,3888,Yes
-INV_00155,CUST_137,2023-03-02,Humidifier Check,,,170,Yes
-INV_00156,CUST_042,2023-11-28,Relay Replacement,,,789,Yes
-INV_00157,CUST_089,2023-05-16,Condenser Coil Cleaning,Flame Sensor Replacement,Thermostat Installation,6430,Yes
-INV_00158,CUST_027,2024-02-07,Heating Tune-up,UV Light Check,,458,Yes
-INV_00159,CUST_104,2024-11-11,Boiler Installation,,,3666,Yes
-INV_00160,CUST_R14,2023-09-12,Refrigerant Level Check,Refrigerant Recharge,,1041,Yes
-INV_00161,CUST_034,2024-07-12,AC Installation,Thermostat Installation,,11671,Yes
-INV_00162,CUST_149,2024-11-18,Boiler Installation,Thermostat Installation,,8805,Yes
-INV_00163,CUST_029,2024-11-05,Refrigerant Recharge,,,803,Yes
-INV_00164,CUST_109,2023-08-25,Capacitor Replacement,Contactor Replacement,,981,Yes
-INV_00165,CUST_059,2023-03-15,Duct Cleaning,Gas Valve Replacement,Pressure Switch Replacement,1922,Yes
-INV_00166,CUST_045,2024-05-13,AC Installation,,,6532,Yes
-INV_00167,CUST_051,2024-07-20,Condenser Coil Cleaning,Thermostat Installation,,5570,Yes
-INV_00168,CUST_014,2023-05-05,Gas Valve Replacement,,,591,Yes
-INV_00169,CUST_101,2023-03-24,Contactor Replacement,Heat Pump Installation,,6022,Yes
-INV_00170,CUST_083,2024-01-13,Igniter Replacement,Thermostat Installation,,5924,Yes
-INV_00171,CUST_128,2024-05-16,HVAC Installation,Thermostat Installation,,9089,Yes
-INV_00172,CUST_018,2023-03-04,Condenser Coil Cleaning,Drain Line Flush,Pressure Switch Replacement,1348,Yes
-INV_00173,CUST_066,2024-09-25,Supply Vent Balancing,,,193,Yes
-INV_00174,CUST_R10,2024-10-23,Zone Damper Replacement,,,634,Yes
-INV_00175,CUST_009,2024-05-07,Filter Replacement,Heat Exchanger Inspection,,613,Yes
-INV_00176,CUST_014,2023-08-11,Capacitor Replacement,Compressor Replacement,Contactor Replacement,4560,Yes
-INV_00177,CUST_013,2024-02-19,Furnace Installation,Refrigerant Recharge,,4691,Yes
-INV_00178,CUST_095,2023-04-10,Zone System Check,,,234,Yes
-INV_00179,CUST_126,2023-04-07,AC Installation,,,6532,Yes
-INV_00180,CUST_R17,2024-09-08,Humidifier Check,,,170,Yes
-INV_00181,CUST_137,2023-09-27,Capacitor Replacement,Condensate Pump Cleaning,,678,No
-INV_00182,CUST_012,2023-01-17,Pressure Switch Replacement,,,756,Yes
-INV_00183,CUST_018,2024-10-30,Heat Pump Installation,,,5538,Yes
-INV_00184,CUST_069,2024-01-26,Zone Damper Replacement,,,634,Yes
-INV_00185,CUST_044,2023-12-09,Contactor Replacement,Igniter Replacement,,1269,Yes
-INV_00186,CUST_006,2023-07-30,Duct Cleaning,Evaporator Coil Cleaning,,1332,Yes
-INV_00187,CUST_082,2024-01-03,Boiler Installation,Thermostat Installation,,8805,No
-INV_00188,CUST_004,2024-08-06,Igniter Replacement,UV Light Check,,1022,Yes
-INV_00189,CUST_076,2024-01-22,Boiler Installation,Pressure Switch Replacement,Thermostat Replacement,4889,Yes
-INV_00190,CUST_027,2024-03-29,Heat Exchanger Inspection,,,467,Yes
-INV_00191,CUST_072,2024-12-27,Flame Sensor Replacement,Humidifier Check,Igniter Replacement,1815,Yes
-INV_00192,CUST_128,2024-11-04,AC Repair,,,363,Yes
-INV_00193,CUST_087,2023-03-15,Heat Exchanger Inspection,,,467,Yes
-INV_00194,CUST_034,2023-01-02,Heat Exchanger Inspection,,,467,Yes
-INV_00195,CUST_038,2023-08-22,Capacitor Replacement,Flame Sensor Replacement,,1357,Yes
-INV_00196,CUST_133,2023-11-15,Boiler Installation,Flame Sensor Replacement,Zone System Check,4760,Yes
-INV_00197,CUST_127,2023-01-24,Pressure Switch Replacement,,,756,No
-INV_00198,CUST_006,2024-07-24,AC Repair,Condensate Pump Cleaning,,544,Yes
-INV_00199,CUST_092,2024-09-08,Mini-Split Installation,,,2875,Yes
-INV_00200,CUST_005,2024-12-25,Heat Pump Installation,,,5538,Yes
-INV_00201,CUST_115,2024-06-02,Compressor Replacement,,,3579,Yes
-INV_00202,CUST_104,2024-12-11,Heat Exchanger Inspection,,,467,No
-INV_00203,CUST_101,2024-02-20,Flame Sensor Replacement,,,860,Yes
-INV_00204,CUST_065,2023-11-15,Fan Motor Replacement,,,696,Yes
-INV_00205,CUST_033,2023-03-15,Pressure Switch Replacement,,,756,Yes
-INV_00206,CUST_017,2024-05-03,Humidifier Check,,,170,Yes
-INV_00207,CUST_089,2023-08-24,Return Air Inspection,,,250,No
-INV_00208,CUST_139,2023-11-30,AC Repair,Electrical Safety Inspection,Zone System Check,840,Yes
-INV_00209,CUST_034,2023-05-20,Boiler Installation,,,3666,Yes
-INV_00210,CUST_R07,2024-08-05,AC Tune-up,,,141,Yes
-INV_00211,CUST_086,2023-04-17,HVAC Installation,,,3950,Yes
-INV_00212,CUST_028,2024-03-26,Boiler Installation,Evaporator Coil Cleaning,Thermostat Installation,9562,Yes
-INV_00213,CUST_131,2024-06-01,Compressor Replacement,,,3579,No
-INV_00214,CUST_086,2024-12-14,Boiler Installation,Thermostat Installation,,8805,Yes
-INV_00215,CUST_105,2023-03-02,Heating Repair,,,632,Yes
-INV_00216,CUST_047,2023-12-11,Gas Valve Replacement,Zone Damper Replacement,,1225,Yes
-INV_00217,CUST_049,2024-05-30,Thermostat Check,,,249,Yes
-INV_00218,CUST_R03,2024-09-04,Condenser Coil Cleaning,Thermostat Calibration,,604,Yes
-INV_00219,CUST_148,2024-08-28,Compressor Replacement,,,3579,Yes
-INV_00220,CUST_022,2024-11-21,Flame Sensor Replacement,Heating Repair,,1492,Yes
-INV_00221,CUST_118,2024-12-08,Gas Valve Replacement,,,591,Yes
-INV_00222,CUST_150,2024-03-20,Igniter Replacement,Pressure Switch Replacement,Refrigerant Recharge,2344,Yes
-INV_00223,CUST_084,2024-07-08,AC Tune-up,Evaporator Coil Cleaning,,898,Yes
-INV_00224,CUST_019,2023-08-07,AC Tune-up,Condensate Pump Cleaning,Supply Vent Balancing,515,Yes
-INV_00225,CUST_072,2023-12-20,Air Quality Assessment,,,162,Yes
-INV_00226,CUST_R05,2024-01-31,Igniter Replacement,,,785,Yes
-INV_00227,CUST_R07,2023-09-30,Boiler Installation,Thermostat Installation,,8805,Yes
-INV_00228,CUST_138,2023-08-09,AC Repair,Breaker Inspection,,609,Yes
-INV_00229,CUST_070,2023-06-23,Duct Sealing,Heating Tune-up,Thermostat Installation,8195,Yes
-INV_00230,CUST_124,2024-01-11,AC Tune-up,,,141,Yes
-INV_00231,CUST_150,2023-02-16,Boiler Installation,Thermostat Installation,,8805,Yes
-INV_00232,CUST_063,2023-09-22,Condensate Pump Cleaning,Heat Exchanger Inspection,,648,Yes
-INV_00233,CUST_078,2023-11-10,Drain Line Flush,Refrigerant Level Check,,399,Yes
-INV_00234,CUST_051,2023-09-15,Contactor Replacement,Heating Repair,Thermostat Check,1365,Yes
-INV_00235,CUST_R13,2023-10-15,Fan Motor Replacement,,,696,Yes
-INV_00236,CUST_138,2023-11-02,Gas Valve Replacement,Heat Exchanger Inspection,Zone System Check,1292,Yes
-INV_00237,CUST_141,2023-03-03,Flame Sensor Replacement,Pressure Switch Replacement,,1616,Yes
-INV_00238,CUST_036,2024-01-08,Duct Inspection,,,166,Yes
-INV_00239,CUST_037,2024-01-08,Boiler Installation,Thermostat Installation,,8805,Yes
-INV_00240,CUST_092,2024-10-17,Filter Replacement,Thermostat Installation,,5285,Yes
-INV_00241,CUST_021,2024-01-17,Evaporator Coil Cleaning,Flame Sensor Replacement,Humidifier Check,1787,Yes
-INV_00242,CUST_143,2023-11-23,Flame Sensor Replacement,Thermostat Installation,,5999,Yes
-INV_00243,CUST_064,2023-10-23,Compressor Replacement,Thermostat Installation,,8718,Yes
-INV_00244,CUST_049,2024-03-21,Pressure Switch Replacement,,,756,Yes
-INV_00245,CUST_121,2023-06-30,AC Installation,,,6532,Yes
-INV_00246,CUST_046,2024-11-24,AC Repair,,,363,Yes
-INV_00247,CUST_085,2023-04-27,Fan Motor Replacement,,,696,Yes
-INV_00248,CUST_102,2024-09-21,Fan Motor Replacement,Gas Valve Replacement,,1287,Yes
-INV_00249,CUST_139,2023-10-07,Fan Motor Replacement,Flame Sensor Replacement,,1556,Yes
-INV_00250,CUST_085,2023-04-30,Drain Pan Replacement,,,477,Yes
-INV_00251,CUST_R23,2024-10-28,Contactor Replacement,Heat Pump Installation,,6022,Yes
-INV_00252,CUST_027,2024-05-01,Flame Sensor Replacement,Heat Pump Installation,,6398,Yes
-INV_00253,CUST_141,2023-07-21,Refrigerant Level Check,,,238,Yes
-INV_00254,CUST_036,2023-09-27,Air Handler Installation,Thermostat Installation,,9893,Yes
-INV_00255,CUST_078,2024-06-23,Filter Replacement,,,146,No
-INV_00256,CUST_041,2024-08-27,Condenser Coil Cleaning,,,431,Yes
-INV_00257,CUST_141,2024-06-29,Compressor Replacement,Contactor Replacement,Thermostat Installation,9202,Yes
-INV_00258,CUST_048,2023-10-17,Flame Sensor Replacement,,,860,Yes
-INV_00259,CUST_118,2023-12-29,AC Tune-up,Heating Repair,,773,Yes
-INV_00260,CUST_007,2023-03-02,Boiler Installation,,,3666,Yes
-INV_00261,CUST_R15,2024-09-12,Capacitor Replacement,,,497,Yes
-INV_00262,CUST_R18,2023-04-18,Pressure Switch Replacement,Zone Damper Replacement,,1390,Yes
-INV_00263,CUST_093,2023-04-01,Compressor Replacement,Heating Tune-up,Mini-Split Installation,6675,Yes
-INV_00264,CUST_042,2024-07-07,Thermostat Calibration,,,173,Yes
-INV_00265,CUST_031,2023-09-08,Contactor Replacement,Drain Line Flush,,645,Yes
-INV_00266,CUST_134,2023-04-19,Compressor Replacement,Duct Inspection,Furnace Installation,7633,Yes
-INV_00267,CUST_053,2023-09-11,Furnace Installation,Gas Valve Replacement,,4479,Yes
-INV_00268,CUST_R10,2024-01-26,Heating Tune-up,Thermostat Installation,,5360,Yes
-INV_00269,CUST_134,2024-10-22,Filter Replacement,UV Light Check,,383,Yes
-INV_00270,CUST_146,2024-11-25,Gas Valve Replacement,,,591,Yes
-INV_00271,CUST_060,2024-01-24,Compressor Replacement,Pressure Switch Replacement,,4335,Yes
-INV_00272,CUST_121,2024-09-02,Heat Exchanger Inspection,Thermostat Installation,,5606,Yes
-INV_00273,CUST_074,2024-08-01,Drain Pan Replacement,Evaporator Coil Cleaning,Refrigerant Recharge,2037,Yes
-INV_00274,CUST_042,2023-09-15,AC Tune-up,Refrigerant Level Check,,379,Yes
-INV_00275,CUST_120,2023-05-27,Thermostat Replacement,Zone System Check,,701,Yes
-INV_00276,CUST_051,2023-07-21,AC Installation,Thermostat Installation,,11671,Yes
-INV_00277,CUST_077,2023-10-15,Mini-Split Installation,,,2875,Yes
-INV_00278,CUST_126,2024-05-01,Supply Vent Balancing,,,193,Yes
-INV_00279,CUST_073,2024-09-20,AC Repair,Carbon Monoxide Test,Electrical Safety Inspection,786,No
-INV_00280,CUST_084,2024-01-01,AC Installation,Duct Cleaning,Thermostat Installation,12246,Yes
-INV_00281,CUST_090,2023-04-23,Control Board Replacement,Heat Exchanger Inspection,,1276,No
-INV_00282,CUST_090,2023-01-10,Air Handler Installation,,,4754,Yes
-INV_00283,CUST_141,2024-08-21,Mini-Split Installation,,,2875,Yes
-INV_00284,CUST_116,2023-02-12,Heating Tune-up,Igniter Replacement,Thermostat Installation,6145,Yes
-INV_00285,CUST_061,2024-05-14,Evaporator Coil Cleaning,,,757,No
-INV_00286,CUST_015,2023-08-29,AC Tune-up,,,141,Yes
-INV_00287,CUST_109,2024-05-22,Duct Inspection,Refrigerant Level Check,,404,Yes
-INV_00288,CUST_048,2024-01-18,Blower Motor Cleaning,Condensate Pump Cleaning,Flame Sensor Replacement,1235,Yes
-INV_00289,CUST_007,2023-03-29,Pressure Switch Replacement,,,756,Yes
-INV_00290,CUST_123,2023-11-21,Drain Line Flush,Zone Damper Replacement,,795,No
-INV_00291,CUST_083,2023-05-25,AC Installation,,,6532,Yes
-INV_00292,CUST_R15,2024-11-20,Drain Pan Replacement,Evaporator Coil Cleaning,,1234,Yes
-INV_00293,CUST_088,2023-06-17,Compressor Replacement,,,3579,Yes
-INV_00294,CUST_128,2024-10-11,Contactor Replacement,Heat Pump Installation,,6022,Yes
-INV_00295,CUST_129,2023-06-13,Breaker Inspection,Evaporator Coil Cleaning,,1003,Yes
-INV_00296,CUST_057,2024-06-29,Drain Line Flush,Refrigerant Level Check,,399,Yes
-INV_00297,CUST_132,2024-02-20,Heating Tune-up,,,221,Yes
-INV_00298,CUST_018,2023-02-04,Furnace Installation,,,3888,Yes
-INV_00299,CUST_109,2023-01-18,Flame Sensor Replacement,Gas Valve Replacement,,1451,Yes
-INV_00300,CUST_033,2023-12-28,Pressure Switch Replacement,Refrigerant Level Check,,994,Yes
-INV_00301,CUST_010,2024-07-05,HVAC Installation,Mini-Split Installation,Thermostat Installation,11964,Yes
-INV_00302,CUST_090,2024-10-27,Refrigerant Level Check,,,238,Yes
-INV_00303,CUST_052,2023-07-31,Duct Cleaning,,,575,Yes
-INV_00304,CUST_054,2023-12-16,Thermostat Calibration,,,173,Yes
-INV_00305,CUST_108,2023-03-18,Gas Valve Replacement,Heating Repair,,1223,Yes
-INV_00306,CUST_085,2023-02-03,Compressor Replacement,Flame Sensor Replacement,,4439,Yes
-INV_00307,CUST_082,2023-11-15,Filter Replacement,Refrigerant Level Check,,384,Yes
-INV_00308,CUST_004,2024-11-23,Igniter Replacement,Thermostat Installation,,5924,Yes
-INV_00309,CUST_029,2023-10-20,Gas Valve Replacement,Heat Pump Installation,Thermostat Installation,11268,Yes
-INV_00310,CUST_084,2024-08-21,Duct Sealing,Thermostat Installation,,7974,Yes
-INV_00311,CUST_051,2024-07-21,Thermostat Check,Thermostat Installation,,5388,Yes
-INV_00312,CUST_R26,2024-07-04,Capacitor Replacement,,,497,Yes
-INV_00313,CUST_125,2024-10-15,Drain Line Flush,,,161,Yes
-INV_00314,CUST_119,2023-04-24,Filter Replacement,Thermostat Replacement,,613,Yes
-INV_00315,CUST_150,2023-12-30,Furnace Installation,,,3888,Yes
-INV_00316,CUST_126,2024-02-22,Boiler Installation,,,3666,Yes
-INV_00317,CUST_120,2024-11-23,Capacitor Replacement,Furnace Installation,Heating Tune-up,4606,Yes
-INV_00318,CUST_150,2024-09-25,AC Installation,Breaker Inspection,Thermostat Installation,11917,Yes
-INV_00319,CUST_009,2023-11-03,AC Installation,Drain Pan Replacement,Thermostat Installation,12148,Yes
-INV_00320,CUST_R08,2024-06-11,Heat Exchanger Inspection,Thermostat Replacement,,934,Yes
-INV_00321,CUST_089,2024-04-16,Return Air Inspection,,,250,Yes
-INV_00322,CUST_113,2024-05-16,Fan Motor Replacement,Zone Damper Replacement,,1330,Yes
-INV_00323,CUST_117,2024-12-23,Heat Exchanger Inspection,Thermostat Installation,,5606,Yes
-INV_00324,CUST_R11,2023-10-25,AC Tune-up,,,141,Yes
-INV_00325,CUST_049,2023-12-04,Heating Repair,,,632,Yes
-INV_00326,CUST_030,2024-03-03,Furnace Installation,,,3888,Yes
-INV_00327,CUST_053,2023-06-03,Thermostat Check,Thermostat Installation,,5388,No
-INV_00328,CUST_082,2024-07-16,Evaporator Coil Cleaning,Heating Tune-up,,978,Yes
-INV_00329,CUST_046,2023-10-19,Boiler Installation,,,3666,Yes
-INV_00330,CUST_028,2023-03-05,Air Handler Installation,Thermostat Installation,,9893,Yes
-INV_00331,CUST_102,2024-03-13,Furnace Installation,Heat Exchanger Inspection,Supply Vent Balancing,4548,Yes
-INV_00332,CUST_090,2024-04-25,Capacitor Replacement,Evaporator Coil Cleaning,,1254,Yes
-INV_00333,CUST_R14,2023-02-02,Flame Sensor Replacement,Heating Repair,Heating Tune-up,1713,Yes
-INV_00334,CUST_123,2023-09-18,Filter Replacement,Refrigerant Level Check,,384,Yes
-INV_00335,CUST_069,2024-02-21,System Maintenance,,,211,Yes
-INV_00336,CUST_068,2024-07-09,Carbon Monoxide Test,Compressor Replacement,Drain Pan Replacement,4236,No
-INV_00337,CUST_066,2023-03-14,Blower Motor Cleaning,Heat Pump Installation,,5732,Yes
-INV_00338,CUST_109,2024-06-05,Heat Pump Installation,,,5538,Yes
-INV_00339,CUST_147,2024-10-06,Drain Pan Replacement,Evaporator Coil Cleaning,,1234,Yes
-INV_00340,CUST_140,2023-08-24,AC Tune-up,Drain Line Flush,,302,Yes
-INV_00341,CUST_141,2023-07-09,Contactor Replacement,Heating Repair,,1116,Yes
-INV_00342,CUST_141,2023-03-12,Evaporator Coil Cleaning,Heating Tune-up,,978,Yes
-INV_00343,CUST_007,2024-03-06,Compressor Replacement,,,3579,Yes
-INV_00344,CUST_088,2023-03-12,Heating Repair,,,632,Yes
-INV_00345,CUST_143,2024-09-01,AC Installation,Air Handler Installation,Thermostat Installation,16425,Yes
-INV_00346,CUST_046,2024-10-28,AC Tune-up,,,141,Yes
-INV_00347,CUST_133,2024-11-17,Heating Tune-up,,,221,Yes
-INV_00348,CUST_R11,2023-11-01,Boiler Installation,Gas Valve Replacement,Thermostat Installation,9396,Yes
-INV_00349,CUST_068,2023-07-06,Blower Motor Cleaning,,,194,Yes
-INV_00350,CUST_147,2023-02-02,AC Installation,,,6532,Yes
-INV_00351,CUST_115,2023-04-07,Capacitor Replacement,Furnace Installation,,4385,Yes
-INV_00352,CUST_R10,2023-06-25,AC Installation,Gas Valve Replacement,Thermostat Installation,12262,Yes
-INV_00353,CUST_030,2023-06-28,Gas Valve Replacement,Heating Tune-up,,812,Yes
-INV_00354,CUST_030,2024-08-31,Refrigerant Recharge,Thermostat Calibration,,976,Yes
-INV_00355,CUST_087,2024-05-17,Evaporator Coil Cleaning,,,757,Yes
-INV_00356,CUST_042,2024-10-31,AC Installation,Thermostat Installation,,11671,Yes
-INV_00357,CUST_025,2023-11-07,AC Tune-up,Heat Exchanger Inspection,,608,Yes
-INV_00358,CUST_089,2023-01-08,UV Light Check,,,237,Yes
-INV_00359,CUST_040,2023-10-15,Capacitor Replacement,Duct Cleaning,,1072,Yes
-INV_00360,CUST_148,2024-07-13,Gas Valve Replacement,Thermostat Installation,,5730,Yes
-INV_00361,CUST_134,2024-04-28,System Maintenance,Thermostat Installation,,5350,Yes
-INV_00362,CUST_126,2023-10-04,Heating Tune-up,Refrigerant Recharge,,1024,Yes
-INV_00363,CUST_050,2023-01-21,AC Installation,,,6532,Yes
-INV_00364,CUST_137,2023-08-09,AC Installation,Heat Pump Installation,,12070,Yes
-INV_00365,CUST_033,2024-02-26,Heating Repair,,,632,Yes
-INV_00366,CUST_031,2023-08-26,Thermostat Calibration,,,173,Yes
-INV_00367,CUST_R29,2023-05-05,Breaker Inspection,,,246,Yes
-INV_00368,CUST_034,2023-08-17,Mini-Split Installation,Thermostat Installation,,8014,Yes
-INV_00369,CUST_019,2023-01-16,Furnace Installation,,,3888,Yes
-INV_00370,CUST_093,2024-04-30,HVAC Installation,Heat Exchanger Inspection,,4417,Yes
-INV_00371,CUST_049,2024-09-29,Contactor Replacement,,,484,Yes
-INV_00372,CUST_115,2024-09-22,Filter Replacement,Thermostat Installation,,5285,Yes
-INV_00373,CUST_031,2024-10-04,Heating Repair,Thermostat Replacement,,1099,Yes
-INV_00374,CUST_114,2024-07-14,AC Tune-up,,,141,Yes
-INV_00375,CUST_074,2024-04-25,Condenser Coil Cleaning,,,431,Yes
-INV_00376,CUST_R21,2024-03-10,Heating Repair,,,632,Yes
-INV_00377,CUST_058,2023-10-08,Breaker Inspection,Return Air Inspection,,496,Yes
-INV_00378,CUST_052,2024-05-20,Furnace Installation,Thermostat Installation,,9027,Yes
-INV_00379,CUST_121,2023-06-09,Refrigerant Recharge,,,803,Yes
-INV_00380,CUST_133,2024-06-08,Capacitor Replacement,Heat Exchanger Inspection,,964,Yes
-INV_00381,CUST_014,2023-12-10,Control Board Replacement,Evaporator Coil Cleaning,,1566,Yes
-INV_00382,CUST_137,2023-08-25,Heat Pump Installation,Igniter Replacement,,6323,Yes
-INV_00383,CUST_141,2023-02-27,Gas Valve Replacement,,,591,Yes
-INV_00384,CUST_131,2023-07-31,Blower Motor Cleaning,Electrical Safety Inspection,,437,Yes
-INV_00385,CUST_005,2024-06-17,Contactor Replacement,Evaporator Coil Cleaning,,1241,Yes
-INV_00386,CUST_R10,2024-02-06,Boiler Installation,,,3666,Yes
-INV_00387,CUST_070,2023-08-30,Condenser Coil Cleaning,Thermostat Installation,,5570,Yes
-INV_00388,CUST_132,2023-07-24,Refrigerant Recharge,,,803,Yes
-INV_00389,CUST_035,2024-05-14,AC Tune-up,,,141,Yes
-INV_00390,CUST_R20,2024-08-01,Condenser Coil Cleaning,Evaporator Coil Cleaning,,1188,Yes
-INV_00391,CUST_148,2024-01-03,Compressor Replacement,,,3579,Yes
-INV_00392,CUST_033,2023-03-22,Furnace Installation,,,3888,Yes
-INV_00393,CUST_103,2023-07-27,Condenser Coil Cleaning,Heat Pump Installation,,5969,Yes
-INV_00394,CUST_067,2023-11-19,Evaporator Coil Cleaning,Filter Replacement,,903,Yes
-INV_00395,CUST_R12,2024-09-03,Igniter Replacement,Refrigerant Level Check,Thermostat Installation,6162,Yes
-INV_00396,CUST_R25,2023-01-13,Flame Sensor Replacement,Furnace Installation,,4748,Yes
-INV_00397,CUST_011,2024-01-04,Duct Cleaning,Furnace Installation,Thermostat Installation,9602,Yes
-INV_00398,CUST_003,2023-04-16,Compressor Replacement,Heat Exchanger Inspection,Mini-Split Installation,6921,Yes
-INV_00399,CUST_102,2024-09-06,Furnace Installation,,,3888,Yes
-INV_00400,CUST_R09,2023-10-22,Duct Cleaning,Heat Exchanger Inspection,,1042,Yes
-INV_00401,CUST_094,2023-09-09,Igniter Replacement,Supply Vent Balancing,,978,Yes
-INV_00402,CUST_R28,2024-12-13,Gas Valve Replacement,Thermostat Replacement,Zone Damper Replacement,1692,Yes
-INV_00403,CUST_019,2024-08-19,Condenser Coil Cleaning,,,431,No
-INV_00404,CUST_R06,2023-10-13,Compressor Replacement,,,3579,Yes
-INV_00405,CUST_132,2024-04-22,Furnace Installation,,,3888,Yes
-INV_00406,CUST_053,2023-07-12,Condenser Coil Cleaning,,,431,Yes
-INV_00407,CUST_090,2023-11-23,Igniter Replacement,Pressure Switch Replacement,Refrigerant Level Check,1779,Yes
-INV_00408,CUST_128,2024-12-09,Heat Pump Installation,,,5538,Yes
-INV_00409,CUST_103,2024-05-17,Carbon Monoxide Test,Relay Replacement,,969,Yes
-INV_00410,CUST_065,2023-01-29,Capacitor Replacement,Control Board Replacement,,1306,Yes
-INV_00411,CUST_069,2024-02-29,Igniter Replacement,,,785,Yes
-INV_00412,CUST_004,2024-02-23,Gas Valve Replacement,,,591,Yes
-INV_00413,CUST_069,2024-01-19,Flame Sensor Replacement,Thermostat Installation,,5999,Yes
-INV_00414,CUST_120,2023-02-04,Furnace Installation,,,3888,Yes
-INV_00415,CUST_075,2024-08-21,Mini-Split Installation,Thermostat Installation,,8014,Yes
-INV_00416,CUST_065,2023-02-08,Zone System Check,,,234,Yes
-INV_00417,CUST_006,2024-11-06,Compressor Replacement,,,3579,Yes
-INV_00418,CUST_130,2023-11-26,Igniter Replacement,Relay Replacement,,1574,Yes
-INV_00419,CUST_026,2023-11-04,Igniter Replacement,,,785,Yes
-INV_00420,CUST_063,2023-01-28,Heating Tune-up,Pressure Switch Replacement,,977,No
-INV_00421,CUST_101,2023-02-14,AC Tune-up,Refrigerant Recharge,,944,Yes
-INV_00422,CUST_090,2023-04-13,Air Quality Assessment,Filter Replacement,,308,Yes
-INV_00423,CUST_076,2023-02-11,Flame Sensor Replacement,Igniter Replacement,,1645,Yes
-INV_00424,CUST_R03,2023-06-09,Blower Motor Cleaning,Capacitor Replacement,Gas Valve Replacement,1282,Yes
-INV_00425,CUST_018,2023-05-03,Evaporator Coil Cleaning,Gas Valve Replacement,Thermostat Installation,6487,Yes
-INV_00426,CUST_150,2024-01-20,Blower Motor Cleaning,Heat Exchanger Inspection,Heating Tune-up,882,Yes
-INV_00427,CUST_R21,2024-04-05,AC Tune-up,,,141,Yes
-INV_00428,CUST_065,2024-09-18,Fan Motor Replacement,,,696,Yes
-INV_00429,CUST_147,2023-06-30,AC Tune-up,Mini-Split Installation,,3016,Yes
-INV_00430,CUST_068,2023-07-08,Pressure Switch Replacement,,,756,Yes
-INV_00431,CUST_065,2023-09-03,Heat Exchanger Inspection,Supply Vent Balancing,,660,No
-INV_00432,CUST_017,2024-04-13,Return Air Inspection,,,250,Yes
-INV_00433,CUST_076,2024-09-03,Boiler Installation,Capacitor Replacement,Thermostat Installation,9302,Yes
-INV_00434,CUST_021,2023-11-04,Pressure Switch Replacement,,,756,Yes
-INV_00435,CUST_077,2023-07-31,AC Installation,Thermostat Installation,,11671,Yes
-INV_00436,CUST_R04,2023-11-22,Blower Motor Repair,Pressure Switch Replacement,,1238,Yes
-INV_00437,CUST_R30,2024-07-31,Refrigerant Level Check,,,238,Yes
-INV_00438,CUST_004,2023-02-19,Furnace Installation,Thermostat Installation,,9027,Yes
-INV_00439,CUST_045,2024-05-08,Contactor Replacement,Heating Repair,,1116,Yes
-INV_00440,CUST_022,2024-02-07,Air Quality Assessment,,,162,Yes
-INV_00441,CUST_019,2024-04-02,Condenser Coil Cleaning,Furnace Installation,Igniter Replacement,5104,Yes
-INV_00442,CUST_135,2023-10-31,Refrigerant Recharge,Thermostat Installation,,5942,Yes
-INV_00443,CUST_088,2023-12-03,Flame Sensor Replacement,Refrigerant Level Check,,1098,Yes
-INV_00444,CUST_009,2024-02-19,Boiler Installation,Furnace Installation,,7554,Yes
-INV_00445,CUST_006,2024-05-12,Duct Sealing,,,2835,Yes
-INV_00446,CUST_014,2024-06-02,AC Repair,Thermostat Calibration,,536,Yes
-INV_00447,CUST_120,2024-08-31,AC Installation,Condenser Coil Cleaning,,6963,Yes
-INV_00448,CUST_128,2024-06-18,Filter Replacement,,,146,Yes
-INV_00449,CUST_095,2024-10-27,AC Tune-up,Heating Tune-up,,362,Yes
-INV_00450,CUST_032,2024-02-22,Filter Replacement,,,146,Yes
-INV_00451,CUST_025,2024-11-08,Flame Sensor Replacement,Pressure Switch Replacement,,1616,Yes
-INV_00452,CUST_116,2023-12-24,Flame Sensor Replacement,UV Light Check,,1097,Yes
-INV_00453,CUST_049,2024-11-15,Boiler Installation,Igniter Replacement,Thermostat Installation,9590,Yes
-INV_00454,CUST_126,2024-02-22,AC Installation,Thermostat Installation,,11671,Yes
-INV_00455,CUST_079,2023-02-21,Fan Motor Replacement,,,696,Yes
-INV_00456,CUST_094,2024-10-19,AC Tune-up,Igniter Replacement,,926,Yes
-INV_00457,CUST_070,2023-11-26,Return Air Inspection,,,250,Yes
-INV_00458,CUST_009,2023-12-13,Duct Cleaning,,,575,Yes
-INV_00459,CUST_R28,2024-08-15,Thermostat Check,,,249,Yes
-INV_00460,CUST_073,2023-02-05,Gas Valve Replacement,,,591,Yes
-INV_00461,CUST_097,2023-03-10,Capacitor Replacement,Contactor Replacement,,981,Yes
-INV_00462,CUST_125,2024-03-14,Igniter Replacement,,,785,Yes
-INV_00463,CUST_R02,2023-07-11,Mini-Split Installation,Refrigerant Level Check,,3113,Yes
-INV_00464,CUST_063,2024-10-28,UV Light Check,,,237,Yes
-INV_00465,CUST_055,2023-05-25,Control Board Replacement,,,809,Yes
-INV_00466,CUST_017,2024-08-24,Condenser Coil Cleaning,Refrigerant Level Check,,669,Yes
-INV_00467,CUST_R17,2023-04-11,Igniter Replacement,Thermostat Installation,,5924,Yes
-INV_00468,CUST_037,2023-03-05,Condenser Coil Cleaning,Filter Replacement,,577,Yes
-INV_00469,CUST_038,2024-03-01,Drain Pan Replacement,,,477,Yes
-INV_00470,CUST_001,2023-09-26,Heat Pump Installation,Mini-Split Installation,,8413,Yes
-INV_00471,CUST_042,2023-09-24,Thermostat Installation,,,5139,Yes
-INV_00472,CUST_128,2023-12-23,Heating Repair,,,632,Yes
-INV_00473,CUST_016,2024-02-27,Gas Valve Replacement,Heating Tune-up,,812,Yes
-INV_00474,CUST_045,2024-03-01,Heating Repair,Heating Tune-up,Pressure Switch Replacement,1609,Yes
-INV_00475,CUST_148,2024-04-05,AC Installation,,,6532,Yes
-INV_00476,CUST_133,2023-07-10,Relay Replacement,,,789,Yes
-INV_00477,CUST_026,2023-02-28,Gas Valve Replacement,Heating Tune-up,,812,Yes
-INV_00478,CUST_026,2023-11-10,Pressure Switch Replacement,,,756,Yes
-INV_00479,CUST_009,2023-05-21,Refrigerant Recharge,System Maintenance,,1014,Yes
-INV_00480,CUST_091,2024-07-26,Contactor Replacement,,,484,Yes
-INV_00481,CUST_042,2023-07-21,Boiler Installation,,,3666,Yes
-INV_00482,CUST_143,2023-07-29,Heat Pump Installation,Thermostat Installation,,10677,Yes
-INV_00483,CUST_R25,2023-09-10,Compressor Replacement,Filter Replacement,Thermostat Installation,8864,Yes
-INV_00484,CUST_123,2024-11-27,Furnace Installation,,,3888,Yes
-INV_00485,CUST_006,2024-05-08,Pressure Switch Replacement,,,756,Yes
-INV_00486,CUST_090,2023-01-19,Gas Valve Replacement,,,591,Yes
-INV_00487,CUST_017,2024-10-27,Heat Pump Installation,Thermostat Installation,,10677,Yes
-INV_00488,CUST_085,2024-07-09,Evaporator Coil Cleaning,,,757,Yes
-INV_00489,CUST_025,2023-12-09,Boiler Installation,,,3666,Yes
-INV_00490,CUST_034,2024-08-19,Breaker Inspection,Condenser Coil Cleaning,Control Board Replacement,1486,Yes
-INV_00491,CUST_009,2024-03-04,Heating Repair,,,632,Yes
-INV_00492,CUST_023,2024-01-17,Heat Pump Installation,Thermostat Check,Zone Damper Replacement,6421,Yes
-INV_00493,CUST_026,2023-01-09,Contactor Replacement,Flame Sensor Replacement,Gas Valve Replacement,1935,Yes
-INV_00494,CUST_118,2023-06-07,Supply Vent Balancing,,,193,Yes
-INV_00495,CUST_038,2024-05-28,Air Quality Assessment,Thermostat Installation,,5301,Yes
-INV_00496,CUST_130,2023-05-28,Heating Repair,UV Light Check,,869,Yes
-INV_00497,CUST_146,2024-03-16,Heat Exchanger Inspection,,,467,Yes
-INV_00498,CUST_110,2024-06-02,Evaporator Coil Cleaning,,,757,Yes
-INV_00499,CUST_075,2024-11-15,Thermostat Replacement,,,467,Yes
-INV_00500,CUST_016,2024-02-13,Gas Valve Replacement,Heating Repair,Return Air Inspection,1473,Yes
-INV_00501,CUST_043,2024-01-23,Condenser Coil Cleaning,Relay Replacement,,1220,No
-INV_00502,CUST_094,2024-07-01,AC Tune-up,Boiler Installation,,3807,Yes
-INV_00503,CUST_103,2023-04-20,Heating Tune-up,UV Light Check,,458,Yes
-INV_00504,CUST_030,2024-10-05,Heat Pump Installation,,,5538,Yes
-INV_00505,CUST_039,2024-02-05,Flame Sensor Replacement,Mini-Split Installation,Refrigerant Recharge,4538,Yes
-INV_00506,CUST_112,2023-03-21,Carbon Monoxide Test,Gas Valve Replacement,Heating Tune-up,992,Yes
-INV_00507,CUST_091,2024-02-23,Furnace Installation,Igniter Replacement,,4673,Yes
-INV_00508,CUST_094,2024-11-30,Air Handler Installation,Heating Repair,,5386,Yes
-INV_00509,CUST_R10,2023-10-14,Compressor Replacement,Furnace Installation,,7467,Yes
-INV_00510,CUST_087,2023-05-10,Air Quality Assessment,,,162,Yes
-INV_00511,CUST_091,2023-11-28,UV Light Check,,,237,Yes
-INV_00512,CUST_038,2023-08-11,Condenser Coil Cleaning,Heat Exchanger Inspection,Refrigerant Level Check,1136,Yes
-INV_00513,CUST_008,2024-12-08,Boiler Installation,Igniter Replacement,,4451,Yes
-INV_00514,CUST_023,2024-10-10,Condensate Pump Cleaning,Fan Motor Replacement,,877,Yes
-INV_00515,CUST_R13,2023-05-05,Contactor Replacement,,,484,Yes
-INV_00516,CUST_R11,2023-05-13,Capacitor Replacement,Thermostat Installation,,5636,Yes
-INV_00517,CUST_007,2024-11-07,Furnace Installation,,,3888,Yes
-INV_00518,CUST_051,2023-10-25,Duct Sealing,,,2835,Yes
-INV_00519,CUST_081,2024-09-26,Refrigerant Recharge,,,803,Yes
-INV_00520,CUST_049,2024-06-10,AC Tune-up,Refrigerant Level Check,,379,Yes
-INV_00521,CUST_080,2024-05-24,Mini-Split Installation,Thermostat Installation,,8014,Yes
-INV_00522,CUST_039,2024-08-10,AC Installation,Thermostat Installation,,11671,Yes
-INV_00523,CUST_097,2023-12-27,Condenser Coil Cleaning,Gas Valve Replacement,,1022,Yes
-INV_00524,CUST_027,2023-03-16,Flame Sensor Replacement,Igniter Replacement,,1645,Yes
-INV_00525,CUST_137,2023-01-11,Flame Sensor Replacement,,,860,Yes
-INV_00526,CUST_069,2024-01-12,Gas Valve Replacement,,,591,Yes
-INV_00527,CUST_030,2023-09-30,AC Installation,AC Tune-up,Thermostat Installation,11812,Yes
-INV_00528,CUST_112,2023-11-01,Heating Tune-up,Zone Damper Replacement,,855,Yes
-INV_00529,CUST_037,2023-03-11,Heat Pump Installation,Return Air Inspection,Thermostat Installation,10927,Yes
-INV_00530,CUST_112,2023-11-03,HVAC Installation,Thermostat Installation,,9089,Yes
-INV_00531,CUST_143,2024-11-03,Boiler Installation,Gas Valve Replacement,,4257,Yes
-INV_00532,CUST_142,2023-02-18,Igniter Replacement,,,785,Yes
-INV_00533,CUST_016,2023-07-08,Duct Cleaning,,,575,Yes
-INV_00534,CUST_041,2023-03-31,Carbon Monoxide Test,Control Board Replacement,,989,Yes
-INV_00535,CUST_111,2024-05-19,AC Tune-up,Duct Cleaning,Thermostat Replacement,1183,Yes
-INV_00536,CUST_017,2024-06-06,AC Repair,,,363,Yes
-INV_00537,CUST_055,2023-09-03,Air Handler Installation,Refrigerant Recharge,Thermostat Installation,10696,Yes
-INV_00538,CUST_R28,2024-07-06,Mini-Split Installation,,,2875,Yes
-INV_00539,CUST_146,2024-09-19,Evaporator Coil Cleaning,Refrigerant Recharge,,1560,Yes
-INV_00540,CUST_033,2023-08-30,AC Tune-up,Heat Exchanger Inspection,,608,Yes
-INV_00541,CUST_013,2023-11-02,Heating Tune-up,Igniter Replacement,Refrigerant Recharge,1809,Yes
-INV_00542,CUST_004,2024-06-30,Duct Cleaning,Supply Vent Balancing,,768,Yes
-INV_00543,CUST_072,2024-05-05,Igniter Replacement,,,785,Yes
-INV_00544,CUST_088,2023-03-09,Capacitor Replacement,Control Board Replacement,,1306,Yes
-INV_00545,CUST_020,2024-02-10,Heat Pump Installation,,,5538,Yes
-INV_00546,CUST_149,2023-09-20,Humidifier Check,,,170,Yes
-INV_00547,CUST_006,2023-04-19,Refrigerant Recharge,,,803,Yes
-INV_00548,CUST_029,2023-10-11,Blower Motor Cleaning,Drain Line Flush,,355,Yes
-INV_00549,CUST_124,2024-08-28,Condenser Coil Cleaning,Gas Valve Replacement,,1022,Yes
-INV_00550,CUST_R19,2024-03-04,Filter Replacement,Humidifier Check,,316,Yes
-INV_00551,CUST_149,2023-03-22,Furnace Installation,Thermostat Installation,,9027,Yes
-INV_00552,CUST_043,2024-12-16,AC Installation,Igniter Replacement,,7317,Yes
-INV_00553,CUST_R11,2023-05-17,AC Repair,Compressor Replacement,Thermostat Installation,9081,Yes
-INV_00554,CUST_116,2024-09-29,Control Board Replacement,Heating Tune-up,,1030,Yes
-INV_00555,CUST_122,2024-08-20,Refrigerant Recharge,,,803,Yes
-INV_00556,CUST_017,2024-11-04,Pressure Switch Replacement,Thermostat Installation,,5895,Yes
-INV_00557,CUST_027,2024-02-22,Thermostat Check,,,249,Yes
-INV_00558,CUST_094,2023-05-14,Capacitor Replacement,Heating Tune-up,Igniter Replacement,1503,Yes
-INV_00559,CUST_R28,2023-05-08,Duct Inspection,,,166,Yes
-INV_00560,CUST_087,2023-06-25,Pressure Switch Replacement,,,756,Yes
-INV_00561,CUST_R18,2024-05-16,Furnace Installation,HVAC Installation,,7838,Yes
-INV_00562,CUST_091,2024-04-29,Capacitor Replacement,Duct Inspection,,663,Yes
-INV_00563,CUST_083,2023-09-19,Condenser Coil Cleaning,Furnace Installation,Thermostat Installation,9458,Yes
-INV_00564,CUST_080,2023-02-08,Boiler Installation,Thermostat Installation,,8805,Yes
-INV_00565,CUST_R18,2023-10-01,Refrigerant Recharge,,,803,Yes
-INV_00566,CUST_052,2023-03-10,AC Installation,,,6532,Yes
-INV_00567,CUST_049,2024-02-26,Carbon Monoxide Test,Flame Sensor Replacement,,1040,Yes
-INV_00568,CUST_015,2023-01-18,Heating Tune-up,Pressure Switch Replacement,,977,Yes
-INV_00569,CUST_071,2024-09-17,Heat Pump Installation,,,5538,Yes
-INV_00570,CUST_129,2024-07-12,Condenser Coil Cleaning,Control Board Replacement,,1240,Yes
-INV_00571,CUST_056,2023-08-17,Condensate Pump Cleaning,Heat Pump Installation,,5719,Yes
-INV_00572,CUST_092,2023-03-29,Refrigerant Level Check,,,238,Yes
-INV_00573,CUST_078,2024-11-03,Contactor Replacement,,,484,Yes
-INV_00574,CUST_049,2023-09-17,Thermostat Calibration,Thermostat Installation,,5312,Yes
-INV_00575,CUST_004,2023-07-07,Heat Pump Installation,Thermostat Installation,,10677,Yes
-INV_00576,CUST_R02,2023-02-03,Boiler Installation,Furnace Installation,,7554,Yes
-INV_00577,CUST_R23,2024-04-17,Air Quality Assessment,Breaker Inspection,,408,Yes
-INV_00578,CUST_030,2023-05-17,Return Air Inspection,,,250,Yes
-INV_00579,CUST_R06,2024-09-09,Condenser Coil Cleaning,Electrical Safety Inspection,,674,Yes
-INV_00580,CUST_081,2023-06-14,Condenser Coil Cleaning,Heating Tune-up,,652,Yes
-INV_00581,CUST_095,2024-08-19,Blower Motor Cleaning,Duct Cleaning,,769,Yes
-INV_00582,CUST_140,2024-03-12,Compressor Replacement,,,3579,Yes
-INV_00583,CUST_001,2023-03-15,Heat Exchanger Inspection,,,467,Yes
-INV_00584,CUST_R09,2023-02-06,Heating Tune-up,Supply Vent Balancing,,414,Yes
-INV_00585,CUST_R04,2024-06-29,Refrigerant Recharge,Thermostat Installation,,5942,Yes
-INV_00586,CUST_R12,2024-04-02,Heating Repair,,,632,Yes
-INV_00587,CUST_129,2023-02-10,Boiler Installation,,,3666,Yes
-INV_00588,CUST_140,2024-12-11,Refrigerant Level Check,Thermostat Installation,,5377,Yes
-INV_00589,CUST_143,2023-05-02,AC Repair,,,363,Yes
-INV_00590,CUST_R06,2024-11-17,Duct Inspection,Heat Pump Installation,,5704,Yes
-INV_00591,CUST_120,2024-02-03,Capacitor Replacement,,,497,Yes
-INV_00592,CUST_074,2024-06-09,Thermostat Calibration,,,173,Yes
-INV_00593,CUST_024,2024-09-28,Fan Motor Replacement,UV Light Check,,933,No
-INV_00594,CUST_123,2023-01-25,AC Installation,Gas Valve Replacement,Thermostat Installation,12262,Yes
-INV_00595,CUST_125,2024-03-02,Blower Motor Cleaning,Evaporator Coil Cleaning,,951,Yes
-INV_00596,CUST_012,2024-02-22,Duct Inspection,Flame Sensor Replacement,,1026,Yes
-INV_00597,CUST_051,2023-10-20,Heat Exchanger Inspection,,,467,Yes
-INV_00598,CUST_100,2023-05-29,AC Installation,Contactor Replacement,Igniter Replacement,7801,Yes
-INV_00599,CUST_111,2024-02-15,Condenser Coil Cleaning,Drain Pan Replacement,,908,Yes
-INV_00600,CUST_024,2023-04-08,Blower Motor Cleaning,Condensate Pump Cleaning,,375,Yes
-INV_00601,CUST_107,2024-09-26,Drain Pan Replacement,Evaporator Coil Cleaning,,1234,Yes
-INV_00602,CUST_078,2024-04-10,Duct Sealing,Heat Pump Installation,UV Light Check,8610,Yes
-INV_00603,CUST_083,2023-11-08,Heating Repair,Refrigerant Recharge,,1435,Yes
-INV_00604,CUST_064,2023-12-12,Blower Motor Cleaning,Thermostat Replacement,,661,Yes
-INV_00605,CUST_037,2023-02-11,Gas Valve Replacement,,,591,No
-INV_00606,CUST_128,2023-09-24,Air Quality Assessment,,,162,Yes
-INV_00607,CUST_072,2024-05-26,Heating Tune-up,,,221,Yes
-INV_00608,CUST_R23,2023-01-12,Flame Sensor Replacement,Gas Valve Replacement,,1451,Yes
-INV_00609,CUST_093,2023-07-07,Capacitor Replacement,Refrigerant Level Check,,735,Yes
-INV_00610,CUST_129,2023-05-09,Evaporator Coil Cleaning,Refrigerant Recharge,,1560,No
-INV_00611,CUST_094,2023-03-10,Heating Repair,,,632,Yes
-INV_00612,CUST_113,2023-04-11,Condenser Coil Cleaning,Evaporator Coil Cleaning,,1188,Yes
-INV_00613,CUST_136,2023-12-02,Carbon Monoxide Test,Refrigerant Recharge,,983,Yes
-INV_00614,CUST_065,2024-08-23,Condenser Coil Cleaning,,,431,Yes
-INV_00615,CUST_020,2024-09-07,Capacitor Replacement,Heat Exchanger Inspection,Mini-Split Installation,3839,No
-INV_00616,CUST_R02,2024-07-12,Contactor Replacement,Heat Pump Installation,,6022,Yes
-INV_00617,CUST_138,2023-09-29,Blower Motor Repair,,,482,Yes
-INV_00618,CUST_135,2024-01-30,Zone Damper Replacement,,,634,Yes
-INV_00619,CUST_142,2024-10-23,Heat Exchanger Inspection,,,467,Yes
-INV_00620,CUST_017,2024-05-29,Duct Cleaning,Heating Repair,,1207,No
-INV_00621,CUST_062,2024-07-16,Gas Valve Replacement,Refrigerant Level Check,,829,Yes
-INV_00622,CUST_072,2024-06-18,AC Repair,Heat Pump Installation,,5901,No
-INV_00623,CUST_106,2023-03-13,Control Board Replacement,Flame Sensor Replacement,Heating Repair,2301,Yes
-INV_00624,CUST_103,2024-01-23,Flame Sensor Replacement,Heating Tune-up,,1081,Yes
-INV_00625,CUST_R05,2023-03-23,Duct Cleaning,Heating Tune-up,,796,Yes
-INV_00626,CUST_093,2023-11-17,Flame Sensor Replacement,Heating Tune-up,Pressure Switch Replacement,1837,Yes
-INV_00627,CUST_R11,2023-08-26,Air Quality Assessment,Duct Inspection,,328,Yes
-INV_00628,CUST_109,2024-11-27,Flame Sensor Replacement,Pressure Switch Replacement,Supply Vent Balancing,1809,Yes
-INV_00629,CUST_108,2024-11-03,Thermostat Check,,,249,Yes
-INV_00630,CUST_025,2024-02-04,Condenser Coil Cleaning,Heat Exchanger Inspection,,898,Yes
-INV_00631,CUST_003,2023-10-01,Heating Tune-up,Humidifier Check,,391,Yes
-INV_00632,CUST_013,2024-05-16,AC Installation,Air Quality Assessment,Contactor Replacement,7178,Yes
-INV_00633,CUST_136,2024-07-25,Drain Line Flush,,,161,Yes
-INV_00634,CUST_147,2024-09-16,AC Tune-up,,,141,Yes
-INV_00635,CUST_091,2023-04-06,Gas Valve Replacement,Igniter Replacement,Refrigerant Recharge,2179,Yes
-INV_00636,CUST_149,2023-01-29,AC Installation,Carbon Monoxide Test,,6712,Yes
-INV_00637,CUST_060,2023-06-26,AC Installation,AC Tune-up,Thermostat Installation,11812,Yes
-INV_00638,CUST_126,2023-04-07,Control Board Replacement,Heat Exchanger Inspection,,1276,Yes
-INV_00639,CUST_040,2023-02-12,Gas Valve Replacement,HVAC Installation,,4541,Yes
-INV_00640,CUST_029,2024-12-22,Boiler Installation,Heat Exchanger Inspection,,4133,Yes
-INV_00641,CUST_040,2023-10-30,Furnace Installation,Thermostat Installation,,9027,Yes
-INV_00642,CUST_103,2023-06-27,Compressor Replacement,,,3579,Yes
-INV_00643,CUST_R16,2023-02-09,Capacitor Replacement,Furnace Installation,,4385,Yes
-INV_00644,CUST_121,2023-05-03,Compressor Replacement,,,3579,Yes
-INV_00645,CUST_099,2023-11-26,Thermostat Calibration,,,173,Yes
-INV_00646,CUST_R05,2024-11-05,Gas Valve Replacement,Heating Repair,,1223,Yes
-INV_00647,CUST_019,2024-04-05,Duct Cleaning,Thermostat Installation,,5714,Yes
-INV_00648,CUST_003,2023-05-07,Heat Pump Installation,Thermostat Installation,,10677,Yes
-INV_00649,CUST_119,2023-10-07,AC Repair,Thermostat Installation,Thermostat Replacement,5969,Yes
-INV_00650,CUST_071,2024-07-08,AC Installation,Capacitor Replacement,,7029,Yes
-INV_00651,CUST_R01,2023-06-16,Refrigerant Level Check,Thermostat Installation,,5377,Yes
-INV_00652,CUST_042,2024-09-14,AC Tune-up,Contactor Replacement,Relay Replacement,1414,Yes
-INV_00653,CUST_035,2023-06-27,AC Repair,Contactor Replacement,Electrical Safety Inspection,1090,Yes
-INV_00654,CUST_059,2023-04-01,AC Tune-up,Return Air Inspection,,391,Yes
-INV_00655,CUST_001,2024-11-19,Boiler Installation,Heat Exchanger Inspection,,4133,Yes
-INV_00656,CUST_100,2024-12-10,Mini-Split Installation,System Maintenance,,3086,Yes
-INV_00657,CUST_095,2024-10-19,Boiler Installation,Thermostat Installation,,8805,Yes
-INV_00658,CUST_R21,2024-04-24,Compressor Replacement,Refrigerant Level Check,,3817,Yes
-INV_00659,CUST_100,2023-08-13,Evaporator Coil Cleaning,,,757,Yes
-INV_00660,CUST_067,2024-03-08,Zone System Check,,,234,Yes
-INV_00661,CUST_058,2023-09-02,UV Light Check,,,237,Yes
-INV_00662,CUST_043,2024-11-15,Heat Pump Installation,,,5538,Yes
-INV_00663,CUST_081,2024-01-26,Boiler Installation,Thermostat Installation,,8805,Yes
-INV_00664,CUST_061,2023-12-25,AC Tune-up,Heating Repair,Pressure Switch Replacement,1529,Yes
-INV_00665,CUST_R29,2023-07-28,AC Installation,,,6532,Yes
-INV_00666,CUST_050,2023-05-20,AC Installation,Filter Replacement,,6678,Yes
-INV_00667,CUST_R01,2023-09-11,Mini-Split Installation,Thermostat Installation,,8014,Yes
-INV_00668,CUST_142,2023-09-07,Heat Exchanger Inspection,,,467,Yes
-INV_00669,CUST_R01,2023-08-30,Flame Sensor Replacement,,,860,Yes
-INV_00670,CUST_062,2023-07-28,Thermostat Installation,UV Light Check,,5376,Yes
-INV_00671,CUST_080,2024-05-13,Boiler Installation,,,3666,No
-INV_00672,CUST_082,2023-12-22,Carbon Monoxide Test,Flame Sensor Replacement,,1040,Yes
-INV_00673,CUST_010,2024-11-26,Fan Motor Replacement,Heating Tune-up,Igniter Replacement,1702,Yes
-INV_00674,CUST_105,2023-05-26,Refrigerant Level Check,Refrigerant Recharge,,1041,Yes
-INV_00675,CUST_R16,2023-10-18,Contactor Replacement,,,484,Yes
-INV_00676,CUST_005,2023-01-16,Heat Exchanger Inspection,,,467,Yes
-INV_00677,CUST_031,2024-09-01,Compressor Replacement,Thermostat Installation,,8718,Yes
-INV_00678,CUST_024,2023-03-10,Heating Tune-up,Zone System Check,,455,Yes
-INV_00679,CUST_R23,2023-09-25,Compressor Replacement,Pressure Switch Replacement,,4335,Yes
-INV_00680,CUST_R08,2023-08-31,Pressure Switch Replacement,,,756,Yes
-INV_00681,CUST_005,2023-06-11,Humidifier Check,,,170,Yes
-INV_00682,CUST_135,2023-12-20,Contactor Replacement,Electrical Safety Inspection,,727,Yes
-INV_00683,CUST_105,2024-06-15,HVAC Installation,Heat Pump Installation,Thermostat Installation,14627,Yes
-INV_00684,CUST_042,2024-04-23,Igniter Replacement,,,785,Yes
-INV_00685,CUST_R03,2024-07-01,Refrigerant Recharge,,,803,Yes
-INV_00686,CUST_134,2024-03-04,Condenser Coil Cleaning,Thermostat Installation,,5570,Yes
-INV_00687,CUST_098,2024-07-28,Flame Sensor Replacement,,,860,Yes
-INV_00688,CUST_076,2023-07-26,AC Repair,Condenser Coil Cleaning,Igniter Replacement,1579,Yes
-INV_00689,CUST_069,2023-06-01,Filter Replacement,,,146,Yes
-INV_00690,CUST_117,2023-07-08,Air Quality Assessment,,,162,Yes
-INV_00691,CUST_122,2024-04-25,AC Repair,Capacitor Replacement,Condenser Coil Cleaning,1291,Yes
-INV_00692,CUST_031,2024-12-22,Contactor Replacement,System Maintenance,Thermostat Installation,5834,Yes
-INV_00693,CUST_126,2024-05-31,AC Tune-up,,,141,Yes
-INV_00694,CUST_055,2023-07-13,AC Installation,Thermostat Installation,,11671,Yes
-INV_00695,CUST_121,2024-08-10,AC Installation,Heat Pump Installation,,12070,Yes
-INV_00696,CUST_084,2023-10-18,Refrigerant Level Check,Thermostat Installation,,5377,Yes
-INV_00697,CUST_111,2023-09-24,AC Installation,Thermostat Installation,,11671,Yes
-INV_00698,CUST_R04,2024-03-12,Heating Tune-up,Zone Damper Replacement,,855,Yes
-INV_00699,CUST_R04,2023-01-02,Drain Pan Replacement,Heating Repair,,1109,Yes
-INV_00700,CUST_122,2024-01-17,Igniter Replacement,Pressure Switch Replacement,,1541,Yes
-INV_00701,CUST_R16,2023-06-25,Contactor Replacement,,,484,No
-INV_00702,CUST_050,2024-03-24,AC Repair,,,363,Yes
-INV_00703,CUST_023,2023-12-21,Heating Repair,Refrigerant Recharge,,1435,Yes
-INV_00704,CUST_128,2023-10-08,Igniter Replacement,Thermostat Check,,1034,Yes
-INV_00705,CUST_R20,2023-05-10,Supply Vent Balancing,,,193,Yes
-INV_00706,CUST_115,2024-07-03,Duct Cleaning,Heat Pump Installation,,6113,Yes
-INV_00707,CUST_118,2024-11-10,Heating Repair,,,632,Yes
-INV_00708,CUST_109,2024-02-24,Boiler Installation,Pressure Switch Replacement,Thermostat Installation,9561,Yes
-INV_00709,CUST_R01,2023-01-01,Furnace Installation,,,3888,Yes
-INV_00710,CUST_051,2024-05-30,Thermostat Check,,,249,Yes
-INV_00711,CUST_046,2023-12-07,Heating Tune-up,Igniter Replacement,,1006,Yes
-INV_00712,CUST_R19,2023-04-28,AC Tune-up,Mini-Split Installation,Thermostat Installation,8155,Yes
-INV_00713,CUST_067,2024-03-02,Blower Motor Repair,Heat Exchanger Inspection,Thermostat Installation,6088,Yes
-INV_00714,CUST_R26,2024-07-28,Condenser Coil Cleaning,Gas Valve Replacement,Mini-Split Installation,3897,Yes
-INV_00715,CUST_007,2023-11-11,Heating Tune-up,Zone Damper Replacement,,855,Yes
-INV_00716,CUST_037,2024-10-19,Air Quality Assessment,Heating Repair,,794,Yes
-INV_00717,CUST_087,2024-10-26,Mini-Split Installation,Pressure Switch Replacement,Thermostat Installation,8770,Yes
-INV_00718,CUST_030,2024-08-16,Compressor Replacement,,,3579,Yes
-INV_00719,CUST_009,2024-11-30,Heating Repair,Mini-Split Installation,,3507,Yes
-INV_00720,CUST_072,2023-02-17,Flame Sensor Replacement,Supply Vent Balancing,,1053,Yes
-INV_00721,CUST_065,2023-08-19,UV Light Check,,,237,No
-INV_00722,CUST_015,2023-11-15,Heat Exchanger Inspection,Heating Tune-up,,688,Yes
-INV_00723,CUST_049,2023-04-13,Flame Sensor Replacement,Thermostat Installation,,5999,Yes
-INV_00724,CUST_061,2024-12-20,Heating Tune-up,Refrigerant Level Check,Thermostat Installation,5598,Yes
-INV_00725,CUST_117,2023-10-10,Mini-Split Installation,Thermostat Installation,,8014,Yes
-INV_00726,CUST_R20,2024-07-03,AC Repair,Filter Replacement,,509,Yes
-INV_00727,CUST_018,2024-12-27,Contactor Replacement,Heating Tune-up,,705,Yes
-INV_00728,CUST_113,2023-02-16,Compressor Replacement,,,3579,Yes
-INV_00729,CUST_150,2024-08-02,Compressor Replacement,Condensate Pump Cleaning,,3760,Yes
-INV_00730,CUST_049,2023-05-17,Gas Valve Replacement,,,591,Yes
-INV_00731,CUST_047,2024-02-16,Drain Pan Replacement,,,477,Yes
-INV_00732,CUST_R15,2023-03-25,Boiler Installation,Igniter Replacement,Thermostat Installation,9590,No
-INV_00733,CUST_R17,2024-02-17,Igniter Replacement,Thermostat Replacement,,1252,Yes
-INV_00734,CUST_150,2023-01-02,Furnace Installation,Heating Repair,,4520,Yes
-INV_00735,CUST_126,2023-01-06,Compressor Replacement,Thermostat Installation,,8718,Yes
-INV_00736,CUST_060,2024-10-11,Gas Valve Replacement,Thermostat Calibration,,764,Yes
-INV_00737,CUST_025,2024-10-10,Drain Line Flush,Duct Sealing,Thermostat Installation,8135,Yes
-INV_00738,CUST_061,2023-10-16,Heat Exchanger Inspection,Heating Tune-up,,688,Yes
-INV_00739,CUST_083,2023-09-09,Breaker Inspection,Condenser Coil Cleaning,Zone System Check,911,Yes
-INV_00740,CUST_041,2023-09-21,Igniter Replacement,,,785,Yes
-INV_00741,CUST_087,2023-01-11,Igniter Replacement,,,785,Yes
-INV_00742,CUST_033,2024-09-04,Contactor Replacement,,,484,Yes
-INV_00743,CUST_R29,2024-10-01,Refrigerant Recharge,,,803,Yes
-INV_00744,CUST_062,2023-04-22,Gas Valve Replacement,,,591,Yes
-INV_00745,CUST_R06,2024-02-13,Gas Valve Replacement,Heating Repair,Refrigerant Level Check,1461,Yes
-INV_00746,CUST_R23,2023-02-27,AC Installation,,,6532,Yes
-INV_00747,CUST_142,2024-07-29,AC Tune-up,Heat Pump Installation,,5679,Yes
-INV_00748,CUST_138,2024-02-14,Heating Tune-up,,,221,Yes
-INV_00749,CUST_R05,2023-03-21,Pressure Switch Replacement,,,756,No
-INV_00750,CUST_R25,2023-03-28,Compressor Replacement,Heat Exchanger Inspection,,4046,Yes
-INV_00751,CUST_R05,2024-11-07,Drain Line Flush,Thermostat Calibration,,334,Yes
-INV_00752,CUST_067,2023-04-02,Evaporator Coil Cleaning,Refrigerant Level Check,,995,No
-INV_00753,CUST_048,2023-05-13,Breaker Inspection,Thermostat Installation,,5385,Yes
-INV_00754,CUST_128,2023-07-27,Return Air Inspection,,,250,Yes
-INV_00755,CUST_044,2023-07-28,AC Repair,Heat Exchanger Inspection,,830,Yes
-INV_00756,CUST_150,2024-07-30,Evaporator Coil Cleaning,Heat Pump Installation,,6295,Yes
-INV_00757,CUST_081,2023-08-19,Mini-Split Installation,,,2875,Yes
-INV_00758,CUST_091,2023-02-01,AC Installation,Gas Valve Replacement,Thermostat Installation,12262,Yes
-INV_00759,CUST_067,2024-09-26,AC Tune-up,Compressor Replacement,,3720,Yes
-INV_00760,CUST_116,2024-11-08,Igniter Replacement,,,785,Yes
-INV_00761,CUST_093,2024-02-18,Heating Repair,Pressure Switch Replacement,,1388,Yes
-INV_00762,CUST_013,2023-01-02,AC Installation,Contactor Replacement,,7016,Yes
-INV_00763,CUST_011,2023-09-18,Gas Valve Replacement,,,591,Yes
-INV_00764,CUST_129,2023-05-02,Carbon Monoxide Test,Control Board Replacement,,989,Yes
-INV_00765,CUST_076,2024-01-02,Gas Valve Replacement,,,591,Yes
-INV_00766,CUST_046,2023-09-25,Mini-Split Installation,Thermostat Installation,,8014,Yes
-INV_00767,CUST_122,2024-11-02,Contactor Replacement,Thermostat Installation,,5623,Yes
-INV_00768,CUST_R07,2024-01-10,Drain Pan Replacement,Igniter Replacement,,1262,Yes
-INV_00769,CUST_R11,2023-03-06,Heat Pump Installation,Humidifier Check,,5708,Yes
-INV_00770,CUST_143,2024-05-11,AC Installation,,,6532,No
-INV_00771,CUST_047,2024-11-24,Boiler Installation,,,3666,Yes
-INV_00772,CUST_127,2023-06-07,Condenser Coil Cleaning,Duct Sealing,,3266,Yes
-INV_00773,CUST_123,2024-02-10,Boiler Installation,Thermostat Installation,,8805,Yes
-INV_00774,CUST_042,2024-06-14,Duct Cleaning,,,575,Yes
-INV_00775,CUST_R07,2024-08-21,Filter Replacement,,,146,Yes
-INV_00776,CUST_070,2024-12-04,Relay Replacement,Return Air Inspection,,1039,Yes
-INV_00777,CUST_035,2023-03-22,Fan Motor Replacement,Heating Repair,Refrigerant Level Check,1566,Yes
-INV_00778,CUST_074,2023-05-28,Compressor Replacement,Thermostat Installation,,8718,Yes
-INV_00779,CUST_142,2023-10-27,Drain Line Flush,Flame Sensor Replacement,,1021,Yes
-INV_00780,CUST_041,2024-10-08,Heating Tune-up,,,221,Yes
-INV_00781,CUST_007,2024-06-28,AC Installation,Refrigerant Level Check,,6770,Yes
-INV_00782,CUST_021,2023-10-28,Furnace Installation,,,3888,Yes
-INV_00783,CUST_034,2024-04-20,AC Repair,,,363,Yes
-INV_00784,CUST_009,2023-06-30,AC Repair,Filter Replacement,Flame Sensor Replacement,1369,Yes
-INV_00785,CUST_045,2024-05-27,AC Repair,Fan Motor Replacement,Refrigerant Level Check,1297,Yes
-INV_00786,CUST_092,2023-11-30,AC Repair,Air Quality Assessment,Relay Replacement,1314,Yes
-INV_00787,CUST_031,2024-12-09,Carbon Monoxide Test,,,180,Yes
-INV_00788,CUST_111,2023-10-21,Drain Pan Replacement,Supply Vent Balancing,,670,No
-INV_00789,CUST_056,2023-01-02,Refrigerant Recharge,,,803,Yes
-INV_00790,CUST_096,2023-04-23,Refrigerant Level Check,,,238,Yes
-INV_00791,CUST_008,2024-10-07,AC Repair,Control Board Replacement,Fan Motor Replacement,1868,Yes
-INV_00792,CUST_063,2023-06-07,System Maintenance,,,211,Yes
-INV_00793,CUST_100,2023-10-19,Condensate Pump Cleaning,Heat Exchanger Inspection,,648,Yes
-INV_00794,CUST_050,2024-02-23,Duct Sealing,,,2835,Yes
-INV_00795,CUST_084,2023-06-17,Capacitor Replacement,Control Board Replacement,,1306,Yes
-INV_00796,CUST_034,2024-09-07,Zone System Check,,,234,Yes
-INV_00797,CUST_051,2023-03-20,Breaker Inspection,,,246,Yes
-INV_00798,CUST_016,2024-11-18,Condenser Coil Cleaning,Control Board Replacement,Zone Damper Replacement,1874,Yes
-INV_00799,CUST_110,2023-10-17,AC Installation,Condenser Coil Cleaning,Thermostat Installation,12102,Yes
-INV_00800,CUST_052,2023-10-07,Flame Sensor Replacement,Thermostat Installation,,5999,Yes
-INV_00801,CUST_070,2024-01-02,Pressure Switch Replacement,,,756,Yes
-INV_00802,CUST_135,2024-01-07,Gas Valve Replacement,,,591,No
-INV_00803,CUST_105,2024-08-14,Capacitor Replacement,,,497,Yes
-INV_00804,CUST_093,2023-01-04,Flame Sensor Replacement,Heat Exchanger Inspection,Refrigerant Level Check,1565,No
-INV_00805,CUST_067,2023-07-22,AC Installation,,,6532,No
-INV_00806,CUST_R03,2023-02-25,Drain Line Flush,Heating Tune-up,Thermostat Installation,5521,Yes
-INV_00807,CUST_061,2024-12-03,Flame Sensor Replacement,,,860,Yes
-INV_00808,CUST_128,2023-09-17,System Maintenance,,,211,Yes
-INV_00809,CUST_075,2024-05-27,Thermostat Check,,,249,Yes
-INV_00810,CUST_132,2023-07-27,AC Tune-up,Duct Inspection,,307,Yes
-INV_00811,CUST_050,2023-08-18,Condenser Coil Cleaning,,,431,Yes
-INV_00812,CUST_R01,2023-04-12,Pressure Switch Replacement,System Maintenance,,967,Yes
-INV_00813,CUST_100,2024-07-28,AC Repair,Thermostat Calibration,,536,Yes
-INV_00814,CUST_116,2023-11-04,Duct Inspection,Heating Repair,Pressure Switch Replacement,1554,Yes
-INV_00815,CUST_118,2023-09-25,Capacitor Replacement,Refrigerant Level Check,,735,Yes
-INV_00816,CUST_069,2023-07-18,AC Repair,Capacitor Replacement,Refrigerant Recharge,1663,Yes
-INV_00817,CUST_R23,2024-04-30,Electrical Safety Inspection,HVAC Installation,Refrigerant Recharge,4996,Yes
-INV_00818,CUST_055,2024-02-22,Pressure Switch Replacement,,,756,Yes
-INV_00819,CUST_117,2024-11-14,Capacitor Replacement,Pressure Switch Replacement,,1253,Yes
-INV_00820,CUST_R12,2023-02-25,Boiler Installation,Gas Valve Replacement,Thermostat Installation,9396,Yes
-INV_00821,CUST_096,2024-03-15,Gas Valve Replacement,Thermostat Installation,,5730,Yes
-INV_00822,CUST_064,2024-01-07,Heating Repair,,,632,Yes
-INV_00823,CUST_113,2024-06-12,Condenser Coil Cleaning,Relay Replacement,,1220,Yes
-INV_00824,CUST_106,2023-08-07,AC Tune-up,Air Handler Installation,Compressor Replacement,8474,Yes
-INV_00825,CUST_073,2024-04-01,HVAC Installation,,,3950,Yes
-INV_00826,CUST_122,2023-03-17,Duct Sealing,Heating Tune-up,,3056,Yes
-INV_00827,CUST_093,2024-08-01,Carbon Monoxide Test,Zone System Check,,414,Yes
-INV_00828,CUST_112,2023-03-11,Heating Repair,,,632,Yes
-INV_00829,CUST_R25,2023-10-09,AC Installation,Evaporator Coil Cleaning,Thermostat Installation,12428,Yes
-INV_00830,CUST_060,2024-06-28,Compressor Replacement,,,3579,Yes
-INV_00831,CUST_093,2024-10-14,HVAC Installation,Thermostat Installation,,9089,Yes
-INV_00832,CUST_015,2023-03-13,Flame Sensor Replacement,Return Air Inspection,,1110,Yes
-INV_00833,CUST_132,2024-06-20,Duct Inspection,,,166,Yes
-INV_00834,CUST_105,2024-07-30,AC Installation,,,6532,No
-INV_00835,CUST_104,2024-02-27,Thermostat Installation,,,5139,Yes
-INV_00836,CUST_113,2023-04-27,Air Quality Assessment,Flame Sensor Replacement,Refrigerant Level Check,1260,Yes
-INV_00837,CUST_R10,2024-04-14,Blower Motor Repair,,,482,Yes
-INV_00838,CUST_052,2023-10-24,Compressor Replacement,Igniter Replacement,Thermostat Installation,9503,Yes
-INV_00839,CUST_R21,2023-10-09,Capacitor Replacement,Gas Valve Replacement,,1088,Yes
-INV_00840,CUST_R07,2024-10-07,UV Light Check,,,237,Yes
-INV_00841,CUST_R24,2023-11-06,Breaker Inspection,,,246,Yes
-INV_00842,CUST_109,2024-12-17,Igniter Replacement,,,785,No
-INV_00843,CUST_035,2024-12-04,Boiler Installation,Evaporator Coil Cleaning,Thermostat Installation,9562,Yes
-INV_00844,CUST_070,2024-08-01,Compressor Replacement,Refrigerant Level Check,,3817,Yes
-INV_00845,CUST_146,2023-08-12,Condenser Coil Cleaning,Refrigerant Recharge,System Maintenance,1445,Yes
-INV_00846,CUST_103,2023-03-18,Filter Replacement,Flame Sensor Replacement,,1006,Yes
-INV_00847,CUST_140,2023-01-18,Thermostat Replacement,,,467,No
-INV_00848,CUST_062,2024-09-24,Fan Motor Replacement,,,696,Yes
-INV_00849,CUST_116,2023-09-26,Contactor Replacement,,,484,Yes
-INV_00850,CUST_117,2024-07-19,Capacitor Replacement,,,497,Yes
-INV_00851,CUST_080,2023-01-12,Mini-Split Installation,Pressure Switch Replacement,Thermostat Installation,8770,Yes
-INV_00852,CUST_029,2024-02-04,Flame Sensor Replacement,,,860,Yes
-INV_00853,CUST_039,2024-03-22,AC Tune-up,Condensate Pump Cleaning,Zone Damper Replacement,956,Yes
-INV_00854,CUST_R01,2023-10-30,AC Installation,,,6532,Yes
-INV_00855,CUST_066,2023-07-17,Refrigerant Level Check,,,238,Yes
-INV_00856,CUST_023,2024-05-05,Condenser Coil Cleaning,Igniter Replacement,,1216,Yes
-INV_00857,CUST_017,2024-12-31,Heating Tune-up,,,221,Yes
-INV_00858,CUST_124,2023-01-30,Heating Repair,System Maintenance,,843,No
-INV_00859,CUST_120,2024-12-07,Furnace Installation,Thermostat Installation,,9027,Yes
-INV_00860,CUST_123,2024-10-31,Evaporator Coil Cleaning,Thermostat Check,Thermostat Installation,6145,Yes
-INV_00861,CUST_R06,2024-06-23,Mini-Split Installation,Thermostat Installation,,8014,Yes
-INV_00862,CUST_091,2023-04-11,Zone Damper Replacement,,,634,Yes
-INV_00863,CUST_110,2023-03-12,AC Tune-up,Boiler Installation,Thermostat Installation,8946,Yes
-INV_00864,CUST_145,2023-10-23,Heat Exchanger Inspection,,,467,Yes
-INV_00865,CUST_042,2023-01-20,Evaporator Coil Cleaning,Flame Sensor Replacement,,1617,Yes
-INV_00866,CUST_051,2023-08-28,Capacitor Replacement,Mini-Split Installation,,3372,Yes
-INV_00867,CUST_078,2024-10-23,Duct Cleaning,Pressure Switch Replacement,,1331,Yes
-INV_00868,CUST_037,2024-08-05,Compressor Replacement,Mini-Split Installation,,6454,Yes
-INV_00869,CUST_057,2023-08-13,Compressor Replacement,Refrigerant Recharge,,4382,Yes
-INV_00870,CUST_R11,2024-11-09,Capacitor Replacement,Duct Sealing,Heating Repair,3964,Yes
-INV_00871,CUST_086,2023-10-18,Air Quality Assessment,Pressure Switch Replacement,Relay Replacement,1707,Yes
-INV_00872,CUST_131,2024-11-21,Evaporator Coil Cleaning,Heating Repair,,1389,Yes
-INV_00873,CUST_R05,2023-11-15,Heating Tune-up,,,221,Yes
-INV_00874,CUST_110,2024-03-14,Heat Exchanger Inspection,,,467,Yes
-INV_00875,CUST_131,2024-01-29,Gas Valve Replacement,Igniter Replacement,Thermostat Check,1625,Yes
-INV_00876,CUST_R01,2024-04-23,Evaporator Coil Cleaning,Heating Repair,Relay Replacement,2178,Yes
-INV_00877,CUST_095,2023-12-20,Capacitor Replacement,Supply Vent Balancing,,690,Yes
-INV_00878,CUST_067,2024-10-15,AC Tune-up,Fan Motor Replacement,,837,Yes
-INV_00879,CUST_R27,2024-07-01,Refrigerant Level Check,UV Light Check,,475,Yes
-INV_00880,CUST_R18,2024-06-22,Evaporator Coil Cleaning,,,757,Yes
-INV_00881,CUST_131,2024-07-30,Refrigerant Recharge,,,803,Yes
-INV_00882,CUST_015,2023-04-11,Relay Replacement,,,789,Yes
-INV_00883,CUST_041,2024-07-07,AC Repair,Capacitor Replacement,,860,Yes
-INV_00884,CUST_R27,2023-03-25,Heating Tune-up,Igniter Replacement,,1006,Yes
-INV_00885,CUST_124,2024-03-30,Boiler Installation,Heating Repair,Thermostat Installation,9437,Yes
-INV_00886,CUST_008,2023-10-06,Refrigerant Recharge,Thermostat Installation,,5942,Yes
-INV_00887,CUST_R06,2024-09-19,Boiler Installation,Heat Pump Installation,,9204,Yes
-INV_00888,CUST_091,2023-09-11,AC Installation,Air Quality Assessment,,6694,Yes
-INV_00889,CUST_039,2024-11-21,Duct Cleaning,UV Light Check,,812,No
-INV_00890,CUST_140,2024-05-28,Blower Motor Cleaning,Contactor Replacement,,678,Yes
-INV_00891,CUST_094,2023-08-03,AC Installation,,,6532,Yes
-INV_00892,CUST_040,2023-06-01,AC Repair,,,363,Yes
-INV_00893,CUST_134,2023-01-27,Heating Repair,Heating Tune-up,Mini-Split Installation,3728,Yes
-INV_00894,CUST_068,2023-12-27,Heat Exchanger Inspection,,,467,Yes
-INV_00895,CUST_R06,2024-07-21,AC Repair,Compressor Replacement,Condenser Coil Cleaning,4373,Yes
-INV_00896,CUST_064,2024-02-29,Contactor Replacement,Flame Sensor Replacement,Pressure Switch Replacement,2100,Yes
-INV_00897,CUST_061,2024-05-30,Blower Motor Repair,,,482,Yes
-INV_00898,CUST_010,2024-08-02,Capacitor Replacement,,,497,Yes
-INV_00899,CUST_119,2024-08-03,Refrigerant Recharge,,,803,Yes
-INV_00900,CUST_035,2023-03-22,Capacitor Replacement,Heat Exchanger Inspection,Igniter Replacement,1749,Yes
-INV_00901,CUST_R08,2024-02-28,Fan Motor Replacement,Heating Repair,,1328,Yes
-INV_00902,CUST_R04,2024-03-19,Duct Sealing,Flame Sensor Replacement,Thermostat Installation,8834,Yes
-INV_00903,CUST_R26,2024-03-16,Boiler Installation,Thermostat Installation,Thermostat Replacement,9272,Yes
-INV_00904,CUST_R21,2024-05-15,Refrigerant Recharge,,,803,Yes
-INV_00905,CUST_097,2023-06-01,AC Installation,,,6532,Yes
-INV_00906,CUST_136,2024-04-24,Air Handler Installation,Thermostat Installation,,9893,Yes
-INV_00907,CUST_143,2023-03-19,Flame Sensor Replacement,Furnace Installation,Thermostat Installation,9887,Yes
-INV_00908,CUST_R11,2024-12-24,Gas Valve Replacement,Heating Tune-up,Igniter Replacement,1597,Yes
-INV_00909,CUST_R24,2024-10-02,Igniter Replacement,Thermostat Installation,,5924,No
-INV_00910,CUST_004,2024-11-08,Thermostat Calibration,,,173,Yes
-INV_00911,CUST_150,2024-10-10,AC Repair,Electrical Safety Inspection,,606,Yes
-INV_00912,CUST_114,2023-08-30,Evaporator Coil Cleaning,Zone System Check,,991,Yes
-INV_00913,CUST_069,2024-10-11,Heating Repair,,,632,Yes
-INV_00914,CUST_038,2024-05-27,Breaker Inspection,Heating Repair,,878,Yes
-INV_00915,CUST_131,2024-02-04,Heating Tune-up,Thermostat Installation,,5360,Yes
-INV_00916,CUST_029,2023-02-20,HVAC Installation,,,3950,Yes
-INV_00917,CUST_113,2023-10-17,Boiler Installation,Thermostat Installation,,8805,Yes
-INV_00918,CUST_057,2023-05-25,Contactor Replacement,Mini-Split Installation,,3359,Yes
-INV_00919,CUST_119,2024-01-21,Heat Exchanger Inspection,Heating Repair,,1099,Yes
-INV_00920,CUST_099,2023-09-28,Pressure Switch Replacement,Thermostat Installation,,5895,Yes
-INV_00921,CUST_110,2023-04-27,Pressure Switch Replacement,,,756,Yes
-INV_00922,CUST_R05,2024-06-13,Capacitor Replacement,Refrigerant Level Check,,735,Yes
-INV_00923,CUST_138,2024-12-16,Air Quality Assessment,,,162,Yes
-INV_00924,CUST_100,2023-12-17,Flame Sensor Replacement,Gas Valve Replacement,,1451,No
-INV_00925,CUST_044,2024-03-30,Blower Motor Cleaning,,,194,Yes
-INV_00926,CUST_057,2024-03-09,Heating Tune-up,Igniter Replacement,,1006,Yes
-INV_00927,CUST_089,2023-09-20,Condenser Coil Cleaning,Heating Repair,,1063,Yes
-INV_00928,CUST_002,2023-10-19,Filter Replacement,,,146,Yes
-INV_00929,CUST_082,2024-05-01,AC Installation,Condenser Coil Cleaning,,6963,Yes
-INV_00930,CUST_061,2024-11-06,AC Installation,Thermostat Installation,,11671,Yes
-INV_00931,CUST_096,2023-02-21,Boiler Installation,,,3666,Yes
-INV_00932,CUST_122,2024-03-22,Relay Replacement,,,789,Yes
-INV_00933,CUST_015,2023-10-26,Heating Repair,Refrigerant Level Check,,870,Yes
-INV_00934,CUST_026,2023-10-28,Igniter Replacement,,,785,Yes
-INV_00935,CUST_017,2023-05-29,Contactor Replacement,,,484,Yes
-INV_00936,CUST_005,2024-08-15,AC Installation,Refrigerant Recharge,,7335,Yes
-INV_00937,CUST_047,2023-11-23,Boiler Installation,,,3666,Yes
-INV_00938,CUST_136,2023-08-12,AC Repair,,,363,Yes
-INV_00939,CUST_033,2024-04-02,Heat Pump Installation,,,5538,Yes
-INV_00940,CUST_020,2024-11-18,Igniter Replacement,UV Light Check,,1022,Yes
-INV_00941,CUST_056,2023-07-19,AC Tune-up,,,141,Yes
-INV_00942,CUST_016,2024-09-29,Capacitor Replacement,Refrigerant Level Check,,735,Yes
-INV_00943,CUST_020,2023-06-29,Compressor Replacement,Thermostat Installation,,8718,Yes
-INV_00944,CUST_018,2024-07-07,Capacitor Replacement,Control Board Replacement,,1306,Yes
-INV_00945,CUST_031,2023-10-10,Boiler Installation,,,3666,Yes
-INV_00946,CUST_R16,2024-07-01,AC Tune-up,Condenser Coil Cleaning,Return Air Inspection,822,Yes
-INV_00947,CUST_028,2023-11-17,Thermostat Replacement,,,467,Yes
-INV_00948,CUST_050,2023-06-09,Flame Sensor Replacement,Relay Replacement,System Maintenance,1860,Yes
-INV_00949,CUST_078,2024-04-09,AC Tune-up,Heating Tune-up,,362,Yes
-INV_00950,CUST_150,2024-05-04,Heating Repair,Thermostat Installation,,5771,Yes
-INV_00951,CUST_060,2024-01-13,Furnace Installation,,,3888,Yes
-INV_00952,CUST_122,2023-02-22,Condensate Pump Cleaning,Furnace Installation,,4069,Yes
-INV_00953,CUST_147,2024-11-20,Heat Pump Installation,Igniter Replacement,,6323,Yes
-INV_00954,CUST_148,2023-07-24,Compressor Replacement,Fan Motor Replacement,,4275,Yes
-INV_00955,CUST_R30,2023-04-03,Gas Valve Replacement,,,591,Yes
-INV_00956,CUST_073,2023-10-11,Flame Sensor Replacement,Gas Valve Replacement,Refrigerant Recharge,2254,Yes
-INV_00957,CUST_064,2023-11-02,Furnace Installation,Thermostat Installation,,9027,Yes
-INV_00958,CUST_120,2023-08-17,HVAC Installation,Thermostat Installation,,9089,No
-INV_00959,CUST_035,2023-05-28,AC Installation,Thermostat Installation,,11671,Yes
-INV_00960,CUST_038,2023-03-19,AC Repair,Thermostat Replacement,,830,Yes
-INV_00961,CUST_R06,2024-10-19,Thermostat Calibration,,,173,Yes
-INV_00962,CUST_050,2024-12-26,Capacitor Replacement,Heat Exchanger Inspection,Igniter Replacement,1749,Yes
-INV_00963,CUST_015,2024-08-26,Heat Pump Installation,,,5538,Yes
-INV_00964,CUST_115,2023-01-23,Flame Sensor Replacement,Heating Repair,Heating Tune-up,1713,Yes
-INV_00965,CUST_034,2024-06-24,Capacitor Replacement,Thermostat Installation,,5636,Yes
-INV_00966,CUST_145,2023-10-10,AC Repair,Igniter Replacement,,1148,Yes
-INV_00967,CUST_006,2023-04-07,Drain Line Flush,Flame Sensor Replacement,,1021,Yes
-INV_00968,CUST_146,2023-05-01,Capacitor Replacement,Fan Motor Replacement,System Maintenance,1404,Yes
-INV_00969,CUST_R17,2023-11-01,Boiler Installation,Thermostat Installation,,8805,Yes
-INV_00970,CUST_058,2024-03-04,Condenser Coil Cleaning,Heating Repair,Igniter Replacement,1848,Yes
-INV_00971,CUST_R06,2024-09-25,Thermostat Replacement,,,467,Yes
-INV_00972,CUST_088,2023-06-15,Drain Pan Replacement,Filter Replacement,Refrigerant Recharge,1426,Yes
-INV_00973,CUST_082,2024-02-28,AC Installation,,,6532,No
-INV_00974,CUST_112,2024-01-15,Flame Sensor Replacement,Heating Tune-up,,1081,Yes
-INV_00975,CUST_088,2023-11-03,Carbon Monoxide Test,,,180,Yes
-INV_00976,CUST_146,2023-03-23,Duct Sealing,Heat Exchanger Inspection,,3302,Yes
-INV_00977,CUST_001,2024-11-27,Refrigerant Recharge,Return Air Inspection,,1053,Yes
-INV_00978,CUST_059,2023-01-09,Condenser Coil Cleaning,Contactor Replacement,Pressure Switch Replacement,1671,Yes
-INV_00979,CUST_132,2023-09-10,Blower Motor Cleaning,Blower Motor Repair,Compressor Replacement,4255,No
-INV_00980,CUST_090,2023-01-18,Gas Valve Replacement,Heat Exchanger Inspection,,1058,Yes
-INV_00981,CUST_045,2023-08-10,Compressor Replacement,Heat Pump Installation,,9117,Yes
-INV_00982,CUST_066,2023-06-09,AC Installation,Mini-Split Installation,Refrigerant Level Check,9645,Yes
-INV_00983,CUST_037,2023-06-04,Evaporator Coil Cleaning,Mini-Split Installation,,3632,Yes
-INV_00984,CUST_128,2023-05-30,Furnace Installation,HVAC Installation,,7838,Yes
-INV_00985,CUST_147,2023-10-14,Air Quality Assessment,,,162,Yes
-INV_00986,CUST_014,2024-06-25,AC Tune-up,,,141,Yes
-INV_00987,CUST_092,2023-07-23,Condenser Coil Cleaning,Contactor Replacement,Evaporator Coil Cleaning,1672,Yes
-INV_00988,CUST_013,2023-10-08,Thermostat Calibration,Thermostat Replacement,,640,Yes
-INV_00989,CUST_R24,2024-06-10,Evaporator Coil Cleaning,Gas Valve Replacement,,1348,Yes
-INV_00990,CUST_017,2023-06-03,AC Repair,Return Air Inspection,,613,Yes
-INV_00991,CUST_019,2024-04-01,Blower Motor Repair,Boiler Installation,Thermostat Installation,9287,Yes
-INV_00992,CUST_139,2023-09-09,Furnace Installation,,,3888,Yes
-INV_00993,CUST_R13,2023-08-31,Evaporator Coil Cleaning,Humidifier Check,System Maintenance,1138,Yes
-INV_00994,CUST_078,2023-04-21,Pressure Switch Replacement,,,756,Yes
-INV_00995,CUST_099,2023-11-09,Capacitor Replacement,Thermostat Calibration,,670,Yes
-INV_00996,CUST_R18,2024-01-12,Furnace Installation,,,3888,Yes
-INV_00997,CUST_083,2023-10-06,Gas Valve Replacement,HVAC Installation,Igniter Replacement,5326,No
-INV_00998,CUST_R03,2023-02-02,Pressure Switch Replacement,Thermostat Installation,,5895,Yes
-INV_00999,CUST_109,2024-08-31,Duct Sealing,,,2835,Yes
-INV_01000,CUST_017,2023-10-22,Flame Sensor Replacement,Return Air Inspection,Supply Vent Balancing,1303,Yes
+INV_00001,CUST_001,2023-10-04,Refrigerant Recharge (2 lbs),,,225,No
+INV_00002,CUST_001,2023-11-02,AC Repair,,,390,No
+INV_00003,CUST_001,2023-11-23,Furnace Repair,,,425,No
+INV_00004,CUST_001,2023-12-04,Air Handler Replacement,,,1750,No
+INV_00005,CUST_001,2023-12-18,Heating Tune-up,,,140,No
+INV_00006,CUST_001,2024-01-30,Carbon Monoxide Test,,,95,No
+INV_00007,CUST_001,2024-02-05,Water Heater Installation,,,1450,No
+INV_00008,CUST_001,2024-04-17,Refrigerant Leak Repair,,,350,No
+INV_00009,CUST_001,2024-04-24,Furnace Repair,,,425,No
+INV_00010,CUST_001,2024-08-21,Furnace Repair,,,425,No
+INV_00011,CUST_002,2023-11-23,Blower Motor Replacement,,,485,No
+INV_00012,CUST_002,2024-01-22,AC Repair,,,390,No
+INV_00013,CUST_002,2024-03-17,Capacitor Replacement,,,125,No
+INV_00014,CUST_002,2024-04-11,Refrigerant Recharge (2 lbs),,,225,No
+INV_00015,CUST_002,2024-04-20,Smart Thermostat Installation,,,295,No
+INV_00016,CUST_002,2024-05-17,Compressor Replacement,,,1850,No
+INV_00017,CUST_002,2024-05-22,Weekend Emergency Call,,,225,No
+INV_00018,CUST_002,2024-06-16,Refrigerant Leak Repair,,,350,No
+INV_00019,CUST_002,2024-06-18,Heating Tune-up,,,140,No
+INV_00020,CUST_002,2024-06-19,Breaker Inspection,,,85,No
+INV_00021,CUST_002,2024-08-08,Emergency Service Call,,,175,No
+INV_00022,CUST_003,2023-10-05,Boiler Installation,,,4500,No
+INV_00023,CUST_003,2023-10-13,Emergency Service Call,,,175,No
+INV_00024,CUST_003,2023-10-29,Duct Inspection,Furnace Installation,,3885,Yes
+INV_00025,CUST_003,2023-11-21,System Maintenance,Tankless Water Heater Installation,,2300,Yes
+INV_00026,CUST_003,2023-11-27,Emergency Service Call,,,175,No
+INV_00027,CUST_003,2023-12-05,Emergency Service Call,,,175,No
+INV_00028,CUST_003,2024-01-01,Thermostat Check,,,50,No
+INV_00029,CUST_003,2024-01-11,Blower Motor Replacement,,,485,No
+INV_00030,CUST_003,2024-01-12,Gas Leak Detection,Duct Inspection,,310,Yes
+INV_00031,CUST_003,2024-01-21,AC Tune-up,,,125,No
+INV_00032,CUST_003,2024-02-07,Duct Cleaning,,,350,No
+INV_00033,CUST_003,2024-03-05,Heat Pump Repair,,,475,No
+INV_00034,CUST_003,2024-05-14,Ductless Mini-Split Installation,,,3200,No
+INV_00035,CUST_003,2024-05-24,Weekend Emergency Call,,,225,No
+INV_00036,CUST_003,2024-05-29,Dehumidifier Installation,,,695,No
+INV_00037,CUST_003,2024-07-13,Boiler Installation,,,4500,No
+INV_00038,CUST_003,2024-08-11,Thermostat Check,,,50,No
+INV_00039,CUST_004,2023-11-14,AC Tune-up,,,125,No
+INV_00040,CUST_004,2023-11-16,After Hours Emergency,Weekend Emergency Call,,500,Yes
+INV_00041,CUST_004,2024-02-12,Refrigerant Leak Repair,,,350,No
+INV_00042,CUST_004,2024-02-21,Contactor Replacement,,,150,No
+INV_00043,CUST_004,2024-04-08,Heating Tune-up,,,140,No
+INV_00044,CUST_004,2024-06-04,Return Air Inspection,,,70,No
+INV_00045,CUST_004,2024-06-11,Blower Motor Replacement,,,485,No
+INV_00046,CUST_004,2024-06-13,Emergency Service Call,,,175,No
+INV_00047,CUST_004,2024-06-17,Carbon Monoxide Test,,,95,No
+INV_00048,CUST_004,2024-06-24,Emergency Service Call,,,175,No
+INV_00049,CUST_004,2024-06-26,Thermostat Installation,,,189,No
+INV_00050,CUST_004,2024-06-30,Refrigerant Recharge (2 lbs),,,225,No
+INV_00051,CUST_004,2024-07-01,Furnace Repair,,,425,No
+INV_00052,CUST_004,2024-07-07,Capacitor Replacement,,,125,No
+INV_00053,CUST_004,2024-07-11,Boiler Installation,,,4500,No
+INV_00054,CUST_004,2024-07-14,Air Quality Assessment,,,140,No
+INV_00055,CUST_004,2024-07-31,AC Repair,,,390,No
+INV_00056,CUST_004,2024-08-21,Compressor Replacement,,,1850,No
+INV_00057,CUST_004,2024-08-25,Gas Leak Detection,,,225,No
+INV_00058,CUST_004,2024-08-26,Compressor Replacement,,,1850,No
+INV_00059,CUST_005,2023-10-03,Gas Line Inspection,,,145,No
+INV_00060,CUST_005,2023-10-08,Contactor Replacement,,,150,No
+INV_00061,CUST_005,2023-11-28,Heating Tune-up,,,140,No
+INV_00062,CUST_005,2023-12-17,Humidifier Check,,,75,No
+INV_00063,CUST_005,2024-02-13,Capacitor Replacement,,,125,No
+INV_00064,CUST_005,2024-03-06,Capacitor Replacement,,,125,No
+INV_00065,CUST_005,2024-03-20,Heating Tune-up,,,140,No
+INV_00066,CUST_005,2024-04-06,Carbon Monoxide Test,,,95,No
+INV_00067,CUST_005,2024-06-04,Air Purifier Installation,,,525,No
+INV_00068,CUST_005,2024-06-08,Air Quality Assessment,,,140,No
+INV_00069,CUST_005,2024-07-24,Humidifier Installation,,,595,No
+INV_00070,CUST_005,2024-08-21,Capacitor Replacement,,,125,No
+INV_00071,CUST_006,2023-10-22,Smart Thermostat Installation,,,295,No
+INV_00072,CUST_006,2024-01-24,Gas Line Inspection,,,145,No
+INV_00073,CUST_006,2024-02-03,Tankless Water Heater Installation,,,2150,No
+INV_00074,CUST_006,2024-02-13,Heating Tune-up,,,140,No
+INV_00075,CUST_006,2024-02-22,Holiday Emergency Call,,,350,No
+INV_00076,CUST_006,2024-04-08,Refrigerant Recharge (2 lbs),,,225,No
+INV_00077,CUST_006,2024-04-22,Smart Thermostat Installation,,,295,No
+INV_00078,CUST_006,2024-05-29,Thermostat Check,,,50,No
+INV_00079,CUST_006,2024-05-30,AC Tune-up,,,125,No
+INV_00080,CUST_006,2024-06-16,Smart Thermostat Installation,,,295,No
+INV_00081,CUST_006,2024-06-17,Filter Replacement,,,45,No
+INV_00082,CUST_006,2024-07-05,AC Repair,,,390,No
+INV_00083,CUST_006,2024-07-26,System Maintenance,,,150,No
+INV_00084,CUST_007,2023-10-24,Heat Pump Repair,,,475,No
+INV_00085,CUST_007,2023-11-14,Emergency Service Call,,,175,No
+INV_00086,CUST_007,2023-11-29,Furnace Repair,,,425,No
+INV_00087,CUST_007,2023-12-24,Air Purifier Installation,,,525,No
+INV_00088,CUST_007,2024-01-11,Central AC Installation,,,4200,No
+INV_00089,CUST_007,2024-02-03,Carbon Monoxide Test,,,95,No
+INV_00090,CUST_007,2024-02-19,Filter Replacement,,,45,No
+INV_00091,CUST_007,2024-03-16,Furnace Repair,,,425,No
+INV_00092,CUST_007,2024-03-24,Thermostat Installation,,,189,No
+INV_00093,CUST_007,2024-04-28,Blower Motor Replacement,,,485,No
+INV_00094,CUST_007,2024-06-11,Central AC Installation,,,4200,No
+INV_00095,CUST_007,2024-06-28,Condenser Replacement,,,1450,No
+INV_00096,CUST_007,2024-07-09,Smart Thermostat Installation,,,295,No
+INV_00097,CUST_007,2024-08-22,Duct Cleaning,,,350,No
+INV_00098,CUST_008,2023-10-04,Heat Pump Repair,,,475,No
+INV_00099,CUST_008,2023-10-19,Air Quality Assessment,,,140,No
+INV_00100,CUST_008,2023-10-25,AC Tune-up,,,125,No
+INV_00101,CUST_008,2023-11-25,Air Quality Assessment,,,140,No
+INV_00102,CUST_008,2023-12-19,Supply Vent Balancing,,,180,No
+INV_00103,CUST_008,2023-12-26,Heating Tune-up,,,140,No
+INV_00104,CUST_008,2024-01-04,Filter Replacement,,,45,No
+INV_00105,CUST_008,2024-01-14,AC Tune-up,,,125,No
+INV_00106,CUST_008,2024-01-16,Central AC Installation,,,4200,No
+INV_00107,CUST_008,2024-01-27,Breaker Inspection,,,85,No
+INV_00108,CUST_008,2024-02-02,Emergency Service Call,,,175,No
+INV_00109,CUST_008,2024-04-01,Duct Inspection,,,85,No
+INV_00110,CUST_008,2024-04-17,Emergency Service Call,,,175,No
+INV_00111,CUST_008,2024-05-13,Thermostat Installation,,,189,No
+INV_00112,CUST_008,2024-06-03,AC Tune-up,,,125,No
+INV_00113,CUST_008,2024-07-29,Contactor Replacement,,,150,No
+INV_00114,CUST_008,2024-08-13,After Hours Emergency,,,275,No
+INV_00115,CUST_008,2024-08-15,Supply Vent Balancing,,,180,No
+INV_00116,CUST_008,2024-08-26,Duct Inspection,,,85,No
+INV_00117,CUST_009,2023-10-10,Breaker Inspection,,,85,No
+INV_00118,CUST_009,2023-10-26,Heating Tune-up,AC Tune-up,,265,Yes
+INV_00119,CUST_009,2023-11-16,Capacitor Replacement,,,125,No
+INV_00120,CUST_009,2023-11-23,Smart Thermostat Installation,,,295,No
+INV_00121,CUST_009,2023-12-01,UV Light Check,,,90,No
+INV_00122,CUST_009,2023-12-26,Refrigerant Leak Repair,,,350,No
+INV_00123,CUST_009,2023-12-31,AC Tune-up,,,125,No
+INV_00124,CUST_009,2024-01-17,System Maintenance,,,150,No
+INV_00125,CUST_009,2024-02-13,Central AC Installation,,,4200,No
+INV_00126,CUST_009,2024-03-02,Supply Vent Balancing,,,180,No
+INV_00127,CUST_009,2024-04-23,AC Tune-up,,,125,No
+INV_00128,CUST_009,2024-05-02,Carbon Monoxide Test,,,95,No
+INV_00129,CUST_009,2024-05-05,Weekend Emergency Call,,,225,No
+INV_00130,CUST_009,2024-06-25,Gas Line Inspection,,,145,No
+INV_00131,CUST_009,2024-06-29,Filter Replacement,,,45,No
+INV_00132,CUST_009,2024-07-08,AC Repair,,,390,No
+INV_00133,CUST_009,2024-08-02,Emergency Service Call,,,175,No
+INV_00134,CUST_009,2024-08-15,Thermostat Installation,,,189,No
+INV_00135,CUST_009,2024-08-28,Contactor Replacement,,,150,No
+INV_00136,CUST_010,2023-10-31,Contactor Replacement,,,150,No
+INV_00137,CUST_010,2023-11-03,Furnace Installation,,,3800,No
+INV_00138,CUST_010,2023-11-26,Duct Cleaning,,,350,No
+INV_00139,CUST_010,2023-12-24,Gas Leak Detection,,,225,No
+INV_00140,CUST_010,2024-01-21,AC Repair,,,390,No
+INV_00141,CUST_010,2024-04-17,UV Light Check,,,90,No
+INV_00142,CUST_010,2024-04-21,Furnace Installation,,,3800,No
+INV_00143,CUST_010,2024-05-04,Emergency Service Call,,,175,No
+INV_00144,CUST_010,2024-05-29,Weekend Emergency Call,,,225,No
+INV_00145,CUST_010,2024-06-07,Furnace Installation,,,3800,No
+INV_00146,CUST_010,2024-06-10,Refrigerant Leak Repair,,,350,No
+INV_00147,CUST_010,2024-07-21,Emergency Service Call,,,175,No
+INV_00148,CUST_010,2024-07-28,Air Purifier Installation,,,525,No
+INV_00149,CUST_010,2024-08-06,Humidifier Installation,Capacitor Replacement,,720,Yes
+INV_00150,CUST_010,2024-08-21,AC Tune-up,,,125,No
+INV_00151,CUST_010,2024-08-27,Emergency Service Call,,,175,No
+INV_00152,CUST_011,2023-10-30,System Maintenance,,,150,No
+INV_00153,CUST_011,2023-11-08,Carbon Monoxide Test,,,95,No
+INV_00154,CUST_011,2024-01-26,UV Light Check,,,90,No
+INV_00155,CUST_011,2024-03-22,Smart Thermostat Installation,,,295,No
+INV_00156,CUST_011,2024-04-27,Boiler Installation,,,4500,No
+INV_00157,CUST_011,2024-06-13,Contactor Replacement,,,150,No
+INV_00158,CUST_011,2024-07-24,Contactor Replacement,,,150,No
+INV_00159,CUST_011,2024-08-20,Refrigerant Recharge (2 lbs),,,225,No
+INV_00160,CUST_012,2023-10-16,Air Purifier Installation,,,525,No
+INV_00161,CUST_012,2023-10-18,Boiler Installation,,,4500,No
+INV_00162,CUST_012,2023-10-20,Heat Pump Repair,,,475,No
+INV_00163,CUST_012,2023-11-03,Duct Sealing,,,520,No
+INV_00164,CUST_012,2023-12-17,Smart Thermostat Installation,,,295,No
+INV_00165,CUST_012,2023-12-31,Thermostat Installation,,,189,No
+INV_00166,CUST_012,2024-01-21,Thermostat Calibration,,,95,No
+INV_00167,CUST_012,2024-02-17,Smart Thermostat Installation,,,295,No
+INV_00168,CUST_012,2024-02-22,Filter Replacement,,,45,No
+INV_00169,CUST_012,2024-02-24,Holiday Emergency Call,,,350,No
+INV_00170,CUST_012,2024-03-09,Thermostat Installation,,,189,No
+INV_00171,CUST_012,2024-03-29,Thermostat Check,,,50,No
+INV_00172,CUST_012,2024-04-05,Gas Line Inspection,,,145,No
+INV_00173,CUST_012,2024-06-14,Duct Cleaning,,,350,No
+INV_00174,CUST_012,2024-06-15,Thermostat Calibration,,,95,No
+INV_00175,CUST_012,2024-08-04,Thermostat Installation,,,189,No
+INV_00176,CUST_012,2024-08-16,Supply Vent Balancing,,,180,No
+INV_00177,CUST_012,2024-08-31,Thermostat Check,,,50,No
+INV_00178,CUST_013,2023-10-15,UV Light Installation,,,495,No
+INV_00179,CUST_013,2023-12-13,Thermostat Check,,,50,No
+INV_00180,CUST_013,2023-12-23,UV Light Check,,,90,No
+INV_00181,CUST_013,2023-12-25,AC Tune-up,,,125,No
+INV_00182,CUST_013,2024-01-09,Heating Tune-up,,,140,No
+INV_00183,CUST_013,2024-01-22,Thermostat Installation,,,189,No
+INV_00184,CUST_013,2024-01-26,Heating Tune-up,,,140,No
+INV_00185,CUST_013,2024-02-07,Capacitor Replacement,,,125,No
+INV_00186,CUST_013,2024-03-11,Emergency Service Call,,,175,No
+INV_00187,CUST_013,2024-03-29,Water Heater Installation,,,1450,No
+INV_00188,CUST_013,2024-04-03,Weekend Emergency Call,,,225,No
+INV_00189,CUST_013,2024-04-06,Holiday Emergency Call,,,350,No
+INV_00190,CUST_013,2024-04-11,Zone System Check,,,120,No
+INV_00191,CUST_013,2024-05-16,Emergency Service Call,,,175,No
+INV_00192,CUST_013,2024-07-03,Contactor Replacement,,,150,No
+INV_00193,CUST_013,2024-07-04,Thermostat Installation,,,189,No
+INV_00194,CUST_013,2024-07-12,Air Purifier Installation,,,525,No
+INV_00195,CUST_013,2024-07-16,Smart Thermostat Installation,,,295,No
+INV_00196,CUST_013,2024-08-08,System Maintenance,,,150,No
+INV_00197,CUST_013,2024-08-28,AC Tune-up,,,125,No
+INV_00198,CUST_014,2023-10-06,Smart Thermostat Installation,,,295,No
+INV_00199,CUST_014,2023-10-20,UV Light Installation,,,495,No
+INV_00200,CUST_014,2023-11-14,Duct Sealing,,,520,No
+INV_00201,CUST_014,2023-12-25,Duct Inspection,,,85,No
+INV_00202,CUST_014,2024-01-07,Gas Line Inspection,,,145,No
+INV_00203,CUST_014,2024-03-11,System Maintenance,,,150,No
+INV_00204,CUST_014,2024-05-29,Emergency Service Call,,,175,No
+INV_00205,CUST_014,2024-07-16,Heat Pump Repair,,,475,No
+INV_00206,CUST_014,2024-07-24,Filter Replacement,,,45,No
+INV_00207,CUST_014,2024-08-04,Gas Leak Detection,,,225,No
+INV_00208,CUST_014,2024-08-09,Heat Pump Installation,,,4900,No
+INV_00209,CUST_015,2023-11-12,AC Tune-up,,,125,No
+INV_00210,CUST_015,2023-12-12,Air Purifier Installation,,,525,No
+INV_00211,CUST_015,2023-12-15,Capacitor Replacement,,,125,No
+INV_00212,CUST_015,2023-12-25,Filter Replacement,,,45,No
+INV_00213,CUST_015,2024-01-30,Carbon Monoxide Test,,,95,No
+INV_00214,CUST_015,2024-02-05,Heat Exchanger Replacement,,,1450,No
+INV_00215,CUST_015,2024-02-08,Carbon Monoxide Test,,,95,No
+INV_00216,CUST_015,2024-03-23,Heat Pump Repair,,,475,No
+INV_00217,CUST_015,2024-03-31,Filter Replacement,,,45,No
+INV_00218,CUST_015,2024-05-22,Water Heater Installation,,,1450,No
+INV_00219,CUST_015,2024-06-09,Thermostat Installation,,,189,No
+INV_00220,CUST_015,2024-06-17,Furnace Installation,,,3800,No
+INV_00221,CUST_015,2024-07-15,Thermostat Calibration,,,95,No
+INV_00222,CUST_016,2023-10-16,Emergency Service Call,,,175,No
+INV_00223,CUST_016,2023-10-19,Heating Tune-up,,,140,No
+INV_00224,CUST_016,2023-10-26,Ductless Mini-Split Installation,,,3200,No
+INV_00225,CUST_016,2023-11-11,Furnace Installation,,,3800,No
+INV_00226,CUST_016,2023-11-15,Gas Leak Detection,,,225,No
+INV_00227,CUST_016,2023-11-30,Duct Inspection,,,85,No
+INV_00228,CUST_016,2024-01-17,System Maintenance,,,150,No
+INV_00229,CUST_016,2024-01-28,Boiler Installation,,,4500,No
+INV_00230,CUST_016,2024-03-05,Heat Pump Repair,,,475,No
+INV_00231,CUST_016,2024-03-06,Humidifier Check,,,75,No
+INV_00232,CUST_016,2024-03-15,Emergency Service Call,,,175,No
+INV_00233,CUST_016,2024-03-28,Blower Motor Replacement,,,485,No
+INV_00234,CUST_016,2024-05-19,Air Handler Replacement,,,1750,No
+INV_00235,CUST_016,2024-06-09,Duct Inspection,,,85,No
+INV_00236,CUST_016,2024-06-11,UV Light Check,,,90,No
+INV_00237,CUST_016,2024-06-23,Refrigerant Recharge (2 lbs),,,225,No
+INV_00238,CUST_016,2024-07-13,System Maintenance,,,150,No
+INV_00239,CUST_016,2024-07-30,System Maintenance,,,150,No
+INV_00240,CUST_016,2024-08-28,Furnace Repair,,,425,No
+INV_00241,CUST_017,2023-10-31,Capacitor Replacement,,,125,No
+INV_00242,CUST_017,2023-11-15,Capacitor Replacement,,,125,No
+INV_00243,CUST_017,2023-11-24,Capacitor Replacement,,,125,No
+INV_00244,CUST_017,2023-11-30,Thermostat Installation,,,189,No
+INV_00245,CUST_017,2024-01-12,Air Purifier Installation,,,525,No
+INV_00246,CUST_017,2024-02-03,Air Quality Assessment,,,140,No
+INV_00247,CUST_017,2024-02-06,Thermostat Installation,,,189,No
+INV_00248,CUST_017,2024-03-27,Smart Thermostat Installation,,,295,No
+INV_00249,CUST_017,2024-04-01,Thermostat Installation,,,189,No
+INV_00250,CUST_017,2024-04-24,Zone System Check,,,120,No
+INV_00251,CUST_017,2024-05-23,AC Repair,,,390,No
+INV_00252,CUST_017,2024-05-28,Duct Inspection,,,85,No
+INV_00253,CUST_017,2024-06-12,Capacitor Replacement,,,125,No
+INV_00254,CUST_017,2024-07-08,Capacitor Replacement,,,125,No
+INV_00255,CUST_018,2023-11-02,Boiler Installation,,,4500,No
+INV_00256,CUST_018,2023-11-26,Zone System Check,,,120,No
+INV_00257,CUST_018,2023-12-01,After Hours Emergency,,,275,No
+INV_00258,CUST_018,2023-12-26,AC Repair,,,390,No
+INV_00259,CUST_018,2023-12-27,UV Light Check,,,90,No
+INV_00260,CUST_018,2024-01-05,Dehumidifier Installation,,,695,No
+INV_00261,CUST_018,2024-02-29,Filter Replacement,,,45,No
+INV_00262,CUST_018,2024-03-12,Filter Replacement,,,45,No
+INV_00263,CUST_018,2024-04-18,Filter Replacement,,,45,No
+INV_00264,CUST_018,2024-05-12,Thermostat Installation,,,189,No
+INV_00265,CUST_018,2024-05-16,Filter Replacement,,,45,No
+INV_00266,CUST_018,2024-06-02,Supply Vent Balancing,,,180,No
+INV_00267,CUST_018,2024-07-11,Boiler Installation,,,4500,No
+INV_00268,CUST_018,2024-07-19,Thermostat Installation,,,189,No
+INV_00269,CUST_018,2024-07-21,Filter Replacement,,,45,No
+INV_00270,CUST_018,2024-08-13,Zone System Check,,,120,No
+INV_00271,CUST_019,2023-11-21,Filter Replacement,,,45,No
+INV_00272,CUST_019,2024-01-17,Furnace Repair,,,425,No
+INV_00273,CUST_019,2024-03-29,Thermostat Installation,,,189,No
+INV_00274,CUST_019,2024-03-30,Air Purifier Installation,,,525,No
+INV_00275,CUST_019,2024-04-30,Thermostat Installation,,,189,No
+INV_00276,CUST_019,2024-06-10,Capacitor Replacement,,,125,No
+INV_00277,CUST_019,2024-06-13,Heat Exchanger Replacement,,,1450,No
+INV_00278,CUST_019,2024-06-21,UV Light Installation,,,495,No
+INV_00279,CUST_019,2024-07-17,UV Light Check,,,90,No
+INV_00280,CUST_019,2024-08-14,Blower Motor Replacement,,,485,No
+INV_00281,CUST_020,2023-10-01,Refrigerant Leak Repair,,,350,No
+INV_00282,CUST_020,2023-10-10,UV Light Installation,,,495,No
+INV_00283,CUST_020,2023-11-30,Gas Leak Detection,,,225,No
+INV_00284,CUST_020,2023-12-05,Air Handler Replacement,,,1750,No
+INV_00285,CUST_020,2023-12-10,Furnace Repair,,,425,No
+INV_00286,CUST_020,2023-12-14,Thermostat Installation,,,189,No
+INV_00287,CUST_020,2024-02-16,Refrigerant Recharge (2 lbs),,,225,No
+INV_00288,CUST_020,2024-02-17,Thermostat Installation,,,189,No
+INV_00289,CUST_020,2024-03-21,Air Quality Assessment,,,140,No
+INV_00290,CUST_020,2024-03-29,Refrigerant Recharge (2 lbs),,,225,No
+INV_00291,CUST_020,2024-03-31,Dehumidifier Installation,,,695,No
+INV_00292,CUST_020,2024-05-05,Duct Cleaning,,,350,No
+INV_00293,CUST_020,2024-06-22,Refrigerant Recharge (2 lbs),,,225,No
+INV_00294,CUST_020,2024-06-29,AC Repair,,,390,No
+INV_00295,CUST_020,2024-08-08,Ductless Mini-Split Installation,,,3200,No
+INV_00296,CUST_020,2024-08-18,Thermostat Check,,,50,No
+INV_00297,CUST_021,2023-10-22,UV Light Installation,,,495,No
+INV_00298,CUST_021,2023-10-27,Heat Pump Installation,,,4900,No
+INV_00299,CUST_021,2023-11-06,Return Air Inspection,,,70,No
+INV_00300,CUST_021,2023-11-26,Weekend Emergency Call,,,225,No
+INV_00301,CUST_021,2023-12-31,System Maintenance,,,150,No
+INV_00302,CUST_021,2024-01-03,Air Purifier Installation,,,525,No
+INV_00303,CUST_021,2024-01-13,After Hours Emergency,,,275,No
+INV_00304,CUST_021,2024-02-08,Thermostat Calibration,,,95,No
+INV_00305,CUST_021,2024-02-23,Smart Thermostat Installation,,,295,No
+INV_00306,CUST_021,2024-03-10,Dehumidifier Installation,,,695,No
+INV_00307,CUST_021,2024-03-28,UV Light Check,,,90,No
+INV_00308,CUST_021,2024-04-11,Electrical Safety Inspection,,,110,No
+INV_00309,CUST_021,2024-04-28,Evaporator Coil Replacement,,,1250,No
+INV_00310,CUST_021,2024-05-01,Ductless Mini-Split Installation,,,3200,No
+INV_00311,CUST_021,2024-05-15,After Hours Emergency,,,275,No
+INV_00312,CUST_021,2024-05-19,Capacitor Replacement,,,125,No
+INV_00313,CUST_021,2024-07-29,Filter Replacement,,,45,No
+INV_00314,CUST_021,2024-08-15,System Maintenance,,,150,No
+INV_00315,CUST_022,2023-10-26,Compressor Replacement,,,1850,No
+INV_00316,CUST_022,2023-12-03,Thermostat Check,,,50,No
+INV_00317,CUST_022,2023-12-30,Furnace Repair,,,425,No
+INV_00318,CUST_022,2024-01-15,Thermostat Check,,,50,No
+INV_00319,CUST_022,2024-02-11,Air Quality Assessment,,,140,No
+INV_00320,CUST_022,2024-02-19,Electrical Safety Inspection,,,110,No
+INV_00321,CUST_022,2024-03-13,Contactor Replacement,System Maintenance,,300,Yes
+INV_00322,CUST_022,2024-03-17,Filter Replacement,,,45,No
+INV_00323,CUST_022,2024-03-28,Filter Replacement,,,45,No
+INV_00324,CUST_022,2024-04-20,System Maintenance,,,150,No
+INV_00325,CUST_022,2024-04-25,Furnace Repair,,,425,No
+INV_00326,CUST_022,2024-04-27,Thermostat Installation,,,189,No
+INV_00327,CUST_022,2024-05-02,Capacitor Replacement,,,125,No
+INV_00328,CUST_022,2024-06-10,AC Repair,,,390,No
+INV_00329,CUST_022,2024-07-25,Air Quality Assessment,,,140,No
+INV_00330,CUST_022,2024-08-31,Capacitor Replacement,,,125,No
+INV_00331,CUST_023,2023-10-09,Furnace Installation,,,3800,No
+INV_00332,CUST_023,2023-10-18,Heating Tune-up,,,140,No
+INV_00333,CUST_023,2023-10-25,Gas Line Inspection,,,145,No
+INV_00334,CUST_023,2024-01-02,Breaker Inspection,,,85,No
+INV_00335,CUST_023,2024-01-14,Blower Motor Replacement,,,485,No
+INV_00336,CUST_023,2024-02-12,Emergency Service Call,,,175,No
+INV_00337,CUST_023,2024-02-27,Thermostat Installation,,,189,No
+INV_00338,CUST_023,2024-04-04,Filter Replacement,,,45,No
+INV_00339,CUST_023,2024-04-23,Thermostat Installation,,,189,No
+INV_00340,CUST_023,2024-06-03,Furnace Repair,,,425,No
+INV_00341,CUST_023,2024-06-20,Return Air Inspection,,,70,No
+INV_00342,CUST_023,2024-07-30,Electrical Safety Inspection,,,110,No
+INV_00343,CUST_024,2023-10-01,Capacitor Replacement,,,125,No
+INV_00344,CUST_024,2023-10-11,Refrigerant Leak Repair,,,350,No
+INV_00345,CUST_024,2023-11-06,Thermostat Check,,,50,No
+INV_00346,CUST_024,2023-11-25,Refrigerant Leak Repair,,,350,No
+INV_00347,CUST_024,2024-02-04,Furnace Repair,,,425,No
+INV_00348,CUST_024,2024-02-22,Thermostat Installation,,,189,No
+INV_00349,CUST_024,2024-05-03,Gas Leak Detection,,,225,No
+INV_00350,CUST_024,2024-05-21,Heat Pump Repair,,,475,No
+INV_00351,CUST_024,2024-07-12,Ductless Mini-Split Installation,,,3200,No
+INV_00352,CUST_025,2023-11-20,Thermostat Installation,,,189,No
+INV_00353,CUST_025,2023-12-05,Heating Tune-up,,,140,No
+INV_00354,CUST_025,2023-12-06,Smart Thermostat Installation,,,295,No
+INV_00355,CUST_025,2024-03-04,Refrigerant Recharge (2 lbs),,,225,No
+INV_00356,CUST_025,2024-03-21,Humidifier Check,,,75,No
+INV_00357,CUST_025,2024-05-07,Air Purifier Installation,,,525,No
+INV_00358,CUST_025,2024-05-13,Contactor Replacement,,,150,No
+INV_00359,CUST_025,2024-06-02,Thermostat Calibration,,,95,No
+INV_00360,CUST_025,2024-06-22,AC Tune-up,,,125,No
+INV_00361,CUST_025,2024-07-17,System Maintenance,,,150,No
+INV_00362,CUST_025,2024-07-27,Heating Tune-up,,,140,No
+INV_00363,CUST_025,2024-07-28,Boiler Installation,,,4500,No
+INV_00364,CUST_025,2024-08-26,Thermostat Installation,,,189,No
+INV_00365,CUST_026,2023-10-29,Ductless Mini-Split Installation,,,3200,No
+INV_00366,CUST_026,2023-11-02,Humidifier Installation,,,595,No
+INV_00367,CUST_026,2023-11-15,Emergency Service Call,,,175,No
+INV_00368,CUST_026,2023-11-22,Thermostat Installation,,,189,No
+INV_00369,CUST_026,2023-12-31,UV Light Check,,,90,No
+INV_00370,CUST_026,2024-02-17,Humidifier Installation,,,595,No
+INV_00371,CUST_026,2024-02-26,Heating Tune-up,,,140,No
+INV_00372,CUST_026,2024-05-09,Humidifier Check,,,75,No
+INV_00373,CUST_026,2024-05-13,Thermostat Check,,,50,No
+INV_00374,CUST_026,2024-06-10,Zone System Check,,,120,No
+INV_00375,CUST_026,2024-07-01,Return Air Inspection,,,70,No
+INV_00376,CUST_026,2024-07-25,Air Purifier Installation,,,525,No
+INV_00377,CUST_026,2024-08-10,AC Repair,,,390,No
+INV_00378,CUST_027,2023-10-07,Air Quality Assessment,,,140,No
+INV_00379,CUST_027,2023-10-11,Carbon Monoxide Test,,,95,No
+INV_00380,CUST_027,2023-11-26,Thermostat Installation,,,189,No
+INV_00381,CUST_027,2023-11-29,Thermostat Installation,,,189,No
+INV_00382,CUST_027,2023-12-03,UV Light Check,,,90,No
+INV_00383,CUST_027,2023-12-05,Central AC Installation,,,4200,No
+INV_00384,CUST_027,2023-12-11,Humidifier Installation,,,595,No
+INV_00385,CUST_027,2023-12-17,Heating Tune-up,,,140,No
+INV_00386,CUST_027,2024-01-13,Thermostat Calibration,,,95,No
+INV_00387,CUST_027,2024-02-10,AC Repair,,,390,No
+INV_00388,CUST_027,2024-03-10,Air Purifier Installation,Return Air Inspection,,595,Yes
+INV_00389,CUST_027,2024-03-16,Thermostat Installation,,,189,No
+INV_00390,CUST_027,2024-03-18,Refrigerant Recharge (2 lbs),,,225,No
+INV_00391,CUST_027,2024-04-27,Smart Thermostat Installation,,,295,No
+INV_00392,CUST_027,2024-05-09,Boiler Installation,,,4500,No
+INV_00393,CUST_027,2024-05-27,Smart Thermostat Installation,,,295,No
+INV_00394,CUST_027,2024-06-01,Furnace Installation,,,3800,No
+INV_00395,CUST_027,2024-06-03,Condenser Replacement,,,1450,No
+INV_00396,CUST_027,2024-06-27,Heating Tune-up,,,140,No
+INV_00397,CUST_027,2024-08-25,After Hours Emergency,,,275,No
+INV_00398,CUST_027,2024-08-29,Carbon Monoxide Test,,,95,No
+INV_00399,CUST_028,2023-10-16,Air Quality Assessment,,,140,No
+INV_00400,CUST_028,2023-11-10,System Maintenance,,,150,No
+INV_00401,CUST_028,2023-12-29,Capacitor Replacement,,,125,No
+INV_00402,CUST_028,2024-01-17,After Hours Emergency,,,275,No
+INV_00403,CUST_028,2024-02-14,Refrigerant Recharge (2 lbs),,,225,No
+INV_00404,CUST_028,2024-02-23,Blower Motor Replacement,,,485,No
+INV_00405,CUST_028,2024-02-26,Holiday Emergency Call,,,350,No
+INV_00406,CUST_028,2024-03-17,Dehumidifier Installation,,,695,No
+INV_00407,CUST_028,2024-04-05,Capacitor Replacement,,,125,No
+INV_00408,CUST_028,2024-04-11,Capacitor Replacement,,,125,No
+INV_00409,CUST_028,2024-04-18,Thermostat Calibration,,,95,No
+INV_00410,CUST_028,2024-05-22,Zone System Check,,,120,No
+INV_00411,CUST_028,2024-06-22,Central AC Installation,,,4200,No
+INV_00412,CUST_028,2024-06-28,Central AC Installation,,,4200,No
+INV_00413,CUST_028,2024-07-06,Thermostat Check,,,50,No
+INV_00414,CUST_028,2024-07-07,Gas Line Inspection,,,145,No
+INV_00415,CUST_028,2024-08-14,System Maintenance,,,150,No
+INV_00416,CUST_028,2024-08-17,Heat Pump Repair,,,475,No
+INV_00417,CUST_028,2024-08-22,AC Tune-up,,,125,No
+INV_00418,CUST_029,2023-10-02,Furnace Repair,,,425,No
+INV_00419,CUST_029,2023-10-23,Duct Inspection,,,85,No
+INV_00420,CUST_029,2023-11-10,Thermostat Installation,,,189,No
+INV_00421,CUST_029,2023-11-13,Thermostat Installation,,,189,No
+INV_00422,CUST_029,2023-11-16,Filter Replacement,,,45,No
+INV_00423,CUST_029,2024-02-07,Contactor Replacement,,,150,No
+INV_00424,CUST_029,2024-02-22,Zone System Check,,,120,No
+INV_00425,CUST_029,2024-03-19,UV Light Installation,,,495,No
+INV_00426,CUST_029,2024-05-02,Duct Inspection,,,85,No
+INV_00427,CUST_029,2024-05-13,Emergency Service Call,,,175,No
+INV_00428,CUST_029,2024-05-22,Heat Pump Repair,,,475,No
+INV_00429,CUST_029,2024-07-09,Smart Thermostat Installation,,,295,No
+INV_00430,CUST_029,2024-08-29,Humidifier Installation,,,595,No
+INV_00431,CUST_030,2023-10-29,Air Quality Assessment,,,140,No
+INV_00432,CUST_030,2023-11-03,AC Repair,,,390,No
+INV_00433,CUST_030,2023-11-17,Emergency Service Call,,,175,No
+INV_00434,CUST_030,2023-12-01,Air Quality Assessment,,,140,No
+INV_00435,CUST_030,2023-12-14,Gas Leak Detection,,,225,No
+INV_00436,CUST_030,2023-12-28,Carbon Monoxide Test,,,95,No
+INV_00437,CUST_030,2024-01-04,Gas Leak Detection,,,225,No
+INV_00438,CUST_030,2024-01-24,Weekend Emergency Call,,,225,No
+INV_00439,CUST_030,2024-01-25,Filter Replacement,,,45,No
+INV_00440,CUST_030,2024-04-29,UV Light Check,,,90,No
+INV_00441,CUST_030,2024-05-05,Supply Vent Balancing,,,180,No
+INV_00442,CUST_030,2024-05-22,Filter Replacement,,,45,No
+INV_00443,CUST_030,2024-06-07,Thermostat Check,,,50,No
+INV_00444,CUST_030,2024-06-26,Return Air Inspection,,,70,No
+INV_00445,CUST_030,2024-07-03,Duct Inspection,,,85,No
+INV_00446,CUST_030,2024-08-08,Heat Exchanger Replacement,,,1450,No
+INV_00447,CUST_031,2023-10-10,Ductless Mini-Split Installation,,,3200,No
+INV_00448,CUST_031,2023-11-05,Furnace Repair,,,425,No
+INV_00449,CUST_031,2023-11-18,Filter Replacement,,,45,No
+INV_00450,CUST_031,2023-12-11,Thermostat Calibration,,,95,No
+INV_00451,CUST_031,2024-03-18,Heat Pump Installation,,,4900,No
+INV_00452,CUST_031,2024-07-12,Dehumidifier Installation,,,695,No
+INV_00453,CUST_031,2024-08-20,Smart Thermostat Installation,,,295,No
+INV_00454,CUST_032,2023-10-10,Heat Pump Repair,,,475,No
+INV_00455,CUST_032,2023-10-20,Thermostat Calibration,,,95,No
+INV_00456,CUST_032,2023-12-08,Weekend Emergency Call,,,225,No
+INV_00457,CUST_032,2023-12-21,Blower Motor Replacement,,,485,No
+INV_00458,CUST_032,2024-01-30,Emergency Service Call,,,175,No
+INV_00459,CUST_032,2024-02-21,Humidifier Installation,,,595,No
+INV_00460,CUST_032,2024-04-15,UV Light Check,,,90,No
+INV_00461,CUST_032,2024-04-21,Air Quality Assessment,,,140,No
+INV_00462,CUST_032,2024-04-22,AC Repair,,,390,No
+INV_00463,CUST_032,2024-05-01,Air Quality Assessment,,,140,No
+INV_00464,CUST_032,2024-05-19,Blower Motor Replacement,,,485,No
+INV_00465,CUST_032,2024-06-12,Furnace Installation,,,3800,No
+INV_00466,CUST_032,2024-06-20,Emergency Service Call,,,175,No
+INV_00467,CUST_032,2024-08-09,UV Light Installation,,,495,No
+INV_00468,CUST_033,2023-10-22,Contactor Replacement,,,150,No
+INV_00469,CUST_033,2023-11-15,Weekend Emergency Call,,,225,No
+INV_00470,CUST_033,2023-12-25,AC Tune-up,,,125,No
+INV_00471,CUST_033,2024-02-23,Furnace Installation,,,3800,No
+INV_00472,CUST_033,2024-04-29,Filter Replacement,,,45,No
+INV_00473,CUST_033,2024-05-24,Contactor Replacement,,,150,No
+INV_00474,CUST_033,2024-05-28,Heating Tune-up,,,140,No
+INV_00475,CUST_033,2024-06-23,After Hours Emergency,,,275,No
+INV_00476,CUST_033,2024-06-26,Weekend Emergency Call,,,225,No
+INV_00477,CUST_033,2024-08-09,Weekend Emergency Call,,,225,No
+INV_00478,CUST_033,2024-08-27,Holiday Emergency Call,,,350,No
+INV_00479,CUST_033,2024-08-30,Weekend Emergency Call,,,225,No
+INV_00480,CUST_034,2023-10-18,Heating Tune-up,,,140,No
+INV_00481,CUST_034,2023-10-20,Refrigerant Recharge (2 lbs),,,225,No
+INV_00482,CUST_034,2023-10-28,Capacitor Replacement,,,125,No
+INV_00483,CUST_034,2023-11-21,Heating Tune-up,,,140,No
+INV_00484,CUST_034,2023-11-27,Contactor Replacement,,,150,No
+INV_00485,CUST_034,2023-11-30,Heating Tune-up,,,140,No
+INV_00486,CUST_034,2024-01-30,Heating Tune-up,,,140,No
+INV_00487,CUST_034,2024-02-09,Heating Tune-up,,,140,No
+INV_00488,CUST_034,2024-04-13,UV Light Check,,,90,No
+INV_00489,CUST_034,2024-04-20,Gas Leak Detection,,,225,No
+INV_00490,CUST_034,2024-06-08,Zone System Check,,,120,No
+INV_00491,CUST_034,2024-06-28,Thermostat Installation,,,189,No
+INV_00492,CUST_034,2024-07-30,Weekend Emergency Call,,,225,No
+INV_00493,CUST_035,2023-10-14,Supply Vent Balancing,,,180,No
+INV_00494,CUST_035,2023-11-04,Heat Pump Repair,,,475,No
+INV_00495,CUST_035,2023-12-21,Ductless Mini-Split Installation,,,3200,No
+INV_00496,CUST_035,2023-12-29,UV Light Check,,,90,No
+INV_00497,CUST_035,2024-01-08,System Maintenance,Tankless Water Heater Installation,,2300,Yes
+INV_00498,CUST_035,2024-01-14,Refrigerant Recharge (2 lbs),,,225,No
+INV_00499,CUST_035,2024-01-19,Filter Replacement,,,45,No
+INV_00500,CUST_035,2024-02-23,Heating Tune-up,,,140,No
+INV_00501,CUST_035,2024-03-27,Thermostat Calibration,,,95,No
+INV_00502,CUST_035,2024-04-04,AC Tune-up,,,125,No
+INV_00503,CUST_035,2024-04-28,Refrigerant Recharge (2 lbs),,,225,No
+INV_00504,CUST_035,2024-06-01,Heat Pump Repair,,,475,No
+INV_00505,CUST_035,2024-06-23,Air Quality Assessment,,,140,No
+INV_00506,CUST_035,2024-06-29,Thermostat Installation,,,189,No
+INV_00507,CUST_035,2024-07-12,Air Purifier Installation,,,525,No
+INV_00508,CUST_035,2024-08-11,Boiler Installation,Heat Pump Repair,,4975,Yes
+INV_00509,CUST_036,2023-10-29,Central AC Installation,,,4200,No
+INV_00510,CUST_036,2023-11-18,Capacitor Replacement,,,125,No
+INV_00511,CUST_036,2023-12-17,Thermostat Installation,,,189,No
+INV_00512,CUST_036,2023-12-18,Humidifier Check,,,75,No
+INV_00513,CUST_036,2024-01-24,Tankless Water Heater Installation,,,2150,No
+INV_00514,CUST_036,2024-01-31,Contactor Replacement,,,150,No
+INV_00515,CUST_036,2024-03-04,Carbon Monoxide Test,,,95,No
+INV_00516,CUST_036,2024-03-20,Dehumidifier Installation,,,695,No
+INV_00517,CUST_036,2024-04-09,Duct Inspection,,,85,No
+INV_00518,CUST_036,2024-05-02,Thermostat Check,,,50,No
+INV_00519,CUST_036,2024-05-05,Heat Exchanger Replacement,,,1450,No
+INV_00520,CUST_036,2024-06-01,Emergency Service Call,,,175,No
+INV_00521,CUST_036,2024-06-19,Furnace Repair,,,425,No
+INV_00522,CUST_036,2024-07-13,Zone System Check,,,120,No
+INV_00523,CUST_037,2023-10-01,Weekend Emergency Call,,,225,No
+INV_00524,CUST_037,2023-12-07,Emergency Service Call,,,175,No
+INV_00525,CUST_037,2023-12-09,Filter Replacement,,,45,No
+INV_00526,CUST_037,2024-03-14,Thermostat Installation,,,189,No
+INV_00527,CUST_037,2024-04-09,Heating Tune-up,Emergency Service Call,,315,Yes
+INV_00528,CUST_037,2024-05-15,Dehumidifier Installation,,,695,No
+INV_00529,CUST_037,2024-07-01,Contactor Replacement,,,150,No
+INV_00530,CUST_037,2024-07-28,Weekend Emergency Call,,,225,No
+INV_00531,CUST_038,2023-11-25,After Hours Emergency,,,275,No
+INV_00532,CUST_038,2023-11-28,Heating Tune-up,,,140,No
+INV_00533,CUST_038,2023-12-07,Furnace Repair,,,425,No
+INV_00534,CUST_038,2023-12-14,System Maintenance,Thermostat Installation,System Maintenance,489,Yes
+INV_00535,CUST_038,2024-01-21,Smart Thermostat Installation,,,295,No
+INV_00536,CUST_038,2024-01-25,Thermostat Installation,,,189,No
+INV_00537,CUST_038,2024-01-28,Duct Sealing,,,520,No
+INV_00538,CUST_038,2024-02-09,Furnace Installation,,,3800,No
+INV_00539,CUST_038,2024-02-19,Thermostat Check,,,50,No
+INV_00540,CUST_038,2024-02-24,Heat Pump Repair,,,475,No
+INV_00541,CUST_038,2024-04-06,Water Heater Installation,,,1450,No
+INV_00542,CUST_038,2024-04-25,Gas Leak Detection,,,225,No
+INV_00543,CUST_038,2024-06-11,Emergency Service Call,,,175,No
+INV_00544,CUST_038,2024-07-02,System Maintenance,,,150,No
+INV_00545,CUST_038,2024-08-05,Furnace Repair,,,425,No
+INV_00546,CUST_039,2023-10-21,AC Tune-up,,,125,No
+INV_00547,CUST_039,2023-10-22,Air Quality Assessment,,,140,No
+INV_00548,CUST_039,2023-11-08,Weekend Emergency Call,,,225,No
+INV_00549,CUST_039,2023-11-18,Air Handler Replacement,,,1750,No
+INV_00550,CUST_039,2023-11-23,Humidifier Installation,,,595,No
+INV_00551,CUST_039,2024-01-04,Furnace Repair,,,425,No
+INV_00552,CUST_039,2024-02-06,Weekend Emergency Call,,,225,No
+INV_00553,CUST_039,2024-03-21,Heat Pump Repair,,,475,No
+INV_00554,CUST_039,2024-03-24,Heat Exchanger Replacement,,,1450,No
+INV_00555,CUST_039,2024-04-03,Return Air Inspection,,,70,No
+INV_00556,CUST_039,2024-06-03,Supply Vent Balancing,,,180,No
+INV_00557,CUST_039,2024-06-10,Carbon Monoxide Test,,,95,No
+INV_00558,CUST_039,2024-06-26,AC Tune-up,,,125,No
+INV_00559,CUST_039,2024-07-11,Capacitor Replacement,,,125,No
+INV_00560,CUST_039,2024-07-15,UV Light Installation,,,495,No
+INV_00561,CUST_039,2024-07-26,Duct Cleaning,,,350,No
+INV_00562,CUST_039,2024-08-05,Zone System Check,,,120,No
+INV_00563,CUST_039,2024-08-21,Humidifier Installation,,,595,No
+INV_00564,CUST_039,2024-08-31,Duct Inspection,,,85,No
+INV_00565,CUST_040,2023-10-27,Thermostat Installation,,,189,No
+INV_00566,CUST_040,2023-10-28,Blower Motor Replacement,,,485,No
+INV_00567,CUST_040,2023-12-15,UV Light Check,,,90,No
+INV_00568,CUST_040,2023-12-18,Electrical Safety Inspection,,,110,No
+INV_00569,CUST_040,2023-12-20,Refrigerant Recharge (2 lbs),,,225,No
+INV_00570,CUST_040,2024-02-28,Heat Pump Installation,,,4900,No
+INV_00571,CUST_040,2024-04-07,Furnace Installation,,,3800,No
+INV_00572,CUST_040,2024-04-10,Return Air Inspection,,,70,No
+INV_00573,CUST_040,2024-04-11,Emergency Service Call,,,175,No
+INV_00574,CUST_040,2024-04-14,Duct Inspection,,,85,No
+INV_00575,CUST_040,2024-04-18,Filter Replacement,,,45,No
+INV_00576,CUST_040,2024-05-23,Filter Replacement,,,45,No
+INV_00577,CUST_040,2024-05-24,Tankless Water Heater Installation,,,2150,No
+INV_00578,CUST_040,2024-06-23,Water Heater Installation,,,1450,No
+INV_00579,CUST_040,2024-08-16,Gas Line Inspection,,,145,No
+INV_00580,CUST_040,2024-08-24,UV Light Installation,,,495,No
+INV_00581,CUST_041,2023-10-10,Duct Inspection,,,85,No
+INV_00582,CUST_041,2023-10-31,Thermostat Installation,,,189,No
+INV_00583,CUST_041,2023-12-14,Furnace Repair,,,425,No
+INV_00584,CUST_041,2023-12-24,System Maintenance,,,150,No
+INV_00585,CUST_041,2024-02-07,Return Air Inspection,,,70,No
+INV_00586,CUST_041,2024-03-21,UV Light Check,,,90,No
+INV_00587,CUST_041,2024-04-06,Heat Pump Repair,,,475,No
+INV_00588,CUST_041,2024-04-18,Weekend Emergency Call,,,225,No
+INV_00589,CUST_041,2024-05-17,Evaporator Coil Replacement,,,1250,No
+INV_00590,CUST_041,2024-06-08,Humidifier Installation,,,595,No
+INV_00591,CUST_041,2024-06-30,Emergency Service Call,,,175,No
+INV_00592,CUST_041,2024-08-11,Thermostat Calibration,,,95,No
+INV_00593,CUST_042,2023-10-06,Return Air Inspection,,,70,No
+INV_00594,CUST_042,2023-10-11,Ductless Mini-Split Installation,,,3200,No
+INV_00595,CUST_042,2023-10-14,Humidifier Installation,,,595,No
+INV_00596,CUST_042,2023-10-15,Filter Replacement,,,45,No
+INV_00597,CUST_042,2023-11-03,Refrigerant Recharge (2 lbs),,,225,No
+INV_00598,CUST_042,2023-11-29,Furnace Repair,,,425,No
+INV_00599,CUST_042,2023-12-15,Emergency Service Call,,,175,No
+INV_00600,CUST_042,2024-02-04,AC Tune-up,,,125,No
+INV_00601,CUST_042,2024-02-16,AC Repair,,,390,No
+INV_00602,CUST_042,2024-02-18,Emergency Service Call,,,175,No
+INV_00603,CUST_042,2024-03-29,Furnace Repair,,,425,No
+INV_00604,CUST_042,2024-04-21,Refrigerant Recharge (2 lbs),,,225,No
+INV_00605,CUST_042,2024-05-14,Return Air Inspection,,,70,No
+INV_00606,CUST_042,2024-06-02,Thermostat Calibration,,,95,No
+INV_00607,CUST_042,2024-07-22,AC Repair,Carbon Monoxide Test,,485,Yes
+INV_00608,CUST_043,2023-10-03,Heat Pump Repair,,,475,No
+INV_00609,CUST_043,2023-11-18,Weekend Emergency Call,,,225,No
+INV_00610,CUST_043,2023-12-02,After Hours Emergency,,,275,No
+INV_00611,CUST_043,2023-12-14,Weekend Emergency Call,,,225,No
+INV_00612,CUST_043,2023-12-18,Smart Thermostat Installation,,,295,No
+INV_00613,CUST_043,2024-01-05,Weekend Emergency Call,,,225,No
+INV_00614,CUST_043,2024-01-19,Humidifier Check,,,75,No
+INV_00615,CUST_043,2024-02-07,Compressor Replacement,,,1850,No
+INV_00616,CUST_043,2024-02-14,Return Air Inspection,,,70,No
+INV_00617,CUST_043,2024-03-06,Smart Thermostat Installation,,,295,No
+INV_00618,CUST_043,2024-03-10,Electrical Safety Inspection,,,110,No
+INV_00619,CUST_043,2024-03-25,Refrigerant Recharge (2 lbs),,,225,No
+INV_00620,CUST_043,2024-04-09,Electrical Safety Inspection,,,110,No
+INV_00621,CUST_043,2024-04-16,Heating Tune-up,,,140,No
+INV_00622,CUST_043,2024-04-17,Duct Cleaning,,,350,No
+INV_00623,CUST_043,2024-05-22,Weekend Emergency Call,,,225,No
+INV_00624,CUST_043,2024-06-03,Capacitor Replacement,,,125,No
+INV_00625,CUST_043,2024-06-09,Heating Tune-up,Heat Pump Installation,,5040,Yes
+INV_00626,CUST_043,2024-07-04,Central AC Installation,,,4200,No
+INV_00627,CUST_043,2024-07-23,Gas Line Inspection,,,145,No
+INV_00628,CUST_043,2024-08-03,Duct Cleaning,,,350,No
+INV_00629,CUST_044,2023-10-07,System Maintenance,,,150,No
+INV_00630,CUST_044,2023-11-03,System Maintenance,,,150,No
+INV_00631,CUST_044,2023-11-12,Evaporator Coil Replacement,,,1250,No
+INV_00632,CUST_044,2024-01-10,Air Purifier Installation,,,525,No
+INV_00633,CUST_044,2024-01-16,Furnace Repair,,,425,No
+INV_00634,CUST_044,2024-02-29,Gas Line Inspection,,,145,No
+INV_00635,CUST_044,2024-03-19,Air Purifier Installation,,,525,No
+INV_00636,CUST_044,2024-05-05,Furnace Installation,,,3800,No
+INV_00637,CUST_044,2024-05-07,Furnace Repair,,,425,No
+INV_00638,CUST_044,2024-05-15,Thermostat Check,,,50,No
+INV_00639,CUST_044,2024-06-12,Heat Pump Repair,,,475,No
+INV_00640,CUST_044,2024-06-26,Weekend Emergency Call,,,225,No
+INV_00641,CUST_044,2024-07-24,System Maintenance,,,150,No
+INV_00642,CUST_045,2023-10-18,Smart Thermostat Installation,,,295,No
+INV_00643,CUST_045,2023-11-13,Air Purifier Installation,,,525,No
+INV_00644,CUST_045,2023-12-07,AC Repair,,,390,No
+INV_00645,CUST_045,2023-12-10,Water Heater Installation,Thermostat Installation,,1639,Yes
+INV_00646,CUST_045,2024-02-02,Supply Vent Balancing,,,180,No
+INV_00647,CUST_045,2024-02-09,AC Repair,,,390,No
+INV_00648,CUST_045,2024-02-12,Air Quality Assessment,,,140,No
+INV_00649,CUST_045,2024-02-17,Refrigerant Leak Repair,,,350,No
+INV_00650,CUST_045,2024-03-03,AC Repair,Holiday Emergency Call,,740,Yes
+INV_00651,CUST_045,2024-05-24,Air Purifier Installation,,,525,No
+INV_00652,CUST_045,2024-07-19,System Maintenance,,,150,No
+INV_00653,CUST_046,2023-10-18,Thermostat Calibration,,,95,No
+INV_00654,CUST_046,2023-10-26,Thermostat Installation,,,189,No
+INV_00655,CUST_046,2023-10-31,Ductless Mini-Split Installation,,,3200,No
+INV_00656,CUST_046,2023-11-08,UV Light Installation,,,495,No
+INV_00657,CUST_046,2023-11-30,Air Quality Assessment,,,140,No
+INV_00658,CUST_046,2024-01-14,Emergency Service Call,,,175,No
+INV_00659,CUST_046,2024-02-09,Heating Tune-up,,,140,No
+INV_00660,CUST_046,2024-05-09,Compressor Replacement,,,1850,No
+INV_00661,CUST_046,2024-08-13,Carbon Monoxide Test,,,95,No
+INV_00662,CUST_046,2024-08-18,Gas Line Inspection,,,145,No
+INV_00663,CUST_046,2024-08-31,Heat Pump Repair,,,475,No
+INV_00664,CUST_047,2023-12-28,Return Air Inspection,,,70,No
+INV_00665,CUST_047,2024-01-26,Gas Leak Detection,,,225,No
+INV_00666,CUST_047,2024-02-18,AC Repair,,,390,No
+INV_00667,CUST_047,2024-02-19,Humidifier Installation,,,595,No
+INV_00668,CUST_047,2024-02-22,Weekend Emergency Call,,,225,No
+INV_00669,CUST_047,2024-03-20,Humidifier Installation,,,595,No
+INV_00670,CUST_047,2024-04-08,Supply Vent Balancing,,,180,No
+INV_00671,CUST_047,2024-05-01,AC Repair,,,390,No
+INV_00672,CUST_047,2024-05-12,AC Tune-up,,,125,No
+INV_00673,CUST_047,2024-07-16,Electrical Safety Inspection,,,110,No
+INV_00674,CUST_047,2024-07-27,AC Repair,,,390,No
+INV_00675,CUST_047,2024-08-05,Breaker Inspection,,,85,No
+INV_00676,CUST_047,2024-08-16,Compressor Replacement,,,1850,No
+INV_00677,CUST_048,2023-11-10,AC Repair,,,390,No
+INV_00678,CUST_048,2023-12-08,Carbon Monoxide Test,,,95,No
+INV_00679,CUST_048,2023-12-13,Smart Thermostat Installation,,,295,No
+INV_00680,CUST_048,2023-12-25,Zone System Check,,,120,No
+INV_00681,CUST_048,2023-12-26,Gas Leak Detection,,,225,No
+INV_00682,CUST_048,2024-01-20,Heat Exchanger Replacement,,,1450,No
+INV_00683,CUST_048,2024-01-27,System Maintenance,,,150,No
+INV_00684,CUST_048,2024-02-09,Thermostat Installation,,,189,No
+INV_00685,CUST_048,2024-02-13,Duct Sealing,,,520,No
+INV_00686,CUST_048,2024-03-27,Filter Replacement,,,45,No
+INV_00687,CUST_048,2024-04-05,Smart Thermostat Installation,,,295,No
+INV_00688,CUST_048,2024-05-20,Humidifier Installation,,,595,No
+INV_00689,CUST_048,2024-07-07,Duct Cleaning,,,350,No
+INV_00690,CUST_048,2024-07-13,Duct Inspection,,,85,No
+INV_00691,CUST_048,2024-08-01,Thermostat Installation,,,189,No
+INV_00692,CUST_049,2023-10-10,UV Light Installation,,,495,No
+INV_00693,CUST_049,2023-10-14,Furnace Repair,,,425,No
+INV_00694,CUST_049,2023-12-08,AC Tune-up,,,125,No
+INV_00695,CUST_049,2024-01-07,After Hours Emergency,,,275,No
+INV_00696,CUST_049,2024-02-27,Refrigerant Recharge (2 lbs),,,225,No
+INV_00697,CUST_049,2024-03-08,Central AC Installation,,,4200,No
+INV_00698,CUST_049,2024-03-31,Condenser Replacement,,,1450,No
+INV_00699,CUST_049,2024-05-07,Thermostat Installation,,,189,No
+INV_00700,CUST_049,2024-05-23,Emergency Service Call,,,175,No
+INV_00701,CUST_049,2024-07-12,Weekend Emergency Call,,,225,No
+INV_00702,CUST_049,2024-07-21,Heat Exchanger Replacement,,,1450,No
+INV_00703,CUST_049,2024-07-24,Smart Thermostat Installation,,,295,No
+INV_00704,CUST_049,2024-08-07,Filter Replacement,,,45,No
+INV_00705,CUST_049,2024-08-25,Filter Replacement,,,45,No
+INV_00706,CUST_050,2023-11-08,Holiday Emergency Call,,,350,No
+INV_00707,CUST_050,2023-11-26,Water Heater Installation,,,1450,No
+INV_00708,CUST_050,2023-11-28,Filter Replacement,,,45,No
+INV_00709,CUST_050,2023-12-08,Air Purifier Installation,,,525,No
+INV_00710,CUST_050,2023-12-20,Filter Replacement,,,45,No
+INV_00711,CUST_050,2023-12-27,Furnace Installation,,,3800,No
+INV_00712,CUST_050,2023-12-28,Weekend Emergency Call,,,225,No
+INV_00713,CUST_050,2024-01-08,Air Purifier Installation,,,525,No
+INV_00714,CUST_050,2024-01-20,AC Tune-up,,,125,No
+INV_00715,CUST_050,2024-02-17,Supply Vent Balancing,,,180,No
+INV_00716,CUST_050,2024-02-26,Refrigerant Recharge (2 lbs),,,225,No
+INV_00717,CUST_050,2024-03-13,Furnace Repair,,,425,No
+INV_00718,CUST_050,2024-03-16,After Hours Emergency,,,275,No
+INV_00719,CUST_050,2024-04-12,Smart Thermostat Installation,,,295,No
+INV_00720,CUST_050,2024-06-24,Thermostat Installation,,,189,No
+INV_00721,CUST_050,2024-07-12,Refrigerant Leak Repair,,,350,No
+INV_00722,CUST_050,2024-08-03,Furnace Repair,,,425,No
+INV_00723,CUST_050,2024-08-20,Condenser Replacement,,,1450,No
+INV_00724,CUST_051,2023-10-19,Contactor Replacement,,,150,No
+INV_00725,CUST_051,2023-11-08,Weekend Emergency Call,,,225,No
+INV_00726,CUST_051,2023-12-07,Filter Replacement,,,45,No
+INV_00727,CUST_051,2023-12-18,Contactor Replacement,,,150,No
+INV_00728,CUST_051,2024-01-12,Filter Replacement,,,45,No
+INV_00729,CUST_051,2024-02-03,Filter Replacement,,,45,No
+INV_00730,CUST_051,2024-02-20,Duct Sealing,,,520,No
+INV_00731,CUST_051,2024-03-31,Emergency Service Call,,,175,No
+INV_00732,CUST_051,2024-05-06,AC Repair,,,390,No
+INV_00733,CUST_051,2024-05-15,Refrigerant Recharge (2 lbs),,,225,No
+INV_00734,CUST_051,2024-05-31,Furnace Repair,,,425,No
+INV_00735,CUST_051,2024-06-23,Refrigerant Recharge (2 lbs),,,225,No
+INV_00736,CUST_051,2024-06-24,Duct Cleaning,,,350,No
+INV_00737,CUST_051,2024-07-19,Refrigerant Leak Repair,,,350,No
+INV_00738,CUST_051,2024-08-10,AC Tune-up,,,125,No
+INV_00739,CUST_051,2024-08-22,Thermostat Installation,,,189,No
+INV_00740,CUST_052,2023-10-25,Air Purifier Installation,,,525,No
+INV_00741,CUST_052,2023-12-06,Contactor Replacement,,,150,No
+INV_00742,CUST_052,2024-01-05,Thermostat Calibration,,,95,No
+INV_00743,CUST_052,2024-01-28,Zone System Check,,,120,No
+INV_00744,CUST_052,2024-02-03,Tankless Water Heater Installation,,,2150,No
+INV_00745,CUST_052,2024-02-10,Smart Thermostat Installation,,,295,No
+INV_00746,CUST_052,2024-02-12,Air Handler Replacement,,,1750,No
+INV_00747,CUST_052,2024-03-20,AC Tune-up,,,125,No
+INV_00748,CUST_052,2024-05-08,Dehumidifier Installation,Heat Pump Installation,,5595,Yes
+INV_00749,CUST_052,2024-05-09,Furnace Installation,,,3800,No
+INV_00750,CUST_052,2024-05-19,Heat Pump Repair,,,475,No
+INV_00751,CUST_052,2024-05-21,AC Repair,,,390,No
+INV_00752,CUST_052,2024-05-31,Air Quality Assessment,,,140,No
+INV_00753,CUST_052,2024-06-02,Humidifier Installation,,,595,No
+INV_00754,CUST_052,2024-08-24,Emergency Service Call,,,175,No
+INV_00755,CUST_052,2024-08-30,Contactor Replacement,,,150,No
+INV_00756,CUST_053,2023-10-13,Smart Thermostat Installation,Refrigerant Recharge (2 lbs),,520,Yes
+INV_00757,CUST_053,2023-10-14,Smart Thermostat Installation,,,295,No
+INV_00758,CUST_053,2023-11-08,Emergency Service Call,,,175,No
+INV_00759,CUST_053,2023-11-25,Compressor Replacement,,,1850,No
+INV_00760,CUST_053,2023-11-26,Furnace Installation,,,3800,No
+INV_00761,CUST_053,2023-12-07,Contactor Replacement,,,150,No
+INV_00762,CUST_053,2023-12-19,Heat Pump Installation,,,4900,No
+INV_00763,CUST_053,2024-02-02,Contactor Replacement,,,150,No
+INV_00764,CUST_053,2024-02-25,Filter Replacement,,,45,No
+INV_00765,CUST_053,2024-03-08,Duct Inspection,,,85,No
+INV_00766,CUST_053,2024-05-20,Tankless Water Heater Installation,,,2150,No
+INV_00767,CUST_053,2024-05-31,Heat Pump Repair,,,475,No
+INV_00768,CUST_053,2024-06-21,Furnace Repair,,,425,No
+INV_00769,CUST_053,2024-06-25,Zone System Check,,,120,No
+INV_00770,CUST_053,2024-07-07,Furnace Repair,,,425,No
+INV_00771,CUST_053,2024-07-09,Supply Vent Balancing,,,180,No
+INV_00772,CUST_053,2024-08-25,Zone System Check,,,120,No
+INV_00773,CUST_053,2024-08-29,Supply Vent Balancing,,,180,No
+INV_00774,CUST_054,2023-10-04,Return Air Inspection,,,70,No
+INV_00775,CUST_054,2023-11-27,Filter Replacement,,,45,No
+INV_00776,CUST_054,2023-12-29,Air Purifier Installation,,,525,No
+INV_00777,CUST_054,2024-01-03,Thermostat Installation,,,189,No
+INV_00778,CUST_054,2024-01-06,Weekend Emergency Call,,,225,No
+INV_00779,CUST_054,2024-02-06,Weekend Emergency Call,,,225,No
+INV_00780,CUST_054,2024-02-21,Refrigerant Leak Repair,,,350,No
+INV_00781,CUST_054,2024-03-04,Refrigerant Leak Repair,,,350,No
+INV_00782,CUST_054,2024-03-22,Smart Thermostat Installation,,,295,No
+INV_00783,CUST_054,2024-04-30,Thermostat Installation,,,189,No
+INV_00784,CUST_054,2024-05-29,Refrigerant Leak Repair,,,350,No
+INV_00785,CUST_054,2024-06-28,Air Quality Assessment,,,140,No
+INV_00786,CUST_054,2024-07-05,Contactor Replacement,,,150,No
+INV_00787,CUST_054,2024-07-11,Thermostat Calibration,,,95,No
+INV_00788,CUST_054,2024-07-14,System Maintenance,Weekend Emergency Call,,375,Yes
+INV_00789,CUST_054,2024-07-19,Smart Thermostat Installation,,,295,No
+INV_00790,CUST_054,2024-08-25,Thermostat Installation,,,189,No
+INV_00791,CUST_055,2023-10-08,Heating Tune-up,,,140,No
+INV_00792,CUST_055,2023-10-17,After Hours Emergency,,,275,No
+INV_00793,CUST_055,2023-11-14,AC Repair,,,390,No
+INV_00794,CUST_055,2023-11-25,Weekend Emergency Call,,,225,No
+INV_00795,CUST_055,2023-12-01,Central AC Installation,,,4200,No
+INV_00796,CUST_055,2023-12-09,Heating Tune-up,,,140,No
+INV_00797,CUST_055,2023-12-13,Return Air Inspection,,,70,No
+INV_00798,CUST_055,2023-12-19,Weekend Emergency Call,,,225,No
+INV_00799,CUST_055,2023-12-27,Heating Tune-up,,,140,No
+INV_00800,CUST_055,2024-02-04,UV Light Installation,,,495,No
+INV_00801,CUST_055,2024-02-11,Thermostat Installation,,,189,No
+INV_00802,CUST_055,2024-03-20,System Maintenance,,,150,No
+INV_00803,CUST_055,2024-04-04,Breaker Inspection,,,85,No
+INV_00804,CUST_055,2024-05-03,Emergency Service Call,,,175,No
+INV_00805,CUST_055,2024-05-04,Thermostat Check,,,50,No
+INV_00806,CUST_055,2024-06-02,Central AC Installation,,,4200,No
+INV_00807,CUST_055,2024-06-14,Thermostat Installation,,,189,No
+INV_00808,CUST_055,2024-06-22,Thermostat Calibration,,,95,No
+INV_00809,CUST_055,2024-08-31,Boiler Installation,,,4500,No
+INV_00810,CUST_056,2023-11-28,Blower Motor Replacement,,,485,No
+INV_00811,CUST_056,2023-11-30,Thermostat Installation,,,189,No
+INV_00812,CUST_056,2023-12-25,Water Heater Installation,,,1450,No
+INV_00813,CUST_056,2024-01-05,Refrigerant Leak Repair,,,350,No
+INV_00814,CUST_056,2024-02-05,Ductless Mini-Split Installation,,,3200,No
+INV_00815,CUST_056,2024-02-06,Smart Thermostat Installation,,,295,No
+INV_00816,CUST_056,2024-02-24,Ductless Mini-Split Installation,,,3200,No
+INV_00817,CUST_056,2024-03-01,Contactor Replacement,,,150,No
+INV_00818,CUST_056,2024-04-03,After Hours Emergency,,,275,No
+INV_00819,CUST_056,2024-04-24,Refrigerant Recharge (2 lbs),,,225,No
+INV_00820,CUST_056,2024-05-21,Emergency Service Call,,,175,No
+INV_00821,CUST_056,2024-05-31,UV Light Installation,,,495,No
+INV_00822,CUST_057,2023-12-31,Holiday Emergency Call,,,350,No
+INV_00823,CUST_057,2024-01-07,Return Air Inspection,Air Handler Replacement,,1820,Yes
+INV_00824,CUST_057,2024-02-29,UV Light Installation,,,495,No
+INV_00825,CUST_057,2024-03-02,Dehumidifier Installation,,,695,No
+INV_00826,CUST_057,2024-03-03,Duct Cleaning,,,350,No
+INV_00827,CUST_057,2024-03-11,Furnace Installation,,,3800,No
+INV_00828,CUST_057,2024-03-22,Emergency Service Call,,,175,No
+INV_00829,CUST_057,2024-03-30,Heat Pump Repair,,,475,No
+INV_00830,CUST_057,2024-04-19,Capacitor Replacement,,,125,No
+INV_00831,CUST_057,2024-05-18,System Maintenance,,,150,No
+INV_00832,CUST_057,2024-06-11,Refrigerant Leak Repair,,,350,No
+INV_00833,CUST_057,2024-07-12,Return Air Inspection,,,70,No
+INV_00834,CUST_057,2024-07-13,Heating Tune-up,,,140,No
+INV_00835,CUST_057,2024-07-23,AC Tune-up,,,125,No
+INV_00836,CUST_057,2024-07-30,Refrigerant Recharge (2 lbs),,,225,No
+INV_00837,CUST_057,2024-08-17,Blower Motor Replacement,,,485,No
+INV_00838,CUST_058,2023-11-27,Heat Pump Repair,,,475,No
+INV_00839,CUST_058,2023-12-11,Emergency Service Call,,,175,No
+INV_00840,CUST_058,2023-12-29,Gas Line Inspection,,,145,No
+INV_00841,CUST_058,2024-01-26,Air Purifier Installation,,,525,No
+INV_00842,CUST_058,2024-02-04,UV Light Check,,,90,No
+INV_00843,CUST_058,2024-03-28,AC Tune-up,,,125,No
+INV_00844,CUST_058,2024-04-05,Thermostat Calibration,,,95,No
+INV_00845,CUST_058,2024-04-09,Humidifier Installation,,,595,No
+INV_00846,CUST_058,2024-05-19,Thermostat Calibration,,,95,No
+INV_00847,CUST_058,2024-06-01,Holiday Emergency Call,,,350,No
+INV_00848,CUST_058,2024-06-29,Emergency Service Call,,,175,No
+INV_00849,CUST_058,2024-08-13,Furnace Installation,,,3800,No
+INV_00850,CUST_059,2023-10-26,Gas Line Inspection,,,145,No
+INV_00851,CUST_059,2023-11-14,Breaker Inspection,,,85,No
+INV_00852,CUST_059,2023-12-04,Refrigerant Leak Repair,,,350,No
+INV_00853,CUST_059,2024-01-28,Filter Replacement,,,45,No
+INV_00854,CUST_059,2024-02-08,AC Tune-up,,,125,No
+INV_00855,CUST_059,2024-02-26,Condenser Replacement,Weekend Emergency Call,,1675,Yes
+INV_00856,CUST_059,2024-03-25,Emergency Service Call,,,175,No
+INV_00857,CUST_059,2024-04-05,Refrigerant Leak Repair,,,350,No
+INV_00858,CUST_059,2024-04-09,Smart Thermostat Installation,,,295,No
+INV_00859,CUST_059,2024-05-09,Emergency Service Call,,,175,No
+INV_00860,CUST_059,2024-05-16,Gas Line Inspection,,,145,No
+INV_00861,CUST_059,2024-06-18,Refrigerant Recharge (2 lbs),,,225,No
+INV_00862,CUST_059,2024-06-29,Furnace Installation,,,3800,No
+INV_00863,CUST_059,2024-08-09,Smart Thermostat Installation,,,295,No
+INV_00864,CUST_060,2023-10-12,Emergency Service Call,,,175,No
+INV_00865,CUST_060,2023-11-06,Duct Inspection,,,85,No
+INV_00866,CUST_060,2024-02-05,Air Handler Replacement,,,1750,No
+INV_00867,CUST_060,2024-02-07,Heating Tune-up,,,140,No
+INV_00868,CUST_060,2024-02-21,Thermostat Installation,,,189,No
+INV_00869,CUST_060,2024-02-22,Air Handler Replacement,,,1750,No
+INV_00870,CUST_060,2024-02-27,Weekend Emergency Call,,,225,No
+INV_00871,CUST_060,2024-04-03,Gas Line Inspection,,,145,No
+INV_00872,CUST_060,2024-04-21,Filter Replacement,,,45,No
+INV_00873,CUST_060,2024-04-25,Filter Replacement,,,45,No
+INV_00874,CUST_060,2024-05-04,Air Handler Replacement,,,1750,No
+INV_00875,CUST_060,2024-05-31,Gas Line Inspection,,,145,No
+INV_00876,CUST_060,2024-08-14,Zone System Check,,,120,No
+INV_00877,CUST_060,2024-08-23,Gas Leak Detection,,,225,No
+INV_00878,CUST_060,2024-08-24,AC Tune-up,,,125,No
+INV_00879,CUST_061,2023-10-04,Blower Motor Replacement,,,485,No
+INV_00880,CUST_061,2023-10-09,Humidifier Installation,,,595,No
+INV_00881,CUST_061,2023-10-19,Dehumidifier Installation,,,695,No
+INV_00882,CUST_061,2023-10-25,System Maintenance,,,150,No
+INV_00883,CUST_061,2023-11-03,Emergency Service Call,,,175,No
+INV_00884,CUST_061,2023-11-11,Smart Thermostat Installation,,,295,No
+INV_00885,CUST_061,2023-11-23,Humidifier Installation,,,595,No
+INV_00886,CUST_061,2023-12-04,UV Light Check,,,90,No
+INV_00887,CUST_061,2023-12-11,Compressor Replacement,,,1850,No
+INV_00888,CUST_061,2024-02-06,UV Light Installation,,,495,No
+INV_00889,CUST_061,2024-04-13,Heat Pump Installation,,,4900,No
+INV_00890,CUST_061,2024-04-21,AC Tune-up,,,125,No
+INV_00891,CUST_061,2024-05-12,Smart Thermostat Installation,,,295,No
+INV_00892,CUST_061,2024-07-17,Furnace Installation,,,3800,No
+INV_00893,CUST_061,2024-07-18,AC Tune-up,,,125,No
+INV_00894,CUST_061,2024-08-19,Heat Pump Repair,,,475,No
+INV_00895,CUST_062,2023-10-03,Gas Leak Detection,,,225,No
+INV_00896,CUST_062,2023-10-17,Capacitor Replacement,Heat Pump Installation,,5025,Yes
+INV_00897,CUST_062,2023-10-22,Condenser Replacement,,,1450,No
+INV_00898,CUST_062,2023-11-11,UV Light Check,,,90,No
+INV_00899,CUST_062,2023-11-25,Thermostat Calibration,,,95,No
+INV_00900,CUST_062,2023-12-08,Duct Inspection,,,85,No
+INV_00901,CUST_062,2023-12-21,Contactor Replacement,,,150,No
+INV_00902,CUST_062,2023-12-27,Boiler Installation,,,4500,No
+INV_00903,CUST_062,2024-01-10,Duct Inspection,,,85,No
+INV_00904,CUST_062,2024-02-22,AC Tune-up,,,125,No
+INV_00905,CUST_062,2024-04-23,Water Heater Installation,,,1450,No
+INV_00906,CUST_062,2024-04-26,Boiler Installation,,,4500,No
+INV_00907,CUST_062,2024-04-27,Heat Pump Installation,,,4900,No
+INV_00908,CUST_062,2024-05-03,Furnace Installation,,,3800,No
+INV_00909,CUST_062,2024-05-10,Refrigerant Recharge (2 lbs),,,225,No
+INV_00910,CUST_062,2024-05-18,Tankless Water Heater Installation,,,2150,No
+INV_00911,CUST_062,2024-06-05,Capacitor Replacement,,,125,No
+INV_00912,CUST_062,2024-06-20,After Hours Emergency,,,275,No
+INV_00913,CUST_062,2024-07-11,Duct Sealing,,,520,No
+INV_00914,CUST_062,2024-08-03,Capacitor Replacement,,,125,No
+INV_00915,CUST_063,2023-10-09,Humidifier Check,,,75,No
+INV_00916,CUST_063,2023-10-27,AC Repair,,,390,No
+INV_00917,CUST_063,2023-11-18,Dehumidifier Installation,,,695,No
+INV_00918,CUST_063,2024-01-22,Furnace Installation,,,3800,No
+INV_00919,CUST_063,2024-03-02,Return Air Inspection,,,70,No
+INV_00920,CUST_063,2024-03-17,Holiday Emergency Call,,,350,No
+INV_00921,CUST_063,2024-03-23,Central AC Installation,,,4200,No
+INV_00922,CUST_063,2024-04-03,Water Heater Installation,,,1450,No
+INV_00923,CUST_063,2024-04-04,Electrical Safety Inspection,,,110,No
+INV_00924,CUST_063,2024-04-17,Smart Thermostat Installation,,,295,No
+INV_00925,CUST_063,2024-04-25,Breaker Inspection,,,85,No
+INV_00926,CUST_063,2024-05-28,Emergency Service Call,,,175,No
+INV_00927,CUST_063,2024-06-04,AC Tune-up,,,125,No
+INV_00928,CUST_063,2024-06-24,Thermostat Installation,,,189,No
+INV_00929,CUST_063,2024-06-29,Smart Thermostat Installation,,,295,No
+INV_00930,CUST_063,2024-07-19,AC Repair,,,390,No
+INV_00931,CUST_063,2024-08-12,Humidifier Installation,,,595,No
+INV_00932,CUST_064,2023-11-18,Duct Cleaning,,,350,No
+INV_00933,CUST_064,2024-01-01,Emergency Service Call,,,175,No
+INV_00934,CUST_064,2024-01-02,Heating Tune-up,,,140,No
+INV_00935,CUST_064,2024-03-10,Return Air Inspection,,,70,No
+INV_00936,CUST_064,2024-04-17,Furnace Repair,,,425,No
+INV_00937,CUST_064,2024-06-05,Heating Tune-up,,,140,No
+INV_00938,CUST_064,2024-06-23,Refrigerant Leak Repair,,,350,No
+INV_00939,CUST_064,2024-06-29,Emergency Service Call,,,175,No
+INV_00940,CUST_064,2024-07-04,System Maintenance,,,150,No
+INV_00941,CUST_064,2024-07-06,Emergency Service Call,,,175,No
+INV_00942,CUST_064,2024-07-16,Refrigerant Recharge (2 lbs),,,225,No
+INV_00943,CUST_064,2024-08-02,Condenser Replacement,,,1450,No
+INV_00944,CUST_064,2024-08-20,Duct Cleaning,,,350,No
+INV_00945,CUST_064,2024-08-28,Blower Motor Replacement,,,485,No
+INV_00946,CUST_065,2023-10-18,Blower Motor Replacement,,,485,No
+INV_00947,CUST_065,2023-10-24,After Hours Emergency,,,275,No
+INV_00948,CUST_065,2023-11-20,Supply Vent Balancing,,,180,No
+INV_00949,CUST_065,2023-12-30,Thermostat Calibration,,,95,No
+INV_00950,CUST_065,2024-01-16,Duct Sealing,,,520,No
+INV_00951,CUST_065,2024-01-26,Duct Cleaning,,,350,No
+INV_00952,CUST_065,2024-02-09,Duct Sealing,,,520,No
+INV_00953,CUST_065,2024-03-04,Zone System Check,,,120,No
+INV_00954,CUST_065,2024-04-09,Water Heater Installation,,,1450,No
+INV_00955,CUST_065,2024-05-01,Furnace Repair,,,425,No
+INV_00956,CUST_065,2024-05-07,Refrigerant Recharge (2 lbs),,,225,No
+INV_00957,CUST_065,2024-05-26,System Maintenance,,,150,No
+INV_00958,CUST_065,2024-08-02,Zone System Check,,,120,No
+INV_00959,CUST_065,2024-08-27,AC Tune-up,,,125,No
+INV_00960,CUST_066,2023-10-20,Weekend Emergency Call,Heat Pump Installation,,5125,Yes
+INV_00961,CUST_066,2024-01-11,Heat Pump Installation,,,4900,No
+INV_00962,CUST_066,2024-01-16,Heat Pump Repair,,,475,No
+INV_00963,CUST_066,2024-02-16,Filter Replacement,,,45,No
+INV_00964,CUST_066,2024-02-26,Duct Inspection,,,85,No
+INV_00965,CUST_066,2024-03-10,System Maintenance,,,150,No
+INV_00966,CUST_066,2024-05-06,Gas Line Inspection,,,145,No
+INV_00967,CUST_066,2024-05-15,Thermostat Installation,,,189,No
+INV_00968,CUST_066,2024-05-23,Furnace Installation,,,3800,No
+INV_00969,CUST_066,2024-06-10,Heating Tune-up,,,140,No
+INV_00970,CUST_067,2023-11-09,Carbon Monoxide Test,,,95,No
+INV_00971,CUST_067,2024-01-15,Air Purifier Installation,,,525,No
+INV_00972,CUST_067,2024-01-25,AC Repair,,,390,No
+INV_00973,CUST_067,2024-02-29,Carbon Monoxide Test,,,95,No
+INV_00974,CUST_067,2024-03-25,Smart Thermostat Installation,,,295,No
+INV_00975,CUST_067,2024-04-15,Gas Leak Detection,,,225,No
+INV_00976,CUST_067,2024-08-02,Thermostat Installation,,,189,No
+INV_00977,CUST_067,2024-08-09,Refrigerant Leak Repair,,,350,No
+INV_00978,CUST_067,2024-08-26,System Maintenance,,,150,No
+INV_00979,CUST_068,2023-10-16,UV Light Installation,,,495,No
+INV_00980,CUST_068,2023-10-17,Supply Vent Balancing,,,180,No
+INV_00981,CUST_068,2023-11-11,Dehumidifier Installation,,,695,No
+INV_00982,CUST_068,2024-02-12,Electrical Safety Inspection,,,110,No
+INV_00983,CUST_068,2024-02-18,Central AC Installation,,,4200,No
+INV_00984,CUST_068,2024-03-16,Humidifier Check,,,75,No
+INV_00985,CUST_068,2024-03-23,Furnace Installation,,,3800,No
+INV_00986,CUST_068,2024-04-12,Supply Vent Balancing,Weekend Emergency Call,,405,Yes
+INV_00987,CUST_068,2024-04-25,Contactor Replacement,,,150,No
+INV_00988,CUST_068,2024-08-21,Heat Exchanger Replacement,,,1450,No
+INV_00989,CUST_069,2023-10-16,UV Light Installation,,,495,No
+INV_00990,CUST_069,2023-10-20,Filter Replacement,,,45,No
+INV_00991,CUST_069,2023-12-31,Holiday Emergency Call,,,350,No
+INV_00992,CUST_069,2024-02-10,Refrigerant Recharge (2 lbs),,,225,No
+INV_00993,CUST_069,2024-02-14,Holiday Emergency Call,,,350,No
+INV_00994,CUST_069,2024-03-24,Capacitor Replacement,,,125,No
+INV_00995,CUST_069,2024-03-28,Emergency Service Call,,,175,No
+INV_00996,CUST_069,2024-03-30,Weekend Emergency Call,,,225,No
+INV_00997,CUST_069,2024-05-13,After Hours Emergency,,,275,No
+INV_00998,CUST_069,2024-06-02,Gas Leak Detection,,,225,No
+INV_00999,CUST_069,2024-06-15,Contactor Replacement,,,150,No
+INV_01000,CUST_069,2024-07-02,Compressor Replacement,,,1850,No
+INV_01001,CUST_069,2024-07-18,System Maintenance,,,150,No
+INV_01002,CUST_070,2023-10-04,Thermostat Calibration,,,95,No
+INV_01003,CUST_070,2023-10-28,Thermostat Installation,,,189,No
+INV_01004,CUST_070,2023-11-13,Capacitor Replacement,,,125,No
+INV_01005,CUST_070,2023-12-07,Filter Replacement,,,45,No
+INV_01006,CUST_070,2023-12-13,Return Air Inspection,,,70,No
+INV_01007,CUST_070,2023-12-28,Compressor Replacement,,,1850,No
+INV_01008,CUST_070,2024-01-07,Thermostat Installation,,,189,No
+INV_01009,CUST_070,2024-01-09,Emergency Service Call,,,175,No
+INV_01010,CUST_070,2024-01-17,Air Quality Assessment,,,140,No
+INV_01011,CUST_070,2024-01-18,Filter Replacement,,,45,No
+INV_01012,CUST_070,2024-01-20,Emergency Service Call,,,175,No
+INV_01013,CUST_070,2024-03-16,Filter Replacement,,,45,No
+INV_01014,CUST_070,2024-04-03,UV Light Installation,,,495,No
+INV_01015,CUST_070,2024-04-11,Blower Motor Replacement,,,485,No
+INV_01016,CUST_070,2024-05-01,Supply Vent Balancing,,,180,No
+INV_01017,CUST_070,2024-05-11,Carbon Monoxide Test,,,95,No
+INV_01018,CUST_070,2024-06-05,Capacitor Replacement,,,125,No
+INV_01019,CUST_070,2024-06-18,Supply Vent Balancing,,,180,No
+INV_01020,CUST_070,2024-06-28,Furnace Repair,,,425,No
+INV_01021,CUST_070,2024-07-30,Heat Pump Installation,,,4900,No
+INV_01022,CUST_070,2024-08-14,Emergency Service Call,,,175,No
+INV_01023,CUST_071,2023-10-19,Contactor Replacement,,,150,No
+INV_01024,CUST_071,2023-10-22,AC Repair,,,390,No
+INV_01025,CUST_071,2023-11-10,AC Repair,,,390,No
+INV_01026,CUST_071,2023-12-06,AC Tune-up,Thermostat Installation,,314,Yes
+INV_01027,CUST_071,2023-12-25,Return Air Inspection,,,70,No
+INV_01028,CUST_071,2024-01-24,Duct Inspection,,,85,No
+INV_01029,CUST_071,2024-02-07,Air Handler Replacement,,,1750,No
+INV_01030,CUST_071,2024-02-24,Heat Pump Repair,,,475,No
+INV_01031,CUST_071,2024-04-06,Refrigerant Leak Repair,Filter Replacement,,395,Yes
+INV_01032,CUST_071,2024-07-15,Smart Thermostat Installation,,,295,No
+INV_01033,CUST_072,2023-10-14,Tankless Water Heater Installation,,,2150,No
+INV_01034,CUST_072,2023-10-31,Evaporator Coil Replacement,,,1250,No
+INV_01035,CUST_072,2023-11-13,Heating Tune-up,,,140,No
+INV_01036,CUST_072,2023-11-21,Refrigerant Recharge (2 lbs),,,225,No
+INV_01037,CUST_072,2023-12-09,UV Light Check,,,90,No
+INV_01038,CUST_072,2023-12-26,Refrigerant Recharge (2 lbs),,,225,No
+INV_01039,CUST_072,2024-02-22,Thermostat Check,,,50,No
+INV_01040,CUST_072,2024-03-02,Capacitor Replacement,,,125,No
+INV_01041,CUST_072,2024-05-16,Boiler Installation,,,4500,No
+INV_01042,CUST_072,2024-05-26,Filter Replacement,,,45,No
+INV_01043,CUST_072,2024-06-19,Refrigerant Recharge (2 lbs),,,225,No
+INV_01044,CUST_072,2024-06-24,Smart Thermostat Installation,,,295,No
+INV_01045,CUST_073,2023-11-07,Blower Motor Replacement,,,485,No
+INV_01046,CUST_073,2023-11-16,System Maintenance,,,150,No
+INV_01047,CUST_073,2023-11-22,Condenser Replacement,,,1450,No
+INV_01048,CUST_073,2023-12-22,Duct Inspection,,,85,No
+INV_01049,CUST_073,2023-12-30,Return Air Inspection,,,70,No
+INV_01050,CUST_073,2024-01-15,Duct Sealing,,,520,No
+INV_01051,CUST_073,2024-02-07,Central AC Installation,,,4200,No
+INV_01052,CUST_073,2024-02-10,Duct Inspection,,,85,No
+INV_01053,CUST_073,2024-02-17,Filter Replacement,,,45,No
+INV_01054,CUST_073,2024-02-29,Breaker Inspection,,,85,No
+INV_01055,CUST_073,2024-04-02,Furnace Repair,,,425,No
+INV_01056,CUST_073,2024-04-22,Electrical Safety Inspection,,,110,No
+INV_01057,CUST_073,2024-06-04,Heat Pump Repair,,,475,No
+INV_01058,CUST_073,2024-06-06,Furnace Repair,,,425,No
+INV_01059,CUST_073,2024-06-12,Smart Thermostat Installation,,,295,No
+INV_01060,CUST_073,2024-06-14,AC Tune-up,,,125,No
+INV_01061,CUST_073,2024-06-18,Carbon Monoxide Test,,,95,No
+INV_01062,CUST_074,2023-10-31,Thermostat Installation,,,189,No
+INV_01063,CUST_074,2023-11-16,Emergency Service Call,,,175,No
+INV_01064,CUST_074,2023-12-10,UV Light Check,,,90,No
+INV_01065,CUST_074,2024-01-03,Heat Exchanger Replacement,,,1450,No
+INV_01066,CUST_074,2024-01-20,Refrigerant Recharge (2 lbs),,,225,No
+INV_01067,CUST_074,2024-01-26,Heat Pump Installation,,,4900,No
+INV_01068,CUST_074,2024-02-18,Furnace Repair,,,425,No
+INV_01069,CUST_074,2024-02-25,Thermostat Calibration,,,95,No
+INV_01070,CUST_074,2024-04-08,Thermostat Installation,,,189,No
+INV_01071,CUST_074,2024-07-11,Duct Sealing,,,520,No
+INV_01072,CUST_074,2024-07-30,Thermostat Installation,,,189,No
+INV_01073,CUST_074,2024-08-23,Duct Inspection,,,85,No
+INV_01074,CUST_075,2023-10-16,Condenser Replacement,,,1450,No
+INV_01075,CUST_075,2023-10-21,Dehumidifier Installation,,,695,No
+INV_01076,CUST_075,2023-11-23,Boiler Installation,,,4500,No
+INV_01077,CUST_075,2023-11-30,Weekend Emergency Call,,,225,No
+INV_01078,CUST_075,2023-12-17,Emergency Service Call,,,175,No
+INV_01079,CUST_075,2024-01-12,Weekend Emergency Call,,,225,No
+INV_01080,CUST_075,2024-01-31,Smart Thermostat Installation,,,295,No
+INV_01081,CUST_075,2024-02-11,Emergency Service Call,,,175,No
+INV_01082,CUST_075,2024-05-07,Duct Sealing,,,520,No
+INV_01083,CUST_075,2024-06-29,Filter Replacement,,,45,No
+INV_01084,CUST_075,2024-08-28,Emergency Service Call,,,175,No
+INV_01085,CUST_076,2023-10-27,Duct Sealing,,,520,No
+INV_01086,CUST_076,2023-11-06,Furnace Repair,,,425,No
+INV_01087,CUST_076,2023-11-30,System Maintenance,,,150,No
+INV_01088,CUST_076,2023-12-25,Refrigerant Recharge (2 lbs),,,225,No
+INV_01089,CUST_076,2023-12-28,Thermostat Calibration,,,95,No
+INV_01090,CUST_076,2024-01-09,Humidifier Check,,,75,No
+INV_01091,CUST_076,2024-01-14,Central AC Installation,,,4200,No
+INV_01092,CUST_076,2024-01-16,Emergency Service Call,,,175,No
+INV_01093,CUST_076,2024-02-20,System Maintenance,,,150,No
+INV_01094,CUST_076,2024-02-22,Air Handler Replacement,,,1750,No
+INV_01095,CUST_076,2024-03-04,Duct Sealing,,,520,No
+INV_01096,CUST_076,2024-03-09,Ductless Mini-Split Installation,,,3200,No
+INV_01097,CUST_076,2024-03-14,Thermostat Installation,,,189,No
+INV_01098,CUST_076,2024-04-22,Emergency Service Call,,,175,No
+INV_01099,CUST_076,2024-05-20,Smart Thermostat Installation,Refrigerant Recharge (2 lbs),,520,Yes
+INV_01100,CUST_076,2024-05-21,Humidifier Check,,,75,No
+INV_01101,CUST_076,2024-05-29,Heating Tune-up,,,140,No
+INV_01102,CUST_076,2024-06-05,Filter Replacement,,,45,No
+INV_01103,CUST_076,2024-06-13,Thermostat Check,,,50,No
+INV_01104,CUST_076,2024-07-08,System Maintenance,,,150,No
+INV_01105,CUST_076,2024-07-24,Emergency Service Call,,,175,No
+INV_01106,CUST_076,2024-08-03,Thermostat Calibration,Blower Motor Replacement,,580,Yes
+INV_01107,CUST_076,2024-08-25,Duct Sealing,,,520,No
+INV_01108,CUST_076,2024-08-26,Smart Thermostat Installation,,,295,No
+INV_01109,CUST_077,2023-10-02,Capacitor Replacement,,,125,No
+INV_01110,CUST_077,2023-10-24,Electrical Safety Inspection,,,110,No
+INV_01111,CUST_077,2023-11-08,Emergency Service Call,,,175,No
+INV_01112,CUST_077,2023-11-10,Dehumidifier Installation,,,695,No
+INV_01113,CUST_077,2023-11-21,Air Handler Replacement,,,1750,No
+INV_01114,CUST_077,2023-11-27,Tankless Water Heater Installation,,,2150,No
+INV_01115,CUST_077,2023-12-06,After Hours Emergency,,,275,No
+INV_01116,CUST_077,2024-01-15,Thermostat Installation,,,189,No
+INV_01117,CUST_077,2024-02-04,Humidifier Installation,,,595,No
+INV_01118,CUST_077,2024-02-08,Breaker Inspection,,,85,No
+INV_01119,CUST_077,2024-02-09,Furnace Repair,,,425,No
+INV_01120,CUST_077,2024-04-12,Filter Replacement,,,45,No
+INV_01121,CUST_077,2024-04-14,Refrigerant Recharge (2 lbs),,,225,No
+INV_01122,CUST_077,2024-06-01,Smart Thermostat Installation,Refrigerant Recharge (2 lbs),,520,Yes
+INV_01123,CUST_077,2024-06-14,Boiler Installation,,,4500,No
+INV_01124,CUST_077,2024-06-19,Furnace Repair,,,425,No
+INV_01125,CUST_077,2024-07-18,Smart Thermostat Installation,,,295,No
+INV_01126,CUST_077,2024-07-21,Heat Exchanger Replacement,,,1450,No
+INV_01127,CUST_077,2024-07-29,Thermostat Installation,,,189,No
+INV_01128,CUST_077,2024-08-03,Furnace Repair,,,425,No
+INV_01129,CUST_077,2024-08-04,AC Tune-up,,,125,No
+INV_01130,CUST_077,2024-08-19,Return Air Inspection,,,70,No
+INV_01131,CUST_077,2024-08-30,Heat Pump Installation,,,4900,No
+INV_01132,CUST_078,2023-10-29,Blower Motor Replacement,,,485,No
+INV_01133,CUST_078,2023-11-13,Heating Tune-up,,,140,No
+INV_01134,CUST_078,2023-12-14,Blower Motor Replacement,,,485,No
+INV_01135,CUST_078,2023-12-22,Compressor Replacement,,,1850,No
+INV_01136,CUST_078,2023-12-29,Contactor Replacement,,,150,No
+INV_01137,CUST_078,2024-01-18,Weekend Emergency Call,,,225,No
+INV_01138,CUST_078,2024-01-28,Carbon Monoxide Test,,,95,No
+INV_01139,CUST_078,2024-03-10,Refrigerant Recharge (2 lbs),,,225,No
+INV_01140,CUST_078,2024-03-26,Refrigerant Leak Repair,,,350,No
+INV_01141,CUST_078,2024-06-01,Filter Replacement,,,45,No
+INV_01142,CUST_078,2024-07-06,Furnace Repair,,,425,No
+INV_01143,CUST_078,2024-07-07,Evaporator Coil Replacement,,,1250,No
+INV_01144,CUST_078,2024-07-27,Emergency Service Call,,,175,No
+INV_01145,CUST_078,2024-07-30,Air Purifier Installation,,,525,No
+INV_01146,CUST_078,2024-08-11,Emergency Service Call,,,175,No
+INV_01147,CUST_078,2024-08-20,Heat Pump Repair,,,475,No
+INV_01148,CUST_079,2023-10-09,Boiler Installation,,,4500,No
+INV_01149,CUST_079,2023-10-19,Thermostat Calibration,,,95,No
+INV_01150,CUST_079,2023-10-26,Capacitor Replacement,,,125,No
+INV_01151,CUST_079,2023-11-03,Thermostat Installation,,,189,No
+INV_01152,CUST_079,2023-11-17,Air Quality Assessment,,,140,No
+INV_01153,CUST_079,2023-12-10,Zone System Check,,,120,No
+INV_01154,CUST_079,2023-12-29,Thermostat Calibration,,,95,No
+INV_01155,CUST_079,2024-01-29,Contactor Replacement,,,150,No
+INV_01156,CUST_079,2024-02-28,Evaporator Coil Replacement,,,1250,No
+INV_01157,CUST_079,2024-03-18,Heating Tune-up,,,140,No
+INV_01158,CUST_079,2024-05-04,Heat Pump Repair,,,475,No
+INV_01159,CUST_080,2023-10-02,System Maintenance,,,150,No
+INV_01160,CUST_080,2023-10-13,Emergency Service Call,,,175,No
+INV_01161,CUST_080,2023-10-22,Thermostat Installation,,,189,No
+INV_01162,CUST_080,2023-11-04,Refrigerant Recharge (2 lbs),Heating Tune-up,,365,Yes
+INV_01163,CUST_080,2023-11-06,Emergency Service Call,,,175,No
+INV_01164,CUST_080,2023-12-28,Filter Replacement,,,45,No
+INV_01165,CUST_080,2024-01-31,Thermostat Check,,,50,No
+INV_01166,CUST_080,2024-02-02,Furnace Repair,,,425,No
+INV_01167,CUST_080,2024-02-14,Heat Pump Repair,,,475,No
+INV_01168,CUST_080,2024-03-14,Capacitor Replacement,,,125,No
+INV_01169,CUST_080,2024-03-25,Furnace Repair,,,425,No
+INV_01170,CUST_080,2024-03-30,After Hours Emergency,,,275,No
+INV_01171,CUST_080,2024-04-30,Heat Pump Repair,,,475,No
+INV_01172,CUST_080,2024-05-02,Furnace Installation,,,3800,No
+INV_01173,CUST_080,2024-05-11,UV Light Installation,,,495,No
+INV_01174,CUST_080,2024-06-10,Air Quality Assessment,,,140,No
+INV_01175,CUST_080,2024-06-11,Filter Replacement,,,45,No
+INV_01176,CUST_080,2024-08-02,Heat Pump Repair,,,475,No
+INV_01177,CUST_081,2023-12-03,Humidifier Check,,,75,No
+INV_01178,CUST_081,2023-12-26,Capacitor Replacement,,,125,No
+INV_01179,CUST_081,2023-12-27,Weekend Emergency Call,,,225,No
+INV_01180,CUST_081,2023-12-28,Heat Pump Repair,,,475,No
+INV_01181,CUST_081,2024-03-25,After Hours Emergency,,,275,No
+INV_01182,CUST_081,2024-05-13,Water Heater Installation,,,1450,No
+INV_01183,CUST_081,2024-06-18,Electrical Safety Inspection,,,110,No
+INV_01184,CUST_081,2024-07-14,Emergency Service Call,,,175,No
+INV_01185,CUST_081,2024-07-21,AC Tune-up,,,125,No
+INV_01186,CUST_081,2024-07-27,Heating Tune-up,,,140,No
+INV_01187,CUST_081,2024-08-16,Emergency Service Call,,,175,No
+INV_01188,CUST_081,2024-08-20,Gas Leak Detection,,,225,No
+INV_01189,CUST_081,2024-08-21,Duct Cleaning,,,350,No
+INV_01190,CUST_081,2024-08-23,Air Handler Replacement,,,1750,No
+INV_01191,CUST_082,2023-10-10,Breaker Inspection,,,85,No
+INV_01192,CUST_082,2023-11-18,Weekend Emergency Call,,,225,No
+INV_01193,CUST_082,2023-11-28,System Maintenance,,,150,No
+INV_01194,CUST_082,2023-12-12,Thermostat Installation,,,189,No
+INV_01195,CUST_082,2023-12-29,Return Air Inspection,,,70,No
+INV_01196,CUST_082,2024-01-04,AC Repair,,,390,No
+INV_01197,CUST_082,2024-03-08,Heating Tune-up,,,140,No
+INV_01198,CUST_082,2024-03-23,Heat Pump Repair,,,475,No
+INV_01199,CUST_082,2024-04-03,AC Repair,,,390,No
+INV_01200,CUST_082,2024-04-09,Duct Sealing,Heat Pump Repair,,995,Yes
+INV_01201,CUST_082,2024-04-21,Water Heater Installation,,,1450,No
+INV_01202,CUST_082,2024-05-26,System Maintenance,,,150,No
+INV_01203,CUST_082,2024-06-01,Heat Pump Repair,,,475,No
+INV_01204,CUST_082,2024-06-05,AC Repair,,,390,No
+INV_01205,CUST_082,2024-06-29,Duct Sealing,,,520,No
+INV_01206,CUST_082,2024-07-05,Emergency Service Call,,,175,No
+INV_01207,CUST_082,2024-07-06,Furnace Installation,,,3800,No
+INV_01208,CUST_082,2024-08-09,Thermostat Installation,,,189,No
+INV_01209,CUST_083,2023-10-17,Thermostat Installation,,,189,No
+INV_01210,CUST_083,2023-12-12,After Hours Emergency,,,275,No
+INV_01211,CUST_083,2023-12-17,Thermostat Calibration,,,95,No
+INV_01212,CUST_083,2024-01-26,Smart Thermostat Installation,,,295,No
+INV_01213,CUST_083,2024-02-20,Heat Pump Repair,,,475,No
+INV_01214,CUST_083,2024-02-29,Smart Thermostat Installation,,,295,No
+INV_01215,CUST_083,2024-04-08,Emergency Service Call,,,175,No
+INV_01216,CUST_083,2024-06-15,Emergency Service Call,,,175,No
+INV_01217,CUST_083,2024-08-23,Thermostat Installation,,,189,No
+INV_01218,CUST_084,2023-11-02,Thermostat Installation,,,189,No
+INV_01219,CUST_084,2023-11-03,Compressor Replacement,,,1850,No
+INV_01220,CUST_084,2023-11-11,Heat Pump Installation,,,4900,No
+INV_01221,CUST_084,2023-12-08,Heat Pump Repair,,,475,No
+INV_01222,CUST_084,2023-12-14,Refrigerant Recharge (2 lbs),,,225,No
+INV_01223,CUST_084,2023-12-19,Gas Line Inspection,,,145,No
+INV_01224,CUST_084,2023-12-21,Weekend Emergency Call,,,225,No
+INV_01225,CUST_084,2024-02-16,Emergency Service Call,Air Purifier Installation,,700,Yes
+INV_01226,CUST_084,2024-03-14,Furnace Repair,,,425,No
+INV_01227,CUST_084,2024-03-16,Contactor Replacement,,,150,No
+INV_01228,CUST_084,2024-04-26,Thermostat Installation,,,189,No
+INV_01229,CUST_084,2024-05-18,Thermostat Installation,,,189,No
+INV_01230,CUST_084,2024-05-26,Air Quality Assessment,,,140,No
+INV_01231,CUST_084,2024-06-03,AC Repair,,,390,No
+INV_01232,CUST_084,2024-06-04,Thermostat Installation,,,189,No
+INV_01233,CUST_084,2024-07-23,Breaker Inspection,,,85,No
+INV_01234,CUST_084,2024-08-09,Contactor Replacement,,,150,No
+INV_01235,CUST_084,2024-08-17,System Maintenance,,,150,No
+INV_01236,CUST_085,2023-10-05,Thermostat Check,,,50,No
+INV_01237,CUST_085,2023-10-08,Heat Pump Installation,,,4900,No
+INV_01238,CUST_085,2023-10-13,Emergency Service Call,,,175,No
+INV_01239,CUST_085,2023-10-21,UV Light Check,,,90,No
+INV_01240,CUST_085,2023-11-28,Tankless Water Heater Installation,,,2150,No
+INV_01241,CUST_085,2023-12-04,Gas Leak Detection,,,225,No
+INV_01242,CUST_085,2023-12-11,Furnace Installation,,,3800,No
+INV_01243,CUST_085,2024-01-13,Filter Replacement,,,45,No
+INV_01244,CUST_085,2024-01-20,Central AC Installation,,,4200,No
+INV_01245,CUST_085,2024-02-26,UV Light Installation,,,495,No
+INV_01246,CUST_085,2024-03-23,Heating Tune-up,,,140,No
+INV_01247,CUST_085,2024-04-09,Emergency Service Call,,,175,No
+INV_01248,CUST_085,2024-04-25,Emergency Service Call,,,175,No
+INV_01249,CUST_085,2024-05-24,Condenser Replacement,,,1450,No
+INV_01250,CUST_085,2024-07-20,Air Purifier Installation,,,525,No
+INV_01251,CUST_086,2023-10-02,Thermostat Installation,,,189,No
+INV_01252,CUST_086,2023-10-19,Supply Vent Balancing,,,180,No
+INV_01253,CUST_086,2023-10-22,UV Light Installation,,,495,No
+INV_01254,CUST_086,2023-10-27,Heat Pump Repair,,,475,No
+INV_01255,CUST_086,2023-11-11,Thermostat Calibration,,,95,No
+INV_01256,CUST_086,2023-11-21,System Maintenance,,,150,No
+INV_01257,CUST_086,2023-12-08,Holiday Emergency Call,,,350,No
+INV_01258,CUST_086,2024-01-03,Condenser Replacement,,,1450,No
+INV_01259,CUST_086,2024-01-24,Thermostat Calibration,,,95,No
+INV_01260,CUST_086,2024-02-13,Refrigerant Recharge (2 lbs),,,225,No
+INV_01261,CUST_086,2024-02-19,Humidifier Check,,,75,No
+INV_01262,CUST_086,2024-02-29,Thermostat Installation,,,189,No
+INV_01263,CUST_086,2024-03-10,Thermostat Calibration,,,95,No
+INV_01264,CUST_086,2024-04-03,UV Light Check,,,90,No
+INV_01265,CUST_086,2024-04-14,Emergency Service Call,,,175,No
+INV_01266,CUST_086,2024-04-27,Thermostat Installation,,,189,No
+INV_01267,CUST_086,2024-05-04,System Maintenance,,,150,No
+INV_01268,CUST_086,2024-05-26,Supply Vent Balancing,,,180,No
+INV_01269,CUST_086,2024-07-05,Contactor Replacement,,,150,No
+INV_01270,CUST_086,2024-08-27,Air Purifier Installation,,,525,No
+INV_01271,CUST_087,2023-10-14,Thermostat Installation,,,189,No
+INV_01272,CUST_087,2023-10-31,Gas Leak Detection,,,225,No
+INV_01273,CUST_087,2023-11-08,Water Heater Installation,,,1450,No
+INV_01274,CUST_087,2023-12-16,Filter Replacement,,,45,No
+INV_01275,CUST_087,2023-12-19,Furnace Repair,,,425,No
+INV_01276,CUST_087,2023-12-23,Thermostat Check,,,50,No
+INV_01277,CUST_087,2023-12-26,AC Repair,,,390,No
+INV_01278,CUST_087,2024-02-16,Central AC Installation,,,4200,No
+INV_01279,CUST_087,2024-03-10,Thermostat Installation,,,189,No
+INV_01280,CUST_087,2024-04-04,AC Tune-up,,,125,No
+INV_01281,CUST_087,2024-04-16,Contactor Replacement,AC Repair,,540,Yes
+INV_01282,CUST_087,2024-04-24,Thermostat Calibration,,,95,No
+INV_01283,CUST_087,2024-05-01,Furnace Repair,,,425,No
+INV_01284,CUST_087,2024-05-19,AC Tune-up,,,125,No
+INV_01285,CUST_087,2024-05-24,Furnace Repair,,,425,No
+INV_01286,CUST_087,2024-06-15,Central AC Installation,,,4200,No
+INV_01287,CUST_088,2023-10-04,Ductless Mini-Split Installation,,,3200,No
+INV_01288,CUST_088,2023-10-13,Heating Tune-up,,,140,No
+INV_01289,CUST_088,2023-10-23,Furnace Installation,Emergency Service Call,,3975,Yes
+INV_01290,CUST_088,2023-11-02,Weekend Emergency Call,,,225,No
+INV_01291,CUST_088,2023-11-21,Filter Replacement,,,45,No
+INV_01292,CUST_088,2023-11-26,Water Heater Installation,,,1450,No
+INV_01293,CUST_088,2023-12-08,Emergency Service Call,,,175,No
+INV_01294,CUST_088,2023-12-10,Smart Thermostat Installation,,,295,No
+INV_01295,CUST_088,2023-12-23,Furnace Repair,,,425,No
+INV_01296,CUST_088,2023-12-28,System Maintenance,,,150,No
+INV_01297,CUST_088,2024-01-01,Central AC Installation,,,4200,No
+INV_01298,CUST_088,2024-01-23,AC Tune-up,,,125,No
+INV_01299,CUST_088,2024-02-11,Humidifier Check,,,75,No
+INV_01300,CUST_088,2024-03-16,Air Purifier Installation,,,525,No
+INV_01301,CUST_088,2024-04-06,Holiday Emergency Call,,,350,No
+INV_01302,CUST_088,2024-04-07,Capacitor Replacement,,,125,No
+INV_01303,CUST_088,2024-07-16,Furnace Installation,,,3800,No
+INV_01304,CUST_088,2024-07-27,Emergency Service Call,,,175,No
+INV_01305,CUST_089,2023-10-26,After Hours Emergency,,,275,No
+INV_01306,CUST_089,2023-11-28,Return Air Inspection,,,70,No
+INV_01307,CUST_089,2023-12-11,Smart Thermostat Installation,,,295,No
+INV_01308,CUST_089,2023-12-22,Capacitor Replacement,,,125,No
+INV_01309,CUST_089,2024-01-06,Refrigerant Leak Repair,,,350,No
+INV_01310,CUST_089,2024-01-20,Capacitor Replacement,,,125,No
+INV_01311,CUST_089,2024-04-04,Emergency Service Call,,,175,No
+INV_01312,CUST_089,2024-06-20,Emergency Service Call,,,175,No
+INV_01313,CUST_089,2024-06-23,Heating Tune-up,,,140,No
+INV_01314,CUST_089,2024-08-19,Furnace Installation,,,3800,No
+INV_01315,CUST_090,2023-10-01,Thermostat Calibration,,,95,No
+INV_01316,CUST_090,2023-10-31,Holiday Emergency Call,,,350,No
+INV_01317,CUST_090,2023-11-06,Capacitor Replacement,,,125,No
+INV_01318,CUST_090,2023-11-14,Heat Pump Repair,,,475,No
+INV_01319,CUST_090,2023-12-11,Gas Line Inspection,,,145,No
+INV_01320,CUST_090,2024-01-25,AC Tune-up,,,125,No
+INV_01321,CUST_090,2024-01-27,Gas Line Inspection,,,145,No
+INV_01322,CUST_090,2024-02-20,Smart Thermostat Installation,,,295,No
+INV_01323,CUST_090,2024-03-05,Carbon Monoxide Test,,,95,No
+INV_01324,CUST_090,2024-03-27,Heat Exchanger Replacement,,,1450,No
+INV_01325,CUST_090,2024-04-17,AC Repair,,,390,No
+INV_01326,CUST_090,2024-05-03,Duct Sealing,,,520,No
+INV_01327,CUST_090,2024-05-18,System Maintenance,,,150,No
+INV_01328,CUST_090,2024-05-21,Contactor Replacement,,,150,No
+INV_01329,CUST_090,2024-07-27,Capacitor Replacement,,,125,No
+INV_01330,CUST_090,2024-08-05,Emergency Service Call,,,175,No
+INV_01331,CUST_090,2024-08-17,Furnace Repair,,,425,No
+INV_01332,CUST_091,2023-10-17,Breaker Inspection,,,85,No
+INV_01333,CUST_091,2023-11-01,Gas Line Inspection,,,145,No
+INV_01334,CUST_091,2023-12-06,Electrical Safety Inspection,,,110,No
+INV_01335,CUST_091,2024-01-01,Contactor Replacement,,,150,No
+INV_01336,CUST_091,2024-01-22,Furnace Repair,,,425,No
+INV_01337,CUST_091,2024-02-14,Thermostat Calibration,,,95,No
+INV_01338,CUST_091,2024-03-22,Emergency Service Call,,,175,No
+INV_01339,CUST_091,2024-04-24,Smart Thermostat Installation,,,295,No
+INV_01340,CUST_091,2024-05-03,Thermostat Check,,,50,No
+INV_01341,CUST_091,2024-06-03,Humidifier Check,,,75,No
+INV_01342,CUST_091,2024-07-14,AC Repair,,,390,No
+INV_01343,CUST_092,2023-10-22,Carbon Monoxide Test,,,95,No
+INV_01344,CUST_092,2023-10-25,Refrigerant Leak Repair,,,350,No
+INV_01345,CUST_092,2023-11-22,Heating Tune-up,,,140,No
+INV_01346,CUST_092,2023-12-10,Emergency Service Call,,,175,No
+INV_01347,CUST_092,2023-12-27,Thermostat Check,,,50,No
+INV_01348,CUST_092,2024-01-11,Gas Line Inspection,,,145,No
+INV_01349,CUST_092,2024-02-02,Refrigerant Recharge (2 lbs),,,225,No
+INV_01350,CUST_092,2024-04-06,Furnace Repair,,,425,No
+INV_01351,CUST_092,2024-04-07,Carbon Monoxide Test,,,95,No
+INV_01352,CUST_092,2024-04-08,After Hours Emergency,,,275,No
+INV_01353,CUST_092,2024-06-03,Duct Cleaning,,,350,No
+INV_01354,CUST_092,2024-07-07,UV Light Check,,,90,No
+INV_01355,CUST_092,2024-07-28,Thermostat Check,,,50,No
+INV_01356,CUST_092,2024-07-29,Air Purifier Installation,,,525,No
+INV_01357,CUST_092,2024-08-19,Filter Replacement,,,45,No
+INV_01358,CUST_093,2023-10-03,Heat Pump Repair,,,475,No
+INV_01359,CUST_093,2023-10-17,After Hours Emergency,,,275,No
+INV_01360,CUST_093,2023-11-24,Filter Replacement,,,45,No
+INV_01361,CUST_093,2023-11-25,Emergency Service Call,,,175,No
+INV_01362,CUST_093,2023-12-02,Duct Inspection,,,85,No
+INV_01363,CUST_093,2023-12-07,Duct Cleaning,,,350,No
+INV_01364,CUST_093,2023-12-11,Thermostat Calibration,,,95,No
+INV_01365,CUST_093,2023-12-13,Weekend Emergency Call,,,225,No
+INV_01366,CUST_093,2024-01-04,Heating Tune-up,,,140,No
+INV_01367,CUST_093,2024-01-06,AC Repair,,,390,No
+INV_01368,CUST_093,2024-01-08,Furnace Repair,,,425,No
+INV_01369,CUST_093,2024-01-15,Return Air Inspection,,,70,No
+INV_01370,CUST_093,2024-02-19,Condenser Replacement,,,1450,No
+INV_01371,CUST_093,2024-03-31,Filter Replacement,,,45,No
+INV_01372,CUST_093,2024-04-07,Furnace Installation,,,3800,No
+INV_01373,CUST_093,2024-04-08,Emergency Service Call,,,175,No
+INV_01374,CUST_093,2024-04-24,Furnace Repair,,,425,No
+INV_01375,CUST_093,2024-05-19,Central AC Installation,,,4200,No
+INV_01376,CUST_093,2024-05-27,Capacitor Replacement,,,125,No
+INV_01377,CUST_093,2024-06-08,Emergency Service Call,,,175,No
+INV_01378,CUST_093,2024-06-27,Contactor Replacement,,,150,No
+INV_01379,CUST_093,2024-08-07,Gas Leak Detection,,,225,No
+INV_01380,CUST_093,2024-08-16,Filter Replacement,,,45,No
+INV_01381,CUST_093,2024-08-18,AC Tune-up,Air Handler Replacement,,1875,Yes
+INV_01382,CUST_094,2023-10-26,Emergency Service Call,,,175,No
+INV_01383,CUST_094,2023-11-23,Filter Replacement,,,45,No
+INV_01384,CUST_094,2023-12-04,Filter Replacement,,,45,No
+INV_01385,CUST_094,2024-01-30,Contactor Replacement,,,150,No
+INV_01386,CUST_094,2024-03-11,Carbon Monoxide Test,,,95,No
+INV_01387,CUST_094,2024-03-21,Air Quality Assessment,,,140,No
+INV_01388,CUST_094,2024-03-27,After Hours Emergency,,,275,No
+INV_01389,CUST_094,2024-04-08,AC Repair,,,390,No
+INV_01390,CUST_094,2024-04-21,Emergency Service Call,,,175,No
+INV_01391,CUST_094,2024-05-03,Weekend Emergency Call,,,225,No
+INV_01392,CUST_094,2024-06-14,Smart Thermostat Installation,,,295,No
+INV_01393,CUST_094,2024-06-15,Duct Sealing,,,520,No
+INV_01394,CUST_094,2024-07-05,Air Handler Replacement,,,1750,No
+INV_01395,CUST_095,2023-11-10,Capacitor Replacement,,,125,No
+INV_01396,CUST_095,2023-11-20,Duct Inspection,,,85,No
+INV_01397,CUST_095,2023-12-02,Compressor Replacement,,,1850,No
+INV_01398,CUST_095,2023-12-10,Emergency Service Call,,,175,No
+INV_01399,CUST_095,2023-12-20,Dehumidifier Installation,,,695,No
+INV_01400,CUST_095,2023-12-23,Gas Line Inspection,,,145,No
+INV_01401,CUST_095,2023-12-29,Thermostat Installation,,,189,No
+INV_01402,CUST_095,2024-02-23,Emergency Service Call,,,175,No
+INV_01403,CUST_095,2024-04-24,AC Repair,,,390,No
+INV_01404,CUST_095,2024-07-02,Central AC Installation,Smart Thermostat Installation,,4495,Yes
+INV_01405,CUST_095,2024-08-17,Condenser Replacement,,,1450,No
+INV_01406,CUST_096,2023-10-13,Refrigerant Leak Repair,,,350,No
+INV_01407,CUST_096,2023-11-28,Contactor Replacement,Contactor Replacement,,300,Yes
+INV_01408,CUST_096,2023-12-18,Weekend Emergency Call,,,225,No
+INV_01409,CUST_096,2024-01-02,Supply Vent Balancing,,,180,No
+INV_01410,CUST_096,2024-02-26,Filter Replacement,,,45,No
+INV_01411,CUST_096,2024-03-01,Weekend Emergency Call,,,225,No
+INV_01412,CUST_096,2024-03-11,Smart Thermostat Installation,,,295,No
+INV_01413,CUST_096,2024-03-28,Contactor Replacement,,,150,No
+INV_01414,CUST_096,2024-03-31,Blower Motor Replacement,,,485,No
+INV_01415,CUST_096,2024-04-07,UV Light Check,,,90,No
+INV_01416,CUST_096,2024-04-09,Thermostat Check,,,50,No
+INV_01417,CUST_096,2024-06-04,Thermostat Calibration,,,95,No
+INV_01418,CUST_096,2024-06-07,Water Heater Installation,,,1450,No
+INV_01419,CUST_096,2024-07-14,Air Quality Assessment,,,140,No
+INV_01420,CUST_096,2024-07-17,Duct Sealing,,,520,No
+INV_01421,CUST_096,2024-08-13,Air Handler Replacement,,,1750,No
+INV_01422,CUST_096,2024-08-20,Emergency Service Call,,,175,No
+INV_01423,CUST_097,2023-10-04,Contactor Replacement,,,150,No
+INV_01424,CUST_097,2023-11-12,Refrigerant Recharge (2 lbs),,,225,No
+INV_01425,CUST_097,2023-12-12,Refrigerant Leak Repair,,,350,No
+INV_01426,CUST_097,2023-12-23,Contactor Replacement,,,150,No
+INV_01427,CUST_097,2024-01-04,Duct Sealing,,,520,No
+INV_01428,CUST_097,2024-01-11,Thermostat Installation,,,189,No
+INV_01429,CUST_097,2024-02-14,Emergency Service Call,,,175,No
+INV_01430,CUST_097,2024-02-15,Blower Motor Replacement,,,485,No
+INV_01431,CUST_097,2024-02-20,UV Light Installation,,,495,No
+INV_01432,CUST_097,2024-03-07,Filter Replacement,,,45,No
+INV_01433,CUST_097,2024-03-09,Return Air Inspection,,,70,No
+INV_01434,CUST_097,2024-04-09,Breaker Inspection,,,85,No
+INV_01435,CUST_097,2024-05-02,Duct Sealing,,,520,No
+INV_01436,CUST_097,2024-05-25,Heating Tune-up,,,140,No
+INV_01437,CUST_097,2024-06-01,UV Light Check,,,90,No
+INV_01438,CUST_097,2024-06-29,Weekend Emergency Call,,,225,No
+INV_01439,CUST_097,2024-07-06,Gas Line Inspection,,,145,No
+INV_01440,CUST_097,2024-07-19,After Hours Emergency,,,275,No
+INV_01441,CUST_097,2024-08-30,Heating Tune-up,,,140,No
+INV_01442,CUST_098,2023-10-05,Air Handler Replacement,,,1750,No
+INV_01443,CUST_098,2023-10-11,System Maintenance,,,150,No
+INV_01444,CUST_098,2023-11-27,System Maintenance,,,150,No
+INV_01445,CUST_098,2024-01-04,Emergency Service Call,,,175,No
+INV_01446,CUST_098,2024-01-14,UV Light Installation,,,495,No
+INV_01447,CUST_098,2024-02-02,Emergency Service Call,Duct Inspection,,260,Yes
+INV_01448,CUST_098,2024-02-26,Smart Thermostat Installation,,,295,No
+INV_01449,CUST_098,2024-03-14,Refrigerant Recharge (2 lbs),,,225,No
+INV_01450,CUST_098,2024-04-21,Dehumidifier Installation,,,695,No
+INV_01451,CUST_098,2024-04-22,Refrigerant Leak Repair,,,350,No
+INV_01452,CUST_098,2024-04-24,Central AC Installation,,,4200,No
+INV_01453,CUST_098,2024-05-13,Emergency Service Call,,,175,No
+INV_01454,CUST_098,2024-05-16,Carbon Monoxide Test,,,95,No
+INV_01455,CUST_098,2024-05-17,Blower Motor Replacement,,,485,No
+INV_01456,CUST_098,2024-06-06,Heat Exchanger Replacement,,,1450,No
+INV_01457,CUST_098,2024-07-14,Air Quality Assessment,,,140,No
+INV_01458,CUST_098,2024-07-19,Refrigerant Recharge (2 lbs),,,225,No
+INV_01459,CUST_098,2024-07-20,Filter Replacement,,,45,No
+INV_01460,CUST_098,2024-08-18,Compressor Replacement,,,1850,No
+INV_01461,CUST_099,2023-10-19,Heating Tune-up,,,140,No
+INV_01462,CUST_099,2023-11-09,Zone System Check,,,120,No
+INV_01463,CUST_099,2023-11-15,Capacitor Replacement,,,125,No
+INV_01464,CUST_099,2023-11-23,After Hours Emergency,,,275,No
+INV_01465,CUST_099,2023-12-10,Thermostat Installation,,,189,No
+INV_01466,CUST_099,2024-01-22,Humidifier Installation,,,595,No
+INV_01467,CUST_099,2024-04-09,Smart Thermostat Installation,,,295,No
+INV_01468,CUST_099,2024-04-11,Holiday Emergency Call,,,350,No
+INV_01469,CUST_099,2024-08-08,Thermostat Check,,,50,No
+INV_01470,CUST_099,2024-08-11,Contactor Replacement,,,150,No
+INV_01471,CUST_100,2023-10-09,Heating Tune-up,,,140,No
+INV_01472,CUST_100,2023-10-15,Dehumidifier Installation,,,695,No
+INV_01473,CUST_100,2023-10-25,Humidifier Check,,,75,No
+INV_01474,CUST_100,2023-11-15,System Maintenance,,,150,No
+INV_01475,CUST_100,2023-12-20,Smart Thermostat Installation,,,295,No
+INV_01476,CUST_100,2024-03-11,After Hours Emergency,,,275,No
+INV_01477,CUST_100,2024-04-24,Heating Tune-up,,,140,No
+INV_01478,CUST_100,2024-04-26,Contactor Replacement,,,150,No
+INV_01479,CUST_100,2024-06-14,Air Handler Replacement,,,1750,No
+INV_01480,CUST_100,2024-06-15,Zone System Check,,,120,No
+INV_01481,CUST_100,2024-06-19,Weekend Emergency Call,,,225,No
+INV_01482,CUST_100,2024-07-26,Heating Tune-up,,,140,No
+INV_01483,CUST_100,2024-08-02,Emergency Service Call,,,175,No
+INV_01484,CUST_101,2023-10-11,After Hours Emergency,,,275,No
+INV_01485,CUST_101,2024-02-08,Holiday Emergency Call,,,350,No
+INV_01486,CUST_101,2024-04-09,UV Light Installation,,,495,No
+INV_01487,CUST_103,2023-10-08,After Hours Emergency,,,275,No
+INV_01488,CUST_103,2023-11-07,AC Tune-up,,,125,No
+INV_01489,CUST_103,2024-06-27,Furnace Installation,,,3800,No
+INV_01490,CUST_104,2023-11-23,UV Light Installation,,,495,No
+INV_01491,CUST_104,2024-06-13,Blower Motor Replacement,,,485,No
+INV_01492,CUST_104,2024-08-16,Emergency Service Call,,,175,No
+INV_01493,CUST_104,2024-08-19,Emergency Service Call,,,175,No
+INV_01494,CUST_105,2023-10-13,Heating Tune-up,,,140,No
+INV_01495,CUST_105,2024-06-05,System Maintenance,,,150,No
+INV_01496,CUST_105,2024-08-02,Thermostat Installation,,,189,No
+INV_01497,CUST_105,2024-08-06,Furnace Repair,,,425,No
+INV_01498,CUST_106,2023-10-12,Heat Pump Repair,,,475,No
+INV_01499,CUST_106,2023-10-25,Emergency Service Call,,,175,No
+INV_01500,CUST_106,2024-02-18,Filter Replacement,,,45,No
+INV_01501,CUST_106,2024-02-22,Zone System Check,,,120,No
+INV_01502,CUST_106,2024-07-13,Central AC Installation,,,4200,No
+INV_01503,CUST_107,2023-12-31,Weekend Emergency Call,,,225,No
+INV_01504,CUST_107,2024-04-13,Filter Replacement,,,45,No
+INV_01505,CUST_107,2024-04-21,Air Purifier Installation,,,525,No
+INV_01506,CUST_107,2024-05-07,Gas Line Inspection,,,145,No
+INV_01507,CUST_108,2023-10-04,Refrigerant Recharge (2 lbs),,,225,No
+INV_01508,CUST_108,2024-01-10,Smart Thermostat Installation,,,295,No
+INV_01509,CUST_108,2024-05-07,Heating Tune-up,,,140,No
+INV_01510,CUST_109,2023-11-04,Furnace Installation,,,3800,No
+INV_01511,CUST_109,2024-07-29,Carbon Monoxide Test,,,95,No
+INV_01512,CUST_110,2024-08-08,Duct Cleaning,,,350,No
+INV_01513,CUST_111,2023-12-08,System Maintenance,,,150,No
+INV_01514,CUST_111,2024-01-10,Humidifier Installation,,,595,No
+INV_01515,CUST_111,2024-01-19,Air Purifier Installation,,,525,No
+INV_01516,CUST_111,2024-04-03,Thermostat Check,,,50,No
+INV_01517,CUST_111,2024-05-26,Tankless Water Heater Installation,,,2150,No
+INV_01518,CUST_112,2023-11-29,Contactor Replacement,,,150,No
+INV_01519,CUST_112,2023-12-25,Furnace Installation,,,3800,No
+INV_01520,CUST_112,2024-05-01,UV Light Check,,,90,No
+INV_01521,CUST_113,2024-02-23,Heat Pump Repair,,,475,No
+INV_01522,CUST_113,2024-03-14,AC Repair,,,390,No
+INV_01523,CUST_113,2024-05-10,Refrigerant Recharge (2 lbs),,,225,No
+INV_01524,CUST_113,2024-05-19,Dehumidifier Installation,,,695,No
+INV_01525,CUST_113,2024-08-23,AC Tune-up,Supply Vent Balancing,,305,Yes
+INV_01526,CUST_114,2023-11-22,Humidifier Check,,,75,No
+INV_01527,CUST_114,2024-03-12,Zone System Check,,,120,No
+INV_01528,CUST_114,2024-04-30,After Hours Emergency,,,275,No
+INV_01529,CUST_114,2024-07-19,Gas Line Inspection,,,145,No
+INV_01530,CUST_115,2024-01-27,Humidifier Check,,,75,No
+INV_01531,CUST_115,2024-06-07,Emergency Service Call,,,175,No
+INV_01532,CUST_115,2024-08-10,Weekend Emergency Call,,,225,No
+INV_01533,CUST_116,2023-12-17,Filter Replacement,,,45,No
+INV_01534,CUST_116,2024-01-11,Tankless Water Heater Installation,,,2150,No
+INV_01535,CUST_116,2024-02-11,Weekend Emergency Call,,,225,No
+INV_01536,CUST_116,2024-03-09,Supply Vent Balancing,,,180,No
+INV_01537,CUST_116,2024-03-19,AC Tune-up,,,125,No
+INV_01538,CUST_116,2024-06-12,Furnace Repair,,,425,No
+INV_01539,CUST_116,2024-08-06,Furnace Repair,,,425,No
+INV_01540,CUST_116,2024-08-10,AC Tune-up,,,125,No
+INV_01541,CUST_117,2023-12-11,Refrigerant Leak Repair,,,350,No
+INV_01542,CUST_117,2024-03-01,Ductless Mini-Split Installation,,,3200,No
+INV_01543,CUST_117,2024-03-12,Return Air Inspection,,,70,No
+INV_01544,CUST_117,2024-03-14,Emergency Service Call,,,175,No
+INV_01545,CUST_117,2024-04-06,Thermostat Installation,,,189,No
+INV_01546,CUST_118,2023-10-12,AC Repair,,,390,No
+INV_01547,CUST_118,2023-10-30,Refrigerant Recharge (2 lbs),,,225,No
+INV_01548,CUST_118,2024-01-01,Duct Inspection,,,85,No
+INV_01549,CUST_118,2024-03-15,Humidifier Installation,,,595,No
+INV_01550,CUST_118,2024-04-17,Thermostat Installation,,,189,No
+INV_01551,CUST_118,2024-08-01,Water Heater Installation,,,1450,No
+INV_01552,CUST_119,2024-01-22,After Hours Emergency,,,275,No
+INV_01553,CUST_119,2024-07-01,Capacitor Replacement,,,125,No
+INV_01554,CUST_120,2024-01-30,Gas Leak Detection,,,225,No
+INV_01555,CUST_120,2024-02-19,AC Repair,,,390,No
+INV_01556,CUST_120,2024-03-23,Smart Thermostat Installation,,,295,No
+INV_01557,CUST_120,2024-08-19,Return Air Inspection,,,70,No
+INV_01558,CUST_121,2023-10-12,Ductless Mini-Split Installation,,,3200,No
+INV_01559,CUST_121,2023-12-04,Central AC Installation,,,4200,No
+INV_01560,CUST_121,2023-12-19,Refrigerant Recharge (2 lbs),,,225,No
+INV_01561,CUST_121,2024-02-24,Electrical Safety Inspection,,,110,No
+INV_01562,CUST_121,2024-05-20,Ductless Mini-Split Installation,,,3200,No
+INV_01563,CUST_122,2024-02-07,Furnace Repair,,,425,No
+INV_01564,CUST_122,2024-03-18,Filter Replacement,,,45,No
+INV_01565,CUST_122,2024-05-25,UV Light Check,,,90,No
+INV_01566,CUST_122,2024-07-14,Refrigerant Leak Repair,,,350,No
+INV_01567,CUST_122,2024-08-26,Thermostat Check,,,50,No
+INV_01568,CUST_123,2024-07-20,Humidifier Check,,,75,No
+INV_01569,CUST_124,2024-03-05,Breaker Inspection,,,85,No
+INV_01570,CUST_124,2024-03-14,Contactor Replacement,,,150,No
+INV_01571,CUST_124,2024-08-03,Supply Vent Balancing,,,180,No
+INV_01572,CUST_125,2023-10-29,AC Repair,,,390,No
+INV_01573,CUST_125,2024-05-28,Humidifier Installation,,,595,No
+INV_01574,CUST_126,2023-11-06,Return Air Inspection,,,70,No
+INV_01575,CUST_126,2024-02-29,Gas Line Inspection,,,145,No
+INV_01576,CUST_126,2024-03-20,Filter Replacement,,,45,No
+INV_01577,CUST_127,2023-11-04,Emergency Service Call,,,175,No
+INV_01578,CUST_127,2024-03-08,Humidifier Check,,,75,No
+INV_01579,CUST_128,2023-10-25,AC Tune-up,,,125,No
+INV_01580,CUST_128,2023-12-14,Smart Thermostat Installation,,,295,No
+INV_01581,CUST_128,2024-01-23,Duct Inspection,,,85,No
+INV_01582,CUST_128,2024-02-29,Thermostat Installation,,,189,No
+INV_01583,CUST_129,2023-10-01,Duct Inspection,,,85,No
+INV_01584,CUST_129,2024-05-29,Central AC Installation,,,4200,No
+INV_01585,CUST_130,2023-10-14,UV Light Installation,,,495,No
+INV_01586,CUST_130,2023-10-17,Condenser Replacement,,,1450,No
+INV_01587,CUST_130,2024-01-12,Zone System Check,,,120,No
+INV_01588,CUST_130,2024-01-23,AC Tune-up,,,125,No
+INV_01589,CUST_130,2024-01-27,Electrical Safety Inspection,,,110,No
+INV_01590,CUST_130,2024-06-20,Smart Thermostat Installation,,,295,No
+INV_01591,CUST_130,2024-07-03,Duct Inspection,,,85,No
+INV_01592,CUST_130,2024-07-13,Thermostat Installation,,,189,No
+INV_01593,CUST_130,2024-08-24,Air Quality Assessment,,,140,No
+INV_01594,CUST_131,2024-03-29,Furnace Installation,,,3800,No
+INV_01595,CUST_132,2023-10-14,After Hours Emergency,,,275,No
+INV_01596,CUST_132,2023-10-28,Smart Thermostat Installation,,,295,No
+INV_01597,CUST_132,2024-03-16,Refrigerant Recharge (2 lbs),,,225,No
+INV_01598,CUST_133,2023-10-21,Furnace Installation,,,3800,No
+INV_01599,CUST_133,2023-10-23,Gas Leak Detection,,,225,No
+INV_01600,CUST_133,2024-02-15,Furnace Installation,,,3800,No
+INV_01601,CUST_133,2024-04-30,Air Quality Assessment,,,140,No
+INV_01602,CUST_134,2024-01-16,Heat Pump Repair,,,475,No
+INV_01603,CUST_134,2024-05-11,Heat Pump Repair,,,475,No
+INV_01604,CUST_134,2024-06-22,Thermostat Calibration,,,95,No
+INV_01605,CUST_135,2024-08-02,Emergency Service Call,,,175,No
+INV_01606,CUST_136,2024-02-24,Duct Cleaning,,,350,No
+INV_01607,CUST_136,2024-07-15,Air Purifier Installation,,,525,No
+INV_01608,CUST_136,2024-08-24,Central AC Installation,,,4200,No
+INV_01609,CUST_137,2023-11-04,Duct Sealing,,,520,No
+INV_01610,CUST_137,2024-06-27,Furnace Installation,,,3800,No
+INV_01611,CUST_137,2024-07-06,Heat Pump Repair,,,475,No
+INV_01612,CUST_137,2024-08-20,After Hours Emergency,,,275,No
+INV_01613,CUST_137,2024-08-24,Filter Replacement,,,45,No
+INV_01614,CUST_138,2024-03-30,Breaker Inspection,,,85,No
+INV_01615,CUST_138,2024-05-14,Emergency Service Call,,,175,No
+INV_01616,CUST_139,2023-10-05,Contactor Replacement,,,150,No
+INV_01617,CUST_139,2024-02-21,Ductless Mini-Split Installation,,,3200,No
+INV_01618,CUST_139,2024-02-26,Refrigerant Recharge (2 lbs),,,225,No
+INV_01619,CUST_139,2024-04-28,Holiday Emergency Call,,,350,No
+INV_01620,CUST_139,2024-08-03,Heat Pump Repair,,,475,No
+INV_01621,CUST_140,2024-01-12,Weekend Emergency Call,,,225,No
+INV_01622,CUST_140,2024-03-08,Contactor Replacement,,,150,No
+INV_01623,CUST_141,2024-08-01,Furnace Repair,,,425,No
+INV_01624,CUST_142,2024-04-24,Blower Motor Replacement,,,485,No
+INV_01625,CUST_143,2024-04-30,Duct Sealing,,,520,No
+INV_01626,CUST_143,2024-05-19,Filter Replacement,,,45,No
+INV_01627,CUST_143,2024-07-04,Refrigerant Recharge (2 lbs),,,225,No
+INV_01628,CUST_143,2024-08-11,Smart Thermostat Installation,,,295,No
+INV_01629,CUST_144,2024-02-20,Heating Tune-up,,,140,No
+INV_01630,CUST_144,2024-06-16,Heating Tune-up,,,140,No
+INV_01631,CUST_145,2023-12-25,Duct Inspection,,,85,No
+INV_01632,CUST_145,2024-04-29,Return Air Inspection,,,70,No
+INV_01633,CUST_145,2024-05-04,After Hours Emergency,,,275,No
+INV_01634,CUST_145,2024-05-24,Thermostat Check,,,50,No
+INV_01635,CUST_146,2023-10-09,Holiday Emergency Call,,,350,No
+INV_01636,CUST_146,2024-02-03,Thermostat Installation,,,189,No
+INV_01637,CUST_147,2023-11-16,Holiday Emergency Call,,,350,No
+INV_01638,CUST_147,2023-12-31,Emergency Service Call,,,175,No
+INV_01639,CUST_147,2024-02-04,Heat Pump Repair,,,475,No
+INV_01640,CUST_147,2024-02-08,Dehumidifier Installation,,,695,No
+INV_01641,CUST_147,2024-02-19,Weekend Emergency Call,,,225,No
+INV_01642,CUST_147,2024-03-09,Supply Vent Balancing,,,180,No
+INV_01643,CUST_147,2024-04-16,Carbon Monoxide Test,,,95,No
+INV_01644,CUST_147,2024-05-29,Thermostat Installation,,,189,No
+INV_01645,CUST_147,2024-06-13,Breaker Inspection,,,85,No
+INV_01646,CUST_147,2024-07-10,System Maintenance,,,150,No
+INV_01647,CUST_148,2024-04-15,Furnace Installation,,,3800,No
+INV_01648,CUST_148,2024-05-31,Thermostat Check,,,50,No
+INV_01649,CUST_148,2024-08-12,Filter Replacement,,,45,No
+INV_01650,CUST_148,2024-08-14,Return Air Inspection,,,70,No
+INV_01651,CUST_149,2023-12-18,AC Tune-up,,,125,No
+INV_01652,CUST_149,2024-04-17,Breaker Inspection,,,85,No
+INV_01653,CUST_149,2024-04-30,Heating Tune-up,,,140,No
+INV_01654,CUST_149,2024-07-05,Central AC Installation,,,4200,No
+INV_01655,CUST_149,2024-08-04,AC Repair,,,390,No
+INV_01656,CUST_150,2023-12-22,Emergency Service Call,,,175,No
+INV_01657,CUST_151,2024-02-03,Filter Replacement,,,45,No
+INV_01658,CUST_151,2024-02-20,Refrigerant Leak Repair,,,350,No
+INV_01659,CUST_151,2024-04-20,AC Repair,,,390,No
+INV_01660,CUST_151,2024-07-19,Smart Thermostat Installation,,,295,No
+INV_01661,CUST_151,2024-07-24,Contactor Replacement,,,150,No
+INV_01662,CUST_151,2024-08-06,After Hours Emergency,,,275,No
+INV_01663,CUST_152,2023-12-08,Weekend Emergency Call,,,225,No
+INV_01664,CUST_152,2024-02-25,Heating Tune-up,,,140,No
+INV_01665,CUST_152,2024-03-28,Refrigerant Recharge (2 lbs),,,225,No
+INV_01666,CUST_152,2024-08-04,Thermostat Installation,,,189,No
+INV_01667,CUST_153,2024-06-16,UV Light Installation,,,495,No
+INV_01668,CUST_154,2023-12-02,UV Light Check,,,90,No
+INV_01669,CUST_154,2023-12-12,Evaporator Coil Replacement,,,1250,No
+INV_01670,CUST_154,2024-07-01,Zone System Check,,,120,No
+INV_01671,CUST_155,2023-11-07,Furnace Installation,,,3800,No
+INV_01672,CUST_155,2024-02-06,After Hours Emergency,,,275,No
+INV_01673,CUST_155,2024-02-18,AC Tune-up,,,125,No
+INV_01674,CUST_155,2024-03-16,After Hours Emergency,,,275,No
+INV_01675,CUST_155,2024-04-02,Breaker Inspection,,,85,No
+INV_01676,CUST_156,2024-01-26,Furnace Repair,,,425,No
+INV_01677,CUST_157,2023-10-05,Heat Pump Repair,,,475,No
+INV_01678,CUST_157,2023-10-20,Weekend Emergency Call,,,225,No
+INV_01679,CUST_157,2023-10-21,Compressor Replacement,,,1850,No
+INV_01680,CUST_157,2024-02-08,System Maintenance,,,150,No
+INV_01681,CUST_157,2024-05-04,Heating Tune-up,,,140,No
+INV_01682,CUST_158,2024-06-25,AC Tune-up,,,125,No
+INV_01683,CUST_159,2023-10-24,Furnace Repair,,,425,No
+INV_01684,CUST_159,2024-03-30,Air Handler Replacement,,,1750,No
+INV_01685,CUST_159,2024-08-07,Humidifier Installation,,,595,No
+INV_01686,CUST_160,2023-12-17,Thermostat Installation,,,189,No
+INV_01687,CUST_160,2024-01-30,Duct Inspection,,,85,No
+INV_01688,CUST_160,2024-07-14,UV Light Installation,,,495,No
+INV_01689,CUST_161,2024-01-09,Heat Pump Installation,,,4900,No
+INV_01690,CUST_161,2024-01-16,Emergency Service Call,,,175,No
+INV_01691,CUST_161,2024-02-27,Air Quality Assessment,,,140,No
+INV_01692,CUST_161,2024-03-02,Boiler Installation,,,4500,No
+INV_01693,CUST_161,2024-07-03,AC Tune-up,,,125,No
+INV_01694,CUST_161,2024-08-26,Filter Replacement,,,45,No
+INV_01695,CUST_162,2023-12-26,Furnace Repair,,,425,No
+INV_01696,CUST_162,2024-02-10,Duct Sealing,,,520,No
+INV_01697,CUST_162,2024-04-13,Thermostat Calibration,,,95,No
+INV_01698,CUST_163,2023-11-10,Filter Replacement,,,45,No
+INV_01699,CUST_163,2024-02-04,Emergency Service Call,,,175,No
+INV_01700,CUST_163,2024-08-24,Duct Sealing,,,520,No
+INV_01701,CUST_164,2023-10-24,Smart Thermostat Installation,,,295,No
+INV_01702,CUST_164,2023-12-11,Breaker Inspection,,,85,No
+INV_01703,CUST_164,2024-05-15,AC Tune-up,,,125,No
+INV_01704,CUST_165,2024-04-10,Emergency Service Call,,,175,No
+INV_01705,CUST_165,2024-05-10,Filter Replacement,,,45,No
+INV_01706,CUST_165,2024-05-21,Smart Thermostat Installation,,,295,No
+INV_01707,CUST_166,2023-11-27,Heat Pump Repair,,,475,No
+INV_01708,CUST_167,2024-01-30,Gas Leak Detection,,,225,No
+INV_01709,CUST_167,2024-02-18,After Hours Emergency,,,275,No
+INV_01710,CUST_168,2023-10-02,AC Tune-up,,,125,No
+INV_01711,CUST_168,2023-11-16,AC Tune-up,,,125,No
+INV_01712,CUST_168,2023-11-28,Filter Replacement,,,45,No
+INV_01713,CUST_168,2023-12-24,Air Quality Assessment,,,140,No
+INV_01714,CUST_168,2024-03-12,Refrigerant Leak Repair,,,350,No
+INV_01715,CUST_168,2024-06-13,Refrigerant Leak Repair,,,350,No
+INV_01716,CUST_168,2024-06-21,Thermostat Calibration,,,95,No
+INV_01717,CUST_169,2024-02-18,Boiler Installation,,,4500,No
+INV_01718,CUST_170,2024-03-06,Filter Replacement,,,45,No
+INV_01719,CUST_170,2024-03-16,Smart Thermostat Installation,,,295,No
+INV_01720,CUST_170,2024-04-25,Emergency Service Call,,,175,No
+INV_01721,CUST_170,2024-08-17,Zone System Check,,,120,No
+INV_01722,CUST_171,2024-01-15,AC Tune-up,,,125,No
+INV_01723,CUST_171,2024-07-21,Refrigerant Leak Repair,,,350,No
+INV_01724,CUST_172,2023-11-15,Weekend Emergency Call,,,225,No
+INV_01725,CUST_172,2024-02-28,Capacitor Replacement,,,125,No
+INV_01726,CUST_172,2024-04-18,Filter Replacement,,,45,No
+INV_01727,CUST_173,2023-11-14,Smart Thermostat Installation,,,295,No
+INV_01728,CUST_173,2024-05-03,AC Repair,,,390,No
+INV_01729,CUST_175,2023-10-22,Smart Thermostat Installation,,,295,No
+INV_01730,CUST_175,2024-02-26,Thermostat Calibration,,,95,No
+INV_01731,CUST_175,2024-04-30,Thermostat Installation,,,189,No
+INV_01732,CUST_176,2024-03-02,Weekend Emergency Call,,,225,No
+INV_01733,CUST_176,2024-06-16,Thermostat Check,,,50,No
+INV_01734,CUST_177,2023-11-18,Capacitor Replacement,,,125,No
+INV_01735,CUST_177,2024-02-23,Refrigerant Leak Repair,,,350,No
+INV_01736,CUST_177,2024-06-04,Contactor Replacement,,,150,No
+INV_01737,CUST_177,2024-06-22,AC Repair,,,390,No
+INV_01738,CUST_178,2023-10-08,Duct Sealing,,,520,No

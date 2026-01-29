@@ -36,9 +36,9 @@ class CustomerSegmentation(BaseAnalysis):
     def rons_challenge(self) -> str:
         return """Ron treats all customers the same way, but are they really all the same? 
         
-        Some call only for emergencies. Others schedule regular maintenance. Some spend thousands 
-        on installations, others just need tune-ups. **Understanding customer segments** helps Ron 
-        tailor his marketing, pricing, and service approach to each group's specific needs."""
+Some call only for emergencies. Others schedule regular maintenance. Some spend thousands 
+on installations, others just need tune-ups. **Understanding customer segments** helps Ron 
+tailor his marketing, pricing, and service approach to each group's specific needs."""
     
     # Backward compatibility
     @property
@@ -48,12 +48,12 @@ class CustomerSegmentation(BaseAnalysis):
     @property
     def data_collected(self) -> list:
         return [
-            '**Source**: ServiceTitan (Field Service Software)',
-            '**Dataset**: customer_segmentation_transactions.csv',
-            '**Records**: 1,778 service transactions, 178 unique customers',
-            '**Contains**: Customer ID, date, service type/category, amount, payment method, technician, duration, parts/labor costs, follow-up needs'
-        ]
-    
+        'Customer transaction history (1,778 transactions from 178 unique customers) - **ServiceTitan**',
+        'RFM metrics: Recency (days since last service), Frequency (# of visits), Monetary (total spend) - **ServiceTitan**',
+        'Service mix preferences by customer (Installation vs Maintenance vs Emergency patterns) - **ServiceTitan**',
+        'Customer tenure (first visit to most recent), engagement scores, visit intervals - **ServiceTitan**',
+        'Payment behaviors (method preferences, avg ticket size, seasonal patterns) - **ServiceTitan**'
+    ]
     # Backward compatibility
     @property
     def data_inputs(self) -> list:
@@ -508,7 +508,7 @@ class CustomerSegmentation(BaseAnalysis):
         insights = []
         
         insights.append(
-            f"**3D clustering reveals {self.n_clusters} distinct customer segments** from {len(self.customer_features)} customers "
+            f"3D clustering reveals {self.n_clusters} distinct customer segments from {len(self.customer_features)} customers "
             f"- clear separation visible in PCA space"
         )
         
@@ -518,7 +518,7 @@ class CustomerSegmentation(BaseAnalysis):
             revenue_pct = (highest_revenue['total_revenue'] / self.segment_profiles['total_revenue'].sum()) * 100
             
             insights.append(
-                f"**{highest_revenue['name']}** drives {revenue_pct:.0f}% of total revenue "
+                f"{highest_revenue['name']} drives {revenue_pct:.0f}% of total revenue "
                 f"({highest_revenue['size']} customers, ${highest_revenue['avg_total_spend']:,.0f} avg LTV)"
             )
             
@@ -526,7 +526,7 @@ class CustomerSegmentation(BaseAnalysis):
             highest_ltv = self.segment_profiles.nlargest(1, 'avg_total_spend').iloc[0]
             if highest_ltv['segment_id'] != highest_revenue['segment_id']:
                 insights.append(
-                    f"**{highest_ltv['name']}** has highest average customer value "
+                    f"{highest_ltv['name']} has highest average customer value "
                     f"(${highest_ltv['avg_total_spend']:,.0f} LTV) - RFM profile shows high monetary score"
                 )
             
@@ -536,7 +536,7 @@ class CustomerSegmentation(BaseAnalysis):
             ]
             if len(installation_heavy) > 0:
                 insights.append(
-                    f"**Service mix analysis**: {installation_heavy.iloc[0]['name']} are {installation_heavy.iloc[0]['pct_installation']:.0f}% installation-focused - "
+                    f"Service mix analysis: {installation_heavy.iloc[0]['name']} are {installation_heavy.iloc[0]['pct_installation']:.0f}% installation-focused - "
                     f"cross-sell maintenance contracts for recurring revenue"
                 )
             
@@ -546,7 +546,7 @@ class CustomerSegmentation(BaseAnalysis):
                 at_risk_total = at_risk['size'].sum()
                 at_risk_pct = (at_risk_total / len(self.customer_features)) * 100
                 insights.append(
-                    f"**{at_risk_total} customers ({at_risk_pct:.0f}%) haven't purchased in 1+ years** - "
+                    f"{at_risk_total} customers ({at_risk_pct:.0f}%) haven't purchased in 1+ years - "
                     f"'{at_risk.iloc[0]['name']}' segment needs win-back campaign (low recency score)"
                 )
             
@@ -554,7 +554,7 @@ class CustomerSegmentation(BaseAnalysis):
             high_freq = self.segment_profiles.nlargest(1, 'avg_frequency').iloc[0]
             if high_freq['avg_frequency'] >= 3:
                 insights.append(
-                    f"**RFM analysis**: '{high_freq['name']}' averages {high_freq['avg_frequency']:.1f} transactions - "
+                    f"RFM analysis: '{high_freq['name']}' averages {high_freq['avg_frequency']:.1f} transactions - "
                     f"highest frequency score indicates strong engagement"
                 )
         
@@ -569,7 +569,7 @@ class CustomerSegmentation(BaseAnalysis):
         
         # Connection to other analyses
         insights.append(
-            "**Connection to Churn Prediction**: Use segment characteristics (recency, frequency, service mix) "
+            "Connection to Churn Prediction: Use segment characteristics (recency, frequency, service mix) "
             "to predict which customers in each group are most at risk"
         )
         

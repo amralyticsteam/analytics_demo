@@ -26,10 +26,10 @@ class BusinessOverview(BaseAnalysis):
     @property
     def rons_challenge(self) -> str:
         return """Ron runs a successful HVAC business but has never analyzed his data systematically. 
-        He knows he's busy in summer (AC work) and winter (heating), but doesn't have clear metrics.
+He knows he's busy in summer (AC work) and winter (heating), but doesn't have clear metrics.
         
-        **What does Ron's business actually look like?** Revenue trends? Service mix? Customer patterns? 
-        Before diving into complex analyses, we need to understand the current state."""
+**What does Ron's business actually look like?** Revenue trends? Service mix? Customer patterns? 
+Before diving into complex analyses, we need to understand the current state."""
     
     # Backward compatibility
     @property
@@ -39,11 +39,12 @@ class BusinessOverview(BaseAnalysis):
     @property
     def data_collected(self) -> list:
         return [
-            '**Source**: ServiceTitan (Field Service Software)',
-            '**Dataset**: customer_segmentation_transactions.csv',
-            '**Records**: 1,778 service transactions from Oct 2023-Aug 2024',
-            '**Contains**: Service type, category, customer ID, pricing, payment method, technician, duration, parts/labor costs'
-        ]
+        'Transaction history (1,778 service records, Oct 2023-Aug 2024) - **ServiceTitan**',
+        'Service types and categories (Installation, Maintenance, Emergency, Cooling, Heating) - **ServiceTitan**',
+        'Revenue breakdown by service category and time period - **QuickBooks**',
+        'Customer payment methods (credit card, check, financing) and timing - **ServiceTitan**',
+        'Technician assignments, service duration, parts and labor costs - **ServiceTitan**'
+    ]
     
     # Backward compatibility
     @property
@@ -258,7 +259,7 @@ class BusinessOverview(BaseAnalysis):
         avg_ticket = self.transactions_df['amount'].mean()
         
         insights.append(
-            f"**Overall business**: ${total_revenue:,.0f} total revenue from {total_transactions} transactions "
+            f"Overall business: ${total_revenue:,.0f} total revenue from {total_transactions} transactions "
             f"across {unique_customers} customers (avg ticket: ${avg_ticket:.0f})"
         )
         
@@ -267,14 +268,14 @@ class BusinessOverview(BaseAnalysis):
         top_pct = (top_category['total_revenue'] / total_revenue) * 100
         
         insights.append(
-            f"**Top revenue driver**: {top_category['category']} accounts for {top_pct:.0f}% of revenue "
+            f"Top revenue driver: {top_category['category']} accounts for {top_pct:.0f}% of revenue "
             f"(${top_category['total_revenue']:,.0f}) with {top_category['job_count']} jobs"
         )
         
         # Highest ticket size
         highest_ticket = self.service_summary.nlargest(1, 'avg_ticket').iloc[0]
         insights.append(
-            f"**Highest ticket size**: {highest_ticket['category']} averages ${highest_ticket['avg_ticket']:.0f} per job"
+            f"Highest ticket size: {highest_ticket['category']} averages ${highest_ticket['avg_ticket']:.0f} per job"
         )
         
         # Revenue trend
@@ -284,7 +285,7 @@ class BusinessOverview(BaseAnalysis):
         
         direction = "up" if trend_pct > 0 else "down"
         insights.append(
-            f"**Recent trend**: Last 3 months average ${recent_3mo:,.0f}/month vs prior 3 months ${prior_3mo:,.0f}/month "
+            f"Recent trend: Last 3 months average ${recent_3mo:,.0f}/month vs prior 3 months ${prior_3mo:,.0f}/month "
             f"({direction} {abs(trend_pct):.1f}%)"
         )
         
@@ -293,7 +294,7 @@ class BusinessOverview(BaseAnalysis):
         repeat_rate = (repeat_customers > 1).sum() / len(repeat_customers) * 100
         
         insights.append(
-            f"**Customer retention**: {repeat_rate:.0f}% of customers have made multiple purchases - "
+            f"Customer retention: {repeat_rate:.0f}% of customers have made multiple purchases - "
             f"{'strong retention' if repeat_rate > 50 else 'opportunity to improve loyalty'}"
         )
         
@@ -308,7 +309,7 @@ class BusinessOverview(BaseAnalysis):
         
         # Connection to other analyses
         insights.append(
-            "**Next steps**: Customer Segmentation will reveal distinct customer groups within this data, "
+            "Next step: Customer Segmentation will reveal distinct customer groups within this data, "
             "and Seasonality Analysis will explain the monthly revenue patterns"
         )
         

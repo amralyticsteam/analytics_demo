@@ -8,6 +8,30 @@ import streamlit as st
 
 def show_intro_page():
     """Display the introduction page for Ron's case study."""
+
+    st.markdown("""
+        <div style="
+            background-color: #fff9e6;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+        ">
+            <h3 style="margin-top: 0; color: #92400e;">About This Case Study</h3>
+            <p style="color: #78350f; margin-bottom: 0;">
+                <strong>What you're viewing:</strong> This is a showcase of our analytical process: 
+                the "art of the possible" for data-driven decision making. In a real engagement, we would not walk a customer through each of these.
+                Visualizations would be shown sparingly depending on what is most relevant for revenue growth, operational effiency gains and profit improvement.
+                We tailor our communication to individual business owners: some people absorb information best with an in-depth, detailed analysis, others prefer a story-driven format, others are more visual. We can accommodate any of these preferences. 
+            </p>
+            </p>
+            <p style="color: #78350f; margin-bottom: 0;">
+                <strong>What Ron could receive:</strong> A focused 1-page executive summary with 3-5 key findings, 
+                an interactive dashboard for the analyses that matter most, and a prioritized 30-day action plan. 
+                We'll meet on a monthly basis to keep updating the 30-day plan, changing the relevant analyses and re-assessing performance.
+            </p>
+        </div>
+    """, unsafe_allow_html=True)
     
     # Hero section
     st.markdown("""
@@ -78,7 +102,7 @@ def show_intro_page():
     st.markdown("### The Data")
     st.markdown("Ron uses several systems to run his business. We'll pull data from all of them:")
     
-    cols = st.columns(4)
+    cols = st.columns(5)
     with cols[0]:
         st.markdown("""
         **Operations**
@@ -108,13 +132,19 @@ def show_intro_page():
         - Google Business Profile
         """)
     
+    with cols[4]:
+        st.markdown("""
+        **External Data**
+        - Weather (NOAA)
+        """)
+    
     st.divider()
     
     # Analysis journey
-    st.markdown("### The Analysis Journey")
+    st.markdown("### The Process")
     st.markdown("""
-    We'll walk through **9 interconnected analyses**, each building on the previous to create a 
-    comprehensive picture of Ron's business. Every analysis follows the same framework:
+    We completed **9 interconnected analyses**, each building on the previous to create a 
+    comprehensive picture of Ron's business. We'll walk through each of these to demonstrate how they add value to Ron's business individually, and how they become even more powerful when used as building blocks to the final recommendations. Every analysis follows the same framework:
     """)
     
     journey_cols = st.columns(5)

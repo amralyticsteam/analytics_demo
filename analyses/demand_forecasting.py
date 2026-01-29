@@ -433,7 +433,7 @@ appropriately and avoid costly overtime or lost revenue."""
         if self.key_drivers is not None and len(self.key_drivers) > 0:
             top_driver = self.key_drivers.iloc[0]
             insights.append(
-                f"**Strongest demand driver**: {top_driver['driver']} "
+                f"Strongest demand driver: {top_driver['driver']} "
                 f"(correlation: {top_driver['correlation']:.2f}) - "
                 f"{'positive' if top_driver['correlation'] > 0 else 'negative'} relationship"
             )
@@ -454,7 +454,7 @@ appropriately and avoid costly overtime or lost revenue."""
             
             if len(lag1_corr) > 0:
                 insights.append(
-                    f"**Lag effect detected**: Yesterday's temperature correlates {lag1_corr[0]:.2f} "
+                    f"Lag effect detected: Yesterday's temperature correlates {lag1_corr[0]:.2f} "
                     f"with today's calls - conditions take 1-2 days to drive demand"
                 )
         
@@ -489,7 +489,7 @@ appropriately and avoid costly overtime or lost revenue."""
         
         # Connection to other analyses
         insights.append(
-            "**Connection to Seasonality Analysis**: Combine seasonal patterns with daily forecasts "
+            "Connection to Seasonality Analysis: Combine seasonal patterns with daily forecasts "
             "for complete capacity planning picture"
         )
         
@@ -505,7 +505,7 @@ appropriately and avoid costly overtime or lost revenue."""
         recommendations = []
         
         recommendations.append(
-            "**Monitor weather forecasts closely**: Strong correlation between temperature extremes and demand - "
+            "Monitor weather forecasts closely: Strong correlation between temperature extremes and demand - "
             "check 3-day forecasts to pre-position staff"
         )
         
@@ -524,12 +524,12 @@ appropriately and avoid costly overtime or lost revenue."""
         )
         
         recommendations.append(
-            "**Track marketing impact with lag**: Marketing spend shows delayed effect on calls - "
+            "Track marketing impact with lag: Marketing spend shows delayed effect on calls - "
             "measure ROI over 7-14 day windows, not same-day"
         )
         
         recommendations.append(
-            "**Next step**: Cross-reference with Pricing Analysis to ensure busy periods are priced "
+            "Next step: Cross-reference with Pricing Analysis to ensure busy periods are priced "
             "to maximize profit (consider surge pricing for emergency services during peak demand)"
         )
         

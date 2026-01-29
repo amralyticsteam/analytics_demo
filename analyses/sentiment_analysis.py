@@ -45,24 +45,23 @@ class SentimentAnalysis(BaseAnalysis):
         return """Ron has over 100 reviews across Yelp and Google Business. He knows customers generally 
         like him (high retention!), but he doesn't have time to read every review systematically.
         
-        **What drives positive vs negative sentiment?** Is it the time of day they leave reviews? Day of week? 
-        Response time? Star rating correlation? Understanding these patterns helps Ron know what really matters."""
+**What drives positive vs negative sentiment?** Is it the time of day they leave reviews? Day of week? 
+Response time? Star rating correlation? Understanding these patterns helps Ron know what really matters."""
     
     # Backward compatibility
     @property
     def business_question(self) -> str:
         return self.rons_challenge
     
-        @property
+    @property
     def data_collected(self) -> list:
         return [
-            '**Source**: Google Reviews API',
-            '**Dataset**: google_reviews.json',
-            '**Records**: 40 customer reviews',
-            '**Contains**: Rating (1-5 stars), review text, date, response time, customer type, service quality metrics'
-        ]
-    
-    
+        'Customer review ratings (40 reviews with 1-5 star ratings, avg 4.2 stars) - **Google Reviews**',
+        'Review text content (150-500 words per review, covering service quality, responsiveness, pricing) - **Google Reviews**',
+        'Review dates (Oct 2023-Aug 2024), business response times, customer reply patterns - **Google Reviews**',
+        'Customer classification (new vs returning, service type received, verified purchaser status) - **Google Reviews**',
+        'Service quality mentions and themes (professionalism, timeliness, expertise, pricing fairness) - **Google Reviews**'
+    ]
     # Backward compatibility
     @property
     def data_inputs(self) -> list:
@@ -430,7 +429,7 @@ class SentimentAnalysis(BaseAnalysis):
             top_3_corr = sentiment_corr.head(3)
             
             insights.append(
-                f"**Strongest correlations with sentiment**: "
+                f"Strongest correlations with sentiment: "
                 f"{top_3_corr.index[0]} ({self.correlation_matrix.loc['Sentiment', top_3_corr.index[0]]:.2f}), "
                 f"{top_3_corr.index[1]} ({self.correlation_matrix.loc['Sentiment', top_3_corr.index[1]]:.2f}), "
                 f"{top_3_corr.index[2]} ({self.correlation_matrix.loc['Sentiment', top_3_corr.index[2]]:.2f})"
@@ -442,7 +441,7 @@ class SentimentAnalysis(BaseAnalysis):
             slow = self.response_correlation.iloc[-1]
             sentiment_drop = fast['avg_sentiment'] - slow['avg_sentiment']
             if sentiment_drop > 0.1:
-                insights.append(f"**Response time matters**: Fast responses ({fast['response_time']}) average {fast['avg_sentiment']:.2f} sentiment vs {slow['avg_sentiment']:.2f} for slow responses — a drop of {sentiment_drop:.2f}")
+                insights.append(f"Response time matters: Fast responses ({fast['response_time']}) average {fast['avg_sentiment']:.2f} sentiment vs {slow['avg_sentiment']:.2f} for slow responses — a drop of {sentiment_drop:.2f}")
         
         # Customer type difference
         existing_sentiment = self.reviews_df[self.reviews_df['is_existing_customer'] == 1]['sentiment'].mean()
@@ -452,7 +451,7 @@ class SentimentAnalysis(BaseAnalysis):
         if abs(sentiment_diff) > 0.1:
             better_group = "existing" if sentiment_diff > 0 else "new"
             insights.append(
-                f"**Customer type matters**: {better_group.capitalize()} customers leave more positive reviews "
+                f"Customer type matters: {better_group.capitalize()} customers leave more positive reviews "
                 f"({existing_sentiment:.2f} vs {new_sentiment:.2f}) - "
                 f"{'loyalty programs working' if better_group == 'existing' else 'need to improve first impressions'}"
             )
@@ -478,7 +477,7 @@ class SentimentAnalysis(BaseAnalysis):
                 insights.append(f"Sentiment trend is {direction} over the past 3 months (change of {trend_change:+.2f})")
         
         # Connection to other analyses
-        insights.append("**Connection to Topic Extraction**: See Analysis #4 for specific topics driving positive/negative sentiment")
+        insights.append("Connection to Topic Extraction: See Analysis #4 for specific topics driving positive/negative sentiment")
         
         return insights
     

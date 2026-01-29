@@ -1,51 +1,51 @@
 service_name,category,price,cogs_parts,cogs_labor_hours,labor_rate,total_cogs,gross_profit,margin_pct,popularity_count,popularity_pct,service_time_hours,difficulty
-AC Tune-up,Maintenance,125,15,1.0,110,125.0,0.0,0.0,48,2.7,1.0,Easy
-Heating Tune-up,Maintenance,140,20,1.5,110,185.0,-45.0,-32.142857142857146,64,3.6,1.5,Easy
-System Maintenance,Maintenance,150,25,1.5,110,190.0,-40.0,-26.666666666666668,16,0.9,1.5,Easy
-Filter Replacement,Maintenance,45,8,0.3,110,41.0,4.0,8.88888888888889,26,1.5,0.3,Easy
-Thermostat Check,Maintenance,50,5,0.5,110,60.0,-10.0,-20.0,19,1.1,0.5,Easy
-Duct Inspection,Maintenance,85,10,0.8,110,98.0,-13.0,-15.294117647058824,12,0.7,0.8,Medium
-Duct Cleaning,Maintenance,350,80,2.5,110,355.0,-5.0,-1.4285714285714286,22,1.2,2.5,Medium
-Duct Sealing,Maintenance,520,180,3.0,110,510.0,10.0,1.9230769230769231,15,0.8,3.0,Medium
-Air Quality Assessment,Maintenance,140,35,1.0,110,145.0,-5.0,-3.571428571428571,20,1.1,1.0,Easy
-Humidifier Check,Maintenance,75,10,0.5,110,65.0,10.0,13.333333333333334,12,0.7,0.5,Easy
-Thermostat Calibration,Maintenance,95,15,0.8,110,103.0,-8.0,-8.421052631578947,22,1.2,0.8,Easy
-Breaker Inspection,Maintenance,85,5,0.7,110,82.0,3.0,3.5294117647058822,14,0.8,0.7,Easy
-Return Air Inspection,Maintenance,70,5,0.6,110,71.0,-1.0,-1.4285714285714286,18,1.0,0.6,Easy
-Supply Vent Balancing,Maintenance,180,20,1.5,110,185.0,-5.0,-2.7777777777777777,18,1.0,1.5,Medium
-Zone System Check,Maintenance,120,15,1.0,110,125.0,-5.0,-4.166666666666666,13,0.7,1.0,Medium
-UV Light Check,Maintenance,90,10,0.7,110,87.0,3.0,3.333333333333333,19,1.1,0.7,Easy
-Carbon Monoxide Test,Maintenance,95,20,0.8,110,108.0,-13.0,-13.684210526315791,15,0.8,0.8,Easy
-Electrical Safety Inspection,Maintenance,110,5,1.0,110,115.0,-5.0,-4.545454545454546,8,0.4,1.0,Medium
-AC Repair,Cooling,390,170,2.0,110,390.0,0.0,0.0,38,2.1,2.0,Medium
-Refrigerant Recharge,Cooling,280,95,1.5,110,260.0,20.0,7.142857142857142,50,2.8,1.5,Medium
-Capacitor Replacement,Cooling,180,45,1.0,110,155.0,25.0,13.88888888888889,51,2.9,1.0,Easy
-Compressor Replacement,Cooling,2100,1350,5.0,110,1900.0,200.0,9.523809523809524,51,2.9,5.0,Hard
-Contactor Replacement,Cooling,165,40,1.0,110,150.0,15.0,9.090909090909092,45,2.5,1.0,Easy
-Refrigerant Level Check,Cooling,95,10,0.7,110,87.0,8.0,8.421052631578947,50,2.8,0.7,Easy
-Condenser Coil Cleaning,Cooling,180,30,1.5,110,195.0,-15.0,-8.333333333333332,56,3.1,1.5,Medium
-Evaporator Coil Cleaning,Cooling,195,35,1.7,110,222.0,-27.0,-13.846153846153848,49,2.8,1.7,Medium
-Drain Line Flush,Cooling,125,20,1.0,110,130.0,-5.0,-4.0,16,0.9,1.0,Easy
-Condensate Pump Cleaning,Cooling,140,25,1.2,110,157.0,-17.0,-12.142857142857142,17,1.0,1.2,Medium
-Drain Pan Replacement,Cooling,220,80,1.5,110,245.0,-25.0,-11.363636363636363,19,1.1,1.5,Medium
-Heating Repair,Heating,450,180,2.5,110,455.0,-5.0,-1.1111111111111112,59,3.3,2.5,Medium
-Igniter Replacement,Heating,220,60,1.5,110,225.0,-5.0,-2.272727272727273,70,3.9,1.5,Easy
-Blower Motor Repair,Heating,320,110,2.0,110,330.0,-10.0,-3.125,10,0.6,2.0,Medium
-Heat Exchanger Inspection,Heating,185,25,1.5,110,190.0,-5.0,-2.702702702702702,58,3.3,1.5,Medium
-Gas Valve Replacement,Heating,350,145,2.0,110,365.0,-15.0,-4.285714285714286,67,3.8,2.0,Medium
-Flame Sensor Replacement,Heating,195,55,1.2,110,187.0,8.0,4.102564102564102,69,3.9,1.2,Easy
-Blower Motor Cleaning,Heating,120,15,1.0,110,125.0,-5.0,-4.166666666666666,17,1.0,1.0,Easy
-Thermostat Replacement,Heating,185,85,1.0,110,195.0,-10.0,-5.405405405405405,23,1.3,1.0,Easy
-Pressure Switch Replacement,Heating,210,65,1.5,110,230.0,-20.0,-9.523809523809524,59,3.3,1.5,Medium
-Control Board Replacement,Heating,580,320,2.5,110,595.0,-15.0,-2.586206896551724,20,1.1,2.5,Hard
-Fan Motor Replacement,Heating,520,280,2.5,110,555.0,-35.0,-6.730769230769231,22,1.2,2.5,Hard
-Relay Replacement,Heating,145,35,1.0,110,145.0,0.0,0.0,18,1.0,1.0,Easy
-Zone Damper Replacement,Heating,380,180,2.0,110,400.0,-20.0,-5.263157894736842,18,1.0,2.0,Medium
-AC Installation,Installation,3750,2500,11.0,110,3710.0,40.0,1.0666666666666669,58,3.3,11.0,Hard
-Furnace Installation,Installation,4100,2750,12.0,110,4070.0,30.0,0.7317073170731708,48,2.7,12.0,Hard
-HVAC Installation,Installation,5200,3400,16.0,110,5160.0,40.0,0.7692307692307693,15,0.8,16.0,Very Hard
-Thermostat Installation,Installation,280,140,1.2,110,272.0,8.0,2.857142857142857,176,9.9,1.2,Easy
-Heat Pump Installation,Installation,5500,3600,17.0,110,5470.0,30.0,0.5454545454545455,48,2.7,17.0,Very Hard
-Mini-Split Installation,Installation,3200,2100,10.0,110,3200.0,0.0,0.0,37,2.1,10.0,Hard
-Boiler Installation,Installation,4800,3200,14.0,110,4740.0,60.0,1.25,54,3.0,14.0,Very Hard
-Air Handler Installation,Installation,2800,1900,9.0,110,2890.0,-90.0,-3.214285714285714,9,0.5,9.0,Hard
+AC Tune-up,Maintenance,125,15,1.0,85,100.0,25.0,20.0,85,4.8,1.0,Easy
+Heating Tune-up,Maintenance,140,20,1.5,85,147.5,-7.5,-5.4,92,5.2,1.5,Easy
+System Maintenance,Maintenance,150,25,1.5,85,152.5,-2.5,-1.7,68,3.8,1.5,Easy
+Filter Replacement,Maintenance,45,8,0.3,85,33.5,11.5,25.6,124,7.0,0.3,Easy
+Thermostat Check,Maintenance,50,5,0.5,85,47.5,2.5,5.0,58,3.3,0.5,Easy
+Duct Inspection,Maintenance,85,10,0.8,85,78.0,7.0,8.2,42,2.4,0.8,Medium
+Duct Cleaning,Maintenance,350,80,2.5,85,292.5,57.5,16.4,38,2.1,2.5,Medium
+Duct Sealing,Maintenance,520,180,3.0,85,435.0,85.0,16.3,28,1.6,3.0,Medium
+Air Quality Assessment,Maintenance,140,35,1.0,85,120.0,20.0,14.3,45,2.5,1.0,Easy
+Humidifier Check,Maintenance,75,10,0.5,85,52.5,22.5,30.0,36,2.0,0.5,Easy
+Thermostat Calibration,Maintenance,95,15,0.8,85,83.0,12.0,12.6,52,2.9,0.8,Easy
+Breaker Inspection,Maintenance,85,5,0.7,85,64.5,20.5,24.1,32,1.8,0.7,Easy
+Return Air Inspection,Maintenance,70,5,0.6,85,56.0,14.0,20.0,41,2.3,0.6,Easy
+Supply Vent Balancing,Maintenance,180,20,1.5,85,147.5,32.5,18.1,48,2.7,1.5,Medium
+Zone System Check,Maintenance,120,15,1.0,85,100.0,20.0,16.7,35,2.0,1.0,Medium
+UV Light Check,Maintenance,90,10,0.7,85,69.5,20.5,22.8,44,2.5,0.7,Easy
+Carbon Monoxide Test,Maintenance,95,20,0.8,85,88.0,7.0,7.4,38,2.1,0.8,Easy
+Electrical Safety Inspection,Maintenance,110,5,1.0,85,90.0,20.0,18.2,24,1.4,1.0,Medium
+AC Repair,Cooling,390,170,2.0,85,340.0,50.0,12.8,86,4.8,2.0,Medium
+Furnace Repair,Heating,425,185,2.5,85,397.5,27.5,6.5,78,4.4,2.5,Medium
+Heat Pump Repair,Heating,475,215,3.0,85,470.0,5.0,1.1,64,3.6,3.0,Hard
+Compressor Replacement,Cooling,1850,1350,5.0,85,1775.0,75.0,4.1,18,1.0,5.0,Hard
+Condenser Replacement,Cooling,1450,950,4.5,85,1332.5,117.5,8.1,22,1.2,4.5,Hard
+Evaporator Coil Replacement,Cooling,1250,850,4.0,85,1190.0,60.0,4.8,16,0.9,4.0,Hard
+Air Handler Replacement,Heating,1750,1200,5.5,85,1667.5,82.5,4.7,24,1.4,5.5,Hard
+Blower Motor Replacement,Heating,485,295,2.5,85,507.5,-22.5,-4.6,42,2.4,2.5,Medium
+Heat Exchanger Replacement,Heating,1450,950,5.5,85,1417.5,32.5,2.2,12,0.7,5.5,Hard
+Capacitor Replacement,Cooling,125,35,0.8,85,103.0,22.0,17.6,68,3.8,0.8,Easy
+Contactor Replacement,Cooling,150,50,1.0,85,135.0,15.0,10.0,54,3.0,1.0,Easy
+Refrigerant Recharge (2 lbs),Cooling,225,95,1.2,85,197.0,28.0,12.4,72,4.1,1.2,Medium
+Refrigerant Leak Repair,Cooling,350,75,2.5,85,287.5,62.5,17.9,45,2.5,2.5,Hard
+Thermostat Installation,Installation,189,65,1.5,85,192.5,-3.5,-1.9,156,8.8,1.5,Easy
+Smart Thermostat Installation,Installation,295,145,2.0,85,315.0,-20.0,-6.8,98,5.5,2.0,Medium
+Humidifier Installation,Installation,595,325,3.5,85,622.5,-27.5,-4.6,32,1.8,3.5,Medium
+Dehumidifier Installation,Installation,695,385,4.0,85,725.0,-30.0,-4.3,28,1.6,4.0,Medium
+Air Purifier Installation,Installation,525,265,3.0,85,520.0,5.0,1.0,36,2.0,3.0,Medium
+UV Light Installation,Installation,495,235,2.5,85,447.5,47.5,9.6,42,2.4,2.5,Medium
+Central AC Installation,Installation,4200,2850,12.0,85,3870.0,330.0,7.9,45,2.5,12.0,Hard
+Furnace Installation,Installation,3800,2550,10.0,85,3400.0,400.0,10.5,52,2.9,10.0,Hard
+Heat Pump Installation,Installation,4900,3450,14.0,85,4640.0,260.0,5.3,38,2.1,14.0,Hard
+Ductless Mini-Split Installation,Installation,3200,2150,10.0,85,3000.0,200.0,6.3,28,1.6,10.0,Hard
+Boiler Installation,Installation,4500,3250,12.0,65,4270.0,230.0,5.1,18,1.0,12.0,Hard
+Water Heater Installation,Installation,1450,950,5.0,85,1375.0,75.0,5.2,24,1.4,5.0,Medium
+Tankless Water Heater Installation,Installation,2150,1550,6.0,85,2060.0,90.0,4.2,22,1.2,6.0,Hard
+Emergency Service Call,Emergency,175,20,1.5,85,147.5,27.5,15.7,148,8.3,1.5,Easy
+Weekend Emergency Call,Emergency,225,25,2.0,85,195.0,30.0,13.3,86,4.8,2.0,Easy
+After Hours Emergency,Emergency,275,30,2.5,85,242.5,32.5,11.8,64,3.6,2.5,Medium
+Holiday Emergency Call,Emergency,350,35,3.0,85,290.0,60.0,17.1,28,1.6,3.0,Medium
+Gas Line Inspection,Heating,145,15,1.5,85,142.5,2.5,1.7,32,1.8,1.5,Medium
+Gas Leak Detection,Emergency,225,25,2.0,85,195.0,30.0,13.3,24,1.4,2.0,Hard

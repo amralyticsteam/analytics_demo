@@ -29,9 +29,9 @@ class PricingAnalysis(BaseAnalysis):
         return """Ron hasn't reviewed his pricing in over 2 years. He's been so focused on finding new 
         customers that he hasn't checked if his most popular services are even profitable.
         
-**Are his prices covering costs?** More importantly: which services are profitable, which are 
-losing money, and which should he promote more heavily? Ron needs a pricing strategy, not just 
-price tags."""
+        **Are his prices covering costs?** More importantly: which services are profitable, which are 
+        losing money, and which should he promote more heavily? Ron needs a pricing strategy, not just 
+        price tags."""
     
     # Backward compatibility
     @property
@@ -41,12 +41,12 @@ price tags."""
     @property
     def data_collected(self) -> list:
         return [
-            'Service pricing (50 HVAC services) - **QuickBooks**',
-            'Parts costs by service - **QuickBooks**',
-            'Labor hours and rates - **ServiceTitan**',
-            'Service popularity/frequency - **ServiceTitan**',
-            'Gross margins by service - **QuickBooks**'
-    ]
+            '**Source**: QuickBooks & ServiceTitan',
+            '**Dataset**: pricing_menu.csv',
+            '**Records**: 50 HVAC services',
+            '**Contains**: Service name, category, price, COGS breakdown (parts + labor hours), margins, popularity counts, difficulty'
+        ]
+    
     
     # Backward compatibility
     @property
@@ -55,23 +55,8 @@ price tags."""
     
     @property
     def methodology(self) -> str:
-        return """We use the following analytical techniques to help Ron optimize his pricing strategy:
-
-**Menu Engineering Matrix** - A restaurant industry technique that plots services by popularity (how often sold) vs profitability (margin). This creates four quadrants: Stars (high profit + high popularity), Plowhorses (low profit + high popularity), Puzzles (high profit + low popularity), and Dogs (low profit + low popularity).
-
-**COGS Analysis (Cost of Goods Sold)** - Breaking down every service into parts cost + labor cost to calculate true margins. Many businesses don't realize they're losing money on "popular" services.
-
-**Labor efficiency metrics** - Revenue per labor hour by category to identify which services are most profitable per unit of Ron's time.
-
-**Why this works for Ron:** Immediately identifies which services are underpriced (popular but unprofitable) and need urgent price increases, plus which high-margin services to promote more.
-
-**If results aren't strong enough, we could:**
-- Add competitive pricing analysis (what do other HVAC companies charge?)
-- Include elasticity testing (how much can Ron raise prices before losing customers?)
-- Build dynamic pricing models (surge pricing for emergency calls, discounts for off-peak)
-- Analyze bundle pricing opportunities (service packages at a discount)"""
-
-
+        return 'Menu Engineering Matrix (popularity vs profitability quadrant analysis), COGS breakdown by service category, labor ratio analysis, price elasticity assessment, competitive positioning'
+    
     # Backward compatibility
     @property
     def technical_output(self) -> str:
@@ -373,10 +358,10 @@ price tags."""
         
         # Update axes with better formatting
         fig.update_xaxes(title_text="Popularity (% of Jobs)", row=1, col=1)
-        fig.update_yaxes(title_text="Profit Margin (%)", row=1, col=1)
+        fig.update_yaxes(title_text="Profit Margin (%)", row=1, col=1, rangemode="tozero")
         
         fig.update_xaxes(title_text="Service Category", row=1, col=2, tickangle=-45)
-        fig.update_yaxes(title_text="Average Cost ($)", row=1, col=2)
+        fig.update_yaxes(title_text="Average Cost ($)", row=1, col=2, rangemode="tozero")
         
         fig.update_xaxes(title_text="Service Category", row=2, col=1, tickangle=-45)
         fig.update_yaxes(
@@ -390,7 +375,7 @@ price tags."""
             row=2, col=2,
             range=[0, top_10['popularity_count'].max() * 1.2]  # Add 20% padding for text
         )
-        fig.update_yaxes(title_text="Service", row=2, col=2)
+        fig.update_yaxes(title_text="Service", row=2, col=2, rangemode="tozero")
         
         return fig
     
@@ -401,68 +386,77 @@ price tags."""
         
         insights = []
         
-        # Menu engineering quadrants
-        stars = self.menu_df[self.menu_df['quadrant'] == 'Star']
-        plowhorses = self.menu_df[self.menu_df['quadrant'] == 'Plowhorse']
-        dogs = self.menu_df[self.menu_df['quadrant'] == 'Dog']
-        
-        if len(stars) > 0:
-            insights.append(
-                f"**Stars (high profit + high popularity)**: {len(stars)} services including "
-                f"{', '.join(stars.nlargest(3, 'popularity_pct')['service_name'].tolist())} - "
-                f"promote these heavily!"
-            )
-        
-        if len(plowhorses) > 0:
-            top_plowhorse = plowhorses.nlargest(1, 'popularity_count').iloc[0]
-            insights.append(
-                f"**Critical issue - Plowhorses**: '{top_plowhorse['service_name']}' is your most popular service "
-                f"with {top_plowhorse['popularity_pct']:.1f}% of jobs, but only {top_plowhorse['margin_pct']:.1f}% margin. "
-                f"**Must raise price immediately**"
-            )
-        
-        # Zero/negative margin services
-        unprofitable = self.menu_df[self.menu_df['margin_pct'] <= 0]
+        # Critical issue - most popular services losing money
+        unprofitable = self.menu_df[self.menu_df['margin_pct'] < 0]
         if len(unprofitable) > 0:
+            top_unprofitable = unprofitable.nlargest(3, 'popularity_count')
             total_unprofitable_jobs = unprofitable['popularity_count'].sum()
-            total_jobs = self.menu_df['popularity_count'].sum()
-            pct_unprofitable = (total_unprofitable_jobs / total_jobs) * 100
             
             insights.append(
-                f"**{len(unprofitable)} services have 0% or negative margins**, representing "
-                f"{pct_unprofitable:.1f}% of all jobs. These are losing money with every service call!"
+                f"Critical problem: Most popular services are LOSING money - "
+                f"{top_unprofitable.iloc[0]['service_name']} ({int(top_unprofitable.iloc[0]['popularity_count'])} jobs/year, "
+                f"{top_unprofitable.iloc[0]['margin_pct']:.1f}% margin), "
+                f"{top_unprofitable.iloc[1]['service_name']} ({int(top_unprofitable.iloc[1]['popularity_count'])} jobs/year, "
+                f"{top_unprofitable.iloc[1]['margin_pct']:.1f}% margin), and "
+                f"{top_unprofitable.iloc[2]['service_name']} ({int(top_unprofitable.iloc[2]['popularity_count'])} jobs/year, "
+                f"{top_unprofitable.iloc[2]['margin_pct']:.1f}% margin) are top sellers with negative margins"
             )
         
-        # Labor efficiency
-        most_efficient = self.labor_analysis.iloc[0]
-        least_efficient = self.labor_analysis.iloc[-1]
+        # Zero/negative margin services count
+        if len(unprofitable) > 0:
+            insights.append(
+                f"{len(unprofitable)} services with negative margins representing "
+                f"{total_unprofitable_jobs:.0f} annual jobs - every service call loses money"
+            )
         
+        # High-margin services underutilized
+        high_margin = self.menu_df[self.menu_df['margin_pct'] > 20].nsmallest(3, 'popularity_count')
+        if len(high_margin) > 0:
+            insights.append(
+                f"High-margin services are underutilized - "
+                f"{high_margin.iloc[0]['service_name']} ({high_margin.iloc[0]['margin_pct']:.1f}% margin), "
+                f"{high_margin.iloc[1]['service_name']} ({high_margin.iloc[1]['margin_pct']:.1f}% margin), and "
+                f"{high_margin.iloc[2]['service_name']} ({high_margin.iloc[2]['margin_pct']:.1f}% margin) "
+                f"are profitable but low volume"
+            )
+        
+        # Major installations razor-thin margins
+        installations = self.menu_df[self.menu_df['category'] == 'Installation']
+        low_margin_installs = installations[installations['margin_pct'] < 10]
+        if len(low_margin_installs) > 0:
+            insights.append(
+                f"Major installations have razor-thin margins - {len(low_margin_installs)} installation services "
+                f"are at 4-10% margins, leaving no room for overhead (sales costs, permits, callbacks)"
+            )
+        
+        # Emergency services priced correctly
+        emergency = self.menu_df[self.menu_df['category'] == 'Emergency']
+        if len(emergency) > 0:
+            avg_emergency_margin = emergency['margin_pct'].mean()
+            insights.append(
+                f"Emergency services are priced correctly - Average {avg_emergency_margin:.1f}% margin "
+                f"shows Ron understands premium pricing for urgent work"
+            )
+        
+        # Labor rate analysis
         insights.append(
-            f"**Labor efficiency varies widely**: {most_efficient['category']} generates "
-            f"${most_efficient['revenue_per_labor_hour']:.0f}/hour vs {least_efficient['category']} "
-            f"at ${least_efficient['revenue_per_labor_hour']:.0f}/hour"
+            f"Labor rate may be too high at $85/hour - combined with parts costs, many services "
+            f"can't cover fully-loaded labor costs (benefits, insurance, vehicle costs add 30-40% to base wage)"
         )
         
-        # COGS insights
-        highest_cogs = self.cogs_analysis.iloc[0]
-        insights.append(
-            f"{highest_cogs['category']} services have highest average COGS at "
-            f"${highest_cogs['avg_total_cogs']:.0f}, with {highest_cogs['avg_margin']:.1f}% average margin"
-        )
-        
-        # Top 10 popularity insight
+        # Top 10 popularity insight - color-coded visualization
         top_10 = self.menu_df.nlargest(10, 'popularity_count')
-        top_10_low_margin = top_10[top_10['margin_pct'] < 5]
+        top_10_low_margin = top_10[top_10['margin_pct'] < 10]
         if len(top_10_low_margin) > 0:
             insights.append(
-                f"**Top 10 popular services**: {len(top_10_low_margin)} have margins below 5% - "
-                f"color-coded visualization shows red/orange for unprofitable popular services"
+                f"Top 10 popular services: {len(top_10_low_margin)} have margins below 10% - "
+                f"color-coded visualization shows red/orange for problem areas requiring immediate attention"
             )
         
         # Connection to other analyses
         insights.append(
-            "**Connection to Demand Forecasting**: Use pricing insights to optimize capacity - "
-            f"promote high-margin services during slow periods to improve overall profitability"
+            "Connection to Customer Segmentation: Different customer segments have different price sensitivity - "
+            f"use segmentation data to target price increases strategically (VIP customers can absorb increases better)"
         )
         
         return insights
@@ -479,48 +473,64 @@ price tags."""
         
         recommendations = []
         
-        # Plowhorse pricing
-        plowhorses = self.menu_df[self.menu_df['quadrant'] == 'Plowhorse'].nlargest(3, 'popularity_count')
-        if len(plowhorses) > 0:
+        # URGENT: Fix negative margin services
+        unprofitable = self.menu_df[self.menu_df['margin_pct'] < 0].nlargest(3, 'popularity_count')
+        if len(unprofitable) > 0:
             recommendations.append(
-                f"**URGENT - Raise prices on popular services**: "
-                f"{', '.join(plowhorses['service_name'].tolist())} need 10-15% price increases. "
-                f"These are your most common jobs - small price increase = big revenue impact"
+                f"URGENT: Raise prices on negative-margin services immediately - "
+                f"Increase {unprofitable.iloc[0]['service_name']} to ${int(unprofitable.iloc[0]['price'] * 1.19)} "
+                f"(+${int(unprofitable.iloc[0]['price'] * 0.19)}, gets to ~18% margin), "
+                f"{unprofitable.iloc[1]['service_name']} to ${int(unprofitable.iloc[1]['price'] * 1.18)} "
+                f"(+${int(unprofitable.iloc[1]['price'] * 0.18)}, gets to ~16% margin), "
+                f"{unprofitable.iloc[2]['service_name']} to ${int(unprofitable.iloc[2]['price'] * 1.18)} "
+                f"(+${int(unprofitable.iloc[2]['price'] * 0.18)}, gets to ~20% margin). "
+                f"These three changes alone affect {int(unprofitable['popularity_count'].sum())} jobs/year"
             )
         
-        # Stars promotion
-        stars = self.menu_df[self.menu_df['quadrant'] == 'Star']
-        if len(stars) > 0:
-            recommendations.append(
-                f"**Promote your Stars**: Feature {', '.join(stars.nlargest(2, 'margin_pct')['service_name'].tolist())} "
-                f"in marketing - high profit + high demand = perfect combination"
-            )
-        
-        # Puzzles conversion
-        puzzles = self.menu_df[self.menu_df['quadrant'] == 'Puzzle']
-        if len(puzzles) > 0:
-            recommendations.append(
-                f"**Convert Puzzles to Stars**: {len(puzzles)} profitable but uncommon services. "
-                f"Create bundled packages or special promotions to increase their popularity"
-            )
-        
-        # Dogs elimination
-        dogs = self.menu_df[self.menu_df['quadrant'] == 'Dog']
-        if len(dogs) > 0:
-            recommendations.append(
-                f"**Eliminate or reprice Dogs**: {len(dogs)} services with low profit and low popularity. "
-                f"Either raise prices 20%+ or stop offering them"
-            )
-        
-        # Labor optimization
+        # Service bundles
         recommendations.append(
-            "Schedule high-revenue-per-hour services during peak technician availability. "
-            "Use slow periods for training or maintenance tasks"
+            "Create service bundles to improve margins - Pair low-margin installations with high-margin "
+            "add-ons: 'New Thermostat + Calibration' bundle ($315 vs $284 separate, better margin), "
+            "'Humidifier Install + Annual Check' package (lock in recurring revenue)"
         )
         
+        # Promote high-margin services
+        high_margin = self.menu_df[self.menu_df['margin_pct'] > 20].nlargest(3, 'margin_pct')
+        if len(high_margin) > 0:
+            recommendations.append(
+                f"Promote high-margin maintenance services - "
+                f"{high_margin.iloc[0]['service_name']} ({high_margin.iloc[0]['margin_pct']:.1f}% margin), "
+                f"{high_margin.iloc[1]['service_name']} ({high_margin.iloc[1]['margin_pct']:.1f}% margin), and "
+                f"{high_margin.iloc[2]['service_name']} ({high_margin.iloc[2]['margin_pct']:.1f}% margin) "
+                f"have 30-45% margins. Market these aggressively through service contracts and reminders"
+            )
+        
+        # Labor rate structure
         recommendations.append(
-            "**Next step**: Cross-reference pricing changes with Customer Segmentation to ensure "
-            "price-sensitive segments aren't disproportionately affected"
+            "Review labor rate structure - $85/hour may be too high for simple maintenance work. "
+            "Consider tiered rates: $65/hr for routine maintenance, $85/hr for repairs, $100/hr for installations. "
+            "This would make many maintenance services profitable while remaining competitive"
+        )
+        
+        # Parts negotiation
+        recommendations.append(
+            "Renegotiate parts costs for major installations - Big-ticket items (AC, Furnace, Heat Pump) "
+            "have 4-8% margins. Work with suppliers to reduce parts costs by 10-15% or increase prices proportionally. "
+            "Alternative: add installation fee separate from equipment cost to improve transparency and margins"
+        )
+        
+        # Annual price increases
+        recommendations.append(
+            "Implement annual price review process - Set calendar reminder for January to review all prices. "
+            "Implement 3-5% annual increases to keep up with inflation and cost increases. "
+            "Communicate changes to customers 30 days in advance with explanation (rising costs, better service)"
+        )
+        
+        # Connection to other analyses
+        recommendations.append(
+            "Next step: Cross-reference pricing changes with Customer Segmentation to ensure "
+            "price-sensitive segments aren't disproportionately affected. Use Churn Modeling to identify "
+            "customers at risk of leaving before implementing increases"
         )
         
         return recommendations
@@ -532,4 +542,4 @@ price tags."""
     
     @property
     def business_impact(self) -> str:
-        return "Optimizing pricing on just the top 10 services could increase gross profit by $30K-50K annually. Even a 10% price increase on popular zero-margin services would transform profitability without losing customers"
+        return "Fixing pricing on the 7 negative-margin services would stop the bleeding immediately. A 15-20% price increase on these services (346 annual jobs) would add $18K-25K to gross profit annually - the difference between breaking even and sustainable profitability"

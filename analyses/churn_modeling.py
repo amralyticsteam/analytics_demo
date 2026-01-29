@@ -350,17 +350,17 @@ Can we predict which customers are about to leave? Understanding **churn risk** 
         
         if 'churned' in self.churn_df.columns:
             churn_rate = self.churn_df['churned'].mean() * 100
-            insights.append(f"**Overall churn rate**: {churn_rate:.1f}% of customers have churned")
+            insights.append(f"Overall churn rate: {churn_rate:.1f}% of customers have churned")
         
         if 'churn_probability' in self.churn_df.columns:
             high_risk = self.churn_df[self.churn_df['churn_probability'] > 0.6]
-            insights.append(f"**{len(high_risk)} customers at high risk** (>60% churn probability)")
+            insights.append(f"{len(high_risk)} customers at high risk (>60% churn probability)")
         
         if self.feature_importance is not None and len(self.feature_importance) > 0:
             top = self.feature_importance.iloc[0]
-            insights.append(f"**Primary churn driver**: '{top['feature']}' - focus interventions here")
+            insights.append(f"Primary churn driver: '{top['feature']}' - focus interventions here")
         
-        insights.append("**Connection to Customer Segmentation**: Different segments have different churn patterns")
+        insights.append("Connection to Customer Segmentation: Different segments have different churn patterns")
         
         return insights
     
@@ -375,15 +375,15 @@ Can we predict which customers are about to leave? Understanding **churn risk** 
         if self.churn_df is not None and 'churn_probability' in self.churn_df.columns:
             high_risk = self.churn_df[self.churn_df['churn_probability'] > 0.6]
             if len(high_risk) > 0:
-                recs.append(f"**Immediate outreach to {len(high_risk)} high-risk customers**")
+                recs.append(f"Immediate outreach to {len(high_risk)} high-risk customers")
             
-            recs.append("**Proactive scheduling**: Set up automated reminders at 90, 180, 270 days")
+            recs.append("Proactive scheduling: Set up automated reminders at 90, 180, 270 days")
             recs.append("Create retention campaigns by risk level")
             
             if 'churned' in self.churn_df.columns:
                 churned = self.churn_df['churned'].sum()
                 if churned > 0:
-                    recs.append(f"**Win-back campaign for {churned} churned customers**")
+                    recs.append(f"Win-back campaign for {churned} churned customers")
         
         return recs
     

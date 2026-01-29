@@ -97,10 +97,10 @@ def show_synthesis_page():
     
     findings = [
         {
-            "finding": "Popular services are losing money",
-            "evidence": "Thermostat Installation (most popular) has only 2.9% margin. Multiple services have negative margins.",
+            "finding": "Ron's most popular services are losing money",
+            "evidence": "Thermostat Installation (156 jobs, -1.9% margin), Smart Thermostat (98 jobs, -6.8% margin), Heating Tune-up (92 jobs, -5.4% margin) - the top 3 most popular services all have negative margins. 7 services total losing money.",
             "source": "Pricing Analysis - QuickBooks & ServiceTitan",
-            "action": "Urgent repricing needed on top 10 services"
+            "action": "Immediate 15-20% price increase on these 7 services"
         },
         {
             "finding": "Customer segments have very different needs",
@@ -145,7 +145,7 @@ def show_synthesis_page():
                     <strong>Evidence:</strong> {item['evidence']}
                 </div>
                 <div style="color: #9ca3af; font-size: 0.9rem; margin-bottom: 0.5rem;">
-                    📊 {item['source']}
+                    {item['source']}
                 </div>
                 <div style="color: #059669; font-weight: 500;">
                     <strong>→ Action:</strong> {item['action']}
@@ -168,11 +168,11 @@ def show_synthesis_page():
     actions = [
         {
             "priority": "🔴 Priority 1",
-            "action": "Fix pricing on negative-margin services immediately",
+            "action": "Fix pricing on 7 negative-margin services immediately",
             "timeline": "This week",
             "impact": "High",
             "effort": "Low",
-            "expected_result": "Raise prices 15-20% on problematic services. Stop losing money on popular jobs. +$12K annual profit.",
+            "expected_result": "Raise Thermostat Install from $189 to $225, Smart Thermostat from $295 to $350, Heating Tune-up from $140 to $165 (+ 4 others). Stop losing money on 346 annual jobs. +$18-25K annual profit.",
             "source": "Pricing Analysis"
         },
         {
@@ -322,17 +322,17 @@ def show_synthesis_page():
     with col1:
         st.metric(
             "Revenue Increase",
-            "+$35-45K",
-            "+6-8%",
-            help="From pricing fixes, bundles, and retention"
+            "+$25-30K",
+            "+2-3%",
+            help="From pricing fixes on 7 negative-margin services"
         )
     
     with col2:
         st.metric(
             "Margin Improvement",
-            "+5-8%",
-            "Fix negative margins",
-            help="Stop losing money on popular services"
+            "+12-18%",
+            "On fixed services",
+            help="Move from -7% to +15% average on problem services"
         )
     
     with col3:

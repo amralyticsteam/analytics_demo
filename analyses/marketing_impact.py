@@ -346,12 +346,12 @@ budget to get the best return. And how long does it take from ad click to actual
         worst_channel = self.channel_performance.iloc[-1]
         
         insights.append(
-            f"**Best channel: {best_channel['channel']}** with {best_channel['roas']:.1f}x ROAS "
+            f"Best channel: {best_channel['channel']} with {best_channel['roas']:.1f}x ROAS "
             f"(${best_channel['revenue']:,.0f} revenue from ${best_channel['spend']:,.0f} spend)"
         )
         
         insights.append(
-            f"**Worst channel: {worst_channel['channel']}** with {worst_channel['roas']:.1f}x ROAS "
+            f"Worst channel: {worst_channel['channel']} with {worst_channel['roas']:.1f}x ROAS "
             f"- consider reducing or eliminating this channel"
         )
         
@@ -372,7 +372,7 @@ budget to get the best return. And how long does it take from ad click to actual
         ]['percentage'].values[0]
         
         insights.append(
-            f"**Conversion timing matters**: {emergency_fast:.0f}% of emergency service conversions "
+            f"Conversion timing matters: {emergency_fast:.0f}% of emergency service conversions "
             f"happen within 3 days - fast response to ads is critical"
         )
         
@@ -388,7 +388,7 @@ budget to get the best return. And how long does it take from ad click to actual
         
         # Connection to other analyses
         insights.append(
-            "**Connection to Customer Segmentation**: Different channels attract different customer types - "
+            "Connection to Customer Segmentation: Different channels attract different customer types - "
             "cross-reference channel data with customer LTV from segmentation analysis"
         )
         
@@ -410,8 +410,8 @@ budget to get the best return. And how long does it take from ad click to actual
         best = self.channel_performance.iloc[0]['channel']
         worst = self.channel_performance.iloc[-1]['channel']
         
-        recommendations.append(f"**Increase investment in {best}** - highest ROAS and best performer")
-        recommendations.append(f"**Stop or drastically reduce {worst} spend** - poor ROI")
+        recommendations.append(f"Increase investment in {best} - highest ROAS and best performer")
+        recommendations.append(f"Stop or drastically reduce {worst} spend - poor ROI")
         
         # Emergency service timing
         recommendations.append(
@@ -426,7 +426,7 @@ budget to get the best return. And how long does it take from ad click to actual
             ].iloc[0]
             if referral_row['roas'] > 10:
                 recommendations.append(
-                    "**Expand referral program** - excellent ROAS with minimal spend. "
+                    "Expand referral program - excellent ROAS with minimal spend. "
                     "Consider increasing referral incentives to generate more volume"
                 )
         
@@ -437,7 +437,7 @@ budget to get the best return. And how long does it take from ad click to actual
         )
         
         recommendations.append(
-            "**Next step**: Use churn prediction to identify at-risk customers and retarget them "
+            "Next step: Use churn prediction to identify at-risk customers and retarget them "
             "through best-performing channels"
         )
         
