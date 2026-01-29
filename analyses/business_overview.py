@@ -234,8 +234,9 @@ Before diving into complex analyses, we need to understand the current state."""
         fig.update_xaxes(title_text="Month", row=1, col=1)
         fig.update_yaxes(title_text="Revenue ($)", row=1, col=1, rangemode='tozero')
         
+        max_val_1_2 = self.service_summary['total_revenue'].max()
         fig.update_xaxes(title_text="Service Category", row=1, col=2, tickangle=-45)
-        fig.update_yaxes(title_text="Total Revenue ($)", row=1, col=2, rangemode='tozero')
+        fig.update_yaxes(title_text="Total Revenue ($)", range=[0, max_val_1_2 * 1.15], row=1, col=2)
         
         fig.update_xaxes(title_text="Service Category", row=2, col=1, tickangle=-45)
         fig.update_yaxes(title_text="Average Transaction ($)", row=2, col=1, rangemode='tozero')
