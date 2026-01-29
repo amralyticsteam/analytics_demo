@@ -174,19 +174,20 @@ def show_intro_page():
     
     st.markdown("")  # spacing
     
-    # The 9 analyses
-    st.markdown("### Our 9-Step Analysis Plan")
+    # The 10 analyses
+    st.markdown("### Our 10-Step Analysis Plan")
     
     analyses = [
         ("1️⃣", "What does Ron's business look like today?", "Business Overview - EDA & descriptive statistics"),
         ("2️⃣", "What are the characteristics of Ron's key customers?", "Customer Segmentation - Clustering analysis"),
-        ("3️⃣", "What do customers think about Ron's business?", "Sentiment Analysis - NLP on reviews - Topic Extraction - Text mining"),
-        ("4️⃣", "How do good leads reach Ron?", "Marketing analytics"),
-        ("5️⃣", "Which customers are at risk of leaving?", "Churn Prediction - Classification modeling"),
-        ("6️⃣", "Are services priced correctly?", "Market Basket Analysis - Association Rules - Pricing Optimization"),
-        ("7️⃣", "When will Ron be busiest?", "Demand Forecasting - Time series prediction"),
-        ("8️⃣", "What sales patterns are normal vs. concerning?", " Seasonality Analysis - Decomposition"),
-        ("9️⃣", "Bringing it all together", "Final Synthesis - Strategic roadmap")
+        ("3️⃣", "How do customers feel about Ron's business?", "Sentiment Analysis - NLP on reviews"),
+        ("4️⃣", "What do customers say about Ron's business?", "Text mining - Topic Extraction"),
+        ("5️⃣", "How do good leads reach Ron? Which marketing channels work best?", "Marketing analytics"),
+        ("6️⃣", "Which customers are at risk of leaving?", "Churn Prediction - Classification modeling"),
+        ("7️⃣", "Are services priced correctly?", "Market Basket Analysis - Association Rules - Pricing Optimization"),
+        ("8️⃣", "When will Ron be busiest?", "Demand Forecasting - Time series prediction"),
+        ("9️⃣", "What sales patterns are normal vs. concerning", "Seasonality Analysis - Decomposition"),
+        ("🔟", "Bringing it all together", "Final Synthesis - Strategic roadmap")
     ]
     
     for num, title, desc in analyses:
