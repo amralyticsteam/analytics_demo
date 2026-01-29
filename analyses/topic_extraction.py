@@ -397,16 +397,6 @@ on what matters most and double down on what customers love."""
                 row=2, col=2
             )
             
-            # Add mean line
-            mean_sentiment = self.topic_sentiments['sentiment'].mean()
-            fig.add_vline(
-                x=mean_sentiment,
-                line_dash="dash",
-                line_color="#023535",
-                annotation_text=f"Mean: {mean_sentiment:.2f}",
-                annotation_position="top",
-                row=2, col=2
-            )
         
         # Update layout
         fig.update_layout(
