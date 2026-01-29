@@ -314,7 +314,7 @@ budget to get the best return. And how long does it take from ad click to actual
         
         # Update layout
         fig.update_layout(
-            height=950,
+            height=1050,
             showlegend=True,
             title_text="Marketing Impact: Channel Performance & Customer Journey",
             title_x=0.5,
