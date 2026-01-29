@@ -7,6 +7,9 @@ A narrative-driven case study showing how data analytics helps a real small busi
 
 import streamlit as st
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).parent))
 
 # Import intro and synthesis pages
 from intro_page import show_intro_page
