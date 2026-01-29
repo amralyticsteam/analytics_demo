@@ -41,10 +41,11 @@ class PricingAnalysis(BaseAnalysis):
     @property
     def data_collected(self) -> list:
         return [
-            '**Source**: QuickBooks & ServiceTitan',
-            '**Dataset**: pricing_menu.csv',
-            '**Records**: 50 HVAC services',
-            '**Contains**: Service name, category, price, COGS breakdown (parts + labor hours), margins, popularity counts, difficulty'
+            'Service pricing (50 HVAC services) - **QuickBooks**',
+            'Parts costs by service - **QuickBooks**',
+            'Labor hours and rates - **ServiceTitan**',
+            'Service popularity/frequency - **ServiceTitan**',
+            'Gross margins by service - **QuickBooks**'
         ]
     
     
