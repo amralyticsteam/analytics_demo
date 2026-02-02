@@ -64,7 +64,7 @@ def show_synthesis_page():
             <div class="flow-title">Churn Prediction</div>
             <div class="flow-insight">At-risk customers</div>
             <div class="flow-source">ServiceTitan</div>
-            <div class="flow-arrow">←</div>
+            <div class="flow-arrow">↓</div>
         </div>
         <div class="flow-box">
             <div class="flow-number">5</div>
@@ -78,7 +78,7 @@ def show_synthesis_page():
             <div class="flow-title">Topic Extraction</div>
             <div class="flow-insight">Key themes</div>
             <div class="flow-source">Google Reviews</div>
-            <div class="flow-arrow">↓</div>
+            <div class="flow-arrow">←</div>
         </div>
     </div>
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
