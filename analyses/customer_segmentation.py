@@ -331,35 +331,37 @@ tailor his marketing, pricing, and service approach to each group's specific nee
                 row=1, col=1
             )
         
-        # 2. Segment Size & Avg Value
+        # 2. Segment Size & Avg Value - Clear dual-axis visualization
         segment_sorted = self.segment_profiles.sort_values('total_revenue', ascending=False)
         
+        # Customer count bars
         fig.add_trace(
             go.Bar(
                 x=segment_sorted['name'],
                 y=segment_sorted['size'],
-                name='Customer Count',
+                name='# of Customers',
                 marker_color=[color_map.get(sid, '#023535') for sid in segment_sorted['segment_id']],
-                text=segment_sorted['size'],
+                text=[f"{int(s)}" for s in segment_sorted['size']],
                 textposition='outside',
-                yaxis='y2',
-                showlegend=False,
-                hovertemplate='<b>%{x}</b><br>Customers: %{y}<extra></extra>'
+                textfont=dict(size=10),
+                hovertemplate='<b>%{x}</b><br>Customers: %{y:,.0f}<extra></extra>'
             ),
             row=1, col=2
         )
         
-        # Add average spend as line on secondary axis
+        # Average LTV line on secondary y-axis  
         fig.add_trace(
             go.Scatter(
                 x=segment_sorted['name'],
                 y=segment_sorted['avg_total_spend'],
-                name='Avg LTV',
-                mode='lines+markers',
+                name='Avg Customer LTV',
+                mode='lines+markers+text',
                 line=dict(color='#ff6b6b', width=3),
-                marker=dict(size=10, symbol='diamond'),
+                marker=dict(size=12, symbol='diamond', line=dict(width=2, color='white')),
+                text=[f"${v/1000:.1f}K" for v in segment_sorted['avg_total_spend']],
+                textposition='top center',
+                textfont=dict(size=9, color='#ff6b6b'),
                 yaxis='y2',
-                showlegend=False,
                 hovertemplate='<b>%{x}</b><br>Avg LTV: $%{y:,.0f}<extra></extra>'
             ),
             row=1, col=2
@@ -392,27 +394,33 @@ tailor his marketing, pricing, and service approach to each group's specific nee
                 row=2, col=1
             )
         
-        # 4. RFM Profile by Segment - Multi-metric comparison
+        # 4. RFM Profile by Segment - Clearer metric labels
         # Normalize RFM metrics for comparison (0-100 scale)
         max_recency = self.segment_profiles['avg_recency'].max()
         max_freq = self.segment_profiles['avg_frequency'].max()
         max_monetary = self.segment_profiles['avg_total_spend'].max()
         
-        # Invert recency (lower is better)
+        # Invert recency (lower days = better = higher score)
         self.segment_profiles['recency_score'] = 100 * (1 - self.segment_profiles['avg_recency'] / max_recency)
         self.segment_profiles['frequency_score'] = 100 * self.segment_profiles['avg_frequency'] / max_freq
         self.segment_profiles['monetary_score'] = 100 * self.segment_profiles['avg_total_spend'] / max_monetary
         
-        # Plot each RFM dimension
+        # Plot each RFM dimension with intuitive labels
         fig.add_trace(
             go.Scatter(
                 x=self.segment_profiles['name'],
                 y=self.segment_profiles['recency_score'],
                 mode='lines+markers',
-                name='Recency',
-                line=dict(color='#00b894', width=2),
-                marker=dict(size=8),
-                hovertemplate='<b>%{x}</b><br>Recency Score: %{y:.0f}<br>Avg Days: %{customdata:.0f}<extra></extra>',
+                name='Recency (How Recently)',
+                line=dict(color='#00b894', width=3),
+                marker=dict(size=10, line=dict(width=2, color='white')),
+                hovertemplate=(
+                    '<b>%{x}</b><br>'
+                    '<b>Recency:</b> %{y:.0f}/100<br>'
+                    'Last service: %{customdata:.0f} days ago<br>'
+                    '<i>(Lower = more recent = better)</i>'
+                    '<extra></extra>'
+                ),
                 customdata=self.segment_profiles['avg_recency']
             ),
             row=2, col=2
@@ -423,10 +431,16 @@ tailor his marketing, pricing, and service approach to each group's specific nee
                 x=self.segment_profiles['name'],
                 y=self.segment_profiles['frequency_score'],
                 mode='lines+markers',
-                name='Frequency',
-                line=dict(color='#008f8c', width=2),
-                marker=dict(size=8),
-                hovertemplate='<b>%{x}</b><br>Frequency Score: %{y:.0f}<br>Avg Transactions: %{customdata:.1f}<extra></extra>',
+                name='Frequency (How Often)',
+                line=dict(color='#008f8c', width=3),
+                marker=dict(size=10, line=dict(width=2, color='white')),
+                hovertemplate=(
+                    '<b>%{x}</b><br>'
+                    '<b>Frequency:</b> %{y:.0f}/100<br>'
+                    'Avg transactions: %{customdata:.1f}<br>'
+                    '<i>(More visits = higher score)</i>'
+                    '<extra></extra>'
+                ),
                 customdata=self.segment_profiles['avg_frequency']
             ),
             row=2, col=2
@@ -437,10 +451,16 @@ tailor his marketing, pricing, and service approach to each group's specific nee
                 x=self.segment_profiles['name'],
                 y=self.segment_profiles['monetary_score'],
                 mode='lines+markers',
-                name='Monetary',
-                line=dict(color='#ff6b6b', width=2),
-                marker=dict(size=8),
-                hovertemplate='<b>%{x}</b><br>Monetary Score: %{y:.0f}<br>Avg Spend: $%{customdata:,.0f}<extra></extra>',
+                name='Monetary (How Much)',
+                line=dict(color='#ff6b6b', width=3),
+                marker=dict(size=10, line=dict(width=2, color='white')),
+                hovertemplate=(
+                    '<b>%{x}</b><br>'
+                    '<b>Monetary:</b> %{y:.0f}/100<br>'
+                    'Avg lifetime value: $%{customdata:,.0f}<br>'
+                    '<i>(More spend = higher score)</i>'
+                    '<extra></extra>'
+                ),
                 customdata=self.segment_profiles['avg_total_spend']
             ),
             row=2, col=2
@@ -464,15 +484,16 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             margin=dict(l=80, r=80, t=120, b=80)
         )
         
-        # Update axes
+        # Update axes with clear labels
         fig.update_xaxes(title_text="Customer Segment", row=1, col=2, tickangle=-45)
         fig.update_yaxes(title_text="Number of Customers", row=1, col=2, secondary_y=False)
+        fig.update_yaxes(title_text="Average LTV ($)", row=1, col=2, secondary_y=True)
         
         fig.update_xaxes(title_text="Customer Segment", row=2, col=1, tickangle=-45)
         fig.update_yaxes(title_text="Service Mix (%)", row=2, col=1)
         
         fig.update_xaxes(title_text="Customer Segment", row=2, col=2, tickangle=-45)
-        fig.update_yaxes(title_text="RFM Score (0-100)", row=2, col=2, range=[0, 105])
+        fig.update_yaxes(title_text="RFM Score (0-100, higher is better)", row=2, col=2, range=[0, 105])
         
         # Update 3D scene
         scene_dict = dict(
