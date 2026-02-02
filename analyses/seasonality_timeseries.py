@@ -29,23 +29,23 @@ class SeasonalityTimeSeries(BaseAnalysis):
         return """Ron knows his business has busy and slow periods, but he doesn't have a clear picture 
         of **normal seasonal patterns vs concerning trends**.
         
-Is that drop in October normal? Should July AC revenue be higher? **Understanding seasonality 
-by service type** helps Ron plan staffing, inventory, and marketing spend throughout the year."""
+        Is that drop in October normal? Should July AC revenue be higher? **Understanding seasonality 
+        by service type** helps Ron plan staffing, inventory, and marketing spend throughout the year."""
     
     # Backward compatibility
     @property
     def business_question(self) -> str:
         return self.rons_challenge
     
-    @property
+        @property
     def data_collected(self) -> list:
         return [
-            'Monthly revenue (32 months, Jan 2022-Aug 2024) - **QuickBooks**',
-            'Revenue by service type - **QuickBooks**',
-            'Installation vs maintenance breakdown - **QuickBooks, ServiceTitan**',
-            'Year-over-year trends - **QuickBooks**',
-            'Seasonal patterns by service - **QuickBooks**'
-    ]
+            '**Source**: QuickBooks Revenue Reports',
+            '**Dataset**: seasonality_timeseries.csv',
+            '**Records**: 32 months (Jan 2022 - Aug 2024)',
+            '**Contains**: Monthly revenue by service type (Installation, Maintenance, Emergency, Cooling, Heating)'
+        ]
+    
     
     # Backward compatibility
     @property
@@ -54,21 +54,8 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
     
     @property
     def methodology(self) -> str:
-        return """We use the following analytical techniques to separate normal seasonal patterns from real business problems:
-
-**Seasonal decomposition** - Breaking revenue into three components: trend (long-term direction), seasonal pattern (predictable monthly cycles), and residual (unusual events).
-
-**Year-over-year comparison** - Comparing each month to the same month last year to avoid false alarms (October is always slower - that's normal).
-
-**Service mix trends** - Tracking how the balance between Installation, Maintenance, Emergency, Cooling, and Heating changes month by month.
-
-**Why this works for Ron:** Prevents panic over normal seasonal dips (winter is slow for AC) while highlighting real problems (emergency calls dropping year-round = losing market share).
-
-**If results aren't strong enough, we could:**
-- Add multiple years of data for more robust seasonal patterns
-- Include external factors (local construction activity, weather anomalies)
-- Build predictive models for next year's seasonal patterns
-- Compare to industry benchmarks (is Ron's seasonality typical for HVAC?)"""
+        return 'Time series decomposition (trend + seasonal + residual), service-specific seasonal patterns, year-over-year growth analysis, seasonal indices by category'
+    
     # Backward compatibility
     @property
     def technical_output(self) -> str:
@@ -107,17 +94,23 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
         
         # Calculate average by month across all years for each service
         service_columns = [
-            'ac_repair_revenue', 'heating_repair_revenue', 
-            'maintenance_revenue', 'emergency_revenue', 'installation_revenue'
+            'cooling', 'heating', 
+            'maintenance', 'emergency', 'installation'
         ]
         
         monthly_avgs = []
         for month in range(1, 13):
             month_data = self.timeseries_df[self.timeseries_df['month_num'] == month]
             
+            if len(month_data) == 0:
+                continue
+                
             row = {'month': month, 'month_name': month_data.iloc[0]['month_name']}
             for col in service_columns:
-                row[col] = month_data[col].mean()
+                if col in month_data.columns:
+                    row[col] = month_data[col].mean()
+                else:
+                    row[col] = 0
             
             monthly_avgs.append(row)
         
@@ -155,11 +148,11 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
         
         # 1. Revenue Over Time - Stacked area or lines
         services = [
-            ('ac_repair_revenue', 'AC Repair'),
-            ('heating_repair_revenue', 'Heating Repair'),
-            ('maintenance_revenue', 'Maintenance'),
-            ('emergency_revenue', 'Emergency'),
-            ('installation_revenue', 'Installation')
+            ('cooling', 'Cooling'),
+            ('heating', 'Heating'),
+            ('maintenance', 'Maintenance'),
+            ('emergency', 'Emergency'),
+            ('installation', 'Installation')
         ]
         
         for col, name in services:
@@ -260,16 +253,16 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
         
         # Update axes
         fig.update_xaxes(title_text="Date", row=1, col=1)
-        fig.update_yaxes(title_text="Revenue ($)", row=1, col=1)
+        fig.update_yaxes(title_text="Revenue ($)", row=1, col=1, rangemode="tozero")
         
         fig.update_xaxes(title_text="Month", row=1, col=2)
-        fig.update_yaxes(title_text="Avg Revenue ($)", row=1, col=2)
+        fig.update_yaxes(title_text="Avg Revenue ($)", row=1, col=2, rangemode="tozero")
         
         fig.update_xaxes(title_text="Month", row=2, col=1)
-        fig.update_yaxes(title_text="Total Revenue ($)", row=2, col=1)
+        fig.update_yaxes(title_text="Total Revenue ($)", row=2, col=1, rangemode="tozero")
         
         fig.update_xaxes(title_text="Avg Monthly Revenue ($)", row=2, col=2)
-        fig.update_yaxes(title_text="Service Type", row=2, col=2)
+        fig.update_yaxes(title_text="Service Type", row=2, col=2, rangemode="tozero")
         
         return fig
     
@@ -282,23 +275,23 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
         
         # Peak months by service
         ac_peak_month = self.service_seasonality.loc[
-            self.service_seasonality['ac_repair_revenue'].idxmax(), 'month_name'
+            self.service_seasonality['cooling'].idxmax(), 'month_name'
         ]
         heating_peak_month = self.service_seasonality.loc[
-            self.service_seasonality['heating_repair_revenue'].idxmax(), 'month_name'
+            self.service_seasonality['heating'].idxmax(), 'month_name'
         ]
         
-        ac_peak_value = self.service_seasonality['ac_repair_revenue'].max()
-        heating_peak_value = self.service_seasonality['heating_repair_revenue'].max()
+        ac_peak_value = self.service_seasonality['cooling'].max()
+        heating_peak_value = self.service_seasonality['heating'].max()
         
         insights.append(
-            f"Clear seasonal patterns: AC repair peaks in {ac_peak_month} (${ac_peak_value:,.0f}), "
-            f"Heating repair peaks in {heating_peak_month} (${heating_peak_value:,.0f})"
+            f"**Clear seasonal patterns**: Cooling peaks in {ac_peak_month} (${ac_peak_value:,.0f}), "
+            f"Heating peaks in {heating_peak_month} (${heating_peak_value:,.0f})"
         )
         
         # Maintenance steadiness
-        maintenance_std = self.service_seasonality['maintenance_revenue'].std()
-        maintenance_mean = self.service_seasonality['maintenance_revenue'].mean()
+        maintenance_std = self.service_seasonality['maintenance'].std()
+        maintenance_mean = self.service_seasonality['maintenance'].mean()
         maintenance_cv = (maintenance_std / maintenance_mean) * 100
         
         if maintenance_cv < 15:
@@ -328,16 +321,16 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
         
         # Service mix
         avg_service_revenue = {
-            'AC Repair': self.timeseries_df['ac_repair_revenue'].mean(),
-            'Heating': self.timeseries_df['heating_repair_revenue'].mean(),
-            'Maintenance': self.timeseries_df['maintenance_revenue'].mean(),
-            'Emergency': self.timeseries_df['emergency_revenue'].mean(),
-            'Installation': self.timeseries_df['installation_revenue'].mean()
+            'Cooling': self.timeseries_df['cooling'].mean(),
+            'Heating': self.timeseries_df['heating'].mean(),
+            'Maintenance': self.timeseries_df['maintenance'].mean(),
+            'Emergency': self.timeseries_df['emergency'].mean(),
+            'Installation': self.timeseries_df['installation'].mean()
         }
         
         top_service = max(avg_service_revenue, key=avg_service_revenue.get)
         insights.append(
-            f"Largest revenue driver: {top_service} averages "
+            f"**Largest revenue driver**: {top_service} averages "
             f"${avg_service_revenue[top_service]:,.0f}/month"
         )
         
@@ -345,8 +338,8 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
         summer_months = self.timeseries_df[self.timeseries_df['date'].dt.month.isin([6, 7, 8])]
         winter_months = self.timeseries_df[self.timeseries_df['date'].dt.month.isin([12, 1, 2])]
         
-        summer_emergency = summer_months['emergency_revenue'].mean()
-        winter_emergency = winter_months['emergency_revenue'].mean()
+        summer_emergency = summer_months['emergency'].mean()
+        winter_emergency = winter_months['emergency'].mean()
         
         if max(summer_emergency, winter_emergency) > 1.3 * min(summer_emergency, winter_emergency):
             peak_season = "summer" if summer_emergency > winter_emergency else "winter"
@@ -359,7 +352,7 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
         
         # Connection to other analyses
         insights.append(
-            "Connection to Demand Forecasting: Seasonal patterns inform capacity planning - "
+            "**Connection to Demand Forecasting**: Seasonal patterns inform capacity planning - "
             "use demand forecasts to fine-tune staffing within these seasonal windows"
         )
         
@@ -379,15 +372,15 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
         
         # Peak season prep
         ac_peak_month = self.service_seasonality.loc[
-            self.service_seasonality['ac_repair_revenue'].idxmax(), 'month_name'
+            self.service_seasonality['cooling'].idxmax(), 'month_name'
         ]
         heating_peak_month = self.service_seasonality.loc[
-            self.service_seasonality['heating_repair_revenue'].idxmax(), 'month_name'
+            self.service_seasonality['heating'].idxmax(), 'month_name'
         ]
         
         recommendations.append(
-            f"Hire seasonal help before peak months: Bring on extra technicians in May "
-            f"(before {ac_peak_month} AC peak) and November (before {heating_peak_month} heating peak)"
+            f"**Hire seasonal help before peak months**: Bring on extra technicians in May "
+            f"(before {ac_peak_month} cooling peak) and November (before {heating_peak_month} heating peak)"
         )
         
         # Inventory management
@@ -415,7 +408,7 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
         )
         
         recommendations.append(
-            "Next step: Use pricing analysis to ensure seasonal services are priced for profitability"
+            "**Next step**: Use pricing analysis to ensure seasonal services are priced for profitability"
         )
         
         return recommendations

@@ -30,24 +30,24 @@ class DemandForecasting(BaseAnalysis):
         return """Ron struggles with staffing - sometimes technicians sit idle, other times he's 
         turning away emergency calls because everyone's booked.
         
-**Can we predict busy periods in advance?** More importantly: **what drives demand?** 
-Is it weather? Marketing spend? Day of week? Understanding these patterns helps Ron staff 
-appropriately and avoid costly overtime or lost revenue."""
+        **Can we predict busy periods in advance?** More importantly: **what drives demand?** 
+        Is it weather? Marketing spend? Day of week? Understanding these patterns helps Ron staff 
+        appropriately and avoid costly overtime or lost revenue."""
     
     # Backward compatibility
     @property
     def business_question(self) -> str:
         return self.rons_challenge
     
-    @property
+        @property
     def data_collected(self) -> list:
         return [
-            'Daily call volume (95 days) - **ServiceTitan**',
-            'High/low temperature data - **Weather API** (NOAA)',
-            'Precipitation and humidity - **Weather API** (NOAA)',
-            'Marketing spend by channel - **Google Analytics, Meta Ads Manager**',
-            'Historical demand patterns - **ServiceTitan**'
-    ]
+            '**Source**: ServiceTitan + Weather API + Marketing Tracking',
+            '**Dataset**: demand_forecasting.csv',
+            '**Records**: 95 days of data',
+            '**Contains**: Daily call volume, weather data (temp, precipitation, humidity), marketing spend by channel'
+        ]
+    
     
     # Backward compatibility
     @property
@@ -56,24 +56,8 @@ appropriately and avoid costly overtime or lost revenue."""
     
     @property
     def methodology(self) -> str:
-        return """We use the following analytical techniques to help Ron predict busy periods and staff accordingly:
-
-**Time series forecasting** - Using historical call volume patterns to predict future demand, accounting for trends and seasonality.
-
-**Weather correlation analysis** - Linking temperature, precipitation, and humidity to call volume. Hot days = AC repairs spike. Cold snaps = furnace emergencies.
-
-**Marketing lag analysis** - Measuring how long it takes for marketing spend to translate into calls (Google Ads might work in 2 days, mailers might take 2 weeks).
-
-**Moving averages** - Smoothing out daily noise to see real underlying demand patterns.
-
-**Why this works for Ron:** Prevents being caught short-staffed during busy periods (losing revenue) and overstaffed during slow periods (wasting money on idle technicians).
-
-**If results aren't strong enough, we could:**
-- Add Prophet or ARIMA models for more sophisticated forecasting
-- Include economic indicators (housing starts, new construction permits)
-- Forecast by service type separately (emergency vs planned maintenance)
-- Build confidence intervals to plan for best/worst case scenarios"""
-
+        return 'Time series regression with weather variables, lag effect analysis (1-3 day delays), feature importance ranking, moving average forecasting with confidence intervals'
+    
     # Backward compatibility
     @property
     def technical_output(self) -> str:
@@ -93,14 +77,14 @@ appropriately and avoid costly overtime or lost revenue."""
         self.demand_df = self.demand_df.sort_values('date')
         
         # Calculate lagged variables
-        self.demand_df['temp_lag1'] = self.demand_df['temp_high'].shift(1)
-        self.demand_df['temp_lag2'] = self.demand_df['temp_high'].shift(2)
+        self.demand_df['temp_lag1'] = self.demand_df['high_temp'].shift(1)
+        self.demand_df['temp_lag2'] = self.demand_df['high_temp'].shift(2)
         self.demand_df['calls_lag1'] = self.demand_df['calls'].shift(1)
         
         # Calculate extreme temperature indicator
         self.demand_df['extreme_temp'] = (
-            (self.demand_df['temp_high'] > 95) | 
-            (self.demand_df['temp_high'] < 35)
+            (self.demand_df['high_temp'] > 95) | 
+            (self.demand_df['high_temp'] < 35)
         ).astype(int)
         
         # Calculate total marketing spend
@@ -125,7 +109,7 @@ appropriately and avoid costly overtime or lost revenue."""
         """Calculate correlation between demand and potential drivers."""
         # Select numeric columns
         driver_cols = {
-            'Temperature': 'temp_high',
+            'Temperature': 'high_temp',
             'Extreme Temp': 'extreme_temp',
             'Precipitation': 'precipitation',
             'Humidity': 'humidity',
@@ -154,7 +138,7 @@ appropriately and avoid costly overtime or lost revenue."""
         # Temperature lags
         lag_correlations.append({
             'variable': 'Temperature (today)',
-            'correlation': analysis_df['calls'].corr(analysis_df['temp_high'])
+            'correlation': analysis_df['calls'].corr(analysis_df['high_temp'])
         })
         lag_correlations.append({
             'variable': 'Temperature (1 day ago)',
@@ -376,7 +360,7 @@ appropriately and avoid costly overtime or lost revenue."""
             
             fig.add_trace(
                 go.Scatter(
-                    x=season_data['temp_high'],
+                    x=season_data['high_temp'],
                     y=season_data['calls'],
                     name=season,
                     mode='markers',
@@ -409,16 +393,16 @@ appropriately and avoid costly overtime or lost revenue."""
         
         # Update axes
         fig.update_xaxes(title_text="Correlation with Call Volume", row=1, col=1)
-        fig.update_yaxes(title_text="Driver Variable", row=1, col=1)
+        fig.update_yaxes(title_text="Driver Variable", row=1, col=1, rangemode="tozero")
         
         fig.update_xaxes(title_text="Date", row=1, col=2)
-        fig.update_yaxes(title_text="Daily Service Calls", row=1, col=2)
+        fig.update_yaxes(title_text="Daily Service Calls", row=1, col=2, rangemode="tozero")
         
         fig.update_xaxes(title_text="Variable", row=2, col=1, tickangle=-45)
-        fig.update_yaxes(title_text="Correlation", row=2, col=1)
+        fig.update_yaxes(title_text="Correlation", row=2, col=1, rangemode="tozero")
         
         fig.update_xaxes(title_text="Temperature (°F)", row=2, col=2)
-        fig.update_yaxes(title_text="Service Calls", row=2, col=2)
+        fig.update_yaxes(title_text="Service Calls", row=2, col=2, rangemode="tozero")
         
         return fig
     
@@ -433,7 +417,7 @@ appropriately and avoid costly overtime or lost revenue."""
         if self.key_drivers is not None and len(self.key_drivers) > 0:
             top_driver = self.key_drivers.iloc[0]
             insights.append(
-                f"Strongest demand driver: {top_driver['driver']} "
+                f"**Strongest demand driver**: {top_driver['driver']} "
                 f"(correlation: {top_driver['correlation']:.2f}) - "
                 f"{'positive' if top_driver['correlation'] > 0 else 'negative'} relationship"
             )
@@ -454,7 +438,7 @@ appropriately and avoid costly overtime or lost revenue."""
             
             if len(lag1_corr) > 0:
                 insights.append(
-                    f"Lag effect detected: Yesterday's temperature correlates {lag1_corr[0]:.2f} "
+                    f"**Lag effect detected**: Yesterday's temperature correlates {lag1_corr[0]:.2f} "
                     f"with today's calls - conditions take 1-2 days to drive demand"
                 )
         
@@ -470,7 +454,7 @@ appropriately and avoid costly overtime or lost revenue."""
         # Peak demand periods
         max_calls = self.demand_df['calls'].max()
         peak_date = self.demand_df.loc[self.demand_df['calls'].idxmax(), 'date']
-        peak_temp = self.demand_df.loc[self.demand_df['calls'].idxmax(), 'temp_high']
+        peak_temp = self.demand_df.loc[self.demand_df['calls'].idxmax(), 'high_temp']
         
         insights.append(
             f"Peak demand day: {peak_date.strftime('%b %d, %Y')} with {max_calls} calls "
@@ -489,7 +473,7 @@ appropriately and avoid costly overtime or lost revenue."""
         
         # Connection to other analyses
         insights.append(
-            "Connection to Seasonality Analysis: Combine seasonal patterns with daily forecasts "
+            "**Connection to Seasonality Analysis**: Combine seasonal patterns with daily forecasts "
             "for complete capacity planning picture"
         )
         
@@ -505,7 +489,7 @@ appropriately and avoid costly overtime or lost revenue."""
         recommendations = []
         
         recommendations.append(
-            "Monitor weather forecasts closely: Strong correlation between temperature extremes and demand - "
+            "**Monitor weather forecasts closely**: Strong correlation between temperature extremes and demand - "
             "check 3-day forecasts to pre-position staff"
         )
         
@@ -524,12 +508,12 @@ appropriately and avoid costly overtime or lost revenue."""
         )
         
         recommendations.append(
-            "Track marketing impact with lag: Marketing spend shows delayed effect on calls - "
+            "**Track marketing impact with lag**: Marketing spend shows delayed effect on calls - "
             "measure ROI over 7-14 day windows, not same-day"
         )
         
         recommendations.append(
-            "Next step: Cross-reference with Pricing Analysis to ensure busy periods are priced "
+            "**Next step**: Cross-reference with Pricing Analysis to ensure busy periods are priced "
             "to maximize profit (consider surge pricing for emergency services during peak demand)"
         )
         
