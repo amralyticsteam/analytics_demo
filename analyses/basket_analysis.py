@@ -412,7 +412,7 @@ upselling, and increase average ticket size without being pushy."""
                         color=self.rules['lift'],
                         colorscale=[[0, '#ffa07a'], [0.5, '#008f8c'], [1, '#00b894']],
                         showscale=True,
-                        colorbar=dict(title="Lift", x=0.46, len=0.4),
+                        colorbar=dict(title="Lift", x=-0.15, len=0.4, xanchor='left'),
                         line=dict(width=1, color='white'),
                         sizemode='diameter',
                         sizemin=5
