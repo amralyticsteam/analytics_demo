@@ -252,7 +252,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             self.perform_clustering(self.customer_features)
         
         # Create segment profiles
-        self.segment_profiles = self.create_segment_profiles(self.customer_features, self.labels)
+        self.segment_profiles = self.create_segment_profiles(self.customer_features, self.labels, df)
         print(f"\nFound {self.n_clusters} customer segments:")
         for _, seg in self.segment_profiles.iterrows():
             print(f"  {seg['name']}: {seg['size']} customers, ${seg['avg_total_spend']:,.0f} avg LTV")
