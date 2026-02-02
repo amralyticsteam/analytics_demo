@@ -42,23 +42,23 @@ class BasketAnalysis(BaseAnalysis):
         return """When a customer calls for an AC repair, what else do they typically need? When Ron 
         installs a new furnace, which add-on services should he recommend?
         
-**Understanding service bundling patterns** helps Ron create packages, train technicians on 
-upselling, and increase average ticket size without being pushy."""
+        **Understanding service bundling patterns** helps Ron create packages, train technicians on 
+        upselling, and increase average ticket size without being pushy."""
     
     # Backward compatibility
     @property
     def business_question(self) -> str:
         return self.rons_challenge
     
-    @property
+        @property
     def data_collected(self) -> list:
         return [
-            'Invoice data (1,000 invoices) - **ServiceTitan**',
-            'Bundled services per visit - **ServiceTitan**',
-            'Service co-occurrence patterns - **ServiceTitan**',
-            'Same-visit service combinations - **ServiceTitan**',
-            'Customer and date information - **ServiceTitan**'
-    ]
+            '**Source**: ServiceTitan Invoice Data',
+            '**Dataset**: basket_analysis.csv',
+            '**Records**: 1,000 invoices with bundled services',
+            '**Contains**: Invoice ID, customer, date, up to 3 services per visit, total amount, same-visit indicator'
+        ]
+    
     
     # Backward compatibility
     @property
@@ -67,23 +67,8 @@ upselling, and increase average ticket size without being pushy."""
     
     @property
     def methodology(self) -> str:
-        return """We use the following analytical techniques to discover which services are naturally purchased together:
-
-**Market Basket Analysis (Apriori Algorithm)** - A machine learning technique from retail (think "people who buy beer also buy diapers") adapted for services. Finds rules like "customers who get Thermostat Installation also get Furnace Maintenance 75% of the time."
-
-**Association rules (Support, Confidence, Lift)** - Metrics that measure how strong the connection is between services. Lift > 2.0 means the combo happens twice as often as random chance.
-
-**Network visualization** - Shows services as nodes with connections between frequently bundled items, revealing the ecosystem of related services.
-
-**Phi correlation** - Statistical measure of how strongly services co-occur on the same invoice.
-
-**Why this works for Ron:** Creates data-driven service bundles and trains technicians on natural upsell opportunities ("Since we're installing your furnace, let me also check your thermostat...").
-
-**If results aren't strong enough, we could:**
-- Add sequence mining (what do customers buy first, second, third over time?)
-- Include seasonal basket patterns (summer vs winter service combos)
-- Build recommendation engine (Netflix-style "customers who bought X also bought Y")
-- Analyze basket profitability (not just popularity)"""
+        return 'Association rule mining using Apriori algorithm, calculating support, confidence, and lift metrics for service pairs, network visualization of strong associations'
+    
     # Backward compatibility
     @property
     def technical_output(self) -> str:
@@ -286,11 +271,107 @@ upselling, and increase average ticket size without being pushy."""
             # Calculate correlations
             self.top_pairs = self.calculate_top_pairs(self.basket_encoded)
         else:
-            print("mlxtend not available - skipping association rules")
+            print("mlxtend not available - using fallback co-occurrence calculation")
+            # Fallback: Calculate simple co-occurrence stats
+            self.rules = self._calculate_fallback_rules()
+            self.top_pairs = self._calculate_fallback_pairs()
+            self.basket_encoded = None
         
         self.basket_df = df
         self.data = df
         return df
+    
+    def _calculate_fallback_rules(self):
+        """Calculate simple co-occurrence rules when mlxtend is unavailable."""
+        # Count service pair occurrences
+        pair_counts = {}
+        service_counts = {}
+        total_invoices = len(self.transactions_df)
+        
+        for _, row in self.transactions_df.iterrows():
+            services = row['services']
+            
+            # Count individual services
+            for service in services:
+                service_counts[service] = service_counts.get(service, 0) + 1
+            
+            # Count pairs
+            if len(services) > 1:
+                for i, service_a in enumerate(services):
+                    for service_b in services[i+1:]:
+                        pair = tuple(sorted([service_a, service_b]))
+                        pair_counts[pair] = pair_counts.get(pair, 0) + 1
+        
+        # Create rules DataFrame
+        rules_list = []
+        for (service_a, service_b), pair_count in pair_counts.items():
+            support = pair_count / total_invoices
+            confidence_ab = pair_count / service_counts[service_a]
+            confidence_ba = pair_count / service_counts[service_b]
+            
+            # Calculate lift
+            prob_b = service_counts[service_b] / total_invoices
+            lift_ab = confidence_ab / prob_b if prob_b > 0 else 0
+            
+            # Only include if above thresholds
+            if support >= 0.01 and confidence_ab >= 0.15 and lift_ab >= 1.1:
+                rules_list.append({
+                    'antecedents': frozenset([service_a]),
+                    'consequents': frozenset([service_b]),
+                    'support': support,
+                    'confidence': confidence_ab,
+                    'lift': lift_ab,
+                    'rule': f"{service_a} → {service_b}"
+                })
+        
+        if len(rules_list) == 0:
+            print("No rules found with fallback method")
+            return None
+            
+        rules_df = pd.DataFrame(rules_list)
+        print(f"Found {len(rules_df)} rules with fallback method")
+        return rules_df
+    
+    def _calculate_fallback_pairs(self):
+        """Calculate service pair correlations without mlxtend."""
+        pair_counts = {}
+        service_counts = {}
+        total = len(self.transactions_df)
+        
+        for _, row in self.transactions_df.iterrows():
+            services = row['services']
+            for service in services:
+                service_counts[service] = service_counts.get(service, 0) + 1
+            
+            if len(services) > 1:
+                for i, service_a in enumerate(services):
+                    for service_b in services[i+1:]:
+                        pair = tuple(sorted([service_a, service_b]))
+                        pair_counts[pair] = pair_counts.get(pair, 0) + 1
+        
+        # Create pairs dataframe
+        pairs_list = []
+        for (service_a, service_b), count in pair_counts.items():
+            # Simple correlation approximation
+            prob_a = service_counts[service_a] / total
+            prob_b = service_counts[service_b] / total
+            prob_ab = count / total
+            
+            # Lift as correlation measure
+            correlation = prob_ab / (prob_a * prob_b) if (prob_a * prob_b) > 0 else 0
+            
+            pairs_list.append({
+                'service_a': service_a,
+                'service_b': service_b,
+                'correlation': correlation,
+                'count': count
+            })
+        
+        if len(pairs_list) == 0:
+            return None
+            
+        pairs_df = pd.DataFrame(pairs_list).sort_values('correlation', ascending=False)
+        return pairs_df
     
     def create_visualization(self):
         """Create 4-panel basket analysis dashboard."""
@@ -499,13 +580,13 @@ upselling, and increase average ticket size without being pushy."""
         
         # Update axes
         fig.update_xaxes(title_text="Support (% of Transactions)", row=1, col=1)
-        fig.update_yaxes(title_text="Confidence", row=1, col=1)
+        fig.update_yaxes(title_text="Confidence", row=1, col=1, rangemode="tozero")
         
         fig.update_xaxes(title_text="Lift (Strength of Association)", row=1, col=2)
-        fig.update_yaxes(title_text="Service Pair", row=1, col=2)
+        fig.update_yaxes(title_text="Service Pair", row=1, col=2, rangemode="tozero")
         
         fig.update_xaxes(title_text="Correlation Coefficient", row=2, col=2)
-        fig.update_yaxes(title_text="Service Pair", row=2, col=2)
+        fig.update_yaxes(title_text="Service Pair", row=2, col=2, rangemode="tozero")
         
         return fig
     
@@ -522,7 +603,7 @@ upselling, and increase average ticket size without being pushy."""
             # Strongest rule
             top_rule = self.rules.iloc[0]
             insights.append(
-                f"Strongest association: {top_rule['rule']} "
+                f"**Strongest association**: {top_rule['rule']} "
                 f"(lift: {top_rule['lift']:.2f}x, confidence: {top_rule['confidence']*100:.0f}%)"
             )
             
@@ -557,7 +638,7 @@ upselling, and increase average ticket size without being pushy."""
         
         # Connection to other analyses
         insights.append(
-            "Connection to Pricing Analysis: Bundle frequently paired services with 10-15% discount "
+            "**Connection to Pricing Analysis**: Bundle frequently paired services with 10-15% discount "
             "while maintaining overall margin"
         )
         
@@ -576,7 +657,7 @@ upselling, and increase average ticket size without being pushy."""
             # Top bundling opportunities
             top_3 = self.rules.nlargest(3, 'lift')
             recommendations.append(
-                "Create service packages for top associations: " +
+                "**Create service packages** for top associations: " +
                 ", ".join([f"'{r['rule']}'" for _, r in top_3.iterrows()])
             )
             
@@ -584,7 +665,7 @@ upselling, and increase average ticket size without being pushy."""
             high_conf_rules = self.rules[self.rules['confidence'] > 0.4].nlargest(5, 'confidence')
             if len(high_conf_rules) > 0:
                 recommendations.append(
-                    "Train technicians to suggest: " +
+                    "**Train technicians to suggest**: " +
                     ", ".join([r['consequent'] for _, r in high_conf_rules.iterrows()]) +
                     " when performing related services"
                 )
@@ -612,7 +693,7 @@ upselling, and increase average ticket size without being pushy."""
         )
         
         recommendations.append(
-            "Next step: Use Customer Segmentation to identify which segments respond "
+            "**Next step**: Use Customer Segmentation to identify which segments respond "
             "best to bundled offerings vs à la carte pricing"
         )
         
