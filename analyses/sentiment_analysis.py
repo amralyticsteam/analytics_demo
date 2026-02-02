@@ -236,7 +236,7 @@ Response time? Star rating correlation? Understanding these patterns helps Ron k
         self.correlation_matrix = corr_df.corr()
     
     def create_visualization(self):
-        """Create 4-panel sentiment analysis dashboard."""
+        """Create 4-panel sentiment analysis dashboard with better spacing."""
         if self.reviews_df is None:
             self.load_data()
         
@@ -244,7 +244,7 @@ Response time? Star rating correlation? Understanding these patterns helps Ron k
             rows=2, cols=2,
             subplot_titles=(
                 'Sentiment Correlation Matrix',
-                'Overall Sentiment Each Month',
+                'Overall Sentiment Trend Over Time',
                 'Response Time Impact on Sentiment',
                 'Sentiment by Day of Week & Customer Type'
             ),
@@ -252,15 +252,12 @@ Response time? Star rating correlation? Understanding these patterns helps Ron k
                 [{"type": "heatmap"}, {"type": "scatter"}],
                 [{"type": "bar"}, {"type": "bar"}]
             ],
-            vertical_spacing=0.15,
-            horizontal_spacing=0.12
+            vertical_spacing=0.22,
+            horizontal_spacing=0.16
         )
         
-        # 1. Correlation Matrix Heatmap
+        # 1. Correlation Matrix Heatmap (NO colorbar legend)
         if self.correlation_matrix is not None:
-            # Focus on sentiment row
-            sentiment_corr = self.correlation_matrix.loc['Sentiment'].drop('Sentiment')
-            
             fig.add_trace(
                 go.Heatmap(
                     z=self.correlation_matrix.values,
@@ -274,31 +271,15 @@ Response time? Star rating correlation? Understanding these patterns helps Ron k
                     zmid=0,
                     text=np.round(self.correlation_matrix.values, 2),
                     texttemplate='%{text}',
-                    textfont={"size": 10},
-                    colorbar=dict(
-                        title="Correlation",
-                        x=0.46,
-                        len=0.4
-                    ),
+                    textfont={"size": 11},
+                    showscale=False,  # Remove the colorbar legend
                     hovertemplate='%{y} vs %{x}<br>Correlation: %{z:.3f}<extra></extra>'
                 ),
                 row=1, col=1
             )
         
-        # 2. Overall Sentiment Each Month (color gradient based on sentiment)
+        # 2. Overall Sentiment Trend
         if self.monthly_sentiment is not None:
-            # Create color scale from red to green
-            colors = []
-            for sentiment in self.monthly_sentiment['avg_sentiment']:
-                if sentiment < -0.2:
-                    colors.append('#ff6b6b')  # Red
-                elif sentiment < 0:
-                    colors.append('#ffa07a')  # Light red
-                elif sentiment < 0.2:
-                    colors.append('#98d8c8')  # Light green
-                else:
-                    colors.append('#00b894')  # Green
-            
             fig.add_trace(
                 go.Scatter(
                     x=self.monthly_sentiment['month'],
@@ -307,13 +288,13 @@ Response time? Star rating correlation? Understanding these patterns helps Ron k
                     name='Monthly Sentiment',
                     line=dict(color='#23606e', width=3),
                     marker=dict(
-                        size=10,
+                        size=11,
                         color=self.monthly_sentiment['avg_sentiment'],
                         colorscale=[[0, '#ff6b6b'], [0.5, '#FFFCF2'], [1, '#00b894']],
                         showscale=False,
-                        line=dict(width=1, color='#023535')
+                        line=dict(width=2, color='#023535')
                     ),
-                    hovertemplate='%{x|%b %Y}<br>Sentiment: %{y:.2f}<extra></extra>'
+                    hovertemplate='%{x|%b %Y}<br>Sentiment: %{y:.2f}<br><extra></extra>'
                 ),
                 row=1, col=2
             )
@@ -321,7 +302,7 @@ Response time? Star rating correlation? Understanding these patterns helps Ron k
             # Add zero line
             fig.add_hline(y=0, line_dash="dash", line_color="#023535", opacity=0.3, row=1, col=2)
         
-        # 3. Response Time Impact (color gradient)
+        # 3. Response Time Impact
         if self.response_correlation is not None:
             colors = []
             for sentiment in self.response_correlation['avg_sentiment']:
@@ -362,7 +343,8 @@ Response time? Star rating correlation? Understanding these patterns helps Ron k
                 name='Existing Customer',
                 marker_color='#008f8c',
                 text=[f"{v:.2f}" for v in existing_by_dow.values],
-                textposition='outside'
+                textposition='outside',
+                hovertemplate='<b>Existing Customer</b><br>%{x}<br>Sentiment: %{y:.2f}<extra></extra>'
             ),
             row=2, col=2
         )
@@ -374,40 +356,41 @@ Response time? Star rating correlation? Understanding these patterns helps Ron k
                 name='New Customer',
                 marker_color='#ffa07a',
                 text=[f"{v:.2f}" for v in new_by_dow.values],
-                textposition='outside'
+                textposition='outside',
+                hovertemplate='<b>New Customer</b><br>%{x}<br>Sentiment: %{y:.2f}<extra></extra>'
             ),
             row=2, col=2
         )
         
-        # Update layout
+        # Update layout with more breathing room
         fig.update_layout(
-            height=850,
+            height=900,
             showlegend=True,
-            title_text="Sentiment Analysis: Correlations & Patterns",
+            title_text="Sentiment Analysis: Customer Feedback Patterns",
             title_x=0.5,
-            title_font=dict(size=18, color='#023535'),
+            title_font=dict(size=20, color='#023535'),
             legend=dict(
                 orientation="h",
                 yanchor="bottom",
-                y=1.02,
-                xanchor="right",
-                x=1
+                y=-0.12,
+                xanchor="center",
+                x=0.75
             ),
             barmode='group'
         )
         
-        # Update axes
-        fig.update_xaxes(tickangle=-45, row=1, col=1)
-        fig.update_yaxes(tickangle=0, row=1, col=1)
+        # Update axes with better spacing
+        fig.update_xaxes(tickangle=-45, row=1, col=1, title_font=dict(size=13))
+        fig.update_yaxes(tickangle=0, row=1, col=1, title_font=dict(size=13))
         
-        fig.update_xaxes(title_text="Month", row=1, col=2)
-        fig.update_yaxes(title_text="Avg Sentiment (-1 to +1)", row=1, col=2, range=[-1, 1])
+        fig.update_xaxes(title_text="Month", row=1, col=2, title_font=dict(size=13))
+        fig.update_yaxes(title_text="Avg Sentiment (-1 to +1)", row=1, col=2, range=[-1, 1], title_font=dict(size=13))
         
-        fig.update_xaxes(title_text="Response Time", row=2, col=1, tickangle=-45)
-        fig.update_yaxes(title_text="Avg Sentiment", row=2, col=1, rangemode="tozero")
+        fig.update_xaxes(title_text="Response Time", row=2, col=1, tickangle=-45, title_font=dict(size=13))
+        fig.update_yaxes(title_text="Avg Sentiment", row=2, col=1, rangemode="tozero", title_font=dict(size=13))
         
-        fig.update_xaxes(title_text="Day of Week", row=2, col=2)
-        fig.update_yaxes(title_text="Avg Sentiment", row=2, col=2, rangemode="tozero")
+        fig.update_xaxes(title_text="Day of Week", row=2, col=2, title_font=dict(size=13))
+        fig.update_yaxes(title_text="Avg Sentiment", row=2, col=2, rangemode="tozero", title_font=dict(size=13))
         
         return fig
     
