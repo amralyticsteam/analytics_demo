@@ -42,8 +42,8 @@ class BasketAnalysis(BaseAnalysis):
         return """When a customer calls for an AC repair, what else do they typically need? When Ron 
         installs a new furnace, which add-on services should he recommend?
         
-        **Understanding service bundling patterns** helps Ron create packages, train technicians on 
-        upselling, and increase average ticket size without being pushy."""
+**Understanding service bundling patterns** helps Ron create packages, train technicians on 
+upselling, and increase average ticket size without being pushy."""
     
     # Backward compatibility
     @property
@@ -329,6 +329,11 @@ class BasketAnalysis(BaseAnalysis):
             return None
             
         rules_df = pd.DataFrame(rules_list)
+        
+        # Add singular columns (same as mlxtend does)
+        rules_df["antecedent"] = rules_df["antecedents"].apply(lambda x: next(iter(x)) if len(x) == 1 else str(x))
+        rules_df["consequent"] = rules_df["consequents"].apply(lambda x: next(iter(x)) if len(x) == 1 else str(x))
+        
         print(f"Found {len(rules_df)} rules with fallback method")
         return rules_df
     
