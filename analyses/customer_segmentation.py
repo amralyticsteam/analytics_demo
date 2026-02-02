@@ -38,7 +38,7 @@ class CustomerSegmentation(BaseAnalysis):
         
 Some call only for emergencies. Others schedule regular maintenance. Some spend thousands 
 on installations, others just need tune-ups. **Understanding customer segments** helps Ron 
-tailor his marketing, pricing, and service approach to each group's specific needs."""
+        tailor his marketing, pricing, and service approach to each group's specific needs."""
     
     # Backward compatibility
     @property
