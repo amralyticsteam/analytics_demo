@@ -167,14 +167,12 @@ tailor his marketing, pricing, and service approach to each group's specific nee
         
         return X_scaled, pca_df, pca, labels, n_clusters, available_cols
     
-    def create_segment_profiles(self, customer_features, labels):
-        """Create detailed profiles for each segment with descriptive names."""
-        customer_features_copy = customer_features.copy()
-        customer_features_copy['segment'] = labels
-        
+    def create_segment_profiles(self, customer_features, labels, transactions_df):
+        """Create descriptive profiles for each segment with proper service mix calculation."""
         profiles = []
+        
         for segment_id in sorted(set(labels)):
-            segment_data = customer_features_copy[customer_features_copy['segment'] == segment_id]
+            segment_data = customer_features[labels == segment_id]
             
             if len(segment_data) == 0:
                 continue
@@ -190,24 +188,26 @@ tailor his marketing, pricing, and service approach to each group's specific nee
                 'total_revenue': segment_data['total_spend'].sum(),
             }
             
-            # Calculate service mix percentages correctly - sum across segment then normalize
-            service_cols = [col for col in customer_features.columns if col.startswith('pct_')]
-            if service_cols:
-                # Get the actual counts by reversing the percentage calculation
-                # For each customer: percentage * frequency = approximate count
-                service_totals = {}
-                for col in service_cols:
-                    # Sum up the weighted percentages
-                    service_totals[col] = (segment_data[col] * segment_data['frequency']).sum()
+            # Calculate service mix percentages from actual transactions
+            segment_customer_ids = segment_data['customer_id'].tolist()
+            segment_transactions = transactions_df[transactions_df['customer_id'].isin(segment_customer_ids)]
+            
+            # Count service categories for this segment
+            if len(segment_transactions) > 0:
+                service_counts = segment_transactions['service_category'].value_counts()
+                total_services = service_counts.sum()
                 
-                # Normalize to percentages that sum to 100
-                total = sum(service_totals.values())
-                if total > 0:
-                    for col in service_cols:
-                        profile[col] = (service_totals[col] / total) * 100
-                else:
-                    for col in service_cols:
-                        profile[col] = 0
+                # Calculate percentages that sum to 100
+                for cat in ['Installation', 'Cooling', 'Heating', 'Maintenance', 'Emergency']:
+                    pct_col = f'pct_{cat.lower()}'
+                    if cat in service_counts.index:
+                        profile[pct_col] = (service_counts[cat] / total_services) * 100
+                    else:
+                        profile[pct_col] = 0
+            else:
+                # No transactions, set all to 0
+                for cat in ['Installation', 'Cooling', 'Heating', 'Maintenance', 'Emergency']:
+                    profile[f'pct_{cat.lower()}'] = 0
             
             profile['avg_tenure'] = segment_data.get('customer_tenure_days', pd.Series([0])).mean()
             
