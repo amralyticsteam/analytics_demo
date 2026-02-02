@@ -74,7 +74,6 @@ def show_synthesis_page():
             <div class="flow-arrow">←</div>
         </div>
         <div class="flow-box">
-            <div class="flow-arrow-top">↓</div>
             <div class="flow-number">4</div>
             <div class="flow-title">Topic Extraction</div>
             <div class="flow-insight">Key themes</div>
@@ -84,7 +83,6 @@ def show_synthesis_page():
     </div>
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
         <div class="flow-box">
-            <div class="flow-arrow-top">↓</div>
             <div class="flow-number">7</div>
             <div class="flow-title">Pricing Analysis</div>
             <div class="flow-insight">Negative margins</div>
@@ -240,7 +238,7 @@ def show_synthesis_page():
                     <strong>Evidence:</strong> {item['evidence']}
                 </div>
                 <div style="color: #9ca3af; font-size: 0.9rem; margin-bottom: 0.5rem;">
-                    📊 {item['source']}
+                    {item['source']}
                 </div>
                 <div style="color: #059669; font-weight: 500;">
                     <strong>→ Action:</strong> {item['action']}
