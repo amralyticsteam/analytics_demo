@@ -506,7 +506,7 @@ on what matters most and double down on what customers love."""
     def insights(self) -> list:
         return self.get_insights()
     
-def get_recommendations(self) -> list:
+    def get_recommendations(self) -> list:
         """Generate actionable recommendations based on topic analysis."""
         recommendations = []
         
