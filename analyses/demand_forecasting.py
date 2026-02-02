@@ -432,7 +432,7 @@ appropriately and avoid costly overtime or lost revenue."""
         if self.key_drivers is not None and len(self.key_drivers) > 0:
             top_driver = self.key_drivers.iloc[0]
             insights.append(
-                f"**Strongest demand driver**: {top_driver['driver']} "
+                f"Strongest demand driver: {top_driver['driver']} "
                 f"(correlation: {top_driver['correlation']:.2f}) - "
                 f"{'positive' if top_driver['correlation'] > 0 else 'negative'} relationship"
             )

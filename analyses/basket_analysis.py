@@ -608,7 +608,7 @@ upselling, and increase average ticket size without being pushy."""
             # Strongest rule
             top_rule = self.rules.iloc[0]
             insights.append(
-f"**Strongest association**: {top_rule['rule']} "
+f"Strongest association: {top_rule['rule']} "
                 f"(lift: {top_rule['lift']:.2f}x, confidence: {top_rule['confidence']*100:.0f}%)"
             )
             

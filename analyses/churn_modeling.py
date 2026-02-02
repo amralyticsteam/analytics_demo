@@ -369,21 +369,74 @@ Can we predict which customers are about to leave? Understanding **churn risk** 
         return self.get_insights()
     
     def get_recommendations(self) -> list:
-        """Generate recommendations."""
+        """Generate actionable churn prevention recommendations."""
         recs = []
         
-        if self.churn_df is not None and 'churn_probability' in self.churn_df.columns:
-            high_risk = self.churn_df[self.churn_df['churn_probability'] > 0.6]
-            if len(high_risk) > 0:
-                recs.append(f"Immediate outreach to {len(high_risk)} high-risk customers")
+        if self.churn_df is None:
+            return ["Load data first to generate recommendations"]
+        
+        # Calculate key metrics
+        total_customers = len(self.churn_df)
+        
+        if 'churn_label' in self.churn_df.columns:
+            high_risk = self.churn_df[self.churn_df['churn_label'] == 1]
+            high_risk_count = len(high_risk)
             
-            recs.append("Proactive scheduling: Set up automated reminders at 90, 180, 270 days")
-            recs.append("Create retention campaigns by risk level")
-            
-            if 'churned' in self.churn_df.columns:
-                churned = self.churn_df['churned'].sum()
-                if churned > 0:
-                    recs.append(f"Win-back campaign for {churned} churned customers")
+            if high_risk_count > 0:
+                recs.append(
+                    f"**Launch win-back campaign immediately**: Contact {high_risk_count} at-risk customers "
+                    f"({high_risk_count/total_customers*100:.1f}% of base) with seasonal tune-up offers. "
+                    f"Target 25% win-back rate = ~${high_risk_count * 0.25 * 2000:,.0f} preserved revenue"
+                )
+                
+                # Average recency for high-risk
+                if 'months_since_last_service' in high_risk.columns:
+                    avg_recency = high_risk['months_since_last_service'].mean()
+                    recs.append(
+                        f"**Set up automated outreach triggers**: Customers inactive {avg_recency:.0f}+ months are high risk. "
+                        f"Implement automated email/SMS at 6, 9, and 12 months with increasing urgency"
+                    )
+        
+        # Service frequency recommendations
+        if 'service_count' in self.churn_df.columns:
+            low_frequency = self.churn_df[self.churn_df['service_count'] < 2]
+            if len(low_frequency) > 0:
+                recs.append(
+                    f"**Build frequency with maintenance contracts**: {len(low_frequency)} customers "
+                    f"({len(low_frequency)/total_customers*100:.0f}%) have only 1 service. "
+                    f"Offer annual maintenance plans to increase engagement and predictability"
+                )
+        
+        # Complaint-based recommendations
+        if 'complaint_count' in self.churn_df.columns:
+            has_complaints = self.churn_df[self.churn_df['complaint_count'] > 0]
+            if len(has_complaints) > 0:
+                recs.append(
+                    f"**Follow up on service issues**: {len(has_complaints)} customers had complaints. "
+                    f"Personal call from Ron to resolve issues can save relationships worth $1,500+ each"
+                )
+        
+        # Referral source insights
+        if 'referral_source' in self.churn_df.columns:
+            source_churn = self.churn_df.groupby('referral_source')['churn_label'].mean()
+            if len(source_churn) > 0:
+                worst_source = source_churn.idxmax()
+                worst_rate = source_churn.max() * 100
+                recs.append(
+                    f"**Improve onboarding for {worst_source} customers**: They churn at {worst_rate:.0f}% rate. "
+                    f"Add extra touchpoints (welcome call, 30-day check-in) to build loyalty early"
+                )
+        
+        # General best practices
+        recs.append(
+            "**Create quarterly 'check-in' campaigns**: Even if system is fine, a courtesy call/email "
+            "keeps Ron top-of-mind when something does break"
+        )
+        
+        recs.append(
+            "**Track prevention metrics**: Monitor monthly how many at-risk customers were successfully retained. "
+            "Goal: Keep churn rate under 10% annually"
+        )
         
         return recs
     
