@@ -191,10 +191,24 @@ tailor his marketing, pricing, and service approach to each group's specific nee
                 'total_revenue': segment_data['total_spend'].sum(),
             }
             
-            # Add service mix percentages
-            for col in customer_features.columns:
-                if col.startswith('pct_'):
-                    profile[col] = segment_data[col].mean()
+            # Calculate service mix percentages correctly - sum across segment then normalize
+            service_cols = [col for col in customer_features.columns if col.startswith('pct_')]
+            if service_cols:
+                # Get the actual counts by reversing the percentage calculation
+                # For each customer: percentage * frequency = approximate count
+                service_totals = {}
+                for col in service_cols:
+                    # Sum up the weighted percentages
+                    service_totals[col] = (segment_data[col] * segment_data['frequency']).sum()
+                
+                # Normalize to percentages that sum to 100
+                total = sum(service_totals.values())
+                if total > 0:
+                    for col in service_cols:
+                        profile[col] = (service_totals[col] / total) * 100
+                else:
+                    for col in service_cols:
+                        profile[col] = 0
             
             profile['avg_tenure'] = segment_data.get('customer_tenure_days', pd.Series([0])).mean()
             

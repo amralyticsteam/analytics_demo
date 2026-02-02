@@ -531,7 +531,7 @@ on what matters most and double down on what customers love."""
             )
         
         # Check if we have common phrases data
-        if hasattr(self, 'common_phrases') and len(self.common_phrases) > 0:
+        if hasattr(self, 'common_phrases') and self.common_phrases is not None and len(self.common_phrases) > 0:
             # Leverage positive language in marketing
             positive_phrases = self.common_phrases[self.common_phrases['sentiment'] > 0.2].head(3)
             if len(positive_phrases) > 0:
@@ -551,25 +551,20 @@ on what matters most and double down on what customers love."""
                     f"Train team on how to address these specific concerns when they come up on calls"
                 )
         
-        # If we have reviews data, provide general recommendations
-        if hasattr(self, 'reviews_df') and self.reviews_df is not None:
-            recommendations.append(
-                "**Set up quarterly review monitoring**: Track how topic sentiment changes each quarter. "
-                "Catching a trend early (e.g., 'pricing' becoming negative) lets Ron fix it before it hurts the business"
-            )
-            
-            recommendations.append(
-                "**Train staff on positive phrases**: Share actual customer quotes in team meetings. "
-                "When technicians hear what gets praised, they know what matters to customers"
-            )
-            
-            recommendations.append(
-                "**Use topics for Google Ads keywords**: Common phrases from reviews should be in Ron's ad copy and keyword targeting"
-            )
+        # General recommendations
+        recommendations.append(
+            "**Set up quarterly review monitoring**: Track how topic sentiment changes each quarter. "
+            "Catching a trend early (e.g., 'pricing' becoming negative) lets Ron fix it before it hurts the business"
+        )
         
-        # Fallback if no data available
-        if len(recommendations) == 0:
-            recommendations.append("Run topic extraction analysis to generate specific recommendations")
+        recommendations.append(
+            "**Train staff on positive phrases**: Share actual customer quotes in team meetings. "
+            "When technicians hear what gets praised, they know what matters to customers"
+        )
+        
+        recommendations.append(
+            "**Use topics for Google Ads keywords**: Common phrases from reviews should be in Ron's ad copy and keyword targeting"
+        )
         
         return recommendations
     
