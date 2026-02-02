@@ -168,7 +168,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
         return X_scaled, pca_df, pca, labels, n_clusters, available_cols
     
     def create_segment_profiles(self, customer_features, labels, transactions_df):
-        """Create descriptive profiles for each segment with proper service mix calculation."""
+        """Create detailed profiles for each segment with descriptive names."""
         profiles = []
         
         for segment_id in sorted(set(labels)):
@@ -177,7 +177,6 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             if len(segment_data) == 0:
                 continue
             
-            # Calculate profile metrics
             # Calculate profile metrics
             profile = {
                 'segment_id': segment_id,
