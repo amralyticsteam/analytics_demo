@@ -386,7 +386,7 @@ Can we predict which customers are about to leave? Understanding **churn risk** 
             
             if high_risk_count > 0:
                 recs.append(
-                    f"**Launch win-back campaign immediately**: Contact {high_risk_count} at-risk customers "
+                    f"Launch win-back campaign immediately: Contact {high_risk_count} at-risk customers "
                     f"({high_risk_count/total_customers*100:.1f}% of base) with seasonal tune-up offers. "
                     f"Target 25% win-back rate = ~${int(high_risk_count * 0.25 * 2000):,} preserved revenue"
                 )
@@ -395,12 +395,12 @@ Can we predict which customers are about to leave? Understanding **churn risk** 
                 if 'months_since_last_service' in self.churn_df.columns and len(high_risk) > 0:
                     avg_recency = high_risk['months_since_last_service'].mean()
                     recs.append(
-                        f"**Set up automated outreach triggers**: Customers inactive {avg_recency:.0f}+ months are high risk. "
+                        f"Set up automated outreach triggers: Customers inactive {avg_recency:.0f}+ months are high risk. "
                         f"Implement automated email/SMS at 6, 9, and 12 months with increasing urgency"
                     )
             else:
                 recs.append(
-                    f"**Strong retention!** Only {high_risk_count} customers at risk. "
+                    f"Strong retention! Only {high_risk_count} customers at risk. "
                     f"Maintain current service quality and continue proactive outreach"
                 )
         
@@ -435,19 +435,19 @@ Can we predict which customers are about to leave? Understanding **churn risk** 
                 
                 if worst_rate > best_rate:
                     recs.append(
-                        f"**Improve onboarding for {worst_source} customers**: They churn at {worst_rate:.0f}% vs "
+                        f"Improve onboarding for {worst_source} customers: They churn at {worst_rate:.0f}% vs "
                         f"{best_source} at {best_rate:.0f}%. Add extra touchpoints (welcome call, 30-day check-in) "
                         f"for {worst_source} customers to build loyalty early"
                     )
         
         # General best practices (always include these)
         recs.append(
-            "**Create quarterly 'check-in' campaigns**: Even if system is fine, a courtesy call/email "
+            "Create quarterly 'check-in' campaigns: Even if system is fine, a courtesy call/email "
             "keeps Ron top-of-mind when something does break"
         )
         
         recs.append(
-            "**Track prevention metrics**: Monitor monthly how many at-risk customers were successfully retained. "
+            "Track prevention metrics: Monitor monthly how many at-risk customers were successfully retained. "
             "Goal: Keep churn rate under 10% annually"
         )
         
