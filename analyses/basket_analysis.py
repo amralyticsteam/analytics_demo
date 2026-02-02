@@ -50,7 +50,7 @@ class BasketAnalysis(BaseAnalysis):
     def business_question(self) -> str:
         return self.rons_challenge
     
-        @property
+    @property
     def data_collected(self) -> list:
         return [
             '**Source**: ServiceTitan Invoice Data',
