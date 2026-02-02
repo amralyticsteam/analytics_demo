@@ -368,12 +368,12 @@ Can we predict which customers are about to leave? Understanding **churn risk** 
     def insights(self) -> list:
         return self.get_insights()
     
-    def get_recommendations(self) -> list:
+def get_recommendations(self) -> list:
         """Generate actionable churn prevention recommendations."""
-        recs = []
-        
         if self.churn_df is None:
-            return []
+            self.load_data()
+        
+        recs = []
         
         # Calculate key metrics
         total_customers = len(self.churn_df)
