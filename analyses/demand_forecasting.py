@@ -30,9 +30,9 @@ class DemandForecasting(BaseAnalysis):
         return """Ron struggles with staffing - sometimes technicians sit idle, other times he's 
         turning away emergency calls because everyone's booked.
         
-        **Can we predict busy periods in advance?** More importantly: **what drives demand?** 
-        Is it weather? Marketing spend? Day of week? Understanding these patterns helps Ron staff 
-        appropriately and avoid costly overtime or lost revenue."""
+**Can we predict busy periods in advance?** More importantly: **what drives demand?** 
+Is it weather? Marketing spend? Day of week? Understanding these patterns helps Ron staff 
+appropriately and avoid costly overtime or lost revenue."""
     
     # Backward compatibility
     @property

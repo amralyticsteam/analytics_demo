@@ -29,8 +29,8 @@ class SeasonalityTimeSeries(BaseAnalysis):
         return """Ron knows his business has busy and slow periods, but he doesn't have a clear picture 
         of **normal seasonal patterns vs concerning trends**.
         
-        Is that drop in October normal? Should July AC revenue be higher? **Understanding seasonality 
-        by service type** helps Ron plan staffing, inventory, and marketing spend throughout the year."""
+Is that drop in October normal? Should July AC revenue be higher? **Understanding seasonality 
+by service type** helps Ron plan staffing, inventory, and marketing spend throughout the year."""
     
     # Backward compatibility
     @property
@@ -140,8 +140,8 @@ class SeasonalityTimeSeries(BaseAnalysis):
         
         # Service colors
         service_colors = {
-            'AC Repair': '#008f8c',
-            'Heating Repair': '#ff6b6b',
+            'Cooling': '#008f8c',
+            'Heating': '#ff6b6b',
             'Maintenance': '#23606e',
             'Emergency': '#ffa07a',
             'Installation': '#00b894'
