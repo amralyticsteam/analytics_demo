@@ -39,7 +39,7 @@ class DemandForecasting(BaseAnalysis):
     def business_question(self) -> str:
         return self.rons_challenge
     
-    @property
+        @property
     def data_collected(self) -> list:
         return [
             '**Source**: ServiceTitan + Weather API + Marketing Tracking',
@@ -79,7 +79,7 @@ class DemandForecasting(BaseAnalysis):
         # Calculate lagged variables
         self.demand_df['temp_lag1'] = self.demand_df['high_temp'].shift(1)
         self.demand_df['temp_lag2'] = self.demand_df['high_temp'].shift(2)
-        self.demand_df['calls_lag1'] = self.demand_df['calls'].shift(1)
+        self.demand_df['calls_lag1'] = self.demand_df['call_volume'].shift(1)
         
         # Calculate extreme temperature indicator
         self.demand_df['extreme_temp'] = (
@@ -87,12 +87,18 @@ class DemandForecasting(BaseAnalysis):
             (self.demand_df['high_temp'] < 35)
         ).astype(int)
         
-        # Calculate total marketing spend
-        self.demand_df['total_marketing'] = (
-            self.demand_df['marketing_spend_google'] + 
-            self.demand_df['marketing_spend_social'] + 
-            self.demand_df['marketing_spend_print']
-        )
+        # Use marketing_spend directly (already aggregated)
+        if 'marketing_spend' in self.demand_df.columns:
+            self.demand_df['total_marketing'] = self.demand_df['marketing_spend']
+        elif all(col in self.demand_df.columns for col in ['marketing_spend_google', 'marketing_spend_social', 'marketing_spend_print']):
+            # Fallback if separate columns exist
+            self.demand_df['total_marketing'] = (
+                self.demand_df['marketing_spend_google'] + 
+                self.demand_df['marketing_spend_social'] + 
+                self.demand_df['marketing_spend_print']
+            )
+        else:
+            self.demand_df['total_marketing'] = 0
         
         # Analyze key drivers
         self._analyze_key_drivers()
@@ -119,7 +125,7 @@ class DemandForecasting(BaseAnalysis):
         
         correlations = []
         for name, col in driver_cols.items():
-            corr = self.demand_df['calls'].corr(self.demand_df[col])
+            corr = self.demand_df['call_volume'].corr(self.demand_df[col])
             correlations.append({
                 'driver': name,
                 'correlation': corr,
@@ -138,21 +144,21 @@ class DemandForecasting(BaseAnalysis):
         # Temperature lags
         lag_correlations.append({
             'variable': 'Temperature (today)',
-            'correlation': analysis_df['calls'].corr(analysis_df['high_temp'])
+            'correlation': analysis_df['call_volume'].corr(analysis_df['high_temp'])
         })
         lag_correlations.append({
             'variable': 'Temperature (1 day ago)',
-            'correlation': analysis_df['calls'].corr(analysis_df['temp_lag1'])
+            'correlation': analysis_df['call_volume'].corr(analysis_df['temp_lag1'])
         })
         lag_correlations.append({
             'variable': 'Temperature (2 days ago)',
-            'correlation': analysis_df['calls'].corr(analysis_df['temp_lag2'])
+            'correlation': analysis_df['call_volume'].corr(analysis_df['temp_lag2'])
         })
         
         # Demand momentum
         lag_correlations.append({
             'variable': 'Calls (1 day ago)',
-            'correlation': analysis_df['calls'].corr(analysis_df['calls_lag1'])
+            'correlation': analysis_df['call_volume'].corr(analysis_df['calls_lag1'])
         })
         
         self.lag_analysis = pd.DataFrame(lag_correlations)
@@ -161,8 +167,8 @@ class DemandForecasting(BaseAnalysis):
         """Create simple moving average forecast with confidence bands."""
         # Use 7-day moving average
         window = 7
-        self.demand_df['ma_7day'] = self.demand_df['calls'].rolling(window=window).mean()
-        self.demand_df['ma_std'] = self.demand_df['calls'].rolling(window=window).std()
+        self.demand_df['ma_7day'] = self.demand_df['call_volume'].rolling(window=window).mean()
+        self.demand_df['ma_std'] = self.demand_df['call_volume'].rolling(window=window).std()
         
         # Create confidence intervals (1.96 std for 95% CI)
         self.demand_df['upper_bound'] = self.demand_df['ma_7day'] + (1.96 * self.demand_df['ma_std'])
@@ -236,7 +242,7 @@ class DemandForecasting(BaseAnalysis):
         fig.add_trace(
             go.Scatter(
                 x=self.demand_df['date'],
-                y=self.demand_df['calls'],
+                y=self.demand_df['call_volume'],
                 name='Actual Calls',
                 mode='markers',
                 marker=dict(size=4, color='#023535', opacity=0.5),
@@ -361,7 +367,7 @@ class DemandForecasting(BaseAnalysis):
             fig.add_trace(
                 go.Scatter(
                     x=season_data['high_temp'],
-                    y=season_data['calls'],
+                    y=season_data['call_volume'],
                     name=season,
                     mode='markers',
                     marker=dict(
@@ -444,7 +450,7 @@ class DemandForecasting(BaseAnalysis):
         
         # Forecast accuracy
         recent_data = self.demand_df.dropna(subset=['ma_7day']).tail(30)
-        mae = abs(recent_data['calls'] - recent_data['ma_7day']).mean()
+        mae = abs(recent_data['call_volume'] - recent_data['ma_7day']).mean()
         
         insights.append(
             f"7-day moving average forecast has ±{mae:.1f} calls mean error - "
@@ -452,9 +458,9 @@ class DemandForecasting(BaseAnalysis):
         )
         
         # Peak demand periods
-        max_calls = self.demand_df['calls'].max()
-        peak_date = self.demand_df.loc[self.demand_df['calls'].idxmax(), 'date']
-        peak_temp = self.demand_df.loc[self.demand_df['calls'].idxmax(), 'high_temp']
+        max_calls = self.demand_df['call_volume'].max()
+        peak_date = self.demand_df.loc[self.demand_df['call_volume'].idxmax(), 'date']
+        peak_temp = self.demand_df.loc[self.demand_df['call_volume'].idxmax(), 'high_temp']
         
         insights.append(
             f"Peak demand day: {peak_date.strftime('%b %d, %Y')} with {max_calls} calls "
@@ -462,8 +468,8 @@ class DemandForecasting(BaseAnalysis):
         )
         
         # Holiday impact
-        holiday_avg = self.demand_df[self.demand_df['is_holiday'] == 1]['calls'].mean()
-        non_holiday_avg = self.demand_df[self.demand_df['is_holiday'] == 0]['calls'].mean()
+        holiday_avg = self.demand_df[self.demand_df['is_holiday'] == 1]['call_volume'].mean()
+        non_holiday_avg = self.demand_df[self.demand_df['is_holiday'] == 0]['call_volume'].mean()
         
         if holiday_avg < non_holiday_avg * 0.8:
             insights.append(
