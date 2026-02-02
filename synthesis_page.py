@@ -64,7 +64,7 @@ def show_synthesis_page():
             <div class="flow-title">Churn Prediction</div>
             <div class="flow-insight">At-risk customers</div>
             <div class="flow-source">ServiceTitan</div>
-            <div class="flow-arrow">←</div>
+            <div class="flow-arrow">↓</div>
         </div>
         <div class="flow-box">
             <div class="flow-number">5</div>
@@ -74,17 +74,15 @@ def show_synthesis_page():
             <div class="flow-arrow">←</div>
         </div>
         <div class="flow-box">
-            <div class="flow-arrow-top">↓</div>
             <div class="flow-number">4</div>
             <div class="flow-title">Topic Extraction</div>
             <div class="flow-insight">Key themes</div>
             <div class="flow-source">Google Reviews</div>
-            <div class="flow-arrow">↓</div>
+            <div class="flow-arrow">←</div>
         </div>
     </div>
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
         <div class="flow-box">
-            <div class="flow-arrow-top">↓</div>
             <div class="flow-number">7</div>
             <div class="flow-title">Pricing Analysis</div>
             <div class="flow-insight">Negative margins</div>
@@ -108,7 +106,6 @@ def show_synthesis_page():
     </div>
     <div style="display: flex; justify-content: center; margin-bottom: 1rem;">
         <div class="flow-box" style="width: 32%;">
-            <div class="flow-arrow-top">↓</div>
             <div class="flow-number">10</div>
             <div class="flow-title">Basket Analysis</div>
             <div class="flow-insight">Bundling opportunities</div>
@@ -117,7 +114,7 @@ def show_synthesis_page():
         </div>
     </div>
     <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 2rem; border-radius: 10px; text-align: center; color: white; margin-top: 1rem;">
-        <div style="font-size: 1.8rem; font-weight: bold;">📋 Complete Action Plan</div>
+        <div style="font-size: 1.8rem; font-weight: bold;">Complete Action Plan</div>
         <div style="font-size: 1.1rem; margin-top: 0.5rem; opacity: 0.95;">Prioritized recommendations from all 10 analyses</div>
     </div>
 </div>
@@ -240,7 +237,7 @@ def show_synthesis_page():
                     <strong>Evidence:</strong> {item['evidence']}
                 </div>
                 <div style="color: #9ca3af; font-size: 0.9rem; margin-bottom: 0.5rem;">
-                    📊 {item['source']}
+                    {item['source']}
                 </div>
                 <div style="color: #059669; font-weight: 500;">
                     <strong>→ Action:</strong> {item['action']}
@@ -377,7 +374,7 @@ def show_synthesis_page():
     col1, col2 = st.columns(2)
     
     with col1:
-        st.markdown("#### ✅ What Ron Gets")
+        st.markdown("#### What Ron Gets")
         st.markdown("""
         1. **Executive Summary** (1 page)
            - Top 5 findings
@@ -395,7 +392,7 @@ def show_synthesis_page():
         """)
     
     with col2:
-        st.markdown("#### ❌ What Ron Does NOT Get")
+        st.markdown("#### What Ron Does NOT Get")
         st.markdown("""
         - Raw data dumps
         - Technical jargon
@@ -473,24 +470,6 @@ def show_synthesis_page():
         
         We work with Ron's existing systems and workflows. No disruption, just improvement.
         """)
-    
-    st.divider()
-    
-    # Next steps
-    st.markdown("### Next Steps")
-    
-    st.info("""
-    **For Ron:**
-    1. Review this action plan
-    2. Pick Priority 1-3 to start (don't do everything at once!)
-    3. Schedule 30-min implementation call
-    
-    **For Amralytics:**
-    1. Set up automated monthly reporting
-    2. Create templates for customer outreach
-    3. Monitor results and adjust recommendations
-    4. Monthly check-ins to track progress
-    """)
     
     st.divider()
     
