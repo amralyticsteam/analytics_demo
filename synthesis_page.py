@@ -60,48 +60,48 @@ def show_synthesis_page():
     </div>
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
         <div class="flow-box">
-            <div class="flow-arrow-top">↓</div>
-            <div class="flow-number">4</div>
-            <div class="flow-title">Topic Extraction</div>
-            <div class="flow-insight">Key themes</div>
-            <div class="flow-source">Google Reviews</div>
-            <div class="flow-arrow">→</div>
+            <div class="flow-number">6</div>
+            <div class="flow-title">Churn Prediction</div>
+            <div class="flow-insight">At-risk customers</div>
+            <div class="flow-source">ServiceTitan</div>
+            <div class="flow-arrow">←</div>
         </div>
         <div class="flow-box">
             <div class="flow-number">5</div>
             <div class="flow-title">Marketing Impact</div>
             <div class="flow-insight">ROI by channel</div>
             <div class="flow-source">Google Analytics</div>
-            <div class="flow-arrow">→</div>
+            <div class="flow-arrow">←</div>
         </div>
         <div class="flow-box">
-            <div class="flow-number">6</div>
-            <div class="flow-title">Churn Prediction</div>
-            <div class="flow-insight">At-risk customers</div>
-            <div class="flow-source">ServiceTitan</div>
+            <div class="flow-arrow-top">↓</div>
+            <div class="flow-number">4</div>
+            <div class="flow-title">Topic Extraction</div>
+            <div class="flow-insight">Key themes</div>
+            <div class="flow-source">Google Reviews</div>
             <div class="flow-arrow">↓</div>
         </div>
     </div>
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
         <div class="flow-box">
             <div class="flow-arrow-top">↓</div>
-            <div class="flow-number">9</div>
-            <div class="flow-title">Seasonality Analysis</div>
-            <div class="flow-insight">Normal vs concerning</div>
+            <div class="flow-number">7</div>
+            <div class="flow-title">Pricing Analysis</div>
+            <div class="flow-insight">Negative margins</div>
             <div class="flow-source">QuickBooks</div>
-            <div class="flow-arrow">←</div>
+            <div class="flow-arrow">→</div>
         </div>
         <div class="flow-box">
             <div class="flow-number">8</div>
             <div class="flow-title">Demand Forecasting</div>
             <div class="flow-insight">Predict busy periods</div>
             <div class="flow-source">ServiceTitan</div>
-            <div class="flow-arrow">←</div>
+            <div class="flow-arrow">→</div>
         </div>
         <div class="flow-box">
-            <div class="flow-number">7</div>
-            <div class="flow-title">Pricing Analysis</div>
-            <div class="flow-insight">Negative margins</div>
+            <div class="flow-number">9</div>
+            <div class="flow-title">Seasonality Analysis</div>
+            <div class="flow-insight">Normal vs concerning</div>
             <div class="flow-source">QuickBooks</div>
             <div class="flow-arrow">↓</div>
         </div>
