@@ -349,7 +349,7 @@ else:
             elif hasattr(analysis_module, 'business_question'):
                 st.markdown(analysis_module.business_question)
             
-            st.info("**Why this matters**: Every analysis starts with understanding the specific problem Ron faces.")
+            st.info("**The Amralytics difference**: Every analysis starts with understanding the specific problem Ron faces.")
         
         # Step 2: Data Collected
         elif current_step == 1:
@@ -375,7 +375,7 @@ else:
                         </div>
                     """, unsafe_allow_html=True)
             
-            st.info("**Data sources**: Everything comes from systems Ron already uses - no extra work for him!")
+            st.info("**The Amralytics difference**: Everything comes from systems Ron already uses.")
         # Step 3: What We Found
         elif current_step == 2:
             st.markdown("## The Analysis")
@@ -435,7 +435,7 @@ else:
                         </div>
                     """, unsafe_allow_html=True)
             
-            st.info("**Key takeaway**: We translate complex data into clear insights specific to Ron's situation.")
+            st.info("**The Amralytics difference**: We translate complex data into clear insights specific to Ron's situation.")
         
         # Step 5: Action Plan
         elif current_step == 4:
