@@ -178,6 +178,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
                 continue
             
             # Calculate profile metrics
+            # Calculate profile metrics
             profile = {
                 'segment_id': segment_id,
                 'size': len(segment_data),
