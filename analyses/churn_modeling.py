@@ -419,7 +419,7 @@ Can we predict which customers are about to leave? Understanding **churn risk** 
             has_complaints = self.churn_df[self.churn_df['complaint_count'] > 0]
             if len(has_complaints) > 0:
                 recs.append(
-                    f"**Follow up on service issues**: {len(has_complaints)} customers "
+                    f"Follow up on service issues: {len(has_complaints)} customers "
                     f"({len(has_complaints)/total_customers*100:.0f}%) had complaints. "
                     f"Personal call from Ron to resolve issues can save relationships worth $1,500+ each"
                 )
