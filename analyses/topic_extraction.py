@@ -506,15 +506,13 @@ on what matters most and double down on what customers love."""
     def insights(self) -> list:
         return self.get_insights()
     
-    def get_recommendations(self) -> list:
+def get_recommendations(self) -> list:
         """Generate actionable recommendations based on topic analysis."""
         recommendations = []
         
-        if self.reviews_df is None or len(self.reviews_df) == 0:
-            return ["Load data first to generate recommendations"]
-        
-        # Analyze recurring pain points
+        # Check if we have quarterly topics data
         if hasattr(self, 'quarterly_topics') and self.quarterly_topics is not None and len(self.quarterly_topics) > 0:
+            # Analyze recurring pain points
             least_positive_topics = self.quarterly_topics['least_positive_topic'].tolist()
             from collections import Counter
             recurring = Counter(least_positive_topics).most_common(1)[0]
@@ -524,16 +522,25 @@ on what matters most and double down on what customers love."""
                     f"**Fix recurring pain point**: '{recurring[0]}' appears as a complaint in {recurring[1]} quarters. "
                     f"This is a pattern, not a one-off. Schedule team training or process improvement to eliminate this issue"
                 )
+            
+            # Highlight most positive topic
+            most_positive = self.quarterly_topics.nlargest(1, 'most_positive_sentiment').iloc[0]
+            recommendations.append(
+                f"**Emphasize Ron's strength**: '{most_positive['most_positive_topic']}' is consistently praised. "
+                f"Feature this in marketing materials and train new technicians to excel here"
+            )
         
-        # Leverage positive language in marketing
+        # Check if we have common phrases data
         if hasattr(self, 'common_phrases') and len(self.common_phrases) > 0:
+            # Leverage positive language in marketing
             positive_phrases = self.common_phrases[self.common_phrases['sentiment'] > 0.2].head(3)
             if len(positive_phrases) > 0:
                 top_phrases = positive_phrases['phrase'].tolist()
-                recommendations.append(
-                    f"**Update marketing copy immediately**: Use customer language like '{top_phrases[0]}' and '{top_phrases[1]}' "
-                    f"in ads and website. These exact phrases resonate with happy customers"
-                )
+                if len(top_phrases) >= 2:
+                    recommendations.append(
+                        f"**Update marketing copy immediately**: Use customer language like '{top_phrases[0]}' and '{top_phrases[1]}' "
+                        f"in ads and website. These exact phrases resonate with happy customers"
+                    )
             
             # Address negative phrases proactively
             negative_phrases = self.common_phrases[self.common_phrases['sentiment'] < -0.1].head(3)
@@ -544,39 +551,25 @@ on what matters most and double down on what customers love."""
                     f"Train team on how to address these specific concerns when they come up on calls"
                 )
         
-        # Service-specific topics
-        if hasattr(self, 'topic_df') and self.topic_df is not None:
-            # Find most discussed service types
-            service_keywords = ['installation', 'repair', 'maintenance', 'tune-up', 'emergency']
-            service_mentions = {}
+        # If we have reviews data, provide general recommendations
+        if hasattr(self, 'reviews_df') and self.reviews_df is not None:
+            recommendations.append(
+                "**Set up quarterly review monitoring**: Track how topic sentiment changes each quarter. "
+                "Catching a trend early (e.g., 'pricing' becoming negative) lets Ron fix it before it hurts the business"
+            )
             
-            for keyword in service_keywords:
-                mentions = sum(1 for topic in self.topic_df['dominant_topic'] if keyword in topic.lower())
-                if mentions > 0:
-                    service_mentions[keyword] = mentions
+            recommendations.append(
+                "**Train staff on positive phrases**: Share actual customer quotes in team meetings. "
+                "When technicians hear what gets praised, they know what matters to customers"
+            )
             
-            if service_mentions:
-                top_service = max(service_mentions, key=service_mentions.get)
-                recommendations.append(
-                    f"**Content opportunity**: '{top_service}' is discussed most in reviews. "
-                    f"Create FAQ page, blog post, or video addressing common questions about {top_service} services"
-                )
+            recommendations.append(
+                "**Use topics for Google Ads keywords**: Common phrases from reviews should be in Ron's ad copy and keyword targeting"
+            )
         
-        # General best practices
-        recommendations.append(
-            "**Set up quarterly review monitoring**: Track how topic sentiment changes each quarter. "
-            "Catching a trend early (e.g., 'pricing' becoming negative) lets Ron fix it before it hurts the business"
-        )
-        
-        recommendations.append(
-            "**Train staff on positive phrases**: Share actual customer quotes in team meetings. "
-            "When technicians hear 'prompt service' praised 15 times, they know that speed matters to customers"
-        )
-        
-        recommendations.append(
-            "**Use topics for Google Ads keywords**: If 'honest pricing' or 'quick response' appear frequently, "
-            "those exact phrases should be in Ron's ad copy and keyword targeting"
-        )
+        # Fallback if no data available
+        if len(recommendations) == 0:
+            recommendations.append("Run topic extraction analysis to generate specific recommendations")
         
         return recommendations
     

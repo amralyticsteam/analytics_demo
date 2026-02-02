@@ -470,7 +470,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
         fig.update_layout(
             height=950,
             showlegend=True,
-            title_text="Customer Segmentation: Understanding Ron's Customer Base",
+            title_text="",
             title_x=0.5,
             title_font=dict(size=18, color='#023535'),
             legend=dict(
