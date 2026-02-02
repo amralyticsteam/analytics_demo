@@ -37,7 +37,7 @@ class SeasonalityTimeSeries(BaseAnalysis):
     def business_question(self) -> str:
         return self.rons_challenge
     
-    @property
+        @property
     def data_collected(self) -> list:
         return [
             '**Source**: QuickBooks Revenue Reports',
@@ -78,8 +78,9 @@ class SeasonalityTimeSeries(BaseAnalysis):
         # Sort by date
         self.timeseries_df = self.timeseries_df.sort_values('date')
         
-        # Add month name for display
+        # Add month name and year for display
         self.timeseries_df['month_name'] = self.timeseries_df['date'].dt.strftime('%b')
+        self.timeseries_df['year'] = self.timeseries_df['date'].dt.year
         self.timeseries_df['year_str'] = self.timeseries_df['date'].dt.year.astype(str)
         
         # Calculate service-specific seasonality
