@@ -507,45 +507,75 @@ on what matters most and double down on what customers love."""
         return self.get_insights()
     
     def get_recommendations(self) -> list:
-        """Generate actionable recommendations."""
+        """Generate actionable recommendations based on topic analysis."""
         recommendations = []
         
+        if self.reviews_df is None or len(self.reviews_df) == 0:
+            return ["Load data first to generate recommendations"]
+        
+        # Analyze recurring pain points
         if hasattr(self, 'quarterly_topics') and self.quarterly_topics is not None and len(self.quarterly_topics) > 0:
-            # Address recurring negative topics
             least_positive_topics = self.quarterly_topics['least_positive_topic'].tolist()
             from collections import Counter
             recurring = Counter(least_positive_topics).most_common(1)[0]
             
             if recurring[1] >= 2:
                 recommendations.append(
-                    f"Priority fix: '{recurring[0]}' appears as a pain point in {recurring[1]} quarters. "
-                    f"Create an action plan to systematically address this issue"
+                    f"**Fix recurring pain point**: '{recurring[0]}' appears as a complaint in {recurring[1]} quarters. "
+                    f"This is a pattern, not a one-off. Schedule team training or process improvement to eliminate this issue"
                 )
         
+        # Leverage positive language in marketing
         if hasattr(self, 'common_phrases') and len(self.common_phrases) > 0:
-            # Leverage positive phrases
             positive_phrases = self.common_phrases[self.common_phrases['sentiment'] > 0.2].head(3)
             if len(positive_phrases) > 0:
+                top_phrases = positive_phrases['phrase'].tolist()
                 recommendations.append(
-                    f"Use these phrases in marketing: {', '.join(positive_phrases['phrase'].tolist())} - "
-                    f"they resonate positively with customers"
+                    f"**Update marketing copy immediately**: Use customer language like '{top_phrases[0]}' and '{top_phrases[1]}' "
+                    f"in ads and website. These exact phrases resonate with happy customers"
                 )
             
-            # Address negative phrases
-            negative_phrases = self.common_phrases[self.common_phrases['sentiment'] < 0].head(2)
+            # Address negative phrases proactively
+            negative_phrases = self.common_phrases[self.common_phrases['sentiment'] < -0.1].head(3)
             if len(negative_phrases) > 0:
+                neg_list = negative_phrases['phrase'].tolist()
                 recommendations.append(
-                    f"Create standard responses for: {', '.join(negative_phrases['phrase'].tolist())} - "
-                    f"these appear frequently in less positive reviews"
+                    f"**Create response templates for**: {', '.join(neg_list)}. "
+                    f"Train team on how to address these specific concerns when they come up on calls"
                 )
         
+        # Service-specific topics
+        if hasattr(self, 'topic_df') and self.topic_df is not None:
+            # Find most discussed service types
+            service_keywords = ['installation', 'repair', 'maintenance', 'tune-up', 'emergency']
+            service_mentions = {}
+            
+            for keyword in service_keywords:
+                mentions = sum(1 for topic in self.topic_df['dominant_topic'] if keyword in topic.lower())
+                if mentions > 0:
+                    service_mentions[keyword] = mentions
+            
+            if service_mentions:
+                top_service = max(service_mentions, key=service_mentions.get)
+                recommendations.append(
+                    f"**Content opportunity**: '{top_service}' is discussed most in reviews. "
+                    f"Create FAQ page, blog post, or video addressing common questions about {top_service} services"
+                )
+        
+        # General best practices
         recommendations.append(
-            "Monitor quarterly topic trends to catch emerging issues before they become widespread"
+            "**Set up quarterly review monitoring**: Track how topic sentiment changes each quarter. "
+            "Catching a trend early (e.g., 'pricing' becoming negative) lets Ron fix it before it hurts the business"
         )
         
         recommendations.append(
-            "Next step: Use Marketing Analysis to test messaging that emphasizes Ron's strongest topics "
-            f"across different channels"
+            "**Train staff on positive phrases**: Share actual customer quotes in team meetings. "
+            "When technicians hear 'prompt service' praised 15 times, they know that speed matters to customers"
+        )
+        
+        recommendations.append(
+            "**Use topics for Google Ads keywords**: If 'honest pricing' or 'quick response' appear frequently, "
+            "those exact phrases should be in Ron's ad copy and keyword targeting"
         )
         
         return recommendations
