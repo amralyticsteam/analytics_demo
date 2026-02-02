@@ -88,12 +88,11 @@ tailor his marketing, pricing, and service approach to each group's specific nee
         
         rfm.columns = ['customer_id', 'recency_days', 'total_spend', 'avg_ticket', 'frequency']
         
-        # Add service mix features
         service_mix = df.groupby("customer_id")["service_category"].value_counts().unstack(fill_value=0)
         service_mix = service_mix.div(service_mix.sum(axis=1), axis=0) * 100  # Convert to percentages
         
         # Ensure all categories exist
-        for cat in ['Installation', 'Cooling', 'Heating', 'Maintenance']:
+        for cat in ['Installation', 'Cooling', 'Heating', 'Maintenance', 'Emergency']:
             if cat not in service_mix.columns:
                 service_mix[cat] = 0
         
