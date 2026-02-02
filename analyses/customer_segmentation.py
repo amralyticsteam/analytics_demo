@@ -38,7 +38,7 @@ class CustomerSegmentation(BaseAnalysis):
         
 Some call only for emergencies. Others schedule regular maintenance. Some spend thousands 
 on installations, others just need tune-ups. **Understanding customer segments** helps Ron 
-        tailor his marketing, pricing, and service approach to each group's specific needs."""
+tailor his marketing, pricing, and service approach to each group's specific needs."""
     
     # Backward compatibility
     @property
@@ -48,11 +48,12 @@ on installations, others just need tune-ups. **Understanding customer segments**
     @property
     def data_collected(self) -> list:
         return [
-            '**Source**: ServiceTitan (Field Service Software)',
-            '**Dataset**: customer_segmentation_transactions.csv',
-            '**Records**: 1,778 service transactions, 178 unique customers',
-            '**Contains**: Customer ID, date, service type/category, amount, payment method, technician, duration, parts/labor costs, follow-up needs'
-        ]
+            'Customer transaction history (1,778 transactions) - **ServiceTitan**',
+            'RFM metrics (Recency, Frequency, Monetary) - **ServiceTitan**',
+            'Service mix preferences by customer - **ServiceTitan**',
+            'Customer tenure and engagement patterns - **ServiceTitan**',
+            'Payment and timing behaviors - **ServiceTitan**'
+    ]
     
     # Backward compatibility
     @property
@@ -61,23 +62,7 @@ on installations, others just need tune-ups. **Understanding customer segments**
     
     @property
     def methodology(self) -> str:
-        return """We use the following analytical techniques to help Ron understand his different customer types and tailor his approach to each group:
-
-**RFM Analysis (Recency, Frequency, Monetary)** - The gold standard for customer segmentation. How recently did they buy? How often? How much did they spend? These three metrics reveal customer value and engagement.
-
-**K-Means Clustering** - A machine learning algorithm that automatically groups customers with similar behaviors together, creating natural segments without manual rules.
-
-**Principal Component Analysis (PCA)** - Reduces complex customer data into 3D visualizations showing how different segments naturally separate.
-
-**Customer Lifetime Value (LTV) calculation** - Estimates how much each customer is worth over their entire relationship with Ron's business.
-
-**Why this works for Ron:** Instead of treating all customers the same, Ron can create targeted marketing, pricing, and service strategies for each segment (VIPs get white-glove service, maintenance customers get contract renewals, etc.).
-
-**If results aren't strong enough, we could:**
-- Try different clustering algorithms (DBSCAN, Hierarchical) to find better segment boundaries
-- Add behavioral features like service type preferences or response to promotions
-- Use predictive segmentation to see how customers move between segments over time
-- Combine with geographic or demographic data for richer profiles"""
+        return 'RFM (Recency, Frequency, Monetary) analysis combined with service preference clustering using K-Means, customer lifetime value calculation, segment profiling'
     
     # Backward compatibility
     @property
@@ -277,7 +262,7 @@ on installations, others just need tune-ups. **Understanding customer segments**
                 '3D Customer Clustering (PCA Components)',
                 'Segment Size & Average Customer Value',
                 'Service Mix by Segment',
-                'Segment Characteristics & Profile'
+                'RFM Profile by Segment'
             ),
             specs=[
                 [{"type": "scatter3d"}, {"type": "bar"}],
@@ -407,92 +392,59 @@ on installations, others just need tune-ups. **Understanding customer segments**
                 row=2, col=1
             )
         
-        # 4. Segment Descriptions - Key Characteristics
-        # Instead of a chart, we'll create a text-based summary using annotations
-        # First, hide the subplot axes
-        fig.update_xaxes(visible=False, row=2, col=2)
-        fig.update_yaxes(visible=False, row=2, col=2)
+        # 4. RFM Profile by Segment - Multi-metric comparison
+        # Normalize RFM metrics for comparison (0-100 scale)
+        max_recency = self.segment_profiles['avg_recency'].max()
+        max_freq = self.segment_profiles['avg_frequency'].max()
+        max_monetary = self.segment_profiles['avg_total_spend'].max()
         
-        # Create segment characteristic descriptions
-        segment_descriptions = {
-            'VIP Installation Clients': {
-                'icon': '⭐',
-                'spend': 'High',
-                'frequency': 'Low-Med',
-                'characteristics': 'Major purchases • Big-ticket items • Price insensitive',
-                'color': '#00b894'
-            },
-            'High-Value Regulars': {
-                'icon': '💎',
-                'spend': 'High',
-                'frequency': 'High',
-                'characteristics': 'Loyal customers • Multiple services • Best LTV',
-                'color': '#008f8c'
-            },
-            'Maintenance Contract Holders': {
-                'icon': '🔧',
-                'spend': 'Medium',
-                'frequency': 'Regular',
-                'characteristics': 'Predictable revenue • Seasonal tune-ups • Contract-based',
-                'color': '#23606e'
-            },
-            'Occasional Service': {
-                'icon': '📅',
-                'spend': 'Low-Med',
-                'frequency': 'Low',
-                'characteristics': 'Sporadic calls • Repair-focused • Price sensitive',
-                'color': '#ffa07a'
-            },
-            'At-Risk / Dormant': {
-                'icon': '⚠️',
-                'spend': 'Varies',
-                'frequency': 'Very Low',
-                'characteristics': 'Inactive 12+ months • Churn risk • Win-back target',
-                'color': '#ff6b6b'
-            },
-            'Recent Customers': {
-                'icon': '🆕',
-                'spend': 'Varies',
-                'frequency': 'New',
-                'characteristics': 'First 90 days • Growth opportunity • Build loyalty',
-                'color': '#98d8c8'
-            },
-            'Repair-Focused': {
-                'icon': '🔨',
-                'spend': 'Medium',
-                'frequency': 'Medium',
-                'characteristics': 'Emergency calls • Reactive service • Seasonal peaks',
-                'color': '#667eea'
-            }
-        }
+        # Invert recency (lower is better)
+        self.segment_profiles['recency_score'] = 100 * (1 - self.segment_profiles['avg_recency'] / max_recency)
+        self.segment_profiles['frequency_score'] = 100 * self.segment_profiles['avg_frequency'] / max_freq
+        self.segment_profiles['monetary_score'] = 100 * self.segment_profiles['avg_total_spend'] / max_monetary
         
-        # Add descriptions as annotations for each segment we actually have
-        y_position = 0.95
-        for _, segment in self.segment_profiles.iterrows():
-            seg_name = segment['name']
-            if seg_name in segment_descriptions:
-                desc = segment_descriptions[seg_name]
-                
-                # Add segment description as annotation
-                fig.add_annotation(
-                    xref="x4", yref="y4",
-                    x=0.5, y=y_position,
-                    text=(
-                        f"<b>{desc['icon']} {seg_name}</b><br>"
-                        f"<i>{segment['size']} customers | ${segment['avg_total_spend']:,.0f} avg LTV</i><br>"
-                        f"<span style='font-size:10px'>{desc['characteristics']}</span>"
-                    ),
-                    showarrow=False,
-                    align="left",
-                    xanchor="left",
-                    font=dict(size=11, color=desc['color']),
-                    bordercolor=desc['color'],
-                    borderwidth=2,
-                    borderpad=8,
-                    bgcolor="white",
-                    opacity=0.95
-                )
-                y_position -= 0.22
+        # Plot each RFM dimension
+        fig.add_trace(
+            go.Scatter(
+                x=self.segment_profiles['name'],
+                y=self.segment_profiles['recency_score'],
+                mode='lines+markers',
+                name='Recency',
+                line=dict(color='#00b894', width=2),
+                marker=dict(size=8),
+                hovertemplate='<b>%{x}</b><br>Recency Score: %{y:.0f}<br>Avg Days: %{customdata:.0f}<extra></extra>',
+                customdata=self.segment_profiles['avg_recency']
+            ),
+            row=2, col=2
+        )
+        
+        fig.add_trace(
+            go.Scatter(
+                x=self.segment_profiles['name'],
+                y=self.segment_profiles['frequency_score'],
+                mode='lines+markers',
+                name='Frequency',
+                line=dict(color='#008f8c', width=2),
+                marker=dict(size=8),
+                hovertemplate='<b>%{x}</b><br>Frequency Score: %{y:.0f}<br>Avg Transactions: %{customdata:.1f}<extra></extra>',
+                customdata=self.segment_profiles['avg_frequency']
+            ),
+            row=2, col=2
+        )
+        
+        fig.add_trace(
+            go.Scatter(
+                x=self.segment_profiles['name'],
+                y=self.segment_profiles['monetary_score'],
+                mode='lines+markers',
+                name='Monetary',
+                line=dict(color='#ff6b6b', width=2),
+                marker=dict(size=8),
+                hovertemplate='<b>%{x}</b><br>Monetary Score: %{y:.0f}<br>Avg Spend: $%{customdata:,.0f}<extra></extra>',
+                customdata=self.segment_profiles['avg_total_spend']
+            ),
+            row=2, col=2
+        )
         
         # Update layout
         fig.update_layout(
@@ -514,13 +466,13 @@ on installations, others just need tune-ups. **Understanding customer segments**
         
         # Update axes
         fig.update_xaxes(title_text="Customer Segment", row=1, col=2, tickangle=-45)
-        fig.update_yaxes(title_text="Number of Customers", row=1, col=2, secondary_y=False, rangemode='tozero')
+        fig.update_yaxes(title_text="Number of Customers", row=1, col=2, secondary_y=False)
         
         fig.update_xaxes(title_text="Customer Segment", row=2, col=1, tickangle=-45)
-        fig.update_yaxes(title_text="Service Mix (%)", row=2, col=1, range=[0, 105])
+        fig.update_yaxes(title_text="Service Mix (%)", row=2, col=1)
         
         fig.update_xaxes(title_text="Customer Segment", row=2, col=2, tickangle=-45)
-        fig.update_yaxes(title_text="RFM Score (0-100)", row=2, col=2, range=[0, 108])
+        fig.update_yaxes(title_text="RFM Score (0-100)", row=2, col=2, range=[0, 105])
         
         # Update 3D scene
         scene_dict = dict(
