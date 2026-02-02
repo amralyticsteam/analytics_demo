@@ -514,7 +514,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
         insights = []
         
         insights.append(
-            f"**3D clustering reveals {self.n_clusters} distinct customer segments** from {len(self.customer_features)} customers "
+            f"3D clustering reveals {self.n_clusters} distinct customer segments from {len(self.customer_features)} customers "
             f"- clear separation visible in PCA space"
         )
         
@@ -524,7 +524,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             revenue_pct = (highest_revenue['total_revenue'] / self.segment_profiles['total_revenue'].sum()) * 100
             
             insights.append(
-                f"**{highest_revenue['name']}** drives {revenue_pct:.0f}% of total revenue "
+                f"{highest_revenue['name']} drives {revenue_pct:.0f}% of total revenue "
                 f"({highest_revenue['size']} customers, ${highest_revenue['avg_total_spend']:,.0f} avg LTV)"
             )
             
@@ -532,7 +532,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             highest_ltv = self.segment_profiles.nlargest(1, 'avg_total_spend').iloc[0]
             if highest_ltv['segment_id'] != highest_revenue['segment_id']:
                 insights.append(
-                    f"**{highest_ltv['name']}** has highest average customer value "
+                    f"{highest_ltv['name']} has highest average customer value "
                     f"(${highest_ltv['avg_total_spend']:,.0f} LTV) - RFM profile shows high monetary score"
                 )
             
@@ -542,7 +542,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             ]
             if len(installation_heavy) > 0:
                 insights.append(
-                    f"**Service mix analysis**: {installation_heavy.iloc[0]['name']} are {installation_heavy.iloc[0]['pct_installation']:.0f}% installation-focused - "
+                    f"Service mix analysis: {installation_heavy.iloc[0]['name']} are {installation_heavy.iloc[0]['pct_installation']:.0f}% installation-focused - "
                     f"cross-sell maintenance contracts for recurring revenue"
                 )
             
@@ -552,7 +552,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
                 at_risk_total = at_risk['size'].sum()
                 at_risk_pct = (at_risk_total / len(self.customer_features)) * 100
                 insights.append(
-                    f"**{at_risk_total} customers ({at_risk_pct:.0f}%) haven't purchased in 1+ years** - "
+                    f"{at_risk_total} customers ({at_risk_pct:.0f}%) haven't purchased in 1+ years - "
                     f"'{at_risk.iloc[0]['name']}' segment needs win-back campaign (low recency score)"
                 )
             
@@ -560,7 +560,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             high_freq = self.segment_profiles.nlargest(1, 'avg_frequency').iloc[0]
             if high_freq['avg_frequency'] >= 3:
                 insights.append(
-                    f"**RFM analysis**: '{high_freq['name']}' averages {high_freq['avg_frequency']:.1f} transactions - "
+                    f"RFM analysis: '{high_freq['name']}' averages {high_freq['avg_frequency']:.1f} transactions - "
                     f"highest frequency score indicates strong engagement"
                 )
         
@@ -575,7 +575,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
         
         # Connection to other analyses
         insights.append(
-            "**Connection to Churn Prediction**: Use segment characteristics (recency, frequency, service mix) "
+            "Connection to Churn Prediction: Use segment characteristics (recency, frequency, service mix) "
             "to predict which customers in each group are most at risk"
         )
         
@@ -594,7 +594,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             # Target high-value segments
             highest_ltv = self.segment_profiles.nlargest(1, 'avg_total_spend').iloc[0]
             recommendations.append(
-                f"**VIP treatment for {highest_ltv['name']}**: Priority scheduling, dedicated technician, "
+                f"VIP treatment for {highest_ltv['name']}: Priority scheduling, dedicated technician, "
                 f"annual check-ins - these customers are worth ${highest_ltv['avg_total_spend']:,.0f} each"
             )
             
@@ -602,7 +602,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             at_risk = self.segment_profiles[self.segment_profiles['avg_recency'] > 365]
             if len(at_risk) > 0:
                 recommendations.append(
-                    f"**Win-back campaign**: Email {at_risk.iloc[0]['name']} with 'We Miss You' offer - "
+                    f"Win-back campaign: Email {at_risk.iloc[0]['name']} with 'We Miss You' offer - "
                     f"seasonal tune-up discount or free safety inspection"
                 )
             
@@ -632,7 +632,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
         )
         
         recommendations.append(
-            "**Next step**: Use Pricing Analysis to ensure each segment has appropriate service packages "
+            "Next step: Use Pricing Analysis to ensure each segment has appropriate service packages "
             "and price points matching their willingness to pay"
         )
         

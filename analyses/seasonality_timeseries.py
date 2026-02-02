@@ -286,7 +286,7 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
         heating_peak_value = self.service_seasonality['heating'].max()
         
         insights.append(
-            f"**Clear seasonal patterns**: Cooling peaks in {ac_peak_month} (${ac_peak_value:,.0f}), "
+            f"Clear seasonal patterns: Cooling peaks in {ac_peak_month} (${ac_peak_value:,.0f}), "
             f"Heating peaks in {heating_peak_month} (${heating_peak_value:,.0f})"
         )
         
@@ -331,7 +331,7 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
         
         top_service = max(avg_service_revenue, key=avg_service_revenue.get)
         insights.append(
-            f"**Largest revenue driver**: {top_service} averages "
+            f"Largest revenue driver: {top_service} averages "
             f"${avg_service_revenue[top_service]:,.0f}/month"
         )
         
@@ -353,7 +353,7 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
         
         # Connection to other analyses
         insights.append(
-            "**Connection to Demand Forecasting**: Seasonal patterns inform capacity planning - "
+            "Connection to Demand Forecasting: Seasonal patterns inform capacity planning - "
             "use demand forecasts to fine-tune staffing within these seasonal windows"
         )
         
@@ -380,7 +380,7 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
         ]
         
         recommendations.append(
-            f"**Hire seasonal help before peak months**: Bring on extra technicians in May "
+            f"Hire seasonal help before peak months: Bring on extra technicians in May "
             f"(before {ac_peak_month} cooling peak) and November (before {heating_peak_month} heating peak)"
         )
         
@@ -409,7 +409,7 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
         )
         
         recommendations.append(
-            "**Next step**: Use pricing analysis to ensure seasonal services are priced for profitability"
+            "Next step: Use pricing analysis to ensure seasonal services are priced for profitability"
         )
         
         return recommendations

@@ -369,7 +369,7 @@ Before diving into complex analyses, we need to understand the current state."""
             )
         
         recommendations.append(
-            "**Next step**: Review Customer Segmentation analysis to understand which customer groups "
+            "Next step: Review Customer Segmentation analysis to understand which customer groups "
             "drive different service categories and tailor strategies accordingly"
         )
         

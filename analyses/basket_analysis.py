@@ -643,7 +643,7 @@ f"**Strongest association**: {top_rule['rule']} "
         
         # Connection to other analyses
         insights.append(
-"**Connection to Pricing Analysis**: Bundle frequently paired services with 10-15% discount "
+"Connection to Pricing Analysis: Bundle frequently paired services with 10-15% discount "
 "while maintaining overall margin"
         )
         
@@ -662,7 +662,7 @@ f"**Strongest association**: {top_rule['rule']} "
             # Top bundling opportunities
             top_3 = self.rules.nlargest(3, 'lift')
             recommendations.append(
-"**Create service packages** for top associations: " +
+"Create service packages for top associations: " +
                 ", ".join([f"'{r['rule']}'" for _, r in top_3.iterrows()])
             )
             
@@ -670,7 +670,7 @@ f"**Strongest association**: {top_rule['rule']} "
             high_conf_rules = self.rules[self.rules['confidence'] > 0.4].nlargest(5, 'confidence')
             if len(high_conf_rules) > 0:
                 recommendations.append(
-"**Train technicians to suggest**: " +
+"Train technicians to suggest: " +
                     ", ".join([r['consequent'] for _, r in high_conf_rules.iterrows()]) +
                     " when performing related services"
                 )
@@ -682,7 +682,7 @@ f"**Strongest association**: {top_rule['rule']} "
             
             if len(install_rules) > 0:
                 recommendations.append(
-"**Installation package**: Always include " +
+"Installation package: Always include " +
                     ", ".join([r['consequent'] for _, r in install_rules.iterrows()]) +
                     " as part of installation quotes"
                 )
@@ -698,7 +698,7 @@ f"**Strongest association**: {top_rule['rule']} "
         )
         
         recommendations.append(
-"**Next step**: Use Customer Segmentation to identify which segments respond "
+"Next step: Use Customer Segmentation to identify which segments respond "
 "best to bundled offerings vs à la carte pricing"
         )
         
