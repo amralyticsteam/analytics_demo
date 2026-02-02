@@ -643,8 +643,8 @@ upselling, and increase average ticket size without being pushy."""
         
         # Connection to other analyses
         insights.append(
-            "**Connection to Pricing Analysis**: Bundle frequently paired services with 10-15% discount "
-            "while maintaining overall margin"
+"**Connection to Pricing Analysis**: Bundle frequently paired services with 10-15% discount "
+"while maintaining overall margin"
         )
         
         return insights
