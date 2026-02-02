@@ -32,63 +32,156 @@ def show_synthesis_page():
     to create a complete picture. Here's how they connect:
     """)
     
-    # Connection flow - Updated for 10 analyses
-    col1, col2 = st.columns([1, 3])
-    
-    with col2:
-        st.markdown("""
-        **1. Business Overview** *(ServiceTitan)*
-        - Revealed revenue trends & transaction patterns across 1,778 services
+    # Visual snake flowchart
+    st.markdown("""
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0;">
+            <!-- Row 1: Left to Right -->
+            <div class="flow-box">
+                <div class="flow-number">1</div>
+                <div class="flow-title">Business Overview</div>
+                <div class="flow-insight">Revenue trends & patterns</div>
+                <div class="flow-source">ServiceTitan</div>
+                <div class="flow-arrow">→</div>
+            </div>
+            <div class="flow-box">
+                <div class="flow-number">2</div>
+                <div class="flow-title">Customer Segmentation</div>
+                <div class="flow-insight">5 distinct customer groups</div>
+                <div class="flow-source">ServiceTitan</div>
+                <div class="flow-arrow">→</div>
+            </div>
+            <div class="flow-box">
+                <div class="flow-number">3</div>
+                <div class="flow-title">Sentiment Analysis</div>
+                <div class="flow-insight">What customers value</div>
+                <div class="flow-source">Google Reviews</div>
+                <div class="flow-arrow">↓</div>
+            </div>
+            
+            <!-- Row 2: Right to Left (snake back) -->
+            <div class="flow-box" style="grid-column: 3; grid-row: 2;">
+                <div class="flow-arrow-top">↓</div>
+                <div class="flow-number">6</div>
+                <div class="flow-title">Churn Prediction</div>
+                <div class="flow-insight">At-risk customers flagged</div>
+                <div class="flow-source">ServiceTitan</div>
+                <div class="flow-arrow">←</div>
+            </div>
+            <div class="flow-box" style="grid-column: 2; grid-row: 2;">
+                <div class="flow-number">5</div>
+                <div class="flow-title">Marketing Impact</div>
+                <div class="flow-insight">ROI by channel</div>
+                <div class="flow-source">Google Analytics, Meta</div>
+                <div class="flow-arrow">←</div>
+            </div>
+            <div class="flow-box" style="grid-column: 1; grid-row: 2;">
+                <div class="flow-number">4</div>
+                <div class="flow-title">Topic Extraction</div>
+                <div class="flow-insight">Key themes in feedback</div>
+                <div class="flow-source">Google Reviews</div>
+                <div class="flow-arrow">↓</div>
+            </div>
+            
+            <!-- Row 3: Left to Right -->
+            <div class="flow-box">
+                <div class="flow-arrow-top">↓</div>
+                <div class="flow-number">7</div>
+                <div class="flow-title">Pricing Analysis</div>
+                <div class="flow-insight">Negative margins found</div>
+                <div class="flow-source">QuickBooks</div>
+                <div class="flow-arrow">→</div>
+            </div>
+            <div class="flow-box">
+                <div class="flow-number">8</div>
+                <div class="flow-title">Demand Forecasting</div>
+                <div class="flow-insight">Predict busy periods</div>
+                <div class="flow-source">ServiceTitan + Weather</div>
+                <div class="flow-arrow">→</div>
+            </div>
+            <div class="flow-box">
+                <div class="flow-number">9</div>
+                <div class="flow-title">Seasonality Analysis</div>
+                <div class="flow-insight">Normal vs concerning trends</div>
+                <div class="flow-source">QuickBooks</div>
+                <div class="flow-arrow">↓</div>
+            </div>
+            
+            <!-- Row 4: Center -->
+            <div class="flow-box" style="grid-column: 2; grid-row: 4;">
+                <div class="flow-arrow-top">↓</div>
+                <div class="flow-number">10</div>
+                <div class="flow-title">Basket Analysis</div>
+                <div class="flow-insight">Service bundling opportunities</div>
+                <div class="flow-source">ServiceTitan</div>
+                <div class="flow-arrow">↓</div>
+            </div>
+            
+            <!-- Final action plan -->
+            <div style="grid-column: 1 / -1; grid-row: 5; background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 2rem; border-radius: 10px; text-align: center; color: white; margin-top: 1rem;">
+                <div style="font-size: 1.8rem; font-weight: bold;">📋 Complete Action Plan</div>
+                <div style="font-size: 1.1rem; margin-top: 0.5rem; opacity: 0.95;">Prioritized recommendations from all 10 analyses</div>
+            </div>
+        </div>
         
-        ↓
-        
-        **2. Customer Segmentation** *(ServiceTitan)*
-        - Identified 5 distinct customer groups using RFM analysis
-        
-        ↓
-        
-        **3. Sentiment Analysis** *(Google Reviews)*
-        - Showed what customers value: quality work, but response time needs improvement
-        
-        ↓
-        
-        **4. Topic Extraction** *(Google Reviews)*
-        - Found key themes: "professional service", "fair pricing", "quick response"
-        
-        ↓
-        
-        **5. Marketing Impact** *(Google Analytics, Meta Ads)*
-        - Identified which channels (Google vs Social) deliver best ROI
-        
-        ↓
-        
-        **6. Churn Prediction** *(ServiceTitan)*
-        - Flagged at-risk customers before they leave (178 customers analyzed)
-        
-        ↓
-        
-        **7. Pricing Analysis** *(QuickBooks, ServiceTitan)*
-        - Found popular services with zero/negative margins - pricing crisis
-        
-        ↓
-        
-        **8. Demand Forecasting** *(ServiceTitan + Weather API)*
-        - Predicted busy periods using weather patterns & marketing spend
-        
-        ↓
-        
-        **9. Seasonality Analysis** *(QuickBooks)*
-        - Separated normal seasonal variation from real business problems
-        
-        ↓
-        
-        **10. Market Basket Analysis** *(ServiceTitan)*
-        - Discovered which services are bundled together - upsell opportunities
-        
-        ↓
-        
-        **→ Complete Action Plan**
-        """)
+        <style>
+        .flow-box {
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 1.2rem;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .flow-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.2);
+        }
+        .flow-number {
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.5rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .flow-title {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+        .flow-insight {
+            font-size: 0.85rem;
+            color: #4b5563;
+            margin-bottom: 0.25rem;
+            font-style: italic;
+        }
+        .flow-source {
+            font-size: 0.8rem;
+            color: #9ca3af;
+            margin-bottom: 0.5rem;
+        }
+        .flow-arrow {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-top: 0.5rem;
+            font-weight: bold;
+        }
+        .flow-arrow-top {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        </style>
+    """, unsafe_allow_html=True)
     
     st.divider()
     
@@ -145,7 +238,7 @@ def show_synthesis_page():
                     <strong>Evidence:</strong> {item['evidence']}
                 </div>
                 <div style="color: #9ca3af; font-size: 0.9rem; margin-bottom: 0.5rem;">
-                    {item['source']}
+                    📊 {item['source']}
                 </div>
                 <div style="color: #059669; font-weight: 500;">
                     <strong>→ Action:</strong> {item['action']}
