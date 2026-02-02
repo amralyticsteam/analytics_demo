@@ -64,7 +64,7 @@ def show_synthesis_page():
             <div class="flow-title">Churn Prediction</div>
             <div class="flow-insight">At-risk customers</div>
             <div class="flow-source">ServiceTitan</div>
-            <div class="flow-arrow">↓</div>
+            <div class="flow-arrow">←</div>
         </div>
         <div class="flow-box">
             <div class="flow-number">5</div>
@@ -74,15 +74,17 @@ def show_synthesis_page():
             <div class="flow-arrow">←</div>
         </div>
         <div class="flow-box">
+            <div class="flow-arrow-top">↓</div>
             <div class="flow-number">4</div>
             <div class="flow-title">Topic Extraction</div>
             <div class="flow-insight">Key themes</div>
             <div class="flow-source">Google Reviews</div>
-            <div class="flow-arrow">←</div>
+            <div class="flow-arrow">↓</div>
         </div>
     </div>
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
         <div class="flow-box">
+            <div class="flow-arrow-top">↓</div>
             <div class="flow-number">7</div>
             <div class="flow-title">Pricing Analysis</div>
             <div class="flow-insight">Negative margins</div>
@@ -106,6 +108,7 @@ def show_synthesis_page():
     </div>
     <div style="display: flex; justify-content: center; margin-bottom: 1rem;">
         <div class="flow-box" style="width: 32%;">
+            <div class="flow-arrow-top">↓</div>
             <div class="flow-number">10</div>
             <div class="flow-title">Basket Analysis</div>
             <div class="flow-insight">Bundling opportunities</div>
@@ -196,13 +199,13 @@ def show_synthesis_page():
         },
         {
             "finding": "Customer segments have very different needs",
-            "evidence": "VIP Installation Clients spend $4,500 avg vs Maintenance Contracts at $800 avg. 5 distinct segments identified.",
+            "evidence": "VIP customers (10%) average $3,500 per service vs Occasional customers (35%) at $400. 650 customers across 5 distinct RFM segments.",
             "source": "Customer Segmentation - ServiceTitan",
             "action": "Tailor marketing & service packages by segment"
         },
         {
             "finding": "High churn risk among recent customers",
-            "evidence": "Customers who haven't been serviced in 365+ days are flagged as high-risk churn",
+            "evidence": "99 customers (15.2%) flagged as high churn risk. Customers inactive 12+ months or with low engagement.",
             "source": "Churn Prediction - ServiceTitan",
             "action": "Launch win-back campaign immediately"
         },
@@ -237,7 +240,7 @@ def show_synthesis_page():
                     <strong>Evidence:</strong> {item['evidence']}
                 </div>
                 <div style="color: #9ca3af; font-size: 0.9rem; margin-bottom: 0.5rem;">
-                    {item['source']}
+                    📊 {item['source']}
                 </div>
                 <div style="color: #059669; font-weight: 500;">
                     <strong>→ Action:</strong> {item['action']}
@@ -273,7 +276,7 @@ def show_synthesis_page():
             "timeline": "Next 2 weeks",
             "impact": "High",
             "effort": "Medium",
-            "expected_result": "Email/call customers who haven't serviced in 365+ days. 'We Miss You' seasonal tune-up offer. Prevent $15-20K revenue loss.",
+            "expected_result": "Email/call 99 high-risk customers. 'We Miss You' seasonal tune-up offer. Target 25% win-back rate = ~$50K preserved revenue.",
             "source": "Churn Prediction"
         },
         {
@@ -328,11 +331,11 @@ def show_synthesis_page():
     with col1:
         st.markdown("""
         **🔧 ServiceTitan** (Field Service Software)
-        - 1,778 service transactions
-        - 178 unique customers
-        - 1,000 invoices with service bundles
+        - 3,490 service transactions
+        - 650 unique customers
+        - 2,358 invoices with service bundles
         - Customer history & churn indicators
-        - Daily call volume (95 days)
+        - Daily call volume (336 days)
         
         **💰 QuickBooks** (Accounting)
         - 50 services with pricing & COGS
