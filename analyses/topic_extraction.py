@@ -519,14 +519,14 @@ on what matters most and double down on what customers love."""
             
             if recurring[1] >= 2:
                 recommendations.append(
-                    f"**Fix recurring pain point**: '{recurring[0]}' appears as a complaint in {recurring[1]} quarters. "
+                    f"Fix recurring pain point: '{recurring[0]}' appears as a complaint in {recurring[1]} quarters. "
                     f"This is a pattern, not a one-off. Schedule team training or process improvement to eliminate this issue"
                 )
             
             # Highlight most positive topic
             most_positive = self.quarterly_topics.nlargest(1, 'most_positive_sentiment').iloc[0]
             recommendations.append(
-                f"**Emphasize Ron's strength**: '{most_positive['most_positive_topic']}' is consistently praised. "
+                f"Emphasize Ron's strength: '{most_positive['most_positive_topic']}' is consistently praised. "
                 f"Feature this in marketing materials and train new technicians to excel here"
             )
         
@@ -538,7 +538,7 @@ on what matters most and double down on what customers love."""
                 top_phrases = positive_phrases['phrase'].tolist()
                 if len(top_phrases) >= 2:
                     recommendations.append(
-                        f"**Update marketing copy immediately**: Use customer language like '{top_phrases[0]}' and '{top_phrases[1]}' "
+                        f"Update marketing copy immediately: Use customer language like '{top_phrases[0]}' and '{top_phrases[1]}' "
                         f"in ads and website. These exact phrases resonate with happy customers"
                     )
             
@@ -547,23 +547,23 @@ on what matters most and double down on what customers love."""
             if len(negative_phrases) > 0:
                 neg_list = negative_phrases['phrase'].tolist()
                 recommendations.append(
-                    f"**Create response templates for**: {', '.join(neg_list)}. "
+                    f"Create response templates for: {', '.join(neg_list)}. "
                     f"Train team on how to address these specific concerns when they come up on calls"
                 )
         
         # General recommendations
         recommendations.append(
-            "**Set up quarterly review monitoring**: Track how topic sentiment changes each quarter. "
+            "Set up quarterly review monitoring: Track how topic sentiment changes each quarter. "
             "Catching a trend early (e.g., 'pricing' becoming negative) lets Ron fix it before it hurts the business"
         )
         
         recommendations.append(
-            "**Train staff on positive phrases**: Share actual customer quotes in team meetings. "
+            "Train staff on positive phrases: Share actual customer quotes in team meetings. "
             "When technicians hear what gets praised, they know what matters to customers"
         )
         
         recommendations.append(
-            "**Use topics for Google Ads keywords**: Common phrases from reviews should be in Ron's ad copy and keyword targeting"
+            "Use topics for Google Ads keywords: Common phrases from reviews should be in Ron's ad copy and keyword targeting"
         )
         
         return recommendations
