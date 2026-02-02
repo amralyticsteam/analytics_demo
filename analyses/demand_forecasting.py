@@ -39,7 +39,7 @@ class DemandForecasting(BaseAnalysis):
     def business_question(self) -> str:
         return self.rons_challenge
     
-    @property
+        @property
     def data_collected(self) -> list:
         return [
             '**Source**: ServiceTitan + Weather API + Marketing Tracking',
@@ -75,6 +75,15 @@ class DemandForecasting(BaseAnalysis):
         self.demand_df = pd.read_csv(filepath)
         self.demand_df['date'] = pd.to_datetime(self.demand_df['date'])
         self.demand_df = self.demand_df.sort_values('date')
+        
+        # Add season based on month
+        self.demand_df['month'] = self.demand_df['date'].dt.month
+        self.demand_df['season'] = self.demand_df['month'].apply(lambda m: 
+            'Winter' if m in [12, 1, 2] else
+            'Spring' if m in [3, 4, 5] else
+            'Summer' if m in [6, 7, 8] else
+            'Fall'
+        )
         
         # Calculate lagged variables
         self.demand_df['temp_lag1'] = self.demand_df['high_temp'].shift(1)
