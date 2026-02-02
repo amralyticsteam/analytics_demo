@@ -106,7 +106,6 @@ def show_synthesis_page():
     </div>
     <div style="display: flex; justify-content: center; margin-bottom: 1rem;">
         <div class="flow-box" style="width: 32%;">
-            <div class="flow-arrow-top">↓</div>
             <div class="flow-number">10</div>
             <div class="flow-title">Basket Analysis</div>
             <div class="flow-insight">Bundling opportunities</div>
