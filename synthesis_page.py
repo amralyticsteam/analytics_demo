@@ -35,7 +35,6 @@ def show_synthesis_page():
     # Visual snake flowchart
     st.markdown("""
         <div style="max-width: 1200px; margin: 2rem auto;">
-            <!-- Row 1: Left to Right -->
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
                 <div class="flow-box">
                     <div class="flow-number">1</div>
@@ -60,7 +59,6 @@ def show_synthesis_page():
                 </div>
             </div>
             
-            <!-- Row 2: Right to Left -->
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
                 <div class="flow-box">
                     <div class="flow-arrow-top">↓</div>
@@ -86,7 +84,6 @@ def show_synthesis_page():
                 </div>
             </div>
             
-            <!-- Row 3: Left to Right -->
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
                 <div class="flow-box">
                     <div class="flow-arrow-top">↓</div>
@@ -112,7 +109,6 @@ def show_synthesis_page():
                 </div>
             </div>
             
-            <!-- Row 4: Center -->
             <div style="display: flex; justify-content: center; margin-bottom: 1rem;">
                 <div class="flow-box" style="width: 32%;">
                     <div class="flow-arrow-top">↓</div>
