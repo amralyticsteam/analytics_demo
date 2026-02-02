@@ -48,12 +48,12 @@ tailor his marketing, pricing, and service approach to each group's specific nee
     @property
     def data_collected(self) -> list:
         return [
-        'Customer transaction history (1,778 transactions from 178 unique customers) - **ServiceTitan**',
-        'RFM metrics: Recency (days since last service), Frequency (# of visits), Monetary (total spend) - **ServiceTitan**',
-        'Service mix preferences by customer (Installation vs Maintenance vs Emergency patterns) - **ServiceTitan**',
-        'Customer tenure (first visit to most recent), engagement scores, visit intervals - **ServiceTitan**',
-        'Payment behaviors (method preferences, avg ticket size, seasonal patterns) - **ServiceTitan**'
-    ]
+            '**Source**: ServiceTitan (Field Service Software)',
+            '**Dataset**: customer_segmentation_transactions.csv',
+            '**Records**: 1,778 service transactions, 178 unique customers',
+            '**Contains**: Customer ID, date, service type/category, amount, payment method, technician, duration, parts/labor costs, follow-up needs'
+        ]
+    
     # Backward compatibility
     @property
     def data_inputs(self) -> list:
@@ -277,7 +277,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
                 '3D Customer Clustering (PCA Components)',
                 'Segment Size & Average Customer Value',
                 'Service Mix by Segment',
-                'RFM Profile by Segment'
+                'Segment Characteristics & Profile'
             ),
             specs=[
                 [{"type": "scatter3d"}, {"type": "bar"}],
@@ -407,59 +407,92 @@ tailor his marketing, pricing, and service approach to each group's specific nee
                 row=2, col=1
             )
         
-        # 4. RFM Profile by Segment - Multi-metric comparison
-        # Normalize RFM metrics for comparison (0-100 scale)
-        max_recency = self.segment_profiles['avg_recency'].max()
-        max_freq = self.segment_profiles['avg_frequency'].max()
-        max_monetary = self.segment_profiles['avg_total_spend'].max()
+        # 4. Segment Descriptions - Key Characteristics
+        # Instead of a chart, we'll create a text-based summary using annotations
+        # First, hide the subplot axes
+        fig.update_xaxes(visible=False, row=2, col=2)
+        fig.update_yaxes(visible=False, row=2, col=2)
         
-        # Invert recency (lower is better)
-        self.segment_profiles['recency_score'] = 100 * (1 - self.segment_profiles['avg_recency'] / max_recency)
-        self.segment_profiles['frequency_score'] = 100 * self.segment_profiles['avg_frequency'] / max_freq
-        self.segment_profiles['monetary_score'] = 100 * self.segment_profiles['avg_total_spend'] / max_monetary
+        # Create segment characteristic descriptions
+        segment_descriptions = {
+            'VIP Installation Clients': {
+                'icon': '⭐',
+                'spend': 'High',
+                'frequency': 'Low-Med',
+                'characteristics': 'Major purchases • Big-ticket items • Price insensitive',
+                'color': '#00b894'
+            },
+            'High-Value Regulars': {
+                'icon': '💎',
+                'spend': 'High',
+                'frequency': 'High',
+                'characteristics': 'Loyal customers • Multiple services • Best LTV',
+                'color': '#008f8c'
+            },
+            'Maintenance Contract Holders': {
+                'icon': '🔧',
+                'spend': 'Medium',
+                'frequency': 'Regular',
+                'characteristics': 'Predictable revenue • Seasonal tune-ups • Contract-based',
+                'color': '#23606e'
+            },
+            'Occasional Service': {
+                'icon': '📅',
+                'spend': 'Low-Med',
+                'frequency': 'Low',
+                'characteristics': 'Sporadic calls • Repair-focused • Price sensitive',
+                'color': '#ffa07a'
+            },
+            'At-Risk / Dormant': {
+                'icon': '⚠️',
+                'spend': 'Varies',
+                'frequency': 'Very Low',
+                'characteristics': 'Inactive 12+ months • Churn risk • Win-back target',
+                'color': '#ff6b6b'
+            },
+            'Recent Customers': {
+                'icon': '🆕',
+                'spend': 'Varies',
+                'frequency': 'New',
+                'characteristics': 'First 90 days • Growth opportunity • Build loyalty',
+                'color': '#98d8c8'
+            },
+            'Repair-Focused': {
+                'icon': '🔨',
+                'spend': 'Medium',
+                'frequency': 'Medium',
+                'characteristics': 'Emergency calls • Reactive service • Seasonal peaks',
+                'color': '#667eea'
+            }
+        }
         
-        # Plot each RFM dimension
-        fig.add_trace(
-            go.Scatter(
-                x=self.segment_profiles['name'],
-                y=self.segment_profiles['recency_score'],
-                mode='lines+markers',
-                name='Recency',
-                line=dict(color='#00b894', width=2),
-                marker=dict(size=8),
-                hovertemplate='<b>%{x}</b><br>Recency Score: %{y:.0f}<br>Avg Days: %{customdata:.0f}<extra></extra>',
-                customdata=self.segment_profiles['avg_recency']
-            ),
-            row=2, col=2
-        )
-        
-        fig.add_trace(
-            go.Scatter(
-                x=self.segment_profiles['name'],
-                y=self.segment_profiles['frequency_score'],
-                mode='lines+markers',
-                name='Frequency',
-                line=dict(color='#008f8c', width=2),
-                marker=dict(size=8),
-                hovertemplate='<b>%{x}</b><br>Frequency Score: %{y:.0f}<br>Avg Transactions: %{customdata:.1f}<extra></extra>',
-                customdata=self.segment_profiles['avg_frequency']
-            ),
-            row=2, col=2
-        )
-        
-        fig.add_trace(
-            go.Scatter(
-                x=self.segment_profiles['name'],
-                y=self.segment_profiles['monetary_score'],
-                mode='lines+markers',
-                name='Monetary',
-                line=dict(color='#ff6b6b', width=2),
-                marker=dict(size=8),
-                hovertemplate='<b>%{x}</b><br>Monetary Score: %{y:.0f}<br>Avg Spend: $%{customdata:,.0f}<extra></extra>',
-                customdata=self.segment_profiles['avg_total_spend']
-            ),
-            row=2, col=2
-        )
+        # Add descriptions as annotations for each segment we actually have
+        y_position = 0.95
+        for _, segment in self.segment_profiles.iterrows():
+            seg_name = segment['name']
+            if seg_name in segment_descriptions:
+                desc = segment_descriptions[seg_name]
+                
+                # Add segment description as annotation
+                fig.add_annotation(
+                    xref="x4", yref="y4",
+                    x=0.5, y=y_position,
+                    text=(
+                        f"<b>{desc['icon']} {seg_name}</b><br>"
+                        f"<i>{segment['size']} customers | ${segment['avg_total_spend']:,.0f} avg LTV</i><br>"
+                        f"<span style='font-size:10px'>{desc['characteristics']}</span>"
+                    ),
+                    showarrow=False,
+                    align="left",
+                    xanchor="left",
+                    font=dict(size=11, color=desc['color']),
+                    bordercolor=desc['color'],
+                    borderwidth=2,
+                    borderpad=8,
+                    bgcolor="white",
+                    opacity=0.95
+                )
+                y_position -= 0.22
         
         # Update layout
         fig.update_layout(
@@ -508,7 +541,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
         insights = []
         
         insights.append(
-            f"3D clustering reveals {self.n_clusters} distinct customer segments from {len(self.customer_features)} customers "
+            f"**3D clustering reveals {self.n_clusters} distinct customer segments** from {len(self.customer_features)} customers "
             f"- clear separation visible in PCA space"
         )
         
@@ -518,7 +551,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             revenue_pct = (highest_revenue['total_revenue'] / self.segment_profiles['total_revenue'].sum()) * 100
             
             insights.append(
-                f"{highest_revenue['name']} drives {revenue_pct:.0f}% of total revenue "
+                f"**{highest_revenue['name']}** drives {revenue_pct:.0f}% of total revenue "
                 f"({highest_revenue['size']} customers, ${highest_revenue['avg_total_spend']:,.0f} avg LTV)"
             )
             
@@ -526,7 +559,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             highest_ltv = self.segment_profiles.nlargest(1, 'avg_total_spend').iloc[0]
             if highest_ltv['segment_id'] != highest_revenue['segment_id']:
                 insights.append(
-                    f"{highest_ltv['name']} has highest average customer value "
+                    f"**{highest_ltv['name']}** has highest average customer value "
                     f"(${highest_ltv['avg_total_spend']:,.0f} LTV) - RFM profile shows high monetary score"
                 )
             
@@ -536,7 +569,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             ]
             if len(installation_heavy) > 0:
                 insights.append(
-                    f"Service mix analysis: {installation_heavy.iloc[0]['name']} are {installation_heavy.iloc[0]['pct_installation']:.0f}% installation-focused - "
+                    f"**Service mix analysis**: {installation_heavy.iloc[0]['name']} are {installation_heavy.iloc[0]['pct_installation']:.0f}% installation-focused - "
                     f"cross-sell maintenance contracts for recurring revenue"
                 )
             
@@ -546,7 +579,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
                 at_risk_total = at_risk['size'].sum()
                 at_risk_pct = (at_risk_total / len(self.customer_features)) * 100
                 insights.append(
-                    f"{at_risk_total} customers ({at_risk_pct:.0f}%) haven't purchased in 1+ years - "
+                    f"**{at_risk_total} customers ({at_risk_pct:.0f}%) haven't purchased in 1+ years** - "
                     f"'{at_risk.iloc[0]['name']}' segment needs win-back campaign (low recency score)"
                 )
             
@@ -554,7 +587,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             high_freq = self.segment_profiles.nlargest(1, 'avg_frequency').iloc[0]
             if high_freq['avg_frequency'] >= 3:
                 insights.append(
-                    f"RFM analysis: '{high_freq['name']}' averages {high_freq['avg_frequency']:.1f} transactions - "
+                    f"**RFM analysis**: '{high_freq['name']}' averages {high_freq['avg_frequency']:.1f} transactions - "
                     f"highest frequency score indicates strong engagement"
                 )
         
@@ -569,7 +602,7 @@ tailor his marketing, pricing, and service approach to each group's specific nee
         
         # Connection to other analyses
         insights.append(
-            "Connection to Churn Prediction: Use segment characteristics (recency, frequency, service mix) "
+            "**Connection to Churn Prediction**: Use segment characteristics (recency, frequency, service mix) "
             "to predict which customers in each group are most at risk"
         )
         
