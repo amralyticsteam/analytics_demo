@@ -34,90 +34,98 @@ def show_synthesis_page():
     
     # Visual snake flowchart
     st.markdown("""
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0;">
+        <div style="max-width: 1200px; margin: 2rem auto;">
             <!-- Row 1: Left to Right -->
-            <div class="flow-box">
-                <div class="flow-number">1</div>
-                <div class="flow-title">Business Overview</div>
-                <div class="flow-insight">Revenue trends & patterns</div>
-                <div class="flow-source">ServiceTitan</div>
-                <div class="flow-arrow">→</div>
-            </div>
-            <div class="flow-box">
-                <div class="flow-number">2</div>
-                <div class="flow-title">Customer Segmentation</div>
-                <div class="flow-insight">5 distinct customer groups</div>
-                <div class="flow-source">ServiceTitan</div>
-                <div class="flow-arrow">→</div>
-            </div>
-            <div class="flow-box">
-                <div class="flow-number">3</div>
-                <div class="flow-title">Sentiment Analysis</div>
-                <div class="flow-insight">What customers value</div>
-                <div class="flow-source">Google Reviews</div>
-                <div class="flow-arrow">↓</div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
+                <div class="flow-box">
+                    <div class="flow-number">1</div>
+                    <div class="flow-title">Business Overview</div>
+                    <div class="flow-insight">Revenue trends</div>
+                    <div class="flow-source">ServiceTitan</div>
+                    <div class="flow-arrow">→</div>
+                </div>
+                <div class="flow-box">
+                    <div class="flow-number">2</div>
+                    <div class="flow-title">Customer Segmentation</div>
+                    <div class="flow-insight">5 customer groups</div>
+                    <div class="flow-source">ServiceTitan</div>
+                    <div class="flow-arrow">→</div>
+                </div>
+                <div class="flow-box">
+                    <div class="flow-number">3</div>
+                    <div class="flow-title">Sentiment Analysis</div>
+                    <div class="flow-insight">Customer values</div>
+                    <div class="flow-source">Google Reviews</div>
+                    <div class="flow-arrow">↓</div>
+                </div>
             </div>
             
-            <!-- Row 2: Right to Left (snake back) -->
-            <div class="flow-box" style="grid-column: 3; grid-row: 2;">
-                <div class="flow-arrow-top">↓</div>
-                <div class="flow-number">6</div>
-                <div class="flow-title">Churn Prediction</div>
-                <div class="flow-insight">At-risk customers flagged</div>
-                <div class="flow-source">ServiceTitan</div>
-                <div class="flow-arrow">←</div>
-            </div>
-            <div class="flow-box" style="grid-column: 2; grid-row: 2;">
-                <div class="flow-number">5</div>
-                <div class="flow-title">Marketing Impact</div>
-                <div class="flow-insight">ROI by channel</div>
-                <div class="flow-source">Google Analytics, Meta</div>
-                <div class="flow-arrow">←</div>
-            </div>
-            <div class="flow-box" style="grid-column: 1; grid-row: 2;">
-                <div class="flow-number">4</div>
-                <div class="flow-title">Topic Extraction</div>
-                <div class="flow-insight">Key themes in feedback</div>
-                <div class="flow-source">Google Reviews</div>
-                <div class="flow-arrow">↓</div>
+            <!-- Row 2: Right to Left -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
+                <div class="flow-box">
+                    <div class="flow-arrow-top">↓</div>
+                    <div class="flow-number">4</div>
+                    <div class="flow-title">Topic Extraction</div>
+                    <div class="flow-insight">Key themes</div>
+                    <div class="flow-source">Google Reviews</div>
+                    <div class="flow-arrow">→</div>
+                </div>
+                <div class="flow-box">
+                    <div class="flow-number">5</div>
+                    <div class="flow-title">Marketing Impact</div>
+                    <div class="flow-insight">ROI by channel</div>
+                    <div class="flow-source">Google Analytics</div>
+                    <div class="flow-arrow">→</div>
+                </div>
+                <div class="flow-box">
+                    <div class="flow-number">6</div>
+                    <div class="flow-title">Churn Prediction</div>
+                    <div class="flow-insight">At-risk customers</div>
+                    <div class="flow-source">ServiceTitan</div>
+                    <div class="flow-arrow">↓</div>
+                </div>
             </div>
             
             <!-- Row 3: Left to Right -->
-            <div class="flow-box">
-                <div class="flow-arrow-top">↓</div>
-                <div class="flow-number">7</div>
-                <div class="flow-title">Pricing Analysis</div>
-                <div class="flow-insight">Negative margins found</div>
-                <div class="flow-source">QuickBooks</div>
-                <div class="flow-arrow">→</div>
-            </div>
-            <div class="flow-box">
-                <div class="flow-number">8</div>
-                <div class="flow-title">Demand Forecasting</div>
-                <div class="flow-insight">Predict busy periods</div>
-                <div class="flow-source">ServiceTitan + Weather</div>
-                <div class="flow-arrow">→</div>
-            </div>
-            <div class="flow-box">
-                <div class="flow-number">9</div>
-                <div class="flow-title">Seasonality Analysis</div>
-                <div class="flow-insight">Normal vs concerning trends</div>
-                <div class="flow-source">QuickBooks</div>
-                <div class="flow-arrow">↓</div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
+                <div class="flow-box">
+                    <div class="flow-arrow-top">↓</div>
+                    <div class="flow-number">9</div>
+                    <div class="flow-title">Seasonality Analysis</div>
+                    <div class="flow-insight">Normal vs concerning</div>
+                    <div class="flow-source">QuickBooks</div>
+                    <div class="flow-arrow">←</div>
+                </div>
+                <div class="flow-box">
+                    <div class="flow-number">8</div>
+                    <div class="flow-title">Demand Forecasting</div>
+                    <div class="flow-insight">Predict busy periods</div>
+                    <div class="flow-source">ServiceTitan</div>
+                    <div class="flow-arrow">←</div>
+                </div>
+                <div class="flow-box">
+                    <div class="flow-number">7</div>
+                    <div class="flow-title">Pricing Analysis</div>
+                    <div class="flow-insight">Negative margins</div>
+                    <div class="flow-source">QuickBooks</div>
+                    <div class="flow-arrow">↓</div>
+                </div>
             </div>
             
             <!-- Row 4: Center -->
-            <div class="flow-box" style="grid-column: 2; grid-row: 4;">
-                <div class="flow-arrow-top">↓</div>
-                <div class="flow-number">10</div>
-                <div class="flow-title">Basket Analysis</div>
-                <div class="flow-insight">Service bundling opportunities</div>
-                <div class="flow-source">ServiceTitan</div>
-                <div class="flow-arrow">↓</div>
+            <div style="display: flex; justify-content: center; margin-bottom: 1rem;">
+                <div class="flow-box" style="width: 32%;">
+                    <div class="flow-arrow-top">↓</div>
+                    <div class="flow-number">10</div>
+                    <div class="flow-title">Basket Analysis</div>
+                    <div class="flow-insight">Bundling opportunities</div>
+                    <div class="flow-source">ServiceTitan</div>
+                    <div class="flow-arrow">↓</div>
+                </div>
             </div>
             
             <!-- Final action plan -->
-            <div style="grid-column: 1 / -1; grid-row: 5; background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 2rem; border-radius: 10px; text-align: center; color: white; margin-top: 1rem;">
+            <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 2rem; border-radius: 10px; text-align: center; color: white; margin-top: 1rem;">
                 <div style="font-size: 1.8rem; font-weight: bold;">📋 Complete Action Plan</div>
                 <div style="font-size: 1.1rem; margin-top: 0.5rem; opacity: 0.95;">Prioritized recommendations from all 10 analyses</div>
             </div>
@@ -128,11 +136,14 @@ def show_synthesis_page():
             background: white;
             border: 2px solid #667eea;
             border-radius: 10px;
-            padding: 1.2rem;
+            padding: 1rem;
             text-align: center;
-            position: relative;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             transition: transform 0.2s, box-shadow 0.2s;
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .flow-box:hover {
             transform: translateY(-2px);
@@ -141,44 +152,45 @@ def show_synthesis_page():
         .flow-number {
             background: #667eea;
             color: white;
-            width: 35px;
-            height: 35px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 0.5rem;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         .flow-title {
             font-weight: 600;
             color: #1f2937;
             margin-bottom: 0.25rem;
-            font-size: 1rem;
+            font-size: 0.95rem;
         }
         .flow-insight {
-            font-size: 0.85rem;
-            color: #4b5563;
+            font-size: 0.8rem;
+            color: #6b7280;
             margin-bottom: 0.25rem;
-            font-style: italic;
         }
         .flow-source {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: #9ca3af;
             margin-bottom: 0.5rem;
         }
         .flow-arrow {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             color: #667eea;
-            margin-top: 0.5rem;
+            margin-top: 0.25rem;
             font-weight: bold;
+            line-height: 1;
         }
         .flow-arrow-top {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             color: #667eea;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
             font-weight: bold;
+            line-height: 1;
         }
         </style>
     """, unsafe_allow_html=True)
