@@ -215,22 +215,36 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             # Add segment_id to ensure uniqueness
             base_name = ''
             
-            if profile['avg_total_spend'] > customer_features['total_spend'].quantile(0.75):
-                if profile.get('pct_installation', 0) > 40:
-                    base_name = 'VIP Installation Clients'
+            # Segment naming based on combined RFM metrics
+            recency = profile['avg_recency']
+            frequency = profile['avg_frequency']
+            total_spend = profile['avg_total_spend']
+            
+            # Define thresholds
+            high_spend_threshold = customer_features['total_spend'].quantile(0.75)  # ~$4000+
+            high_freq_threshold = 7  # 7+ services
+            active_recency = 60  # Last 60 days
+            dormant_recency = 180  # 180+ days inactive
+            
+            # Assign names based on clear patterns
+            if frequency >= 15 and total_spend >= high_spend_threshold:
+                # Segment 1: Very high frequency + high spend
+                profile['name'] = 'VIP Loyal Customers'
+            elif frequency >= high_freq_threshold and total_spend >= high_spend_threshold:
+                # Segment 2: High frequency + high spend
+                profile['name'] = 'Premium Service Contracts'
+            elif recency <= active_recency and frequency >= 3:
+                # Segment 0: Active, decent frequency
+                profile['name'] = 'Active Regulars'
+            elif recency >= dormant_recency:
+                # Segment 3 or 4: Inactive/dormant
+                if total_spend < customer_features['total_spend'].median():
+                    profile['name'] = 'At-Risk One-Timers'
                 else:
-                    base_name = 'High-Value Regulars'
-            elif profile['avg_frequency'] >= 3 and profile.get('pct_maintenance', 0) > 30:
-                base_name = 'Maintenance Contract Holders'
-            elif profile['avg_recency'] < 90:
-                base_name = 'Recent Customers'
-            elif profile['avg_recency'] > 365:
-                base_name = 'At-Risk / Dormant'
+                    profile['name'] = 'Dormant Former Regulars'
             else:
-                if profile.get('pct_cooling', 0) + profile.get('pct_heating', 0) > 60:
-                    base_name = 'Repair-Focused'
-                else:
-                    base_name = 'Occasional Service'
+                # Remaining customers - moderate engagement
+                profile['name'] = 'Moderate Service Users'
             
             # Make name unique by checking if it already exists
             existing_names = [p['name'] for p in profiles]
