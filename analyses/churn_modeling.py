@@ -459,23 +459,31 @@ Can we predict which customers are about to leave? Understanding **churn risk** 
     
     @property
     def business_impact(self) -> str:
-        if self.churn_df is None:
-            self.load_data()
-        
-        if self.churn_df is not None and 'churn_label' in self.churn_df.columns:
-            total_customers = len(self.churn_df)
-            churned = (self.churn_df['churn_label'] == 1).sum()
-            churn_rate = (churned / total_customers) * 100
+        try:
+            if self.churn_df is None:
+                # Try to load data from default location
+                try:
+                    self.load_data('data/churn_modeling.csv')
+                except:
+                    # If that fails, return the fallback message
+                    return "Ron gets a clear list of customers who haven't called in over a year and are likely gone for good. He can reach out with a 'we miss you' offer before it's too late. Winning back old customers is way cheaper than finding new ones."
             
-            # Calculate potential revenue saved
-            avg_ltv = self.churn_df['total_lifetime_value'].mean() if 'total_lifetime_value' in self.churn_df.columns else 2000
-            
-            # If we reduce churn by 5 percentage points
-            customers_saved = int(total_customers * 0.05)
-            revenue_saved = customers_saved * avg_ltv
-            
-            return (f"Ron has {churned} at-risk customers ({churn_rate:.1f}% churn rate). "
-                   f"Reducing churn by just 5 percentage points would save ~{customers_saved} customers, "
-                   f"preserving ${revenue_saved:,.0f} in lifetime value.")
+            if self.churn_df is not None and 'churn_label' in self.churn_df.columns:
+                total_customers = len(self.churn_df)
+                churned = (self.churn_df['churn_label'] == 1).sum()
+                churn_rate = (churned / total_customers) * 100
+                
+                # Calculate potential revenue saved
+                avg_ltv = self.churn_df['total_lifetime_value'].mean() if 'total_lifetime_value' in self.churn_df.columns else 2000
+                
+                # If we reduce churn by 5 percentage points
+                customers_saved = int(total_customers * 0.05)
+                revenue_saved = customers_saved * avg_ltv
+                
+                return (f"Ron has {churned} at-risk customers ({churn_rate:.1f}% churn rate). "
+                       f"Reducing churn by just 5 percentage points would save ~{customers_saved} customers, "
+                       f"preserving ${revenue_saved:,.0f} in lifetime value.")
+        except Exception as e:
+            pass
         
         return "Ron gets a clear list of customers who haven't called in over a year and are likely gone for good. He can reach out with a 'we miss you' offer before it's too late. Winning back old customers is way cheaper than finding new ones."
