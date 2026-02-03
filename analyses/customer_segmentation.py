@@ -380,29 +380,22 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             row=1, col=2
         )
         
-        # Replace lines 383-408 with this to debug:
-        
         # 3. Service Mix by Segment - Stacked bars
-        print("\n=== DEBUG: Service Mix Visualization ===")
-        print(f"segment_profiles shape: {self.segment_profiles.shape}")
-        print(f"All columns: {self.segment_profiles.columns.tolist()}")
-        
+        # DEBUG: Show what columns we have
+        import streamlit as st
         service_cols = [col for col in self.segment_profiles.columns if col.startswith('pct_')]
-        print(f"Columns starting with pct_: {service_cols}")
-        print(f"Number of pct_ columns: {len(service_cols)}")
         
-        # Check for duplicate column names
-        from collections import Counter
-        col_counts = Counter(service_cols)
-        if any(count > 1 for count in col_counts.values()):
-            print("WARNING: Duplicate columns detected!")
-            for col, count in col_counts.items():
-                if count > 1:
-                    print(f"  {col} appears {count} times")
+        st.write("### DEBUG INFO")
+        st.write(f"**Total columns in segment_profiles:** {len(self.segment_profiles.columns)}")
+        st.write(f"**Columns starting with pct_:** {service_cols}")
+        st.write(f"**Number of pct_ columns:** {len(service_cols)}")
+        st.write(f"**Segment names:** {self.segment_profiles['name'].tolist()}")
+        
+        # Show the actual data
+        st.write("**Segment profiles data:**")
+        st.dataframe(self.segment_profiles)
         
         service_names = [col.replace('pct_', '').title() for col in service_cols]
-        print(f"Service names: {service_names}")
-        print("="*40 + "\n")
         
         colors_services = {
             'Installation': '#00b894',
