@@ -42,12 +42,12 @@ appropriately and avoid costly overtime or lost revenue."""
     @property
     def data_collected(self) -> list:
         return [
-            '**Source**: ServiceTitan + Weather API + Marketing Tracking',
-            '**Dataset**: demand_forecasting.csv',
-            '**Records**: 95 days of data',
-            '**Contains**: Daily call volume, weather data (temp, precipitation, humidity), marketing spend by channel'
+            'Daily service call volume - **ServiceTitan**',
+            'High/low temperature data - **NOAA Weather API**',
+            'Precipitation and humidity - **NOAA Weather API**',
+            'Marketing spend by channel - **Google Analytics, Meta Ads**',
+            'Holiday calendar - **Business calendar**'
         ]
-    
     
     # Backward compatibility
     @property

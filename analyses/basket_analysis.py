@@ -53,10 +53,11 @@ upselling, and increase average ticket size without being pushy."""
     @property
     def data_collected(self) -> list:
         return [
-            '**Source**: ServiceTitan Invoice Data',
-            '**Dataset**: basket_analysis.csv',
-            '**Records**: 1,000 invoices with bundled services',
-            '**Contains**: Invoice ID, customer, date, up to 3 services per visit, total amount, same-visit indicator'
+            'Service bundles per invoice - **ServiceTitan**',
+            'Multi-service transactions - **ServiceTitan**',
+            'Same-visit service combinations - **ServiceTitan**',
+            'Invoice totals and service types - **ServiceTitan**',
+            '2,358 invoices analyzed - **ServiceTitan**'
         ]
     
     

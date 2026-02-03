@@ -40,10 +40,12 @@ by service type** helps Ron plan staffing, inventory, and marketing spend throug
     @property
     def data_collected(self) -> list:
         return [
-            '**Source**: QuickBooks Revenue Reports',
-            '**Dataset**: seasonality_timeseries.csv',
-            '**Records**: 32 months (Jan 2022 - Aug 2024)',
-            '**Contains**: Monthly revenue by service type (Installation, Maintenance, Emergency, Cooling, Heating)'
+            'Monthly revenue by service type - **ServiceTitan, QuickBooks**',
+            'Installation revenue trends - **ServiceTitan**',
+            'Maintenance revenue patterns - **ServiceTitan**',
+            'Cooling/heating seasonal patterns - **ServiceTitan**',
+            'Emergency service volume - **ServiceTitan**',
+            '32 months of historical data - **ServiceTitan**'
         ]
     
     
