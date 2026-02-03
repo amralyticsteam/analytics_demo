@@ -459,7 +459,10 @@ Can we predict which customers are about to leave? Understanding **churn risk** 
     
     @property
     def business_impact(self) -> str:
-        if self.churn_df is not None:
+        if self.churn_df is None:
+            self.load_data()
+        
+        if self.churn_df is not None and 'churn_label' in self.churn_df.columns:
             total_customers = len(self.churn_df)
             churned = (self.churn_df['churn_label'] == 1).sum()
             churn_rate = (churned / total_customers) * 100
