@@ -381,14 +381,18 @@ tailor his marketing, pricing, and service approach to each group's specific nee
         )
         
         # 3. Service Mix by Segment - Stacked bars
-        service_cols = [col for col in self.segment_profiles.columns if col.startswith('pct_')]
+        # Use only the 5 expected service categories in a specific order
+        service_cols = ['pct_installation', 'pct_cooling', 'pct_heating', 'pct_maintenance', 'pct_emergency']
+        # Filter to only columns that actually exist in segment_profiles
+        service_cols = [col for col in service_cols if col in self.segment_profiles.columns]
         service_names = [col.replace('pct_', '').title() for col in service_cols]
         
         colors_services = {
             'Installation': '#00b894',
             'Cooling': '#008f8c',
             'Heating': '#ff6b6b',
-            'Maintenance': '#23606e'
+            'Maintenance': '#23606e',
+            'Emergency': '#667eea'
         }
         
         for idx, service_col in enumerate(service_cols):
