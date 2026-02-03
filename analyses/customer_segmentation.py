@@ -212,22 +212,46 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             profile['avg_tenure'] = segment_data.get('customer_tenure_days', pd.Series([0])).mean()
             
             # Assign descriptive names based on characteristics
+            # Add segment_id to ensure uniqueness
+            base_name = ''
+            
             if profile['avg_total_spend'] > customer_features['total_spend'].quantile(0.75):
                 if profile.get('pct_installation', 0) > 40:
-                    profile['name'] = 'VIP Installation Clients'
+                    base_name = 'VIP Installation Clients'
                 else:
-                    profile['name'] = 'High-Value Regulars'
+                    base_name = 'High-Value Regulars'
             elif profile['avg_frequency'] >= 3 and profile.get('pct_maintenance', 0) > 30:
-                profile['name'] = 'Maintenance Contract Holders'
+                base_name = 'Maintenance Contract Holders'
             elif profile['avg_recency'] < 90:
-                profile['name'] = 'Recent Customers'
+                base_name = 'Recent Customers'
             elif profile['avg_recency'] > 365:
-                profile['name'] = 'At-Risk / Dormant'
+                base_name = 'At-Risk / Dormant'
             else:
                 if profile.get('pct_cooling', 0) + profile.get('pct_heating', 0) > 60:
-                    profile['name'] = 'Repair-Focused'
+                    base_name = 'Repair-Focused'
                 else:
-                    profile['name'] = 'Occasional Service'
+                    base_name = 'Occasional Service'
+            
+            # Make name unique by checking if it already exists
+            existing_names = [p['name'] for p in profiles]
+            if base_name in existing_names:
+                # Add a distinguisher based on key characteristic
+                if 'Occasional' in base_name:
+                    # Differentiate by spend level
+                    if profile['avg_total_spend'] > customer_features['total_spend'].median():
+                        profile['name'] = 'Occasional Service (Higher Spend)'
+                    else:
+                        profile['name'] = 'Occasional Service (Lower Spend)'
+                elif 'Recent' in base_name:
+                    if profile['avg_frequency'] > customer_features['frequency'].median():
+                        profile['name'] = 'Recent Customers (Frequent)'
+                    else:
+                        profile['name'] = 'Recent Customers (New)'
+                else:
+                    # Fallback: add segment number
+                    profile['name'] = f"{base_name} #{segment_id}"
+            else:
+                profile['name'] = base_name
             
             profiles.append(profile)
         
