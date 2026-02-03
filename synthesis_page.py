@@ -264,7 +264,7 @@ def show_synthesis_page():
             "timeline": "This week",
             "impact": "High",
             "effort": "Low",
-            "expected_result": "Raise Thermostat Install from $189 to $225, Smart Thermostat from $295 to $350, Heating Tune-up from $140 to $165 (+ 4 others). Stop losing money on 346 annual jobs. +$18-25K annual profit.",
+            "expected_result": "Raise Thermostat Install from \$189 to \$225, Smart Thermostat from \$295 to \$350, Heating Tune-up from \$140 to \$165 (+ 4 others). Stop losing money on 346 annual jobs. +\$18-25K annual profit.",
             "source": "Pricing Analysis"
         },
         {
@@ -282,7 +282,7 @@ def show_synthesis_page():
             "timeline": "Next month",
             "impact": "High",
             "effort": "Medium",
-            "expected_result": "Package frequently co-purchased services at 10% discount. Increase average ticket 15-25%.",
+            "expected_result": "Package frequently co-purchased services at 10\% discount. Increase average ticket 15-25%.",
             "source": "Basket Analysis"
         },
         {
