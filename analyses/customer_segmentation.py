@@ -380,12 +380,29 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             row=1, col=2
         )
         
+        # Replace lines 383-408 with this to debug:
+        
         # 3. Service Mix by Segment - Stacked bars
-        # Use only the 5 expected service categories in a specific order
-        service_cols = ['pct_installation', 'pct_cooling', 'pct_heating', 'pct_maintenance', 'pct_emergency']
-        # Filter to only columns that actually exist in segment_profiles
-        service_cols = [col for col in service_cols if col in self.segment_profiles.columns]
+        print("\n=== DEBUG: Service Mix Visualization ===")
+        print(f"segment_profiles shape: {self.segment_profiles.shape}")
+        print(f"All columns: {self.segment_profiles.columns.tolist()}")
+        
+        service_cols = [col for col in self.segment_profiles.columns if col.startswith('pct_')]
+        print(f"Columns starting with pct_: {service_cols}")
+        print(f"Number of pct_ columns: {len(service_cols)}")
+        
+        # Check for duplicate column names
+        from collections import Counter
+        col_counts = Counter(service_cols)
+        if any(count > 1 for count in col_counts.values()):
+            print("WARNING: Duplicate columns detected!")
+            for col, count in col_counts.items():
+                if count > 1:
+                    print(f"  {col} appears {count} times")
+        
         service_names = [col.replace('pct_', '').title() for col in service_cols]
+        print(f"Service names: {service_names}")
+        print("="*40 + "\n")
         
         colors_services = {
             'Installation': '#00b894',
