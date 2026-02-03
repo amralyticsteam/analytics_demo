@@ -211,65 +211,29 @@ tailor his marketing, pricing, and service approach to each group's specific nee
             
             profile['avg_tenure'] = segment_data.get('customer_tenure_days', pd.Series([0])).mean()
             
-            # Assign descriptive names based on characteristics
-            # Add segment_id to ensure uniqueness
-            base_name = ''
-            
-            # Segment naming based on combined RFM metrics
-            recency = profile['avg_recency']
-            frequency = profile['avg_frequency']
-            total_spend = profile['avg_total_spend']
-            
-            # Define thresholds
-            high_spend_threshold = customer_features['total_spend'].quantile(0.75)  # ~$4000+
-            high_freq_threshold = 7  # 7+ services
-            active_recency = 60  # Last 60 days
-            dormant_recency = 180  # 180+ days inactive
-            
-            # Assign names based on clear patterns
-            if frequency >= 15 and total_spend >= high_spend_threshold:
-                # Segment 1: Very high frequency + high spend
-                profile['name'] = 'VIP Loyal Customers'
-            elif frequency >= high_freq_threshold and total_spend >= high_spend_threshold:
-                # Segment 2: High frequency + high spend
-                profile['name'] = 'Premium Service Contracts'
-            elif recency <= active_recency and frequency >= 3:
-                # Segment 0: Active, decent frequency
-                profile['name'] = 'Active Regulars'
-            elif recency >= dormant_recency:
-                # Segment 3 or 4: Inactive/dormant
-                if total_spend < customer_features['total_spend'].median():
-                    profile['name'] = 'At-Risk One-Timers'
-                else:
-                    profile['name'] = 'Dormant Former Regulars'
-            else:
-                # Remaining customers - moderate engagement
-                profile['name'] = 'Moderate Service Users'
-            
-            # Make name unique by checking if it already exists
-            existing_names = [p['name'] for p in profiles]
-            if base_name in existing_names:
-                # Add a distinguisher based on key characteristic
-                if 'Occasional' in base_name:
-                    # Differentiate by spend level
-                    if profile['avg_total_spend'] > customer_features['total_spend'].median():
-                        profile['name'] = 'Occasional Service (Higher Spend)'
-                    else:
-                        profile['name'] = 'Occasional Service (Lower Spend)'
-                elif 'Recent' in base_name:
-                    if profile['avg_frequency'] > customer_features['frequency'].median():
-                        profile['name'] = 'Recent Customers (Frequent)'
-                    else:
-                        profile['name'] = 'Recent Customers (New)'
-                else:
-                    # Fallback: add segment number
-                    profile['name'] = f"{base_name} #{segment_id}"
-            else:
-                profile['name'] = base_name
-            
+            # Store profile WITHOUT name yet
             profiles.append(profile)
         
-        return pd.DataFrame(profiles)
+        # Convert to DataFrame
+        profiles_df = pd.DataFrame(profiles)
+        
+        # Sort by total revenue to assign names consistently
+        profiles_df = profiles_df.sort_values('total_revenue', ascending=False).reset_index(drop=True)
+        
+        # Assign 5 distinct names based on revenue ranking
+        segment_names = [
+            'Premium Regulars',      # Highest revenue
+            'Active Maintenance',    # Second highest
+            'Steady Customers',      # Middle
+            'Occasional Service',    # Lower engagement
+            'At-Risk Customers'      # Lowest/dormant
+        ]
+        
+        # Assign names based on sorted order
+        profiles_df['name'] = [segment_names[i] if i < len(segment_names) else f'Segment {i+1}' 
+                               for i in range(len(profiles_df))]
+        
+        return profiles_df  
     
     def load_data(self, filepath: str = None) -> pd.DataFrame:
         """Load and process HVAC transaction data."""
